@@ -43,6 +43,13 @@ jobs:
         continue-on-error: true
         run: python scripts/takealot_apple_prices.py
 
+      - name: Scrape Incredible Connection
+        # Previously missing entirely -- data/incredible.json had been a
+        # frozen, hand-curated snapshot with no automated refresh, even
+        # though combine.py actively uses it for matching.
+        continue-on-error: true
+        run: python scripts/incredible_prices.py
+
       - name: Scrape Digicape Mac configurations
         continue-on-error: true
         run: python scripts/digicape_mac_configs.py
@@ -59,5 +66,15 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update price data ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            # The scrape steps above can take several minutes; if another
+            # commit lands on main in the meantime (e.g. manual pushes during
+            # development -- this happened live on 2026-08-19), a plain
+            # 'git push' correctly refuses with "fetch first" rather than
+            # overwriting. This job always fully regenerates every file
+            # under data/, so on a conflict prefer this run's freshly-scraped
+            # data over whatever raced ahead of it, while still merging in
+            # any unrelated commits (script/README/workflow changes) cleanly.
+            git fetch origin main
+            git merge origin/main -X ours -m "Merge scheduled data update onto latest main"
             git push
           fi
