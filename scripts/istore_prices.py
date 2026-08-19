@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Scrapling script: fetch iStore South Africa category pages (Mac, iPhone,
-iPad, Watch, AirPods, Accessories) and extract product names + prices with
-targeted CSS selectors.
+iPad, Watch, AirPods, Apple TV, Accessories) and extract product names +
+prices with targeted CSS selectors.
 
 WHY plain Fetcher (no headless browser needed here):
 Unlike Takealot, iStore's category pages are server-rendered — a plain fetch
@@ -54,16 +54,29 @@ from scrapling.fetchers import Fetcher, StealthyFetcher
 BASE_URL = "https://www.istore.co.za"
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 
-# category slug -> URL path (confirmed against the live site: /mac, /iphone,
-# /accessories were checked directly; ipad/watch/airpods follow the same
-# nav pattern and should match, but double-check with --dump-html if a
-# category comes back with 0 products)
+# category slug -> URL path.
+# /mac, /iphone, /accessories, /airpods are confirmed real Magento product
+# grids (they've been returning real multi-item results in production).
+#
+# /ipad and /watch are NOT product grids — confirmed 2026-08-19 that they
+# only ever returned 0 products in production. Checked directly: they're
+# marketing/discovery landing pages (a hero banner + a curated carousel of a
+# handful of featured models), not the `li.product-item` grid PRODUCT_SELECTORS
+# expects. The real grids, found via search and confirmed to list every
+# current model with a real price, are the "shop-*-range" pages below.
+# "appletv" was missing from this dict entirely (not a bug fix, an omission)
+# — added using the same discovery method. All three new URLs are the same
+# Magento template family as the working ones, so the existing selectors
+# should carry over, but this hasn't been confirmed against real rendered
+# HTML from this environment (no network access here to istore.co.za) —
+# verify with --dump-html once run somewhere with real access.
 CATEGORIES = {
     "mac": "/mac",
     "iphone": "/iphone",
-    "ipad": "/ipad",
-    "watch": "/watch",
+    "ipad": "/ipad/shop-ipad-range",
+    "watch": "/apple-watch/shop-watch-range",
     "airpods": "/airpods",
+    "appletv": "/music-and-tech/discover-apple-tv/shop-apple-tv",
     "accessories": "/accessories",
 }
 

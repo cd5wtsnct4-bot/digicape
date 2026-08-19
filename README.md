@@ -62,6 +62,23 @@ python scripts/combine.py
 
 ## Known limitations
 
+- **iStore was missing iPad, Watch, and Apple TV entirely, now fixed (pending
+  verification).** Incredible Connection turned out fine on inspection — its
+  rows already use the same six categories Digicape does, and it was
+  contributing real matches. iStore's `/mac`, `/iphone`, `/accessories`, and
+  `/airpods` pages are real Magento product grids and scraped correctly, but
+  `/ipad` and `/watch` are marketing/discovery landing pages (a hero banner
+  plus a handful of featured tiles), not the grid `PRODUCT_SELECTORS`
+  expects — confirmed by inspecting them directly, they returned 0 products
+  every run, silently. Apple TV wasn't in the category list at all, a plain
+  omission. Swapped in the real grid URLs
+  (`/ipad/shop-ipad-range`, `/apple-watch/shop-watch-range`,
+  `/music-and-tech/discover-apple-tv/shop-apple-tv`), confirmed via direct
+  inspection to list every current model with a real price. These are the
+  same Magento template family as the working pages, so the existing
+  selectors should carry over, but this environment has no network access to
+  istore.co.za to confirm against real rendered HTML — check the next
+  scheduled run's output for these three categories before trusting it fully.
 - **Takealot showed zero matches until 2026-08-19, now fixed.** Every row from
   `takealot_apple_prices.py` was tagged `"category": "apple-promo"`
   unconditionally, while Digicape (the baseline) tags rows `mac`/`ipad`/
