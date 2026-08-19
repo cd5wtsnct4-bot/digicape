@@ -5,21 +5,29 @@ and extract prices.
 
 HONEST STATUS, READ BEFORE TRUSTING THIS SCRIPT'S OUTPUT:
 Amazon.co.za's robots.txt disallows automated fetching of both its search
-pages and its individual product pages — every fetch attempt made while
-writing this script was blocked before a single byte of real markup was
-seen. The CSS selectors below (PRICE_SELECTORS, TITLE_SELECTORS) are the
-selectors Amazon has used for years across its storefronts
+pages and its individual product pages. This script does not attempt to
+bypass any bot-detection challenge it's shown (see looks_like_captcha() —
+it skips a page rather than tries to get past it), but running it at all
+still needs weighing against that robots.txt disallow before relying on it
+regularly.
+
+The original assumption here — that a direct fetch reliably gets blocked —
+turned out not to hold. Verified twice against the live site (2026-08-19):
+first by hand from a residential connection (20/20 curated URLs, real
+prices, zero CAPTCHA hits), then for real by the scheduled GitHub Actions
+workflow itself (same result: 20/20, see data/amazon.json's commit history
+for the 18:50 UTC run) — so this also isn't blocked from Actions' shared
+IP range, which was the specific remaining risk after the first test. The
+CSS selectors below (PRICE_SELECTORS, TITLE_SELECTORS) — Amazon's
+long-standing selectors across its storefronts
 (`#corePrice_feature_div`, `span.a-price .a-offscreen`, `#productTitle`) —
-well-documented, not guessed from nothing — but they have not been verified
-against amazon.co.za's actual current HTML, because nothing in this
-environment could load it to check. On top of that, Amazon is known for
-aggressive bot detection (CAPTCHA / "Sorry, we just need to make sure
-you're not a robot" interstitials) that can block even a real headless
-browser, including on GitHub Actions' shared IP ranges specifically —
-they're commonly flagged. Run this once by hand and read the console output
-before trusting it in the scheduled workflow; if it comes back with mostly
-CAPTCHA-page titles or zero prices, that's Amazon's bot defense doing its
-job, not a bug to chase with more selector guesses.
+held up as-is in both runs; nothing needed adjusting.
+
+That's two clean runs, not a guarantee of every future one — Amazon's bot
+detection can vary over time or by IP reputation, so keep an eye on the
+"Scrape Amazon SA" step's log occasionally. If it ever comes back with
+mostly CAPTCHA-page titles or zero prices, that's the bot defense kicking
+in at that point, not a bug to chase with more selector guesses.
 
 PRODUCT_URLS below is a curated list (found via web search, not crawled —
 Amazon's search-results pages are even more heavily protected than product
