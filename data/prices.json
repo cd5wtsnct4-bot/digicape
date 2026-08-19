@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T13:02:36Z",
+  "generated_at": "2026-08-19T13:40:58Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -9,42 +9,6 @@
     "istore": "iStore"
   },
   "items": [
-    {
-      "category": "AirPods",
-      "title": "AirPods 4",
-      "prices": {
-        "digicape": {
-          "price": 130.0,
-          "price_text": "Save R130",
-          "url": "https://www.digicape.co.za/category/airpods-all",
-          "stale": false
-        },
-        "incredible": {
-          "price": 2399.0,
-          "price_text": "R2,399",
-          "url": "https://www.incredible.co.za/apple-airpods-4",
-          "stale": false
-        },
-        "istore": {
-          "price": 2799.0,
-          "price_text": "R2 799",
-          "url": "https://www.istore.co.za/airpods",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "AirPods",
-      "title": "AirPods 4 with Active Noise Cancellation",
-      "prices": {
-        "digicape": {
-          "price": 300.0,
-          "price_text": "Save R300",
-          "url": "https://www.digicape.co.za/category/airpods-all",
-          "stale": false
-        }
-      }
-    },
     {
       "category": "AirPods",
       "title": "AirPods Max",
@@ -77,24 +41,6 @@
         "istore": {
           "price": 11499.0,
           "price_text": "R11 499",
-          "url": "https://www.istore.co.za/airpods",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "AirPods",
-      "title": "AirPods Pro 3",
-      "prices": {
-        "digicape": {
-          "price": 400.0,
-          "price_text": "Save R400",
-          "url": "https://www.digicape.co.za/category/airpods-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 5399.0,
-          "price_text": "R5 399",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -322,35 +268,11 @@
     },
     {
       "category": "Watch",
-      "title": "Apple Watch SE 3 Sport Band",
-      "prices": {
-        "digicape": {
-          "price": 300.0,
-          "price_text": "Save R300",
-          "url": "https://www.digicape.co.za/category/watch-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Watch",
       "title": "Apple Watch Series 11 Milanese Loop",
       "prices": {
         "digicape": {
           "price": 18299.0,
           "price_text": "R18 299",
-          "url": "https://www.digicape.co.za/category/watch-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Series 11 Sport Band",
-      "prices": {
-        "digicape": {
-          "price": 500.0,
-          "price_text": "Save R500",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -514,18 +436,6 @@
     },
     {
       "category": "iPad",
-      "title": "iPad Pro 13-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 3800.0,
-          "price_text": "Save R3800",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
       "title": "iPad mini (A17 Pro)",
       "prices": {
         "digicape": {
@@ -538,41 +448,11 @@
     },
     {
       "category": "iPhone",
-      "title": "iPhone 16 Plus",
+      "title": "iPhone 15",
       "prices": {
         "digicape": {
-          "price": 19999.0,
-          "price_text": "R19 999",
-          "url": "https://www.digicape.co.za/category/iphone-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 16e",
-      "prices": {
-        "digicape": {
-          "price": 1200.0,
-          "price_text": "Save R1200",
-          "url": "https://www.digicape.co.za/category/iphone-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 11999.0,
-          "price_text": "R11 999",
-          "url": "https://www.istore.co.za/iphone",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 17",
-      "prices": {
-        "digicape": {
-          "price": 300.0,
-          "price_text": "Save R300",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -580,6 +460,18 @@
           "price": 13999.0,
           "price_text": "R13 999",
           "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 16 Plus",
+      "prices": {
+        "digicape": {
+          "price": 19999.0,
+          "price_text": "R19 999",
+          "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         }
       }

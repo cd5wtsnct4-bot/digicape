@@ -79,6 +79,18 @@ python scripts/combine.py
   (`article[data-dst-pid]` → `p.category__product--heading` →
   `.category__product--price strong`), not a guess — a per-card regex
   fallback still exists underneath in case Digicape's markup shifts again.
+- **That same 12:41 UTC run also surfaced a real extraction bug, since
+  fixed**: on cards showing a savings badge (e.g. "Save R3,800") next to the
+  real price, the extractor sometimes grabbed the badge amount instead of the
+  price itself — nine products (iPad Pro 13" M5, three iPhones, two Watch
+  bands, three AirPods) briefly showed prices as low as R130. Both
+  `digicape_prices.py`'s selector logic and its per-card text fallback now
+  explicitly reject any candidate containing "save"/"off"/"discount"/"was"
+  before accepting it as a price, and a per-category minimum-price check
+  (e.g. an iPhone must be ≥ R5,000) drops anything still implausible rather
+  than publish it. The nine affected rows were manually nulled out in
+  `data/digicape.json` rather than left wrong; they'll repopulate with real
+  numbers on the next scrape run.
 - `amazon_prices.py` is unverified end-to-end: Amazon.co.za blocks automated
   fetching aggressively (robots.txt disallows it outright, and it's known for
   CAPTCHA-based bot detection). The selectors are Amazon's long-standing,

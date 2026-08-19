@@ -112,6 +112,28 @@ PRICE_SELECTORS = [
 
 PRICE_REGEX = re.compile(r"R\s?[\d][\d,\s]*(?:\.\d{2})?")
 
+# A real production bug, confirmed on the live 2026-08-19 12:41 UTC run: several
+# cards show a savings badge ("Save R3,800") right next to the actual price, and
+# a selector/fallback that just grabs "the first R-number on the card" can latch
+# onto the badge instead — e.g. iPad Pro 13-inch (M5 chip) came back priced at
+# "R3,800" (the discount amount), not its real ~R28,000 price. DISCOUNT_TEXT_RE
+# is checked before accepting any price candidate, in every extraction path
+# below, so a savings/was-price badge can never be mistaken for the price itself.
+DISCOUNT_TEXT_RE = re.compile(r"\b(save|off|discount|was)\b", re.IGNORECASE)
+
+# Defense-in-depth, not the primary fix: even with the discount-badge guard
+# above, reject an obviously-implausible price outright rather than publish it.
+# Thresholds are deliberately conservative (real entry-level SA retail prices as
+# of 2026), taken from the same idea as the reference PHP app's
+# dpw_price_is_plausible(). A price that fails this is treated as "not found"
+# (dropped to None) rather than shown wrong — matching this project's existing
+# rule of dropping a product rather than guessing at its price.
+CATEGORY_MIN_PRICE = {
+    "mac": 5000, "iphone": 5000, "ipad": 2500, "watch": 1500,
+    "airpods": 1000, "appletv": 1500,
+}
+CATEGORY_MAX_PRICE = 500000
+
 
 def clean_price(text):
     """'From R13,899' / 'R 1 399.00' -> 13899.0 / 1399.0"""
@@ -122,11 +144,31 @@ def clean_price(text):
     return float(match.group()) if match else None
 
 
+def is_plausible_price(category, price):
+    if price is None:
+        return False
+    floor = CATEGORY_MIN_PRICE.get(category, 200)
+    return floor <= price <= CATEGORY_MAX_PRICE
+
+
 def first_match(card, selectors):
     for sel in selectors:
         val = card.css(sel).get()
         if val:
             return val.strip()
+    return None
+
+
+def first_price_text(card, selectors):
+    """Like first_match, but for price selectors specifically: skips any
+    candidate that reads as a discount badge rather than an actual price
+    (see DISCOUNT_TEXT_RE above), scanning every match of a selector — not
+    just the first — before moving on to the next selector."""
+    for sel in selectors:
+        for val in card.css(sel).getall():
+            val = (val or "").strip()
+            if val and not DISCOUNT_TEXT_RE.search(val):
+                return val
     return None
 
 
@@ -159,13 +201,16 @@ def extract_heuristic(page, category, url):
         text = chunk.strip()
         if not text:
             continue
-        if PRICE_REGEX.search(text):
+        if PRICE_REGEX.search(text) and not DISCOUNT_TEXT_RE.search(text):
+            price = clean_price(text)
+            if not is_plausible_price(category, price):
+                continue
             results.append({
                 "retailer": "digicape",
                 "category": category,
                 "name": pending_name or "",
                 "price_text": text,
-                "price": clean_price(text),
+                "price": price,
                 "old_price_text": "",
                 "old_price": None,
                 "url": url,
@@ -204,9 +249,10 @@ def scrape_listing(category, path):
     print(f"[{category}] matched {len(cards)} cards using selector: {used_selector}")
     results = []
     price_selector_misses = 0
+    dropped_implausible = 0
     for card in cards:
         name = first_match(card, NAME_SELECTORS)
-        price_text = first_match(card, PRICE_SELECTORS)
+        price_text = first_price_text(card, PRICE_SELECTORS)
         if not price_text:
             # PRODUCT_SELECTORS / NAME_SELECTORS can match while
             # PRICE_SELECTORS misses — the card element itself was found (so
@@ -214,21 +260,32 @@ def scrape_listing(category, path):
             # name outside PRICE_SELECTORS's guesses. Fall back to scanning
             # this card's own text nodes for a price-shaped string, scoped to
             # the single card so it can't pick up an unrelated price
-            # elsewhere on the page.
+            # elsewhere on the page. Discount-badge text ("Save R500") is
+            # skipped here too — see DISCOUNT_TEXT_RE.
             price_selector_misses += 1
             for chunk in card.css("*::text").getall():
                 stripped = chunk.strip()
-                if stripped and PRICE_REGEX.search(stripped):
+                if stripped and PRICE_REGEX.search(stripped) and not DISCOUNT_TEXT_RE.search(stripped):
                     price_text = stripped
                     break
         if not name and not price_text:
             continue
+        price = clean_price(price_text)
+        if price is not None and not is_plausible_price(category, price):
+            # Whatever text we found reads as a number but is nowhere near a
+            # realistic price for this category (e.g. a stray badge/label that
+            # slipped past the discount-text filter). Drop the price rather
+            # than publish a number that's obviously wrong; the name is kept
+            # so this doesn't silently disappear from --dump-html debugging.
+            dropped_implausible += 1
+            print(f"[{category}] dropping implausible price for '{name}': {price_text!r} -> {price}")
+            price_text, price = "", None
         results.append({
             "retailer": "digicape",
             "category": category,
             "name": name or "",
             "price_text": price_text or "",
-            "price": clean_price(price_text),
+            "price": price,
             "old_price_text": "",
             "old_price": None,
             "url": url,
@@ -238,6 +295,8 @@ def scrape_listing(category, path):
         print(f"[{category}] PRICE_SELECTORS missed on {price_selector_misses}/{len(cards)} cards; "
               f"per-card text fallback recovered a price for {recovered} of those. If that recovered "
               f"count is still 0, run --dump-html {category} and update PRICE_SELECTORS for real.")
+    if dropped_implausible:
+        print(f"[{category}] dropped {dropped_implausible} implausible price(s) — see lines above.")
     return results
 
 
