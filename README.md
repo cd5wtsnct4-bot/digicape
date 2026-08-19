@@ -62,6 +62,62 @@ python scripts/combine.py
 
 ## Known limitations
 
+- **Mac matching against Takealot showed zero results, and iPhone/Watch
+  generation numbers could silently merge — both now fixed (2026-08-19).**
+  Two separate bugs in `combine.py`'s `normalize_key()`, found while
+  investigating a user report that Takealot's MacBook listings weren't
+  matching Digicape at all:
+  1. Takealot spells out full specs (`"Apple MacBook Pro 14" M5 Pro 15 core
+     CPU and 16 core GPU, 24GB, 2TB SSD"`) while Digicape's category page
+     only shows a generic `"MacBook Pro 14-inch (M5 chip)"` line. Matching
+     requires the two names' token sets to be *identical*, and the leftover
+     `core`/`cpu`/`gpu`/`ssd` boilerplate words blocked every Mac match that
+     had a fully-specced Takealot name — confirmed directly by comparing the
+     two names' computed keys. Fixed by stripping that boilerplate (and
+     removing core counts as a `"<number> core"` unit) before matching.
+  2. Fixing that surfaced a second, worse bug: the normalizer's rule for
+     dropping leftover bare numbers (`"drop any 2-4 digit token that isn't a
+     unit"`) couldn't tell a leftover storage digit apart from a meaningful
+     model number, and was silently merging `"iPhone 15"`, `"iPhone 16"`,
+     and `"iPhone 17"` into a single row — confirmed live in
+     `data/prices.json` before this fix, where the merged row was mislabeled
+     "iPhone 17" but showed the iPhone 15's price, because the combiner
+     always keeps whichever retailer's price is lowest. The same rule was
+     also merging `"Apple Watch Series 10"` and `"Series 11"`. Removed that
+     rule now that spaced storage sizes and core counts are handled
+     explicitly instead.
+  One accuracy caveat this doesn't (and can't, from a category-listing page
+  alone) fully solve: Digicape's category pages only ever expose one generic
+  "from" price per model line — confirmed directly, none of Digicape's 45
+  product names carry a storage size, RAM size, or core count. So a Takealot
+  or Incredible Connection row that lists a specific config (e.g. the M5 Pro
+  15-core/16-core/24GB/1TB MacBook Pro 14") now correctly *appears* next to
+  Digicape's base 14" Pro price, but it's a family-level match, not a
+  same-spec one — the two prices aren't for an identical configuration.
+  `combine.py` now flags this automatically: when a competitor's listing
+  mentions a storage size, RAM size, or core count that Digicape's matched
+  name doesn't, that cell gets a `"note"` and the dashboard shows a
+  "Different variant" badge instead of treating it as an exact price match
+  or a "cheapest" deal (the same mechanism already used for Incredible
+  Connection's hand-curated promo notes). Checked Digicape's own live
+  product page for a 14" MacBook Pro config
+  (`/product/macbook-pro-14-inch-m5-chip-m5-chip-15c-cpu-16c-gpu-2tb-ssd-24gb-silver`):
+  it's a real chip/storage/RAM/colour configurator, but the price isn't in
+  the page's static HTML — it's loaded client-side after you pick options,
+  the same way Takealot's own SPA works. Scraping *every* real per-config
+  price would mean driving a headless browser through that selector for
+  every valid combination on every Mac model, which is a materially bigger
+  project than a matching-key fix — flagging it here rather than building it
+  without being asked, since it needs a decision on whether that scrape cost
+  is worth it before committing to it. Decided it's worth investigating:
+  `scripts/digicape_config_diagnostic.py` is step one, a diagnostic (not a
+  scraper) that answers the question this development environment has no
+  network access to answer itself — does Digicape's configurator load every
+  configuration's price in one embedded JSON blob (fast, reliable path) or
+  only after a live interaction (slow path, needs real click-simulation) —
+  by capturing the page's actual XHR/fetch calls and inspecting its rendered
+  HTML for known embedded-data patterns. Run it once with real network
+  access and its output decides how the real per-config scraper gets built.
 - **iStore was missing iPad, Watch, and Apple TV entirely, now fixed (pending
   verification).** Incredible Connection turned out fine on inspection — its
   rows already use the same six categories Digicape does, and it was

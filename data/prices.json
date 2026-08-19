@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T15:42:42Z",
+  "generated_at": "2026-08-19T17:06:22Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -188,6 +188,13 @@
           "price_text": "R40 699",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
+        },
+        "takealot": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 40999.0,
@@ -385,8 +392,8 @@
           "stale": false
         },
         "istore": {
-          "price": 7999.0,
-          "price_text": "R7 999",
+          "price": 9399.0,
+          "price_text": "R9 399",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -646,6 +653,42 @@
     },
     {
       "category": "iPhone",
+      "title": "iPhone 15",
+      "prices": {
+        "digicape": {
+          "price": 13999.0,
+          "price_text": "R13 999",
+          "url": "https://www.digicape.co.za/category/iphone-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 13999.0,
+          "price_text": "R13 999",
+          "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 16",
+      "prices": {
+        "digicape": {
+          "price": 16999.0,
+          "price_text": "R16 999",
+          "url": "https://www.digicape.co.za/category/iphone-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 17499.0,
+          "price_text": "R17 499",
+          "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
       "title": "iPhone 16 Plus",
       "prices": {
         "digicape": {
@@ -679,14 +722,14 @@
       "title": "iPhone 17",
       "prices": {
         "digicape": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 19699.0,
+          "price_text": "R19 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
         "istore": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 19999.0,
+          "price_text": "R19 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }

@@ -26,17 +26,24 @@ differently — "MacBook Pro 14-inch M5" vs "14-inch MacBook Pro M5" vs
 "MacBook Pro 14″ (M5)" — and some listings are a specific SKU (a storage
 size + colour, e.g. "iPhone 17 Pro 256GB - Silver") rather than the
 model's base "from" price. This script normalizes names into an
-order-independent token key (lowercased, inch-marks unified, storage sizes
-and colour words stripped, tokens sorted) so reasonably-similar names
-collapse into the same comparison row. It will occasionally either merge
-two things that are subtly different configs, or fail to merge two names
-that are further apart than the normalizer expects. Spot-check
-data/prices.json after a run, especially for iPhone/Watch, where
-promotional SKU names are the least consistent across retailers. A row
-carrying a "note" field (see incredible_prices.py) is treated as a known
-different-variant/config caveat — the frontend shows "Different variant"
-for it and never flags it as a deal or the cheapest, the same way the
-reference PHP app's manually-curated variant_note field works.
+order-independent token key (lowercased, inch-marks unified, storage/RAM
+sizes, core counts, and colour words stripped, tokens sorted) so
+reasonably-similar names collapse into the same comparison row. It will
+occasionally either merge two things that are subtly different configs, or
+fail to merge two names that are further apart than the normalizer expects.
+Spot-check data/prices.json after a run, especially for iPhone/Watch, where
+promotional SKU names are the least consistent across retailers.
+
+Because Digicape's own category pages only ever expose one generic "from"
+price per model line (see has_config_markers() below), a competitor's
+fully-specced listing (mentions a storage size, RAM size, or core count
+Digicape's matched name doesn't) is auto-flagged rather than silently
+treated as an exact price match. A row carrying a "note" field — either
+hand-set by a scraper (see incredible_prices.py's on-promo notes) or set
+automatically here — is treated as a known different-variant/config
+caveat: the frontend shows "Different variant" for it and never flags it
+as a deal or the cheapest, the same way the reference PHP app's
+manually-curated variant_note field works.
 """
 
 import json
@@ -83,6 +90,20 @@ STRIP_WORDS = {
     # generic filler that varies between retailers without changing the product
     "chip", "chipset", "processor", "with", "the", "and", "for", "gen",
     "generation", "wifi", "cellular",
+    # Real bug, found 2026-08-19: Takealot's Mac listings spell out full specs
+    # ("Apple MacBook Pro 14" M5 Pro 15 core CPU and 16 core GPU, 24GB, 2TB
+    # SSD") while Digicape's category page only ever shows a generic
+    # "MacBook Pro 14-inch (M5 chip)" line. normalize_key() requires the
+    # SORTED TOKEN SETS to match exactly, not just overlap, so these four
+    # unstripped boilerplate spec words silently blocked every Mac match
+    # that had a fully-specced Takealot name — confirmed directly:
+    # normalize_key() produced "14in core cpu gpu m5 macbook pro ssd" for the
+    # Takealot name above vs "14in m5 macbook pro" for Digicape's, differing
+    # only by these four tokens. Core counts (15/16) and storage/RAM sizes
+    # (24GB/2TB) are already dropped by the numeric-token rules below, so
+    # once this boilerplate is stripped too, both keys collapse to the same
+    # value and the row matches.
+    "core", "cores", "cpu", "gpu", "ssd", "ram",
 }
 
 
@@ -93,16 +114,57 @@ def normalize_key(name):
     s = re.sub(r'(\d+)\s*[\"″]', r'\1in', s)       # 14"  / 14″ -> 14in
     s = re.sub(r'(\d+)\s*-?\s*inch', r'\1in', s)         # 14-inch / 14 inch -> 14in
     s = re.sub(r'(\d+)\s*gb\b', r'\1gb', s)              # normalize spacing on "256 GB"
+    s = re.sub(r'(\d+)\s*tb\b', r'\1tb', s)              # normalize spacing on "2 TB"
+    # Real bug, found 2026-08-19: Takealot spells out core counts as
+    # "15 core CPU" / "16 core GPU" — a bare number followed by the word
+    # "core". Removed as one unit (number + word together) rather than
+    # relying on STRIP_WORDS + a generic bare-number rule, because a
+    # generic rule can't tell a core count apart from a meaningful model
+    # number (see the removed bare-number rule below).
+    s = re.sub(r'\d+\s*-?\s*core\b', ' ', s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
     tokens = [t for t in s.split() if t not in STRIP_WORDS and t != "apple"]
-    # drop a bare storage number only when a unit token (gb/tb) isn't also
-    # present anymore (it was stripped above) — keeps "14in" but drops "256"
-    tokens = [t for t in tokens if not re.fullmatch(r"\d{2,4}", t) or t.endswith("in")]
     # drop compound storage/RAM tokens like "256gb", "1tb", "24gb" — a
     # retailer listing a specific config (e.g. "24GB/1TB") shouldn't stop it
     # matching another retailer's bare "from" price for the same base model
     tokens = [t for t in tokens if not re.fullmatch(r"\d{1,4}(gb|tb)", t)]
+    # NOTE: an earlier version of this function also dropped any leftover
+    # bare 2-4 digit token ("keeps '14in' but drops '256'"). Real bug, found
+    # 2026-08-19: that rule is indiscriminate — it can't distinguish a
+    # leftover storage digit from a meaningful model/generation number, and
+    # it was silently merging "iPhone 15", "iPhone 16", and "iPhone 17" (and
+    # separately, "Apple Watch Series 10" and "Series 11") into one row,
+    # because all of those numbers are bare 2-digit tokens with no unit.
+    # Confirmed live in data/prices.json before this fix: the merged row was
+    # mislabeled "iPhone 17" but showed the iPhone 15's price (R13,999)
+    # because the combiner keeps whichever matched price is lowest. Now that
+    # spaced GB/TB and core counts are joined/removed explicitly above (and
+    # joined GB/TB like "256gb" is caught by the compound-token rule right
+    # above), there's no remaining case that rule was needed for, and
+    # removing it stops those two real products from being confused with
+    # each other.
     return " ".join(sorted(set(tokens)))
+
+
+# Digicape's category pages only ever show one generic "from" price per
+# model line (confirmed directly: e.g. "MacBook Pro 14-inch (M5 chip)" is a
+# single row covering the entire 14" Pro range, base M5 through M5 Pro/Max —
+# none of Digicape's 45 product names carry a storage size, RAM size, or
+# core count). Takealot and Incredible Connection, by contrast, often list a
+# specific configuration (e.g. "M5 Pro 15-core CPU/16-core GPU, 24GB, 2TB
+# SSD"). normalize_key() now matches these to the same row on purpose (see
+# the STRIP_WORDS comment above) so the product shows up at all — but the
+# match is family-level, not a same-spec price comparison: Digicape's price
+# is the cheapest config in that line, not necessarily this one. Flagging
+# that distinction is exactly what the existing "note" field / "Different
+# variant" badge in docs/index.html was already built for (see this file's
+# module docstring) — this just detects the case automatically instead of
+# requiring a scraper to hand-curate it.
+CONFIG_MARKER_RE = re.compile(r"\d{1,4}\s*-?\s*(?:gb|tb)\b|\d+\s*-?\s*core\b", re.IGNORECASE)
+
+
+def has_config_markers(name):
+    return bool(CONFIG_MARKER_RE.search(name or ""))
 
 
 def load_items(filename, retailer):
@@ -178,13 +240,22 @@ def main():
 
         group_key = (category, key)
         if group_key not in grouped:
-            grouped[group_key] = {"title": name, "category": category, "prices": {}}
+            grouped[group_key] = {"title": name, "category": category, "prices": {}, "baseline_name": None}
 
         entry = grouped[group_key]
         # prefer the shortest name seen so far as the display title (tends to
         # be the "from"/base listing rather than a specific colour+size SKU)
         if len(name) < len(entry["title"]):
             entry["title"] = name
+
+        # Track Digicape's own raw name for this group so we can tell a
+        # competitor's fully-specced listing apart from Digicape's generic
+        # "from" line (see has_config_markers above). Safe to read in the
+        # same pass as it's written: digicape.json is loaded before every
+        # competitor file in main(), so a group's baseline_name is already
+        # set by the time any competitor row for that same key is reached.
+        if retailer == BASELINE_RETAILER:
+            entry["baseline_name"] = name
 
         existing = entry["prices"].get(retailer)
         if existing is None or price < existing["price"]:
@@ -196,6 +267,17 @@ def main():
             }
             if row.get("note"):
                 cell["note"] = row["note"]
+            elif (
+                retailer != BASELINE_RETAILER
+                and entry["baseline_name"]
+                and has_config_markers(name)
+                and not has_config_markers(entry["baseline_name"])
+            ):
+                cell["note"] = (
+                    "Listed by this retailer as a specific configuration — "
+                    "Digicape's price is the base 'from' price for this "
+                    "model line, not necessarily this exact spec."
+                )
             entry["prices"][retailer] = cell
 
     # Stale carry-forward: for every product that made it into `grouped`,
