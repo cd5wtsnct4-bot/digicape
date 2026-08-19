@@ -57,8 +57,67 @@ python scripts/istore_prices.py
 python scripts/takealot_apple_prices.py
 python scripts/incredible_prices.py
 python scripts/amazon_prices.py
+python scripts/digicape_mac_configs.py   # optional — see "Precise Mac SKU matching" below
 python scripts/combine.py
 ```
+
+## Precise Mac SKU matching (Phase 2)
+
+`scripts/digicape_config_diagnostic.py` (see the "Known limitations" entry
+below) answered the question of whether Digicape's per-configuration Mac
+prices could be scraped without driving a headless browser through the
+on-page configurator: yes. Every Mac product page embeds a `var available =
+{...}` JavaScript object, directly in the page's static HTML, containing
+every real sold configuration for that model line (chip tier → storage →
+RAM → colour → product ID + price). No clicking required — one plain fetch
+per model page gets the complete price matrix.
+
+`scripts/digicape_mac_configs.py` is the scraper built on that finding: it
+walks the Mac category page for each product's URL, fetches each product
+page, and extracts its `available` tree into `data/digicape_mac_configs.json`.
+It's a separate, optional script (not part of the standard six-scraper run
+above) because it's slower — one extra page fetch per Mac model — and the
+dashboard works fine without it, just with the existing family-level
+matching described below.
+
+When `data/digicape_mac_configs.json` is present, `combine.py` uses it to
+add EXTRA comparison rows for any competitor Mac listing specific enough to
+name an exact chip tier + storage + RAM combination that Digicape actually
+sells — see `scripts/digicape_mac_spec_match.py`. These rows use Digicape's
+real per-SKU price as the baseline instead of the category page's generic
+"from" price, so they're a genuine same-spec comparison with no "Different
+variant" caveat. This is purely additive: the existing family-level rows
+are untouched, so a competitor row can show up in both a family-level row
+(imprecise, but always available) and, when a real matching SKU exists, a
+second, more precise row alongside it. If the configs file is missing, or a
+specific model/spec isn't in it (a scraper failure for one model, or a
+config a competitor lists that Digicape doesn't actually sell),
+`combine.py` simply adds no extra row for that case rather than guessing —
+family-level matching is always the fallback, never replaced.
+
+Validated (2026-08-19) against a real reconstructed 14-configuration tree
+for "MacBook Pro 14-inch (M5 chip)" and the real Takealot/Incredible
+Connection listings already in this repo's `data/`: correctly produced
+distinct, correctly-priced rows for three different M5 Pro configurations
+that share overlapping storage/RAM sizes but are different real chip
+variants at different real prices (15-core/16-core CPU/GPU at R50,899 vs
+R50,999-on-special, and 18-core/20-core CPU/GPU at R65,199), and for the
+base M5 chip at 16GB/1TB (R40,699) — all match the real numbers extracted
+live from digicape.co.za. Also correctly declined to match configurations
+that aren't real (e.g. an 18-core/20-core M5 Pro at 1TB, or an M5 Max at
+48GB) rather than guessing the nearest one. `scripts/digicape_mac_configs.py`
+itself has not yet been run against the live site from an environment with
+real network access — run it once and check its console output (and
+`data/digicape_mac_configs.json`) before trusting the precise-match rows in
+production; if a model's page structure doesn't match what the diagnostic
+found, it prints a per-model failure without affecting anything else.
+
+Not yet wired into `.github/workflows/update-prices.yml` — it adds one page
+fetch per Mac model on top of the existing scheduled scrape, and hasn't run
+against the live site from an environment with real network access yet.
+Once a manual run confirms it holds up, add a
+`python scripts/digicape_mac_configs.py` step there (before the "Combine"
+step) the same way the other scrapers are wired in.
 
 ## Known limitations
 

@@ -44,6 +44,25 @@ automatically here — is treated as a known different-variant/config
 caveat: the frontend shows "Different variant" for it and never flags it
 as a deal or the cheapest, the same way the reference PHP app's
 manually-curated variant_note field works.
+
+PRECISE MAC SKU MATCHING (on top of the family-level matching above): if
+scripts/digicape_mac_configs.py has been run, data/digicape_mac_configs.json
+holds every Mac model's real per-configuration price matrix (chip tier ->
+storage -> RAM -> colour -> product_id/price), scraped from the `available`
+JS object embedded in each Digicape product page. When present, this script
+adds EXTRA comparison rows (alongside the existing family-level ones,
+untouched) for any competitor Mac listing specific enough to identify an
+exact chip tier + storage + RAM combination that's a real, currently-sold
+Digicape configuration — see scripts/digicape_mac_spec_match.py for the
+extraction/matching logic. These rows use Digicape's real SKU price as the
+baseline instead of the category page's generic "from" price, so they're a
+genuine same-spec comparison with no "Different variant" caveat needed.
+Colour is deliberately not part of the match (confirmed on real data: same
+spec, different colour, same price), so one precise row can cover multiple
+competitor colour variants. If the configs file is missing, or a specific
+model/spec isn't in it, this simply adds no extra rows for that case —
+family-level matching (and its "Different variant" note) is always the
+fallback, never replaced.
 """
 
 import json
@@ -51,6 +70,15 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+from digicape_mac_spec_match import (
+    effective_price,
+    extract_chip_tier,
+    extract_cpu_gpu_cores,
+    extract_ram_gb,
+    extract_storage_tb,
+    find_matching_config,
+)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
@@ -205,6 +233,144 @@ def load_previous_output():
     return index
 
 
+def load_mac_configs():
+    """Load data/digicape_mac_configs.json (written by
+    scripts/digicape_mac_configs.py) if it exists, and index its models by
+    the same normalize_key() used for family-level grouping, so a
+    competitor row's family match (e.g. "MacBook Pro 14-inch (M5 chip)")
+    can look up its precise configuration tree directly. Returns {} if the
+    file doesn't exist or can't be parsed — precise matching is always
+    optional, never required."""
+    path = DATA_DIR / "digicape_mac_configs.json"
+    if not path.exists():
+        print(f"[combine] {path.name} not found — skipping precise Mac SKU "
+              f"matching (run scripts/digicape_mac_configs.py to enable it)")
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"[combine] couldn't read {path.name} ({exc}) — skipping precise Mac SKU matching",
+              file=sys.stderr)
+        return {}
+
+    lookup = {}
+    for model in data.get("models", []):
+        key = normalize_key(model.get("name", ""))
+        if key:
+            lookup[key] = model
+    print(f"[combine] loaded {len(lookup)} Mac model configuration tree(s) from {path.name}")
+    return lookup
+
+
+def build_precise_mac_items(raw, mac_model_lookup):
+    """Scan every non-baseline Mac row for a specific-enough spec (chip
+    tier + storage + RAM) that resolves to a real Digicape SKU in
+    mac_model_lookup, and produce extra, genuinely same-spec comparison
+    rows for the ones that do. Purely additive: the family-level rows built
+    in main() are untouched, so this can only add rows, never remove or
+    change existing ones.
+
+    Grouped by (family, chip tier, CPU/GPU core counts, storage, RAM,
+    rounded Digicape price) rather than product_id, because product_id is
+    colour-specific (a Silver and a Space Black SKU are two different
+    product_ids at the same price) and colour isn't part of the match — see
+    the module docstring. Core counts are included in the key (not just the
+    title) specifically so two real configurations that share a storage+RAM
+    size but differ in chip variant — confirmed to happen on real data,
+    e.g. the 14" M5 Pro line sells both a 15-core-CPU/16-core-GPU and an
+    18-core-CPU/20-core-GPU variant at 24GB/2TB — never collapse into one
+    row just because a competitor's listing happens not to state them. The
+    rounded price is still included too, as a last-resort tie-breaker for
+    the rare case a competitor's listing omits core counts entirely
+    (find_matching_config() already refuses to guess in that situation
+    unless every candidate shares one price, so this key stays correct
+    there as well).
+    """
+    if not mac_model_lookup:
+        return []
+
+    groups = {}  # key -> {"title": str, "category": "mac", "prices": {...}}
+
+    for row in raw:
+        if row.get("category") != "mac" or row.get("retailer") == BASELINE_RETAILER:
+            continue
+        name = (row.get("name") or "").strip()
+        price = row.get("price")
+        retailer = row.get("retailer", "unknown")
+        if not name or price is None:
+            continue
+
+        model = mac_model_lookup.get(normalize_key(name))
+        if not model:
+            continue  # this competitor's family doesn't have a scraped config tree this run
+
+        leaf = find_matching_config(name, model.get("available", {}))
+        if not leaf:
+            continue  # not specific enough, or not a real sold configuration — no guessing
+
+        digicape_price = effective_price(leaf)
+        if digicape_price is None:
+            continue
+
+        tier = extract_chip_tier(name)
+        cpu, gpu = extract_cpu_gpu_cores(name)
+        storage_key = extract_storage_tb(name)
+        ram_key = extract_ram_gb(name)
+        group_key = (normalize_key(model["name"]), tier, cpu, gpu, storage_key, ram_key, round(digicape_price))
+
+        title = leaf.get("name") or describe_precise_config(model["name"], tier, cpu, gpu, storage_key, ram_key)
+
+        if group_key not in groups:
+            digicape_cell = {
+                "price": digicape_price,
+                "price_text": "R " + format(digicape_price, ",.0f"),
+                "url": model.get("url", ""),
+                "stale": False,
+            }
+            groups[group_key] = {
+                "title": title,
+                "category": "mac",
+                "prices": {BASELINE_RETAILER: digicape_cell},
+            }
+
+        entry = groups[group_key]
+        existing = entry["prices"].get(retailer)
+        if existing is None or price < existing["price"]:
+            entry["prices"][retailer] = {
+                "price": price,
+                "price_text": row.get("price_text", ""),
+                "url": row.get("url", ""),
+                "stale": False,
+            }
+
+    return [
+        {"category": CATEGORY_LABELS.get(entry["category"], entry["category"]),
+         "title": entry["title"], "prices": entry["prices"]}
+        for entry in groups.values()
+    ]
+
+
+def describe_precise_config(model_name, tier, cpu, gpu, storage_key, ram_key):
+    """Fallback title when a leaf has no 'name' of its own (shouldn't happen
+    with real Digicape data, but avoids ever showing a blank title — and,
+    since this doubles as this row's group key material, avoids two
+    genuinely different configurations ever rendering with an identical
+    title)."""
+    parts = [model_name]
+    if tier == "pro":
+        parts.append("Pro")
+    elif tier == "max":
+        parts.append("Max")
+    if cpu and gpu:
+        parts.append(f"{cpu}-core CPU/{gpu}-core GPU")
+    if ram_key:
+        parts.append(ram_key.upper())
+    if storage_key:
+        parts.append(storage_key.replace("_ssd", "").upper() + " SSD")
+    return " ".join(parts)
+
+
 def main():
     raw = []
     raw += load_items("digicape.json", "digicape")
@@ -313,6 +479,14 @@ def main():
             "title": entry["title"],
             "prices": entry["prices"],
         })
+
+    family_level_row_count = len(items)
+    mac_model_lookup = load_mac_configs()
+    precise_items = build_precise_mac_items(raw, mac_model_lookup)
+    items.extend(precise_items)
+    if precise_items:
+        print(f"[combine] added {len(precise_items)} precise Mac SKU comparison row(s) "
+              f"on top of the {family_level_row_count} family-level rows")
 
     items.sort(key=lambda x: (x["category"], x["title"]))
 
