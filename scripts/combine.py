@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Merge data/digicape.json, data/istore.json, and data/takealot.json (whichever
-of the three exist and are non-empty) into a single data/prices.json that the
-comparison dashboard (docs/index.html) fetches at load time.
+Merge data/digicape.json, data/istore.json, data/takealot.json, and
+data/incredible.json (whichever of the four exist and are non-empty) into a
+single data/prices.json that the comparison dashboard (docs/index.html)
+fetches at load time.
 
 MATCHING IS HEURISTIC, NOT EXACT. Retailers name the same product
 differently — "MacBook Pro 14-inch M5" vs "14-inch MacBook Pro M5" vs
@@ -30,6 +31,7 @@ RETAILER_LABELS = {
     "digicape": "Digicape",
     "istore": "iStore",
     "takealot": "Takealot",
+    "incredible": "Incredible Connection",
 }
 
 CATEGORY_LABELS = {
@@ -71,6 +73,10 @@ def normalize_key(name):
     # drop a bare storage number only when a unit token (gb/tb) isn't also
     # present anymore (it was stripped above) — keeps "14in" but drops "256"
     tokens = [t for t in tokens if not re.fullmatch(r"\d{2,4}", t) or t.endswith("in")]
+    # drop compound storage/RAM tokens like "256gb", "1tb", "24gb" — a
+    # retailer listing a specific config (e.g. "24GB/1TB") shouldn't stop it
+    # matching another retailer's bare "from" price for the same base model
+    tokens = [t for t in tokens if not re.fullmatch(r"\d{1,4}(gb|tb)", t)]
     return " ".join(sorted(set(tokens)))
 
 
@@ -94,6 +100,7 @@ def main():
     raw += load_items("digicape.json", "digicape")
     raw += load_items("istore.json", "istore")
     raw += load_items("takealot.json", "takealot")
+    raw += load_items("incredible.json", "incredible")
 
     if not raw:
         print("[combine] no input data found in data/ — nothing to write. "

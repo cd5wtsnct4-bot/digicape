@@ -448,5 +448,45 @@
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/apple-tv"
+  },
+  {
+    "retailer": "digicape",
+    "category": "accessories",
+    "name": "MAGEASY Roam Case for AirPods 4",
+    "price_text": "From R499",
+    "price": 499.0,
+    "url": "https://www.digicape.co.za/category/airpods-accessories"
+  },
+  {
+    "retailer": "digicape",
+    "category": "accessories",
+    "name": "MAGEASY Roam Case for AirPods Pro 3",
+    "price_text": "From R499",
+    "price": 499.0,
+    "url": "https://www.digicape.co.za/category/airpods-accessories"
+  },
+  {
+    "retailer": "digicape",
+    "category": "accessories",
+    "name": "Switcheasy Artist Artisan Protective Case for AirPod 3",
+    "price_text": "From R399",
+    "price": 399.0,
+    "url": "https://www.digicape.co.za/category/airpods-accessories"
+  },
+  {
+    "retailer": "digicape",
+    "category": "accessories",
+    "name": "Switcheasy Odyssey Rugged Utility Protective Case for AirPod 3",
+    "price_text": "From R399",
+    "price": 399.0,
+    "url": "https://www.digicape.co.za/category/airpods-accessories"
+  },
+  {
+    "retailer": "digicape",
+    "category": "accessories",
+    "name": "SwitchEasy Rugged Shield Case for AirPods 4",
+    "price_text": "From R499",
+    "price": 499.0,
+    "url": "https://www.digicape.co.za/category/airpods-accessories"
   }
 ]

@@ -1,9 +1,10 @@
 {
-  "generated_at": "2026-08-19T11:47:31Z",
+  "generated_at": "2026-08-19T12:12:53Z",
   "retailer_labels": {
     "digicape": "Digicape",
     "istore": "iStore",
-    "takealot": "Takealot"
+    "takealot": "Takealot",
+    "incredible": "Incredible Connection"
   },
   "items": [
     {
@@ -25,6 +26,22 @@
           "price": 2799.0,
           "price_text": "R2 799",
           "url": "https://www.istore.co.za/airpods"
+        },
+        "incredible": {
+          "price": 2399.0,
+          "price_text": "R2,399",
+          "url": "https://www.incredible.co.za/apple-airpods-4"
+        }
+      }
+    },
+    {
+      "category": "AirPods",
+      "title": "Apple AirPods Max USB-C Purple",
+      "prices": {
+        "incredible": {
+          "price": 10499.0,
+          "price_text": "R10,499",
+          "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-purple"
         }
       }
     },
@@ -36,6 +53,11 @@
           "price": 11499.0,
           "price_text": "R11 499",
           "url": "https://www.istore.co.za/airpods"
+        },
+        "incredible": {
+          "price": 9999.0,
+          "price_text": "R9,999",
+          "url": "https://www.incredible.co.za/apple-airpods-max-2-blue"
         }
       }
     },
@@ -107,22 +129,11 @@
     },
     {
       "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
+      "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
       "prices": {
         "takealot": {
           "price": 13999.0,
           "price_text": "R 13,999",
-          "url": ""
-        }
-      }
-    },
-    {
-      "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
-      "prices": {
-        "takealot": {
-          "price": 15999.0,
-          "price_text": "R 15,999",
           "url": ""
         }
       }
@@ -140,7 +151,7 @@
     },
     {
       "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Pro 14\" M5 Pro 15 core CPU and 16 core GPU, 24GB, 1TB SSD",
+      "title": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
       "prices": {
         "takealot": {
           "price": 48999.0,
@@ -151,33 +162,11 @@
     },
     {
       "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
-      "prices": {
-        "takealot": {
-          "price": 60999.0,
-          "price_text": "R 60,999",
-          "url": ""
-        }
-      }
-    },
-    {
-      "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
+      "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD",
       "prices": {
         "takealot": {
           "price": 86999.0,
           "price_text": "R 86,999",
-          "url": ""
-        }
-      }
-    },
-    {
-      "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD",
-      "prices": {
-        "takealot": {
-          "price": 99999.0,
-          "price_text": "R 99,999",
           "url": ""
         }
       }
@@ -195,23 +184,34 @@
     },
     {
       "category": "Apple (Takealot promo)",
-      "title": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 48GB RAM 1TB SSD",
-      "prices": {
-        "takealot": {
-          "price": 71499.0,
-          "price_text": "R 71,499",
-          "url": ""
-        }
-      }
-    },
-    {
-      "category": "Apple (Takealot promo)",
       "title": "Apple Siri Remote",
       "prices": {
         "takealot": {
           "price": 1499.0,
           "price_text": "R 1,499",
           "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple TV",
+      "title": "Apple TV 4K Wi-Fi 64GB",
+      "prices": {
+        "incredible": {
+          "price": 3099.0,
+          "price_text": "R3,099",
+          "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-with-64gb-storage"
+        }
+      }
+    },
+    {
+      "category": "Apple TV",
+      "title": "Apple TV 4K Wi-Fi Ethernet 128GB",
+      "prices": {
+        "incredible": {
+          "price": 3599.0,
+          "price_text": "R3,599",
+          "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-ethernet-128gb"
         }
       }
     },
@@ -223,6 +223,11 @@
           "price": 26499.0,
           "price_text": "R26 499",
           "url": "https://www.istore.co.za/mac"
+        },
+        "incredible": {
+          "price": 36499.0,
+          "price_text": "R36,499",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
         }
       }
     },
@@ -234,6 +239,11 @@
           "price": 40799.0,
           "price_text": "R40 799",
           "url": "https://www.istore.co.za/mac"
+        },
+        "incredible": {
+          "price": 40999.0,
+          "price_text": "R40,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
         }
       }
     },
@@ -256,6 +266,11 @@
           "price": 30599.0,
           "price_text": "R30 599",
           "url": "https://www.istore.co.za/mac"
+        },
+        "incredible": {
+          "price": 36499.0,
+          "price_text": "R36,499",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
         }
       }
     },
@@ -415,6 +430,17 @@
     },
     {
       "category": "Mac",
+      "title": "MacBook Pro 16-inch (M5 Pro) 24GB/1TB",
+      "prices": {
+        "incredible": {
+          "price": 60999.0,
+          "price_text": "R60,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+        }
+      }
+    },
+    {
+      "category": "Mac",
       "title": "MacBook Pro 16-inch | Apple M4",
       "prices": {
         "istore": {
@@ -476,6 +502,17 @@
           "price": 43499.0,
           "price_text": "R43 499",
           "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Watch",
+      "title": "Apple Watch SE3",
+      "prices": {
+        "incredible": {
+          "price": 5699.0,
+          "price_text": "R5,699",
+          "url": "https://www.incredible.co.za/apple-watch-se3"
         }
       }
     },
@@ -679,12 +716,67 @@
     },
     {
       "category": "accessories",
+      "title": "MAGEASY Roam Case for AirPods 4",
+      "prices": {
+        "digicape": {
+          "price": 499.0,
+          "price_text": "From R499",
+          "url": "https://www.digicape.co.za/category/airpods-accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "MAGEASY Roam Case for AirPods Pro 3",
+      "prices": {
+        "digicape": {
+          "price": 499.0,
+          "price_text": "From R499",
+          "url": "https://www.digicape.co.za/category/airpods-accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
       "title": "Ocean Band for Apple Watch 49mm with Black Titanium Finish",
       "prices": {
         "istore": {
           "price": 2399.0,
           "price_text": "R2 399",
           "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "SwitchEasy Rugged Shield Case for AirPods 4",
+      "prices": {
+        "digicape": {
+          "price": 499.0,
+          "price_text": "From R499",
+          "url": "https://www.digicape.co.za/category/airpods-accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Switcheasy Artist Artisan Protective Case for AirPod 3",
+      "prices": {
+        "digicape": {
+          "price": 399.0,
+          "price_text": "From R399",
+          "url": "https://www.digicape.co.za/category/airpods-accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Switcheasy Odyssey Rugged Utility Protective Case for AirPod 3",
+      "prices": {
+        "digicape": {
+          "price": 399.0,
+          "price_text": "From R399",
+          "url": "https://www.digicape.co.za/category/airpods-accessories"
         }
       }
     },
@@ -707,6 +799,17 @@
           "price": 1599.0,
           "price_text": "R1 599",
           "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "Apple iPad 11-inch",
+      "prices": {
+        "incredible": {
+          "price": 7499.0,
+          "price_text": "R7,499",
+          "url": "https://www.incredible.co.za/apple-ipad-11inch"
         }
       }
     },
@@ -927,6 +1030,11 @@
           "price": 14599.0,
           "price_text": "R14 599",
           "url": "https://www.istore.co.za/iphone"
+        },
+        "incredible": {
+          "price": 14599.0,
+          "price_text": "R14,599",
+          "url": "https://www.incredible.co.za/apple-iphone-17e"
         }
       }
     },
@@ -938,6 +1046,11 @@
           "price": 19999.0,
           "price_text": "R19 999",
           "url": "https://www.istore.co.za/iphone"
+        },
+        "incredible": {
+          "price": 25999.0,
+          "price_text": "R25,999",
+          "url": "https://www.incredible.co.za/apple-iphone-air"
         }
       }
     }

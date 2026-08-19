@@ -1,0 +1,112 @@
+[
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "MacBook Air 13-inch (M5) 24GB/1TB",
+    "price_text": "R36,499",
+    "price": 36499.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+    "note": "cheapest listed config, not the base 'from' price"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "MacBook Air 15-inch (M5) 16GB/1TB",
+    "price_text": "R36,499",
+    "price": 36499.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+    "note": "cheapest listed config, not the base 'from' price"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "MacBook Pro 14-inch (M5) 16GB/1TB",
+    "price_text": "R40,999",
+    "price": 40999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+    "note": "cheapest listed config, not the base 'from' price"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch (M5 Pro) 24GB/1TB",
+    "price_text": "R60,999",
+    "price": 60999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+    "note": "cheapest listed config, not the base 'from' price"
+  },
+  {
+    "retailer": "incredible",
+    "category": "ipad",
+    "name": "Apple iPad 11-inch",
+    "price_text": "R7,499",
+    "price": 7499.0,
+    "url": "https://www.incredible.co.za/apple-ipad-11inch"
+  },
+  {
+    "retailer": "incredible",
+    "category": "iphone",
+    "name": "Apple iPhone 17e",
+    "price_text": "R14,599",
+    "price": 14599.0,
+    "url": "https://www.incredible.co.za/apple-iphone-17e"
+  },
+  {
+    "retailer": "incredible",
+    "category": "iphone",
+    "name": "Apple iPhone Air",
+    "price_text": "R25,999",
+    "price": 25999.0,
+    "url": "https://www.incredible.co.za/apple-iphone-air"
+  },
+  {
+    "retailer": "incredible",
+    "category": "watch",
+    "name": "Apple Watch SE3",
+    "price_text": "R5,699",
+    "price": 5699.0,
+    "url": "https://www.incredible.co.za/apple-watch-se3"
+  },
+  {
+    "retailer": "incredible",
+    "category": "airpods",
+    "name": "Apple AirPods 4",
+    "price_text": "R2,399",
+    "price": 2399.0,
+    "url": "https://www.incredible.co.za/apple-airpods-4"
+  },
+  {
+    "retailer": "incredible",
+    "category": "airpods",
+    "name": "Apple AirPods Max 2 Blue",
+    "price_text": "R9,999",
+    "price": 9999.0,
+    "url": "https://www.incredible.co.za/apple-airpods-max-2-blue",
+    "note": "on promo, R11,999 regular"
+  },
+  {
+    "retailer": "incredible",
+    "category": "airpods",
+    "name": "Apple AirPods Max USB-C Purple",
+    "price_text": "R10,499",
+    "price": 10499.0,
+    "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-purple",
+    "note": "on promo, R12,999 regular"
+  },
+  {
+    "retailer": "incredible",
+    "category": "appletv",
+    "name": "Apple TV 4K Wi-Fi 64GB",
+    "price_text": "R3,099",
+    "price": 3099.0,
+    "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-with-64gb-storage"
+  },
+  {
+    "retailer": "incredible",
+    "category": "appletv",
+    "name": "Apple TV 4K Wi-Fi Ethernet 128GB",
+    "price_text": "R3,599",
+    "price": 3599.0,
+    "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-ethernet-128gb"
+  }
+]
