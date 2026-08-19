@@ -130,12 +130,16 @@ If a model's page structure doesn't match what the diagnostic found,
 `digicape_mac_configs.py` prints a per-model failure without affecting
 anything else — family-level matching still applies to that model.
 
-Not yet wired into `.github/workflows/update-prices.yml` — it adds one page
-fetch per Mac model on top of the existing scheduled scrape, and hasn't run
-against the live site from an environment with real network access yet.
-Once a manual run confirms it holds up, add a
-`python scripts/digicape_mac_configs.py` step there (before the "Combine"
-step) the same way the other scrapers are wired in.
+**Now wired into `.github/workflows/update-prices.yml`** (2026-08-19), as a
+"Scrape Digicape Mac configurations" step before "Combine into
+data/prices.json" — after two manual runs against the live site confirmed
+it: a `--limit 2` smoke test (2 models, 20 configurations), then a full run
+(all 10 Mac product lines, 74 real configurations, zero failures), each
+validated by running the rest of the pipeline against the real output.
+Like every other scraper step in that workflow, it's `continue-on-error:
+true` — if it fails or Digicape changes its page structure, the scheduled
+run still completes and `combine.py` falls back to family-level matching
+for that run rather than the whole job breaking.
 
 ## Known limitations
 
