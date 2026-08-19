@@ -105,12 +105,30 @@ R50,999-on-special, and 18-core/20-core CPU/GPU at R65,199), and for the
 base M5 chip at 16GB/1TB (R40,699) — all match the real numbers extracted
 live from digicape.co.za. Also correctly declined to match configurations
 that aren't real (e.g. an 18-core/20-core M5 Pro at 1TB, or an M5 Max at
-48GB) rather than guessing the nearest one. `scripts/digicape_mac_configs.py`
-itself has not yet been run against the live site from an environment with
-real network access — run it once and check its console output (and
-`data/digicape_mac_configs.json`) before trusting the precise-match rows in
-production; if a model's page structure doesn't match what the diagnostic
-found, it prints a per-model failure without affecting anything else.
+48GB) rather than guessing the nearest one.
+
+`scripts/digicape_mac_configs.py` has now been run against the live site
+(2026-08-19, `--limit 2`: MacBook Air 15-inch and MacBook Pro 16-inch) and
+found real configuration data for both — 12 and 8 real SKUs respectively.
+Running the rest of the pipeline against that real output surfaced two more
+real bugs, both fixed the same day:
+1. Takealot's 16-inch MacBook Pro listings have no `-inch`/quote-mark unit
+   at all (just `"MacBook Pro 16 M5 Pro ..."`, unlike its 14-inch listings)
+   — confirmed directly, the bare `"16"` never became `"16in"` and the
+   entire 16-inch line silently never matched Digicape at the family level.
+   Fixed in `normalize_key()`: a bare 13/14/15/16 immediately after
+   "MacBook Air"/"MacBook Pro" is now treated as the screen size, since
+   Apple only ships those two lines in those four sizes.
+2. A Digicape SKU leaf's own `"name"` field turned out, on the real data,
+   to just repeat the model line's generic name for every configuration
+   under it (not a per-spec name as originally assumed) — using it as a
+   precise-match row's title produced several rows with an identical title
+   and different prices. `build_precise_mac_items()` now always builds the
+   title from the extracted spec instead of trusting the leaf's name field.
+
+If a model's page structure doesn't match what the diagnostic found,
+`digicape_mac_configs.py` prints a per-model failure without affecting
+anything else — family-level matching still applies to that model.
 
 Not yet wired into `.github/workflows/update-prices.yml` — it adds one page
 fetch per Mac model on top of the existing scheduled scrape, and hasn't run

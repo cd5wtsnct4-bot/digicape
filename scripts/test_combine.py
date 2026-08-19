@@ -57,6 +57,34 @@ class TestMacBoilerplateStripping(unittest.TestCase):
         takealot_max = 'Apple MacBook Pro 14" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD'
         self.assertNotEqual(normalize_key(digicape), normalize_key(takealot_max))
 
+    def test_takealot_16inch_pro_matches_despite_missing_inch_word(self):
+        # Real bug, found 2026-08-19 (live, after Phase 2 testing): unlike
+        # its 14" listings, Takealot's 16" MacBook Pro names have no
+        # "-inch"/quote-mark unit at all — just a bare "MacBook Pro 16 M5
+        # Pro ...". Confirmed directly: normalize_key() produced
+        # "16 m5 macbook pro" for that name vs "16in m5 macbook pro" for
+        # Digicape's "MacBook Pro 16-inch (M5 chip)", so the entire 16" line
+        # never matched Takealot at all. Apple only ships MacBook Air/Pro in
+        # 13/14/15/16-inch sizes, so a bare 13-16 directly after "MacBook
+        # Air"/"MacBook Pro" is safe to treat as the screen size.
+        digicape = "MacBook Pro 16-inch (M5 chip)"
+        takealot = "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD"
+        self.assertEqual(normalize_key(digicape), normalize_key(takealot))
+
+    def test_bare_macbook_size_fix_does_not_affect_unrelated_bare_numbers(self):
+        # The fix above is scoped to "macbook air/pro <13-16>" specifically —
+        # it must not start treating bare numbers elsewhere (iPhone/Watch
+        # generations, storage digits) as sizes too.
+        self.assertNotEqual(normalize_key("iPhone 16"), normalize_key("iPhone 15"))
+        self.assertEqual(
+            normalize_key("Apple Watch Series 10"),
+            normalize_key("Apple Watch Series 10"),
+        )
+        self.assertNotEqual(
+            normalize_key("Apple Watch Series 10"),
+            normalize_key("Apple Watch Series 11"),
+        )
+
 
 class TestModelNumberNotStripped(unittest.TestCase):
     """Real bug, found 2026-08-19: a rule meant to drop leftover storage

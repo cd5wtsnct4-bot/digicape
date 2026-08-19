@@ -141,6 +141,20 @@ def normalize_key(name):
     s = name.lower().replace("’", "'")
     s = re.sub(r'(\d+)\s*[\"″]', r'\1in', s)       # 14"  / 14″ -> 14in
     s = re.sub(r'(\d+)\s*-?\s*inch', r'\1in', s)         # 14-inch / 14 inch -> 14in
+    # Real bug, found 2026-08-19: Takealot's 16" MacBook Pro listings say
+    # "MacBook Pro 16 M5 Max ..." — a bare "16" with no "-inch"/quote-mark
+    # unit at all (unlike its 14" listings, which do say 14"). Confirmed
+    # directly: normalize_key() produced "16 m5 macbook max pro" for that
+    # name vs "16in m5 macbook pro" for Digicape's "MacBook Pro 16-inch (M5
+    # chip)" — the bare "16" token never becomes "16in" without a unit to
+    # convert, so these can never match, silently excluding the entire 16"
+    # line from Takealot comparisons. Apple only ships MacBook Air/Pro in
+    # 13/14/15/16-inch sizes, so a bare 13-16 immediately after "macbook
+    # air"/"macbook pro" is unambiguously the screen size, not a spec
+    # number — safe to convert here even though a truly bare number
+    # elsewhere in a name is deliberately left alone (see the removed
+    # blanket bare-number rule below).
+    s = re.sub(r'\b(macbook\s+(?:air|pro))\s+(1[3-6])\b', r'\1 \2in', s)
     s = re.sub(r'(\d+)\s*gb\b', r'\1gb', s)              # normalize spacing on "256 GB"
     s = re.sub(r'(\d+)\s*tb\b', r'\1tb', s)              # normalize spacing on "2 TB"
     # Real bug, found 2026-08-19: Takealot spells out core counts as
@@ -319,7 +333,15 @@ def build_precise_mac_items(raw, mac_model_lookup):
         ram_key = extract_ram_gb(name)
         group_key = (normalize_key(model["name"]), tier, cpu, gpu, storage_key, ram_key, round(digicape_price))
 
-        title = leaf.get("name") or describe_precise_config(model["name"], tier, cpu, gpu, storage_key, ram_key)
+        # Real bug, found 2026-08-19 against the live site: a leaf's own
+        # "name" field is NOT a per-spec name — confirmed directly, every
+        # configuration under a given Digicape product page shares the
+        # exact same generic "name" as the model line itself (colour and
+        # spec aren't in it). Using it as this row's title produced several
+        # rows all titled e.g. "MacBook Pro 16-inch (M5 chip)" with
+        # different prices and no way to tell them apart. Always build the
+        # title from the extracted spec instead — see describe_precise_config.
+        title = describe_precise_config(model["name"], tier, cpu, gpu, storage_key, ram_key)
 
         if group_key not in groups:
             digicape_cell = {
@@ -352,11 +374,12 @@ def build_precise_mac_items(raw, mac_model_lookup):
 
 
 def describe_precise_config(model_name, tier, cpu, gpu, storage_key, ram_key):
-    """Fallback title when a leaf has no 'name' of its own (shouldn't happen
-    with real Digicape data, but avoids ever showing a blank title — and,
-    since this doubles as this row's group key material, avoids two
-    genuinely different configurations ever rendering with an identical
-    title)."""
+    """Builds this row's display title from the extracted spec. Confirmed
+    on real data that a leaf's own "name" field is just the model line's
+    generic name repeated for every configuration (see the comment where
+    this is called) — not usable as a title — so this is the only source
+    of a title specific enough to tell two different real configurations
+    apart on the dashboard."""
     parts = [model_name]
     if tier == "pro":
         parts.append("Pro")
