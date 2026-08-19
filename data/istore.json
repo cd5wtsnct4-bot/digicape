@@ -1,0 +1,314 @@
+[
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "iMac 24-inch M4",
+    "price_text": "From R34,299",
+    "price": 34299,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "14-inch MacBook Pro M5",
+    "price_text": "From R40,799",
+    "price": 40799,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Neo",
+    "price_text": "From R13,999",
+    "price": 13999,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Mac mini M4",
+    "price_text": "From R24,499",
+    "price": 24499,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "13-inch MacBook Air M5",
+    "price_text": "From R26,499",
+    "price": 26499,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad A16",
+    "price_text": "From R8,799",
+    "price": 8799,
+    "url": "https://www.istore.co.za/ipad"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad Air M4",
+    "price_text": "From R15,299",
+    "price": 15299,
+    "url": "https://www.istore.co.za/ipad"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad Pro M4",
+    "price_text": "From R24,599",
+    "price": 24599,
+    "url": "https://www.istore.co.za/ipad"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad mini A17 Pro",
+    "price_text": "From R12,299",
+    "price": 12299,
+    "url": "https://www.istore.co.za/ipad"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 16e",
+    "price_text": "From R11,999",
+    "price": 11999,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 17e",
+    "price_text": "From R14,599",
+    "price": 14599,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 17 Pro",
+    "price_text": "From R24,999",
+    "price": 24999,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 17 Pro Max 256GB - Cosmic Orange",
+    "price_text": "R27,999",
+    "price": 27999.0,
+    "url": "https://www.istore.co.za/"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone Air 256GB - Sky Blue",
+    "price_text": "R20,499",
+    "price": 20499.0,
+    "url": "https://www.istore.co.za/"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE3",
+    "price_text": "From R5,799",
+    "price": 5799,
+    "url": "https://www.istore.co.za/watch"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 11",
+    "price_text": "From R9,399",
+    "price": 9399,
+    "url": "https://www.istore.co.za/watch"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3",
+    "price_text": "From R18,799",
+    "price": 18799,
+    "url": "https://www.istore.co.za/watch"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 10 GPS+Cellular 42mm",
+    "price_text": "R8,999",
+    "price": 8999.0,
+    "url": "https://www.istore.co.za/"
+  },
+  {
+    "retailer": "istore",
+    "category": "airpods",
+    "name": "Apple AirPods 4",
+    "price_text": "From R2,799",
+    "price": 2799,
+    "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "airpods",
+    "name": "Apple AirPods Pro 3",
+    "price_text": "From R5,399",
+    "price": 5399,
+    "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "airpods",
+    "name": "Apple AirPods Max 2",
+    "price_text": "From R11,499",
+    "price": 11499,
+    "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Apple 20W USB-C Power Adapter",
+    "price_text": "From R399",
+    "price": 399,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Apple 70W USB-C Power Adapter",
+    "price_text": "From R1,499",
+    "price": 1499,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "AirTag (2nd Gen) - 1 Pack",
+    "price_text": "From R669",
+    "price": 669,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Belkin BoostCharge 20,000 mAh 3-Port 65W Power Bank",
+    "price_text": "From R1,699",
+    "price": 1699,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Apple iPhone 17 Pro Silicone Case with MagSafe",
+    "price_text": "From R1,399",
+    "price": 1399,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17",
+    "price_text": "From R2,199",
+    "price": 2199,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "JBL Flip 7 Portable Bluetooth Speaker",
+    "price_text": "From R2,499",
+    "price": 2499,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Beats Powerbeats Pro 2 High-Performance Earbuds",
+    "price_text": "From R5,499",
+    "price": 5499,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Apple EarPods with USB-C Connector",
+    "price_text": "From R459",
+    "price": 459,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Apple Lightning to USB-C 1m Cable",
+    "price_text": "From R499",
+    "price": 499,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Belkin BoostCharge USB-C to Lightning Cable - White",
+    "price_text": "From R399",
+    "price": 399,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Adonit SE 2 Stylus - White",
+    "price_text": "From R699",
+    "price": 699,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+    "price_text": "From R1,799",
+    "price": 1799,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Moov Clear Glass Screen Guard for iPhone 17 Pro",
+    "price_text": "From R399",
+    "price": 399,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Moov Glass Screen Protector for iPad A16/10th Gen",
+    "price_text": "From R699",
+    "price": 699,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Moov ClearSafe Matte Case for MacBook Air 13-inch - Abstract Flowers",
+    "price_text": "From R499",
+    "price": 499,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Tucano Fold Backpack for 16-inch MacBook - Black",
+    "price_text": "From R1,599",
+    "price": 1599,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Sonos Play Versatile Smart Speaker - Black",
+    "price_text": "From R7,999",
+    "price": 7999,
+    "url": "https://www.istore.co.za/accessories"
+  }
+]

@@ -1,0 +1,65 @@
+name: Update Apple price data
+
+on:
+  schedule:
+    # Every 6 hours. Cron is UTC. Adjust the interval in the cron string if
+    # you want it more/less frequent — GitHub Actions won't run schedules
+    # more often than every 5 minutes, and busy periods can delay a run by
+    # a few minutes past the scheduled time.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the job can commit data/prices.json back to the repo
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Scrapling
+        run: |
+          python -m pip install --upgrade pip
+          pip install "scrapling[all]>=0.4.14"
+          # Playwright's browser download; needed for the StealthyFetcher
+          # fallback path (iStore/Digicape) and for Takealot (always dynamic).
+          scrapling install --force
+
+      - name: Scrape Digicape
+        continue-on-error: true   # one retailer failing shouldn't block the others
+        run: python scripts/digicape_prices.py --no-accessories
+
+      - name: Scrape iStore
+        continue-on-error: true
+        run: python scripts/istore_prices.py
+
+      - name: Scrape Takealot
+        continue-on-error: true
+        run: python scripts/takealot_apple_prices.py
+
+      - name: Combine into data/prices.json
+        run: python scripts/combine.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update price data ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Apple Price Tracker — Digicape / iStore / Takealot</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface-1:      #fcfcfb;
+  --page-plane:     #f9f9f7;
+  --text-primary:   #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted:     #898781;
+  --gridline:       #e1e0d9;
+  --border:         rgba(11,11,11,0.10);
+  --series-1:       #2a78d6; /* blue   - Digicape */
+  --series-2:       #eb6834; /* orange - iStore */
+  --series-3:       #1baf7a; /* aqua   - Takealot */
+  --status-good:    #0ca30c;
+  --status-warning: #fab219;
+  --status-critical:#d03b3b;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--page-plane);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 32px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; }
+
+.header { margin-bottom: 20px; }
+.header h1 { font-size: 22px; font-weight: 700; margin: 0 0 6px; }
+.header p { font-size: 14px; color: var(--text-secondary); margin: 0; }
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin: 14px 0 18px;
+}
+.status-dot { width: 8px; height: 8px; border-radius: 50%; }
+.status-dot.ok { background: var(--status-good); }
+.status-dot.warn { background: var(--status-warning); }
+.status-dot.err { background: var(--status-critical); }
+#refresh-btn {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+#refresh-btn:hover { color: var(--text-primary); }
+
+.notice {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--status-warning);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+.notice.err { border-left-color: var(--status-critical); }
+.notice .icon { font-size: 15px; margin-top: 1px; }
+.notice strong { color: var(--text-primary); }
+
+.legend { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 18px; }
+.legend-item { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-secondary); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--gridline);
+  padding-bottom: 12px;
+}
+.tab {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.tab.active { background: var(--text-primary); color: #fff; border-color: var(--text-primary); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-title { font-size: 14px; font-weight: 700; line-height: 1.3; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px solid var(--gridline);
+  font-size: 13px;
+}
+.row:first-of-type { border-top: none; padding-top: 2px; }
+.row-retailer { display: flex; align-items: center; gap: 7px; color: var(--text-secondary); }
+.row-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.row-price { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; white-space: nowrap; }
+.row.best .row-price { color: var(--status-good); }
+.row.best .row-retailer { color: var(--text-primary); font-weight: 600; }
+.best-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--status-good);
+  border: 1px solid var(--status-good);
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-left: 6px;
+}
+.row-na { color: var(--text-muted); font-style: italic; }
+
+.empty-state { padding: 40px; text-align: center; color: var(--text-secondary); font-size: 14px; }
+
+.footer-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--gridline);
+  margin-top: 28px;
+  padding-top: 16px;
+  line-height: 1.6;
+}
+.footer-note strong { color: var(--text-secondary); }
+.footer-note a { color: var(--series-1); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1>Apple Product Price Comparison — South African Retailers</h1>
+    <p>Digicape, iStore, and Takealot, matched product-for-product where models line up.</p>
+  </div>
+
+  <div class="status-bar" id="status-bar">
+    <span class="status-dot" id="status-dot"></span>
+    <span id="status-text">Loading latest price data&hellip;</span>
+    <button id="refresh-btn" onclick="location.reload()">Reload</button>
+  </div>
+
+  <div id="notice-slot"></div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="footer-note">
+    <strong>How this stays current:</strong> a GitHub Actions workflow in this repo
+    (<code>.github/workflows/update-prices.yml</code>) re-runs the Scrapling scrapers on a schedule and
+    commits a fresh <code>data/prices.json</code>. This page fetches that file straight from GitHub every
+    time it loads — reload it any time to see the latest committed data. It cannot scrape the retailer
+    sites itself: browser security (CORS) blocks a static page like this from calling digicape.co.za or
+    istore.co.za directly, which is exactly why the scraping has to happen in the scheduled workflow rather
+    than in this page's JavaScript. If <code>data/prices.json</code> doesn't exist yet (workflow hasn't run
+    for the first time), or the fetch fails for any reason, this page falls back to the snapshot baked in
+    at the time this page was built. Coverage notes: iPhone/Watch model names vary enough between retailers
+    that matching across sites is heuristic (see <code>scripts/combine.py</code>) — some genuinely-identical
+    products may show up as separate unmatched cards rather than one merged row. Full Accessories and Apple
+    TV catalogs are large and only partially represented here.
+  </div>
+
+</div>
+
+<script>
+const RETAILER_META = {
+  digicape:   { label: "Digicape",   color: "var(--series-1)" },
+  istore:     { label: "iStore",     color: "var(--series-2)" },
+  takealot:   { label: "Takealot",   color: "var(--series-3)" },
+};
+
+// Fallback snapshot, embedded at build time, used only if data/prices.json
+// can't be fetched (first run before the workflow has ever executed, or a
+// network hiccup). Regenerate by running scripts/combine.py and pasting its
+// output here, or just let the workflow overwrite data/prices.json.
+const FALLBACK_DATA = {"generated_at": "2026-08-19T11:19:46Z", "retailer_labels": {"digicape": "Digicape", "istore": "iStore", "takealot": "Takealot"}, "items": [{"category": "AirPods", "title": "AirPods 4", "prices": {"digicape": {"price": 2799, "price_text": "From R2,799", "url": "https://www.digicape.co.za/category/airpods-all"}, "istore": {"price": 2799, "price_text": "From R2,799", "url": "https://www.istore.co.za/airpods"}}}, {"category": "AirPods", "title": "AirPods 4 with Active Noise Cancellation", "prices": {"digicape": {"price": 3699, "price_text": "From R3,699", "url": "https://www.digicape.co.za/category/airpods-all"}}}, {"category": "AirPods", "title": "AirPods Max", "prices": {"digicape": {"price": 11999, "price_text": "From R11,999", "url": "https://www.digicape.co.za/category/airpods-all"}}}, {"category": "AirPods", "title": "AirPods Max 2", "prices": {"digicape": {"price": 11499, "price_text": "From R11,499", "url": "https://www.digicape.co.za/category/airpods-all"}, "istore": {"price": 11499, "price_text": "From R11,499", "url": "https://www.istore.co.za/airpods"}}}, {"category": "AirPods", "title": "AirPods Pro 3", "prices": {"digicape": {"price": 5099, "price_text": "From R5,099", "url": "https://www.digicape.co.za/category/airpods-all"}, "istore": {"price": 5399, "price_text": "From R5,399", "url": "https://www.istore.co.za/airpods"}}}, {"category": "Apple TV", "title": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)", "prices": {"digicape": {"price": 5249, "price_text": "From R5,249", "url": "https://www.digicape.co.za/category/apple-tv"}}}, {"category": "Apple TV", "title": "Apple TV 4K 64Gb Wifi (3rd Gen, 2022)", "prices": {"digicape": {"price": 4199, "price_text": "From R4,199", "url": "https://www.digicape.co.za/category/apple-tv"}}}, {"category": "Apple TV", "title": "Apple TV Siri Remote", "prices": {"digicape": {"price": 1399, "price_text": "From R1,399", "url": "https://www.digicape.co.za/category/apple-tv"}}}, {"category": "Mac", "title": "13-inch MacBook Air M5", "prices": {"digicape": {"price": 26399, "price_text": "From R26,399", "url": "https://www.digicape.co.za/category/mac-all"}, "istore": {"price": 26499, "price_text": "From R26,499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "14-inch MacBook Pro M5", "prices": {"digicape": {"price": 40699, "price_text": "From R40,699", "url": "https://www.digicape.co.za/category/mac-all"}, "istore": {"price": 40799, "price_text": "From R40,799", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Mac Studio (M3 Ultra chip)", "prices": {"digicape": {"price": 107899, "price_text": "From R107,899", "url": "https://www.digicape.co.za/category/mac-all"}}}, {"category": "Mac", "title": "Mac Studio (M4 Max chip)", "prices": {"digicape": {"price": 50899, "price_text": "From R50,899", "url": "https://www.digicape.co.za/category/mac-all"}}}, {"category": "Mac", "title": "Mac mini (M4 Pro chip)", "prices": {"digicape": {"price": 32499, "price_text": "From R32,499", "url": "https://www.digicape.co.za/category/mac-all"}}}, {"category": "Mac", "title": "Mac mini M4", "prices": {"digicape": {"price": 20399, "price_text": "From R20,399", "url": "https://www.digicape.co.za/category/mac-all"}, "istore": {"price": 24499, "price_text": "From R24,499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "MacBook Air 15-inch (M5 chip)", "prices": {"digicape": {"price": 30499, "price_text": "From R30,499", "url": "https://www.digicape.co.za/category/mac-all"}}}, {"category": "Mac", "title": "MacBook Neo", "prices": {"digicape": {"price": 13899, "price_text": "From R13,899", "url": "https://www.digicape.co.za/category/mac-all"}, "istore": {"price": 13999, "price_text": "From R13,999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "MacBook Pro 16-inch (M5 chip)", "prices": {"digicape": {"price": 61099, "price_text": "From R61,099", "url": "https://www.digicape.co.za/category/mac-all"}}}, {"category": "Mac", "title": "iMac 24-inch M4", "prices": {"digicape": {"price": 34199, "price_text": "From R34,199", "url": "https://www.digicape.co.za/category/mac-all"}, "istore": {"price": 34299, "price_text": "From R34,299", "url": "https://www.istore.co.za/mac"}}}, {"category": "Watch", "title": "Apple Watch SE 3 Sport Band", "prices": {"digicape": {"price": 5699, "price_text": "From R5,699", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch SE3", "prices": {"istore": {"price": 5799, "price_text": "From R5,799", "url": "https://www.istore.co.za/watch"}}}, {"category": "Watch", "title": "Apple Watch Series 10 GPS+Cellular 42mm", "prices": {"istore": {"price": 8999.0, "price_text": "R8,999", "url": "https://www.istore.co.za/"}}}, {"category": "Watch", "title": "Apple Watch Series 11", "prices": {"istore": {"price": 9399, "price_text": "From R9,399", "url": "https://www.istore.co.za/watch"}}}, {"category": "Watch", "title": "Apple Watch Series 11 Milanese Loop", "prices": {"digicape": {"price": 18299, "price_text": "From R18,299", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch Series 11 Sport Band", "prices": {"digicape": {"price": 9199, "price_text": "From R9,199", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch Ultra 3", "prices": {"istore": {"price": 18799, "price_text": "From R18,799", "url": "https://www.istore.co.za/watch"}}}, {"category": "Watch", "title": "Apple Watch Ultra 3 with Alpine Loop", "prices": {"digicape": {"price": 19499, "price_text": "From R19,499", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch Ultra 3 with Milanese Loop", "prices": {"digicape": {"price": 21999, "price_text": "From R21,999", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch Ultra 3 with Ocean Band", "prices": {"digicape": {"price": 19499, "price_text": "From R19,499", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "Watch", "title": "Apple Watch Ultra 3 with Trail Loop", "prices": {"digicape": {"price": 19499, "price_text": "From R19,499", "url": "https://www.digicape.co.za/category/watch-all"}}}, {"category": "accessories", "title": "Adonit SE 2 Stylus - White", "prices": {"istore": {"price": 699, "price_text": "From R699", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "AirTag (2nd Gen) - 1 Pack", "prices": {"istore": {"price": 669, "price_text": "From R669", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple 20W USB-C Power Adapter", "prices": {"istore": {"price": 399, "price_text": "From R399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple 70W USB-C Power Adapter", "prices": {"istore": {"price": 1499, "price_text": "From R1,499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple EarPods with USB-C Connector", "prices": {"istore": {"price": 459, "price_text": "From R459", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple Lightning to USB-C 1m Cable", "prices": {"istore": {"price": 499, "price_text": "From R499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple iPhone 17 Pro Silicone Case with MagSafe", "prices": {"istore": {"price": 1399, "price_text": "From R1,399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Powerbeats Pro 2 High-Performance Earbuds", "prices": {"istore": {"price": 5499, "price_text": "From R5,499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17", "prices": {"istore": {"price": 2199, "price_text": "From R2,199", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Belkin BoostCharge 20,000 mAh 3-Port 65W Power Bank", "prices": {"istore": {"price": 1699, "price_text": "From R1,699", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Belkin BoostCharge USB-C to Lightning Cable - White", "prices": {"istore": {"price": 399, "price_text": "From R399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)", "prices": {"istore": {"price": 1799, "price_text": "From R1,799", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "JBL Flip 7 Portable Bluetooth Speaker", "prices": {"istore": {"price": 2499, "price_text": "From R2,499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Moov Clear Glass Screen Guard for iPhone 17 Pro", "prices": {"istore": {"price": 399, "price_text": "From R399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Moov ClearSafe Matte Case for MacBook Air 13-inch - Abstract Flowers", "prices": {"istore": {"price": 499, "price_text": "From R499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Moov Glass Screen Protector for iPad A16/10th Gen", "prices": {"istore": {"price": 699, "price_text": "From R699", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Sonos Play Versatile Smart Speaker - Black", "prices": {"istore": {"price": 7999, "price_text": "From R7,999", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Tucano Fold Backpack for 16-inch MacBook - Black", "prices": {"istore": {"price": 1599, "price_text": "From R1,599", "url": "https://www.istore.co.za/accessories"}}}, {"category": "iPad", "title": "iPad 11-inch (A16 chip)", "prices": {"digicape": {"price": 8699, "price_text": "From R8,699", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad A16", "prices": {"istore": {"price": 8799, "price_text": "From R8,799", "url": "https://www.istore.co.za/ipad"}}}, {"category": "iPad", "title": "iPad Air 11-inch (M3 chip)", "prices": {"digicape": {"price": 15899, "price_text": "From R15,899", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Air 11-inch (M4 chip)", "prices": {"digicape": {"price": 15199, "price_text": "From R15,199", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Air 13-inch (M2 chip)", "prices": {"digicape": {"price": 19299, "price_text": "From R19,299", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Air 13-inch (M3 chip)", "prices": {"digicape": {"price": 16899, "price_text": "From R16,899", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Air 13-inch (M4 chip)", "prices": {"digicape": {"price": 19299, "price_text": "From R19,299", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Air M4", "prices": {"istore": {"price": 15299, "price_text": "From R15,299", "url": "https://www.istore.co.za/ipad"}}}, {"category": "iPad", "title": "iPad Pro 11-inch (M4 chip)", "prices": {"digicape": {"price": 23299, "price_text": "From R23,299", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Pro 11-inch (M5 chip)", "prices": {"digicape": {"price": 24499, "price_text": "From R24,499", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Pro 13-inch (M4 chip)", "prices": {"digicape": {"price": 30199, "price_text": "From R30,199", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Pro 13-inch (M5 chip)", "prices": {"digicape": {"price": 26899, "price_text": "From R26,899", "url": "https://www.digicape.co.za/category/ipad-all"}}}, {"category": "iPad", "title": "iPad Pro M4", "prices": {"istore": {"price": 24599, "price_text": "From R24,599", "url": "https://www.istore.co.za/ipad"}}}, {"category": "iPad", "title": "iPad mini A17 Pro", "prices": {"digicape": {"price": 12199, "price_text": "From R12,199", "url": "https://www.digicape.co.za/category/ipad-all"}, "istore": {"price": 12299, "price_text": "From R12,299", "url": "https://www.istore.co.za/ipad"}}}, {"category": "iPhone", "title": "iPhone 16 Plus", "prices": {"digicape": {"price": 19999, "price_text": "From R19,999", "url": "https://www.digicape.co.za/category/iphone-all"}}}, {"category": "iPhone", "title": "iPhone 16e", "prices": {"digicape": {"price": 11799, "price_text": "From R11,799", "url": "https://www.digicape.co.za/category/iphone-all"}, "istore": {"price": 11999, "price_text": "From R11,999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 17", "prices": {"digicape": {"price": 13999, "price_text": "From R13,999", "url": "https://www.digicape.co.za/category/iphone-all"}}}, {"category": "iPhone", "title": "iPhone 17 Pro", "prices": {"digicape": {"price": 27699, "price_text": "From R27,699", "url": "https://www.digicape.co.za/category/iphone-all"}, "istore": {"price": 24999, "price_text": "From R24,999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 17 Pro Max", "prices": {"digicape": {"price": 30499, "price_text": "From R30,499", "url": "https://www.digicape.co.za/category/iphone-all"}}}, {"category": "iPhone", "title": "iPhone 17 Pro Max 256GB - Cosmic Orange", "prices": {"istore": {"price": 27999.0, "price_text": "R27,999", "url": "https://www.istore.co.za/"}}}, {"category": "iPhone", "title": "iPhone 17e", "prices": {"digicape": {"price": 14599, "price_text": "From R14,599", "url": "https://www.digicape.co.za/category/iphone-all"}, "istore": {"price": 14599, "price_text": "From R14,599", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone Air", "prices": {"digicape": {"price": 21999, "price_text": "From R21,999", "url": "https://www.digicape.co.za/category/iphone-all"}}}, {"category": "iPhone", "title": "iPhone Air 256GB - Sky Blue", "prices": {"istore": {"price": 20499.0, "price_text": "R20,499", "url": "https://www.istore.co.za/"}}}]};
+
+let DATA = null;
+
+function fmt(n) { return "R" + n.toLocaleString("en-ZA"); }
+
+function setStatus(kind, text) {
+  const dot = document.getElementById("status-dot");
+  const label = document.getElementById("status-text");
+  dot.className = "status-dot " + kind;
+  label.textContent = text;
+}
+
+function showNotice(kind, html) {
+  const slot = document.getElementById("notice-slot");
+  slot.innerHTML = `<div class="notice ${kind === "err" ? "err" : ""}">
+    <span class="icon">${kind === "err" ? "&#9888;" : "&#8505;"}</span>
+    <div>${html}</div>
+  </div>`;
+}
+
+async function loadData() {
+  // Absolute raw.githubusercontent.com URL rather than a relative path —
+  // this page may be opened via GitHub Pages (site root = docs/), via
+  // file:// after downloading it, or via a raw-HTML preview proxy, and a
+  // relative "data/prices.json" would resolve differently (or not at all)
+  // in each case. raw.githubusercontent.com also sends permissive CORS
+  // headers, so this fetch works regardless of what origin served this
+  // HTML file itself. Cache-bust so a reload always asks GitHub for the
+  // latest committed file rather than a browser- or CDN-cached copy.
+  const url = `https://raw.githubusercontent.com/cd5wtsnct4-bot/digicape/main/data/prices.json?_=${Date.now()}`;
+  try {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    DATA = json;
+    const when = new Date(json.generated_at).toLocaleString("en-ZA", { dateStyle: "medium", timeStyle: "short" });
+    setStatus("ok", `Live — data last refreshed ${when}`);
+  } catch (err) {
+    DATA = FALLBACK_DATA;
+    setStatus("warn", "Showing a built-in fallback snapshot — live data/prices.json could not be loaded");
+    showNotice("warn", `<strong>Couldn't load live data (${err.message}).</strong> This usually means the
+      GitHub Actions workflow hasn't run yet, or this page is being opened from somewhere other than
+      GitHub Pages / raw.githubusercontent.com where a relative fetch of <code>data/prices.json</code>
+      won't resolve. Showing the snapshot that was baked into this page when it was built instead.`);
+  }
+  render();
+}
+
+function render() {
+  const categories = ["All", ...Array.from(new Set(DATA.items.map(i => i.category)))];
+  let activeCategory = "All";
+
+  const legendEl = document.getElementById("legend");
+  legendEl.innerHTML = "";
+  Object.keys(RETAILER_META).forEach(key => {
+    if (!DATA.items.some(i => i.prices[key])) return;
+    const el = document.createElement("div");
+    el.className = "legend-item";
+    el.innerHTML = `<span class="legend-dot" style="background:${RETAILER_META[key].color}"></span>${RETAILER_META[key].label}`;
+    legendEl.appendChild(el);
+  });
+
+  function renderTabs() {
+    const tabsEl = document.getElementById("tabs");
+    tabsEl.innerHTML = "";
+    categories.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "tab" + (cat === activeCategory ? " active" : "");
+      const count = cat === "All" ? DATA.items.length : DATA.items.filter(i => i.category === cat).length;
+      btn.textContent = `${cat} (${count})`;
+      btn.onclick = () => { activeCategory = cat; renderTabs(); renderGrid(); };
+      tabsEl.appendChild(btn);
+    });
+  }
+
+  function renderGrid() {
+    const gridEl = document.getElementById("grid");
+    gridEl.innerHTML = "";
+    const items = activeCategory === "All" ? DATA.items : DATA.items.filter(i => i.category === activeCategory);
+
+    if (!items.length) {
+      gridEl.innerHTML = `<div class="empty-state">No products in this category yet.</div>`;
+      return;
+    }
+
+    items.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const title = document.createElement("div");
+      title.className = "card-title";
+      title.textContent = item.title;
+      card.appendChild(title);
+
+      const retailerKeys = Object.keys(RETAILER_META).filter(k => item.prices[k]);
+      const validPrices = retailerKeys.map(k => item.prices[k].price).filter(p => typeof p === "number");
+      const minPrice = validPrices.length ? Math.min(...validPrices) : null;
+      const tie = validPrices.filter(p => p === minPrice).length > 1;
+
+      retailerKeys.forEach(key => {
+        const entry = item.prices[key];
+        const row = document.createElement("div");
+        const isBest = minPrice !== null && entry.price === minPrice && !tie && validPrices.length > 1;
+        row.className = "row" + (isBest ? " best" : "");
+
+        const left = document.createElement("div");
+        left.className = "row-retailer";
+        left.innerHTML = `<span class="row-dot" style="background:${RETAILER_META[key].color}"></span>${RETAILER_META[key].label}`;
+        if (isBest) left.innerHTML += `<span class="best-badge">Best</span>`;
+        row.appendChild(left);
+
+        const right = document.createElement("div");
+        if (typeof entry.price === "number") {
+          const a = document.createElement("a");
+          a.className = "row-price";
+          a.style.color = "inherit";
+          a.style.textDecoration = "none";
+          a.textContent = fmt(entry.price);
+          if (entry.url) { a.href = entry.url; a.target = "_blank"; a.rel = "noopener"; }
+          right.appendChild(a);
+        } else {
+          const na = document.createElement("div");
+          na.className = "row-na";
+          na.textContent = "no data";
+          right.appendChild(na);
+        }
+        row.appendChild(right);
+        card.appendChild(row);
+      });
+
+      gridEl.appendChild(card);
+    });
+  }
+
+  renderTabs();
+  renderGrid();
+}
+
+loadData();
+</script>
+</body>
+</html>
