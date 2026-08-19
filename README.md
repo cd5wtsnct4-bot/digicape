@@ -143,6 +143,79 @@ for that run rather than the whole job breaking.
 
 ## Known limitations
 
+- **Amazon SA contributed zero matched rows despite scraping successfully,
+  and Takealot/Incredible Connection were under-matching too — mostly
+  fixed (2026-08-19).** Found while investigating a user report that all
+  three retailers were "not showing as many records as there should be."
+  Amazon's 20/20 scraped rows all loaded with real-looking data but none of
+  them made it into `data/prices.json` at all, for two independent reasons:
+  1. `amazon_prices.py`'s `clean_price()` truncated every single price.
+     Amazon renders thousands separators with U+00A0 (non-breaking space,
+     e.g. `"R29\xa0999.00"`), and `.replace(" ", "")` only strips plain
+     ASCII spaces — confirmed directly, every one of the 20 scraped prices
+     came out as just the leading digit group (29.0 instead of 29999.0).
+     Fixed by stripping all whitespace (`\s+`, which covers `\xa0`) instead
+     of just literal spaces.
+  2. Amazon's titles are full marketing copy (`"Apple MacBook Air 13-inch
+     Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid
+     Retina Display, 24GB Unified Memory, ..."`) against Digicape's short,
+     clean names (`"MacBook Air 13-inch (M5 chip)"`). `normalize_key()`
+     requires identical token sets, so dozens of unstripped marketing/spec
+     words — display, camera, battery, memory, connectivity generation
+     numbers (Wi-Fi 6/7, 5G, 120Hz), chip-generation codes (A16/A19/H2),
+     and more — blocked every single Amazon row from matching anything,
+     confirmed by computing and comparing every Amazon title's key against
+     every same-category Digicape name directly. A related, separate bug in
+     the same code path: Amazon states Mac/iPad screen sizes as the literal
+     panel diagonal (`"13.6-inch"`) rather than Apple's marketed whole
+     number (`"13-inch"`), and the existing inch-regex only grabbed the
+     digit immediately before "-inch", so `"13.6-inch"` produced stray
+     tokens `"13"` and `"6in"` instead of the `"13in"` Digicape's own name
+     produces. Fixed all three by (a) extending `STRIP_WORDS` with Amazon's
+     marketing vocabulary, (b) flooring a decimal inch size to Apple's
+     marketed whole number, but ONLY when that floor is a real Mac/iPad
+     size — iPhone and iPad mini also state a decimal diagonal (6.3", 8.3")
+     that neither Apple nor Digicape names the model by, so those are
+     dropped rather than guessed at, and (c) stripping Wi-Fi
+     generation/megapixel/mm/Hz/5G number+unit tokens and A/H-series chip
+     generation codes as their own units. Result, confirmed against the
+     real live data captured this run: Amazon went from 0/20 to 15/20 rows
+     matched. Considered and explicitly rejected switching the matcher from
+     exact-token-set equality to subset containment as a more general fix
+     for noisy titles — that would have reintroduced the exact "Pro/Max
+     silently collapsing into the base model" bug fixed on 2026-08-19 (see
+     the entry below), since an unstripped "pro"/"max" token in a superset
+     title wouldn't stop it matching a bare base-model key. Also
+     deliberately did NOT strip "active"/"noise"/"cancellation" or
+     "ethernet" as marketing filler, even though doing so would fix
+     Amazon's remaining 2 AirPods Pro/Max misses — confirmed directly this
+     would silently collapse two of Digicape's own real, differently-priced
+     SKUs into one row each (`"AirPods 4"` R2,799 vs `"AirPods 4 with Active
+     Noise Cancellation"` R3,699; `"Apple TV 4K 128Gb Wifi+Ethernet"`
+     R5,249 vs `"Apple TV 4K 64Gb Wifi"` R4,199) — a missed match is an
+     acceptable cost, a silently wrong price is not.
+     Separately, Incredible Connection went from 14 to 29 of its 37 raw Mac
+     rows matching (most of that 37 collapses into fewer combined rows,
+     since many are colour variants of the same spec) after two more small
+     `normalize_key()` fixes found the same way: Incredible spells a colour
+     as one joined word (`"SpaceBlack"`) where other retailers/Digicape use
+     two (`"Space Black"`), and Incredible's core-count listings use U+2011
+     (non-breaking hyphen, `"10‑core CPU"`) instead of a plain `"-"`, which
+     the existing core-count regex's ASCII-only `-?` didn't match, leaving
+     a stray bare `"10"` token. Takealot also picked up one small fix:
+     `"MacBook Neo 13"` states a bare size the same way `"MacBook Pro 16"`
+     does, but unlike Air/Pro, Digicape's own `"MacBook Neo"` name has no
+     size in it at all — so this is dropped entirely rather than converted
+     to `"13in"`. Remaining known gaps, all confirmed to be real content
+     differences rather than matcher bugs: Amazon's 3 M4-chip Mac listings
+     (Digicape doesn't currently sell an M4 configuration in any of those
+     lines), Takealot's Max-tier Mac/Apple-promo-category/no-fresh-price
+     rows (each intentional — see the entries below and above), and two
+     Incredible Connection Apple TV listings that simply don't state the
+     "3rd Gen 2022" wording Digicape's name carries. New regression tests
+     covering all of this: `test_combine.py`'s `TestAmazonMarketingCopyStripping`,
+     `TestDecimalInchHandling`, and `TestIncredibleConnectionFixes`, plus
+     `test_amazon_prices.py` (new file) for the non-breaking-space bug.
 - **Mac matching against Takealot showed zero results, and iPhone/Watch
   generation numbers could silently merge — both now fixed (2026-08-19).**
   Two separate bugs in `combine.py`'s `normalize_key()`, found while
@@ -230,18 +303,28 @@ for that run rather than the whole job breaking.
   Digicape's generic "from" price, so most MacBook rows still won't match a
   base config — that's correct behaviour, not a bug — but AirPods, whose
   names are simple, now match reliably.
-- Amazon SA: **no working scraper yet, and none is planned without a paid
-  proxy.** `amazon_prices.py` exists but Amazon.co.za's robots.txt disallows
-  automated fetching outright and it runs real CAPTCHA-based bot detection —
-  a direct server-side fetch reliably gets blocked, which is also what the
-  ElevateSJC reference PHP tool's own README documents for this retailer. The
-  reference tool's actual fix is a paid scraping/rendering proxy (it
-  documents ScrapingAnt specifically) that executes JavaScript from a
-  residential/datacenter IP and waits for the real product card before
-  returning HTML — plain requests don't get that far regardless of the
-  selectors used. Wiring that in would need an account and API key from
-  whoever runs this repo; nothing here should be interpreted as an attempt to
-  bypass Amazon's bot protection, and nothing here does.
+- **Amazon SA: assumption revised (2026-08-19) — working, including from
+  GitHub Actions.** The original assumption here (a direct fetch reliably
+  gets blocked, matching what the ElevateSJC reference PHP tool's README
+  documents) turned out not to hold. Verified twice against the live site:
+  first by hand from a residential connection (20/20 curated URLs, real
+  prices, zero CAPTCHA hits), then by the scheduled GitHub Actions workflow
+  itself on its first real run with the new step (same result: 20/20,
+  `data/amazon.json` from the 2026-08-19 18:50 UTC run) — so it isn't
+  blocked from Actions' shared IP range either, which was the open question
+  after the first test. `amazon_prices.py` now has a `continue-on-error`
+  step in the scheduled workflow like every other scraper. Two clean runs
+  aren't a permanent guarantee — Amazon's bot detection can vary over time
+  or by IP reputation, so it's worth an occasional glance at that step's
+  log — but there's no reason left to treat this retailer as unworkable. If
+  it ever does start getting blocked, the reference tool's fix is a paid
+  scraping/rendering proxy (it documents ScrapingAnt specifically) that
+  executes JavaScript from a residential/datacenter IP and waits for the
+  real product card before returning HTML; that would need an account and
+  API key from whoever runs this repo. Nothing here should be interpreted
+  as an attempt to bypass Amazon's bot protection — the script backs off
+  the moment it detects a CAPTCHA/bot-check page rather than trying to get
+  past it, and nothing here does otherwise.
 - Product-name matching across retailers is heuristic, not exact. Some
   identical products may show up as separate unmatched cards; occasionally
   two different configurations may merge into one row. Spot-check
@@ -271,10 +354,3 @@ for that run rather than the whole job breaking.
   than publish it. The nine affected rows were manually nulled out in
   `data/digicape.json` rather than left wrong; they'll repopulate with real
   numbers on the next scrape run.
-- `amazon_prices.py` is unverified end-to-end: Amazon.co.za blocks automated
-  fetching aggressively (robots.txt disallows it outright, and it's known for
-  CAPTCHA-based bot detection). The selectors are Amazon's long-standing,
-  well-documented ones, not guessed from nothing, but nothing in this
-  project's development environment could load a real amazon.co.za page to
-  confirm them. Run it once by hand and read its console output before
-  trusting it in the scheduled workflow.
