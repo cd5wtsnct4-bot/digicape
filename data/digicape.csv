@@ -1,46 +1,46 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
-digicape,mac,MacBook Air 15-inch (M5 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,MacBook Pro 16-inch (M5 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,MacBook Air 13-inch (M5 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,MacBook Neo,,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,MacBook Pro 14-inch (M5 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,iMac 24-Inch (M4 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac mini (M4 chip),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac mini (M4 Pro),,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac Studio M3 Ultra,,,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac Studio M4 Max,,,,,https://www.digicape.co.za/category/mac-all
-digicape,ipad,iPad Pro 11-inch (M5 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Pro 13-inch (M5 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Pro 11-inch (M4 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Pro 13-inch (M4 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Air 11-inch (M3 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Air 11-inch (M4 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Air 13-inch (M4 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Air 13-inch (M3 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad Air 13-inch (M2 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad 11-inch (A16 chip),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,ipad,iPad mini (A17 Pro),,,,,https://www.digicape.co.za/category/ipad-all
-digicape,iphone,iPhone 17 Pro,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 17 Pro Max,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone Air,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 17,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 17e,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 16,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 16 Plus,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 16e,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 15,,,,,https://www.digicape.co.za/category/iphone-all
-digicape,watch,Apple Watch Series 11 Milanese Loop,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Series 11 Sport Band,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch SE 3 Sport Band,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 3 with Alpine Loop,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 3 with Milanese Loop,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 3 with Ocean Band,,,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 3 with Trail Loop,,,,,https://www.digicape.co.za/category/watch-all
-digicape,airpods,AirPods 4,,,,,https://www.digicape.co.za/category/airpods-all
-digicape,airpods,AirPods Max 2,,,,,https://www.digicape.co.za/category/airpods-all
-digicape,airpods,AirPods 4 with Active Noise Cancellation,,,,,https://www.digicape.co.za/category/airpods-all
-digicape,airpods,AirPods Pro 3,,,,,https://www.digicape.co.za/category/airpods-all
-digicape,airpods,AirPods Max,,,,,https://www.digicape.co.za/category/airpods-all
-digicape,appletv,"Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",,,,,https://www.digicape.co.za/category/apple-tv
-digicape,appletv,"Apple TV 4K 64Gb Wifi (3rd Gen,2022)",,,,,https://www.digicape.co.za/category/apple-tv
-digicape,appletv,Apple TV Siri Remote,,,,,https://www.digicape.co.za/category/apple-tv
+digicape,mac,MacBook Air 15-inch (M5 chip),R30 499,30499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Pro 16-inch (M5 chip),R61 099,61099.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Air 13-inch (M5 chip),R26 399,26399.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Neo,R13 899,13899.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Pro 14-inch (M5 chip),R40 699,40699.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,iMac 24-Inch (M4 chip),R34 199,34199.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac mini (M4 chip),R20 399,20399.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac mini (M4 Pro),R32 499,32499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac Studio M3 Ultra,R107 899,107899.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac Studio M4 Max,R50 899,50899.0,,,https://www.digicape.co.za/category/mac-all
+digicape,ipad,iPad Pro 11-inch (M5 chip),R24 499,24499.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Pro 13-inch (M5 chip),Save R3800,3800.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Pro 11-inch (M4 chip),R23 299,23299.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Pro 13-inch (M4 chip),R30 199,30199.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Air 11-inch (M3 chip),R15 899,15899.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Air 11-inch (M4 chip),R15 199,15199.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Air 13-inch (M4 chip),R19 299,19299.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Air 13-inch (M3 chip),R16 899,16899.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad Air 13-inch (M2 chip),R19 299,19299.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad 11-inch (A16 chip),R8 699,8699.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,ipad,iPad mini (A17 Pro),R12 199,12199.0,,,https://www.digicape.co.za/category/ipad-all
+digicape,iphone,iPhone 17 Pro,R27 699,27699.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 17 Pro Max,R30 499,30499.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone Air,R21 999,21999.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 17,Save R300,300.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 17e,R14 599,14599.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 16,Save R600,600.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 16 Plus,R19 999,19999.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 16e,Save R1200,1200.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 15,R13 999,13999.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,watch,Apple Watch Series 11 Milanese Loop,R18 299,18299.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Series 11 Sport Band,Save R500,500.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch SE 3 Sport Band,Save R300,300.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 3 with Alpine Loop,R19 499,19499.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 3 with Milanese Loop,R21 999,21999.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 3 with Ocean Band,R19 499,19499.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 3 with Trail Loop,R19 499,19499.0,,,https://www.digicape.co.za/category/watch-all
+digicape,airpods,AirPods 4,Save R130,130.0,,,https://www.digicape.co.za/category/airpods-all
+digicape,airpods,AirPods Max 2,R11 499,11499.0,,,https://www.digicape.co.za/category/airpods-all
+digicape,airpods,AirPods 4 with Active Noise Cancellation,Save R300,300.0,,,https://www.digicape.co.za/category/airpods-all
+digicape,airpods,AirPods Pro 3,Save R400,400.0,,,https://www.digicape.co.za/category/airpods-all
+digicape,airpods,AirPods Max,R11 999,11999.0,,,https://www.digicape.co.za/category/airpods-all
+digicape,appletv,"Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",R5 249,5249.0,,,https://www.digicape.co.za/category/apple-tv
+digicape,appletv,"Apple TV 4K 64Gb Wifi (3rd Gen,2022)",R4 199,4199.0,,,https://www.digicape.co.za/category/apple-tv
+digicape,appletv,Apple TV Siri Remote,R1 399,1399.0,,,https://www.digicape.co.za/category/apple-tv
