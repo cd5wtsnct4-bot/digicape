@@ -2,357 +2,493 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Apple Price Tracker — Digicape / iStore / Takealot / Incredible Connection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digicape Price Watch</title>
+<meta name="description" content="Where Digicape's Apple prices beat the rest of SA retail — and where they don't.">
 <style>
+@font-face { font-family: 'Big Shoulders Display'; font-weight: 700; font-style: normal; src: url('assets/fonts/BigShouldersDisplay-700.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'Big Shoulders Display'; font-weight: 800; font-style: normal; src: url('assets/fonts/BigShouldersDisplay-800.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-style: normal; src: url('assets/fonts/IBMPlexSans-400.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 500; font-style: normal; src: url('assets/fonts/IBMPlexSans-500.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 600; font-style: normal; src: url('assets/fonts/IBMPlexSans-600.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 400; font-style: normal; src: url('assets/fonts/IBMPlexMono-400.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 500; font-style: normal; src: url('assets/fonts/IBMPlexMono-500.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 600; font-style: normal; src: url('assets/fonts/IBMPlexMono-600.ttf') format('truetype'); font-display: swap; }
+
 :root {
-  color-scheme: light;
-  --surface-1:      #fcfcfb;
-  --page-plane:     #f9f9f7;
-  --text-primary:   #0b0b0b;
-  --text-secondary: #52514e;
-  --text-muted:     #898781;
-  --gridline:       #e1e0d9;
-  --border:         rgba(11,11,11,0.10);
-  --series-1:       #2a78d6; /* blue   - Digicape */
-  --series-2:       #eb6834; /* orange - iStore */
-  --series-3:       #1baf7a; /* aqua   - Takealot */
-  --series-4:       #eda100; /* yellow - Incredible Connection */
-  --status-good:    #0ca30c;
-  --status-warning: #fab219;
-  --status-critical:#d03b3b;
+  --ink: #14181c;
+  --ink-soft: #4b5459;
+  --ink-faint: #7c868c;
+  --paper: #f2f6f9;
+  --surface: #ffffff;
+  --surface-alt: #e6eef4;
+  --line: #d2dee6;
+  --brand: #2ba6e0;
+  --brand-strong: #14749f;
+  --brand-soft: #e0f2fb;
+  --accent: #0e7c56;
+  --accent-strong: #0b5f42;
+  --accent-soft: #e1f3ea;
+  --caution: #a5680c;
+  --caution-soft: #f7ebd3;
+  --shadow: rgba(14, 30, 40, 0.10);
 }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #edf1f4; --ink-soft: #a3adb3; --ink-faint: #6c767c;
+    --paper: #0d1418; --surface: #151d22; --surface-alt: #1c262c; --line: #2a353c;
+    --brand: #4bbaee; --brand-strong: #7ed1f4; --brand-soft: #123246;
+    --accent: #3bcb92; --accent-strong: #55dda5; --accent-soft: #17351f;
+    --caution: #e3a83e; --caution-soft: #362a10; --shadow: rgba(0, 0, 0, 0.45);
+  }
+}
+
 * { box-sizing: border-box; }
+html { color-scheme: light dark; }
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  background: var(--page-plane);
-  color: var(--text-primary);
   margin: 0;
-  padding: 32px;
-}
-.wrap { max-width: 1180px; margin: 0 auto; }
-
-.header { margin-bottom: 20px; }
-.header h1 { font-size: 22px; font-weight: 700; margin: 0 0 6px; }
-.header p { font-size: 14px; color: var(--text-secondary); margin: 0; }
-
-.status-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12.5px;
-  color: var(--text-secondary);
-  margin: 14px 0 18px;
-}
-.status-dot { width: 8px; height: 8px; border-radius: 50%; }
-.status-dot.ok { background: var(--status-good); }
-.status-dot.warn { background: var(--status-warning); }
-.status-dot.err { background: var(--status-critical); }
-#refresh-btn {
-  margin-left: auto;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--surface-1);
-  color: var(--text-secondary);
-  cursor: pointer;
-}
-#refresh-btn:hover { color: var(--text-primary); }
-
-.notice {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--status-warning);
-  border-radius: 8px;
-  padding: 12px 16px;
-  font-size: 12.5px;
-  color: var(--text-secondary);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
   line-height: 1.55;
-  margin-bottom: 18px;
+  -webkit-font-smoothing: antialiased;
 }
-.notice.err { border-left-color: var(--status-critical); }
-.notice .icon { font-size: 15px; margin-top: 1px; }
-.notice strong { color: var(--text-primary); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+a { color: var(--brand-strong); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2.5rem); }
 
-.legend { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 18px; }
-.legend-item { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-secondary); }
-.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+/* ---------- Masthead ---------- */
+.masthead { background: var(--surface); border-top: 4px solid var(--brand); border-bottom: 1px dashed var(--line); padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(1.5rem, 4vw, 2.25rem); }
+.eyebrow { font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-strong); margin: 0 0 0.9rem; }
+h1 { font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: clamp(2.6rem, 6.4vw, 4.4rem); line-height: 0.92; letter-spacing: 0.005em; text-transform: uppercase; margin: 0 0 0.7rem; text-wrap: balance; max-width: 16ch; }
+.dek { font-size: clamp(1rem, 1.6vw, 1.2rem); color: var(--ink-soft); max-width: 56ch; margin: 0 0 1.6rem; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; color: var(--ink-soft); }
+.meta-row strong { color: var(--ink); font-weight: 600; }
+.meta-row.warn strong { color: var(--caution); }
 
-.tabs {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--gridline);
-  padding-bottom: 12px;
-}
-.tab {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 7px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--surface-1);
-  color: var(--text-secondary);
-  cursor: pointer;
-}
-.tab.active { background: var(--text-primary); color: #fff; border-color: var(--text-primary); }
+/* ---------- Alerts strip (deals ticket) ---------- */
+.alerts { padding: clamp(2rem, 4vw, 2.75rem) 0 clamp(1.5rem, 3vw, 2rem); }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+h2 { font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: clamp(1.4rem, 2.6vw, 1.85rem); text-transform: uppercase; letter-spacing: 0.01em; margin: 0; }
+.section-note { font-size: 0.85rem; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; }
+.ticket-scroll { display: flex; flex-wrap: wrap; gap: 0.9rem; padding: 0.3rem 0.2rem 1rem; }
+.ticket { flex: 1 1 230px; max-width: 260px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 18px var(--shadow); padding: 1rem 1.1rem 1.05rem; position: relative; }
+.ticket::after { content: ""; position: absolute; left: 0; right: 0; bottom: 3.35rem; border-top: 1px dashed var(--line); }
+.t-cat { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 0.25rem; }
+.t-name { font-weight: 600; font-size: 0.92rem; line-height: 1.25; margin-bottom: 0.75rem; min-height: 2.4em; }
+.t-best-label { font-size: 0.68rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.t-price { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-weight: 600; font-size: 1.5rem; color: var(--accent-strong); line-height: 1.15; margin: 0.1rem 0 0.2rem; }
+.t-retailer { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 0.85rem; }
+.t-dc { font-size: 0.78rem; color: var(--ink-faint); font-family: 'IBM Plex Mono', monospace; }
+.t-dc s { text-decoration-color: var(--ink-faint); }
+.t-save { display: inline-block; margin-top: 0.5rem; background: var(--accent-soft); color: var(--accent-strong); font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 0.78rem; padding: 0.2rem 0.55rem; border-radius: 100px; }
+.empty-state { font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; color: var(--ink-faint); padding: 1rem 0; }
+.deals-group { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.deals-group summary { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.1rem; cursor: pointer; color: #696969; list-style: none; user-select: none; }
+.deals-group summary::-webkit-details-marker { display: none; }
+.deals-group summary::after { content: '+'; margin-left: auto; color: var(--brand-strong); font: 700 1.25rem 'IBM Plex Mono', monospace; }
+.deals-group[open] summary::after { content: '\2212'; }
+.deals-group[open] summary { border-bottom: 1px solid var(--line); }
+.deals-title { font-family: 'Big Shoulders Display', sans-serif; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 700; line-height: 1; }
+.deals-group .section-note { margin-left: auto; }
+.deals-group .ticket-scroll, .deals-group .empty-state { margin: 1rem; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 14px;
-}
+/* ---------- Product comparison cards ---------- */
+.ledger { padding: clamp(1rem, 3vw, 1.5rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+.ledger-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 0.55rem 0.8rem; margin: 0 0 1rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--ink-faint); }
+.ledger-tools label { font-weight: 600; color: var(--ink-soft); }
+.ledger-tools input { flex: 1 1 320px; max-width: 620px; padding: 0.7rem 0.85rem; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font: inherit; }
+.ledger-tools input:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+.product-groups { display: grid; gap: 0.85rem; }
+.product-group { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-alt); }
+.product-group summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 1.05rem; cursor: pointer; color: #696969; list-style: none; user-select: none; }
+.product-group summary::-webkit-details-marker { display: none; }
+.product-group summary::after { content: '+'; order: 3; color: var(--brand-strong); font: 700 1.25rem 'IBM Plex Mono', monospace; }
+.product-group[open] summary::after { content: '\2212'; }
+.product-group summary span { font-family: 'Big Shoulders Display', sans-serif; font-size: 1.35rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; }
+.product-group summary small { margin-left: auto; color: var(--ink-faint); font: 500 0.68rem 'IBM Plex Mono', monospace; }
+.product-group[open] summary { border-bottom: 1px solid var(--line); }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1rem; padding: 1rem; align-items: start; }
+.product-card { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); box-shadow: 0 6px 18px var(--shadow); }
+.product-card-head { padding: 1rem 1.1rem 0.9rem; border-bottom: 1px solid var(--line); background: var(--surface-alt); }
+.product-card-head h3 { margin: 0.2rem 0 0; font-family: 'Big Shoulders Display', sans-serif; font-size: 1.35rem; line-height: 1.05; }
+.product-card-head p { margin: 0.25rem 0 0; color: var(--ink-faint); font-size: 0.78rem; }
+.product-category { color: var(--brand-strong); font: 600 0.67rem 'IBM Plex Mono', monospace; letter-spacing: 0.09em; text-transform: uppercase; }
+.store-prices { display: grid; }
+.store-price { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.12rem 0.8rem; align-items: center; padding: 0.72rem 1.05rem; border-bottom: 1px solid var(--line); }
+.store-price:last-child { border-bottom: 0; }
+.store-price.reference { background: var(--brand-soft); }
+.store-price.best-deal { background: var(--accent-soft); }
+.store-price.cheapest { position: relative; background: #e3f7e9; box-shadow: inset 4px 0 0 var(--accent-strong); }
+.store-price.cheapest .store-name, .store-price.cheapest strong { color: var(--accent-strong); font-weight: 700; }
+.store-price.stale { opacity: 0.78; }
+.store-name { min-width: 0; color: var(--ink-soft); font-size: 0.82rem; }
+.store-name small { display: block; color: var(--brand-strong); font: 500 0.61rem 'IBM Plex Mono', monospace; text-transform: uppercase; }
+.store-price strong { font-family: 'IBM Plex Mono', monospace; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+.store-price .not-available { color: var(--ink-faint); font-family: 'IBM Plex Sans', sans-serif; font-size: 0.78rem; font-style: italic; font-weight: 400; }
+.card-variance, .store-price .stale-label { grid-column: 2; margin: 0; text-align: right; font: 600 0.64rem 'IBM Plex Mono', monospace; }
+.cheapest-badge { grid-column: 1; grid-row: 2; width: fit-content; padding: 0.18rem 0.4rem; border-radius: 999px; background: var(--accent-strong); color: white; font: 600 0.58rem 'IBM Plex Mono', monospace; letter-spacing: 0.05em; text-transform: uppercase; }
+.card-variance.cheaper { color: var(--accent-strong); }
+.card-variance.dearer, .card-variance.same { color: var(--ink-faint); }
+.card-variance.current { color: var(--brand-strong); }
+.card-variance.mismatch { color: var(--caution); }
+.stale-label { display: block; margin-top: 0.2rem; font: 500 0.62rem 'IBM Plex Mono', monospace; color: var(--caution); text-transform: uppercase; }
 
-.card {
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.card-title { font-size: 14px; font-weight: 700; line-height: 1.3; }
+/* ---------- Legend + methodology ---------- */
+.legend { display: flex; flex-wrap: wrap; gap: 1.1rem 1.6rem; margin: 1.1rem 0 0; font-size: 0.78rem; color: var(--ink-soft); }
+.conf { font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; margin-left: 0.3rem; }
+.conf.live { color: var(--brand-strong); }
+.mismatch { color: var(--caution); font-weight: 700; margin-left: 0.25rem; }
 
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 7px 0;
-  border-top: 1px solid var(--gridline);
-  font-size: 13px;
-}
-.row:first-of-type { border-top: none; padding-top: 2px; }
-.row-retailer { display: flex; align-items: center; gap: 7px; color: var(--text-secondary); }
-.row-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-.row-price { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; white-space: nowrap; }
-.row.best .row-price { color: var(--status-good); }
-.row.best .row-retailer { color: var(--text-primary); font-weight: 600; }
-.best-badge {
-  font-size: 9.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: var(--status-good);
-  border: 1px solid var(--status-good);
-  border-radius: 4px;
-  padding: 1px 5px;
-  margin-left: 6px;
-}
-.row-na { color: var(--text-muted); font-style: italic; }
+footer.methodology { background: var(--surface-alt); border-top: 1px solid var(--line); padding: clamp(2rem, 4vw, 2.75rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+footer.methodology h3 { font-family: 'Big Shoulders Display', sans-serif; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.02em; margin: 0 0 0.6rem; }
+footer.methodology p { max-width: none; color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 0.9rem; }
+footer.methodology .schedule { font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 0.9rem 1.1rem; display: inline-block; }
+footer.methodology .schedule.stale { color: var(--caution); border-color: var(--caution); }
 
-.empty-state { padding: 40px; text-align: center; color: var(--text-secondary); font-size: 14px; }
-
-.footer-note {
-  font-size: 12px;
-  color: var(--text-muted);
-  border-top: 1px solid var(--gridline);
-  margin-top: 28px;
-  padding-top: 16px;
-  line-height: 1.6;
+@media (max-width: 640px) {
+  .wrap { padding-left: 0.65rem; padding-right: 0.65rem; }
+  .ticket { flex-basis: 100%; max-width: none; }
+  .deals-group summary { align-items: flex-start; flex-wrap: wrap; gap: 0.35rem 0.65rem; padding: 0.75rem; }
+  .deals-group .section-note { width: calc(100% - 2rem); margin: 0; font-size: 0.66rem; }
+  .deals-title { font-size: 1.35rem; }
+  .product-groups { gap: 0.55rem; }
+  .product-group { border-radius: 9px; }
+  .product-group summary { padding: 0.68rem 0.75rem; }
+  .product-group summary span { font-size: 1.12rem; }
+  .product-grid { grid-template-columns: minmax(0, 1fr); gap: 0.55rem; padding: 0.5rem; }
+  .product-card { border-radius: 8px; box-shadow: 0 3px 10px var(--shadow); }
+  .product-card-head { padding: 0.68rem 0.75rem 0.62rem; }
+  .product-card-head h3 { font-size: 1.12rem; }
+  .product-card-head p { font-size: 0.7rem; }
+  .product-category { font-size: 0.58rem; }
+  .store-price { gap: 0.08rem 0.45rem; padding: 0.5rem 0.7rem; }
+  .store-name { font-size: 0.73rem; }
+  .store-name small { font-size: 0.53rem; }
+  .store-price strong { font-size: 0.8rem; }
+  .store-price .not-available { font-size: 0.7rem; }
+  .card-variance, .store-price .stale-label { font-size: 0.56rem; }
+  .cheapest-badge { padding: 0.13rem 0.32rem; font-size: 0.5rem; }
 }
-.footer-note strong { color: var(--text-secondary); }
-.footer-note a { color: var(--series-1); }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <div class="header">
-    <h1>Apple Product Price Comparison — South African Retailers</h1>
-    <p>Digicape, iStore, Takealot, and Incredible Connection, matched product-for-product where models line up.</p>
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">SA Apple Retail &middot; Price Watch</p>
+    <h1>Digicape Price Watch</h1>
+    <p class="dek" id="dek">Tracking Apple products against Digicape's shelf price across four other South African retailers, and flagging every product where someone else is cheaper.</p>
+    <div class="meta-row" id="meta-row">
+      <span>Last checked: <strong id="last-checked">loading&hellip;</strong></span>
+      <span>Scheduled: <strong>every 6 hours via GitHub Actions</strong></span>
+      <span>Retailers: <strong>Takealot &middot; Amazon SA &middot; Incredible Connection &middot; iStore</strong></span>
+    </div>
   </div>
+</header>
 
-  <div class="status-bar" id="status-bar">
-    <span class="status-dot" id="status-dot"></span>
-    <span id="status-text">Loading latest price data&hellip;</span>
-    <button id="refresh-btn" onclick="location.reload()">Reload</button>
+<div id="fallback-notice"></div>
+
+<section class="alerts">
+  <div class="wrap">
+    <details class="deals-group" open>
+    <summary>
+      <span class="deals-title">Where Digicape isn't the cheapest</span>
+      <span class="section-note" id="deals-note"></span>
+    </summary>
+    <div id="deals-body"></div>
+    </details>
   </div>
+</section>
 
-  <div id="notice-slot"></div>
-
-  <div class="legend" id="legend"></div>
-
-  <div class="tabs" id="tabs"></div>
-  <div class="grid" id="grid"></div>
-
-  <div class="footer-note">
-    <strong>How this stays current:</strong> a GitHub Actions workflow in this repo
-    (<code>.github/workflows/update-prices.yml</code>) re-runs the Scrapling scrapers on a schedule and
-    commits a fresh <code>data/prices.json</code>. This page fetches that file straight from GitHub every
-    time it loads — reload it any time to see the latest committed data. It cannot scrape the retailer
-    sites itself: browser security (CORS) blocks a static page like this from calling digicape.co.za,
-    istore.co.za, takealot.com, or incredible.co.za directly, which is exactly why the scraping has to
-    happen in the scheduled workflow rather than in this page's JavaScript. If <code>data/prices.json</code>
-    doesn't exist yet (workflow hasn't run for the first time), or the fetch fails for any reason, this page
-    falls back to the snapshot baked in at the time this page was built. Coverage notes: iPhone/Watch model
-    names vary enough between retailers that matching across sites is heuristic (see
-    <code>scripts/combine.py</code>) — some genuinely-identical products may show up as separate unmatched
-    cards rather than one merged row. Full Accessories catalogs are large and only partially represented
-    here. Incredible Connection is a general electronics retailer rather than a dedicated Apple reseller, so
-    its coverage is thinner than the other three — some of its category pages block automated fetches
-    outright. Takealot's promotion page is a JavaScript-rendered storefront that only resolves in a real
-    browser, so its data depends on the scheduled workflow actually running; it won't appear here until
-    that's happened at least once.
+<section class="ledger">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>All product comparisons</h2>
+      <span class="section-note">Each card shows every store against the Digicape reference price</span>
+    </div>
+    <div class="ledger-tools">
+      <label for="product-filter">Find an Apple product</label>
+      <input id="product-filter" type="search" placeholder="Search Mac, iPad, iPhone, Watch, AirPods, TV or accessories" autocomplete="off">
+      <span id="filter-count" aria-live="polite"></span>
+    </div>
+    <div class="product-groups" id="product-groups"></div>
+    <div class="legend">
+      <span><span class="conf live">&#9679;</span> Digicape reference price, live-scraped this run</span>
+      <span><span class="mismatch">&ne;</span> different spec/variant — not a like-for-like price</span>
+      <span><span class="stale-label" style="display:inline">last known</span> retained successful price; latest pull unavailable</span>
+      <span>&mdash; unavailable (fetch failed, blocked, or price not found on page)</span>
+    </div>
   </div>
+</section>
 
-</div>
+<footer class="methodology">
+  <div class="wrap">
+    <h3>How this works, and where it can be wrong</h3>
+    <p>Every price is fetched directly from each retailer's own site by a scheduled GitHub Actions workflow in this repo (<code>.github/workflows/update-prices.yml</code>) — no manual price entry. Digicape's current hardware families and advertised starting prices come from its live category pages; competitor prices come from matched product pages. "Unavailable" means the fetch was blocked or no price could be confidently extracted — never a guess. A product only appears above once Digicape has returned a real price in the run that produced the data you're looking at; if Digicape's fetch fails, that product drops off the list entirely rather than showing a stale reference price.</p>
+    <p>Two retailers are worth extra scepticism: Takealot and Amazon SA both run bot-detection that can block plain server-side requests outright, redirect to a CAPTCHA, or serve a JS-only shell with no price in the initial HTML. If those columns show mostly "unavailable", that's very likely why — not that the products vanished. Digicape, Incredible Connection and iStore are more standard storefronts and tend to scrape more reliably, though Incredible Connection's Apple range is thinner since it isn't a dedicated Apple reseller.</p>
+    <p>Product matching across retailers is heuristic (see <code>scripts/combine.py</code>) — different retailers name the same model differently, and a row carrying a "different variant" flag means the cheaper price is for a different storage/chip/colour configuration, not a true like-for-like match.</p>
+    <p class="schedule" id="schedule-line">Loading run metadata&hellip;</p>
+  </div>
+</footer>
 
 <script>
-const RETAILER_META = {
-  digicape:   { label: "Digicape",   color: "var(--series-1)" },
-  istore:     { label: "iStore",     color: "var(--series-2)" },
-  takealot:   { label: "Takealot",   color: "var(--series-3)" },
-  incredible: { label: "Incredible Connection", color: "var(--series-4)" },
-};
+const GROUP_ORDER = ["Mac", "iPad", "iPhone", "Watch", "AirPods", "Apple TV", "Accessories"];
+const GROUP_FOR_CATEGORY = (cat) => GROUP_ORDER.includes(cat) ? cat : "Accessories";
 
 // Fallback snapshot, embedded at build time, used only if data/prices.json
 // can't be fetched (first run before the workflow has ever executed, or a
 // network hiccup). Regenerate by running scripts/combine.py and pasting its
 // output here, or just let the workflow overwrite data/prices.json.
-const FALLBACK_DATA = {"generated_at": "2026-08-19T12:12:53Z", "retailer_labels": {"digicape": "Digicape", "istore": "iStore", "takealot": "Takealot", "incredible": "Incredible Connection"}, "items": [{"category": "AirPods", "title": "AirPods Accessories", "prices": {"istore": {"price": 299.0, "price_text": "R299", "url": "https://www.istore.co.za/airpods"}}}, {"category": "AirPods", "title": "Apple AirPods 4", "prices": {"istore": {"price": 2799.0, "price_text": "R2 799", "url": "https://www.istore.co.za/airpods"}, "incredible": {"price": 2399.0, "price_text": "R2,399", "url": "https://www.incredible.co.za/apple-airpods-4"}}}, {"category": "AirPods", "title": "Apple AirPods Max USB-C Purple", "prices": {"incredible": {"price": 10499.0, "price_text": "R10,499", "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-purple"}}}, {"category": "AirPods", "title": "Apple AirPods Max 2", "prices": {"istore": {"price": 11499.0, "price_text": "R11 499", "url": "https://www.istore.co.za/airpods"}, "incredible": {"price": 9999.0, "price_text": "R9,999", "url": "https://www.incredible.co.za/apple-airpods-max-2-blue"}}}, {"category": "AirPods", "title": "Apple AirPods Pro 3", "prices": {"istore": {"price": 5399.0, "price_text": "R5 399", "url": "https://www.istore.co.za/airpods"}}}, {"category": "Apple (Takealot promo)", "title": "Apple AirPods 4", "prices": {"takealot": {"price": 2399.0, "price_text": "R 2,399", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple AirPods 4 with Active Noise Cancellation", "prices": {"takealot": {"price": 3999.0, "price_text": "R 3,999", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple AirPods Max 2", "prices": {"takealot": {"price": 13645.0, "price_text": "R 13,645", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple AirPods Pro 3", "prices": {"takealot": {"price": 5299.0, "price_text": "R 5,299", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple Lightning Digital AV Adapter", "prices": {"takealot": {"price": 1199.0, "price_text": "R 1,199", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD", "prices": {"takealot": {"price": 13999.0, "price_text": "R 13,999", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD", "prices": {"takealot": {"price": 83499.0, "price_text": "R 83,499", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD", "prices": {"takealot": {"price": 48999.0, "price_text": "R 48,999", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD", "prices": {"takealot": {"price": 86999.0, "price_text": "R 86,999", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD", "prices": {"takealot": {"price": 60999.0, "price_text": "R 60,999", "url": ""}}}, {"category": "Apple (Takealot promo)", "title": "Apple Siri Remote", "prices": {"takealot": {"price": 1499.0, "price_text": "R 1,499", "url": ""}}}, {"category": "Apple TV", "title": "Apple TV 4K Wi-Fi 64GB", "prices": {"incredible": {"price": 3099.0, "price_text": "R3,099", "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-with-64gb-storage"}}}, {"category": "Apple TV", "title": "Apple TV 4K Wi-Fi Ethernet 128GB", "prices": {"incredible": {"price": 3599.0, "price_text": "R3,599", "url": "https://www.incredible.co.za/apple-tv-4k-wi-fi-ethernet-128gb"}}}, {"category": "Mac", "title": "13-inch MacBook Air M5", "prices": {"istore": {"price": 26499.0, "price_text": "R26 499", "url": "https://www.istore.co.za/mac"}, "incredible": {"price": 36499.0, "price_text": "R36,499", "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"}}}, {"category": "Mac", "title": "14-inch MacBook Pro M5", "prices": {"istore": {"price": 40799.0, "price_text": "R40 799", "url": "https://www.istore.co.za/mac"}, "incredible": {"price": 40999.0, "price_text": "R40,999", "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"}}}, {"category": "Mac", "title": "14-inch MacBook Pro M5 Pro / M5 Max", "prices": {"istore": {"price": 50999.0, "price_text": "R50 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "15-inch MacBook Air M5", "prices": {"istore": {"price": 30599.0, "price_text": "R30 599", "url": "https://www.istore.co.za/mac"}, "incredible": {"price": 36499.0, "price_text": "R36,499", "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"}}}, {"category": "Mac", "title": "16-inch MacBook Pro M5 Pro / M5 Max", "prices": {"istore": {"price": 61199.0, "price_text": "R61 199", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Apple HomePod mini", "prices": {"istore": {"price": 2999.0, "price_text": "R2 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Apple Studio Display", "prices": {"istore": {"price": 45199.0, "price_text": "R45 199", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Apple Studio Display XDR", "prices": {"istore": {"price": 81999.0, "price_text": "R81 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Beats Flex – All-Day Wireless Earphones", "prices": {"istore": {"price": 1599.0, "price_text": "R1 599", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Beats Powerbeats Pro 2 High-Performance Earbuds", "prices": {"istore": {"price": 5499.0, "price_text": "R5 499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Beats Studio Buds + True Wireless Noise Cancelling Earbuds", "prices": {"istore": {"price": 3699.0, "price_text": "R3 699", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Beats Studio Pro Premium Wireless Noise Cancelling Headphones", "prices": {"istore": {"price": 7699.0, "price_text": "R7 699", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Beats USB-C to Lightning Woven Cable (1.5 m)", "prices": {"istore": {"price": 549.0, "price_text": "R549", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Harman Kardon Luna 2 Portable Bluetooth Speaker - Black", "prices": {"istore": {"price": 3699.0, "price_text": "R3 699", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Mac Studio | Apple M3 Ultra | 60‑core GPU | 1TB", "prices": {"istore": {"price": 107999.0, "price_text": "R107 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Mac Studio | Apple M4 Max | 32‑core GPU | 512GB", "prices": {"istore": {"price": 50999.0, "price_text": "R50 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Mac mini | Apple M4", "prices": {"istore": {"price": 24499.0, "price_text": "R24 499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "MacBook Neo", "prices": {"istore": {"price": 13999.0, "price_text": "R13 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "MacBook Pro 16-inch (M5 Pro) 24GB/1TB", "prices": {"incredible": {"price": 60999.0, "price_text": "R60,999", "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"}}}, {"category": "Mac", "title": "MacBook Pro 16-inch | Apple M4", "prices": {"istore": {"price": 52999.0, "price_text": "R52 999", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Satechi Slim LX Wired Mouse - Silver", "prices": {"istore": {"price": 499.0, "price_text": "R499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Satechi Slim LX3 Wired Keyboard - Silver", "prices": {"istore": {"price": 899.0, "price_text": "R899", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "Tucano Fine Zaino Doppio Vano Backpack for MacBook 16-inch/15-inch", "prices": {"istore": {"price": 1599.0, "price_text": "R1 599", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "iMac 24-inch | Apple M4", "prices": {"istore": {"price": 34299.0, "price_text": "R34 299", "url": "https://www.istore.co.za/mac"}}}, {"category": "Mac", "title": "iMac 24-inch | Apple M4 | Nano-Texture Glass | 256GB SSD - Silver", "prices": {"istore": {"price": 43499.0, "price_text": "R43 499", "url": "https://www.istore.co.za/mac"}}}, {"category": "Watch", "title": "Apple Watch SE3", "prices": {"incredible": {"price": 5699.0, "price_text": "R5,699", "url": "https://www.incredible.co.za/apple-watch-se3"}}}, {"category": "accessories", "title": "Apple AirPods 4", "prices": {"istore": {"price": 2799.0, "price_text": "R2 799", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple Smart Folio for iPad (A16)", "prices": {"istore": {"price": 2299.0, "price_text": "R2 299", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple Watch Nike Sport Band", "prices": {"istore": {"price": 499.0, "price_text": "R499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple Watch Sport Band", "prices": {"istore": {"price": 1199.0, "price_text": "R1 199", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple Watch Sport Loop", "prices": {"istore": {"price": 1199.0, "price_text": "R1 199", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple iPhone 17 Pro Max Silicone Case with MagSafe", "prices": {"istore": {"price": 1399.0, "price_text": "R1 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple iPhone 17 Pro Silicone Case with MagSafe", "prices": {"istore": {"price": 1399.0, "price_text": "R1 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple iPhone 17 Silicone Case with MagSafe", "prices": {"istore": {"price": 1399.0, "price_text": "R1 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Apple iPhone 17e Silicone Case with MagSafe", "prices": {"istore": {"price": 1399.0, "price_text": "R1 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Pill Wireless Bluetooth Speaker", "prices": {"istore": {"price": 3599.0, "price_text": "R3 599", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Powerbeats Pro 2 High-Performance Earbuds", "prices": {"istore": {"price": 5499.0, "price_text": "R5 499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17", "prices": {"istore": {"price": 2199.0, "price_text": "R2 199", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro", "prices": {"istore": {"price": 2199.0, "price_text": "R2 199", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats Solo 4 Wireless On-Ear Headphones", "prices": {"istore": {"price": 4399.0, "price_text": "R4 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats USB-A to USB-C Woven Cable (1.5m)", "prices": {"istore": {"price": 549.0, "price_text": "R549", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Beats USB-C to USB-C Woven Cable (1.5 m)", "prices": {"istore": {"price": 549.0, "price_text": "R549", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "JBL Flip 7 Portable Bluetooth Speaker", "prices": {"istore": {"price": 2499.0, "price_text": "R2 499", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "JBL Junior 320BT Wireless On-Ear Kids Headphones", "prices": {"istore": {"price": 599.0, "price_text": "R599", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "MAGEASY Roam Case for AirPods 4", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories"}}}, {"category": "accessories", "title": "MAGEASY Roam Case for AirPods Pro 3", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories"}}}, {"category": "accessories", "title": "Ocean Band for Apple Watch 49mm with Black Titanium Finish", "prices": {"istore": {"price": 2399.0, "price_text": "R2 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "SwitchEasy Rugged Shield Case for AirPods 4", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories"}}}, {"category": "accessories", "title": "Switcheasy Artist Artisan Protective Case for AirPod 3", "prices": {"digicape": {"price": 399.0, "price_text": "From R399", "url": "https://www.digicape.co.za/category/airpods-accessories"}}}, {"category": "accessories", "title": "Switcheasy Odyssey Rugged Utility Protective Case for AirPod 3", "prices": {"digicape": {"price": 399.0, "price_text": "From R399", "url": "https://www.digicape.co.za/category/airpods-accessories"}}}, {"category": "accessories", "title": "Trail Loop for Apple Watch 49mm with Black Titanium Finish", "prices": {"istore": {"price": 2399.0, "price_text": "R2 399", "url": "https://www.istore.co.za/accessories"}}}, {"category": "accessories", "title": "Tucano Fine Zaino Doppio Vano Backpack for MacBook 16-inch/15-inch", "prices": {"istore": {"price": 1599.0, "price_text": "R1 599", "url": "https://www.istore.co.za/accessories"}}}, {"category": "iPad", "title": "Apple iPad 11-inch", "prices": {"incredible": {"price": 7499.0, "price_text": "R7,499", "url": "https://www.incredible.co.za/apple-ipad-11inch"}}}, {"category": "iPhone", "title": "Apple AirPods 4", "prices": {"istore": {"price": 2799.0, "price_text": "R2 799", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Apple HomePod (2nd Gen)", "prices": {"istore": {"price": 8179.0, "price_text": "R8 179", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Apple HomePod mini", "prices": {"istore": {"price": 2999.0, "price_text": "R2 999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Apple iPhone 17e Silicone Case with MagSafe", "prices": {"istore": {"price": 1399.0, "price_text": "R1 399", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Flex – All-Day Wireless Earphones", "prices": {"istore": {"price": 1599.0, "price_text": "R1 599", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Powerbeats Pro 2 High-Performance Earbuds", "prices": {"istore": {"price": 5499.0, "price_text": "R5 499", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17", "prices": {"istore": {"price": 2199.0, "price_text": "R2 199", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro", "prices": {"istore": {"price": 2199.0, "price_text": "R2 199", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Studio Buds + True Wireless Noise Cancelling Earbuds", "prices": {"istore": {"price": 3699.0, "price_text": "R3 699", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats Studio Pro Premium Wireless Noise Cancelling Headphones", "prices": {"istore": {"price": 7699.0, "price_text": "R7 699", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats USB-A to USB-C Woven Cable (1.5m)", "prices": {"istore": {"price": 549.0, "price_text": "R549", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Beats USB-C to Lightning Woven Cable (1.5 m)", "prices": {"istore": {"price": 549.0, "price_text": "R549", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Belkin Boostcharge Power Bank 10K Display - Pink", "prices": {"istore": {"price": 599.0, "price_text": "R599", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "JBL Flip 7 Portable Bluetooth Speaker", "prices": {"istore": {"price": 2499.0, "price_text": "R2 499", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "JBL Junior 320BT Wireless On-Ear Kids Headphones", "prices": {"istore": {"price": 599.0, "price_text": "R599", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "Sony WH- 1000XM6 Noise Cancelling Bluetooth Headphones - Pink", "prices": {"istore": {"price": 10999.0, "price_text": "R10 999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 16", "prices": {"istore": {"price": 13999.0, "price_text": "R13 999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 16e", "prices": {"istore": {"price": 11999.0, "price_text": "R11 999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 17 Pro", "prices": {"istore": {"price": 24999.0, "price_text": "R24 999", "url": "https://www.istore.co.za/iphone"}}}, {"category": "iPhone", "title": "iPhone 17e", "prices": {"istore": {"price": 14599.0, "price_text": "R14 599", "url": "https://www.istore.co.za/iphone"}, "incredible": {"price": 14599.0, "price_text": "R14,599", "url": "https://www.incredible.co.za/apple-iphone-17e"}}}, {"category": "iPhone", "title": "iPhone Air", "prices": {"istore": {"price": 19999.0, "price_text": "R19 999", "url": "https://www.istore.co.za/iphone"}, "incredible": {"price": 25999.0, "price_text": "R25,999", "url": "https://www.incredible.co.za/apple-iphone-air"}}}]};
+const FALLBACK_DATA = {"generated_at": "2026-08-19T12:29:43Z", "baseline_retailer": "digicape", "retailer_labels": {"digicape": "Digicape", "takealot": "Takealot", "amazon": "Amazon SA", "incredible": "Incredible Connection", "istore": "iStore"}, "items": [{"category": "Accessories", "title": "MAGEASY Roam Case for AirPods 4", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories", "stale": false}}}, {"category": "Accessories", "title": "MAGEASY Roam Case for AirPods Pro 3", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories", "stale": false}}}, {"category": "Accessories", "title": "SwitchEasy Rugged Shield Case for AirPods 4", "prices": {"digicape": {"price": 499.0, "price_text": "From R499", "url": "https://www.digicape.co.za/category/airpods-accessories", "stale": false}}}, {"category": "Accessories", "title": "Switcheasy Artist Artisan Protective Case for AirPod 3", "prices": {"digicape": {"price": 399.0, "price_text": "From R399", "url": "https://www.digicape.co.za/category/airpods-accessories", "stale": false}}}, {"category": "Accessories", "title": "Switcheasy Odyssey Rugged Utility Protective Case for AirPod 3", "prices": {"digicape": {"price": 399.0, "price_text": "From R399", "url": "https://www.digicape.co.za/category/airpods-accessories", "stale": false}}}]};
 
 let DATA = null;
+let USING_FALLBACK = false;
 
-function fmt(n) { return "R" + n.toLocaleString("en-ZA"); }
-
-function setStatus(kind, text) {
-  const dot = document.getElementById("status-dot");
-  const label = document.getElementById("status-text");
-  dot.className = "status-dot " + kind;
-  label.textContent = text;
-}
-
-function showNotice(kind, html) {
-  const slot = document.getElementById("notice-slot");
-  slot.innerHTML = `<div class="notice ${kind === "err" ? "err" : ""}">
-    <span class="icon">${kind === "err" ? "&#9888;" : "&#8505;"}</span>
-    <div>${html}</div>
-  </div>`;
-}
+function fmt(n) { return "R" + Math.round(n).toLocaleString("en-ZA"); }
 
 async function loadData() {
-  // Absolute raw.githubusercontent.com URL rather than a relative path —
-  // this page may be opened via GitHub Pages (site root = docs/), via
-  // file:// after downloading it, or via a raw-HTML preview proxy, and a
-  // relative "data/prices.json" would resolve differently (or not at all)
-  // in each case. raw.githubusercontent.com also sends permissive CORS
-  // headers, so this fetch works regardless of what origin served this
-  // HTML file itself. Cache-bust so a reload always asks GitHub for the
-  // latest committed file rather than a browser- or CDN-cached copy.
   const url = `https://raw.githubusercontent.com/cd5wtsnct4-bot/digicape/main/data/prices.json?_=${Date.now()}`;
   try {
     const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
-    DATA = json;
-    const when = new Date(json.generated_at).toLocaleString("en-ZA", { dateStyle: "medium", timeStyle: "short" });
-    setStatus("ok", `Live — data last refreshed ${when}`);
+    DATA = await res.json();
+    USING_FALLBACK = false;
   } catch (err) {
     DATA = FALLBACK_DATA;
-    setStatus("warn", "Showing a built-in fallback snapshot — live data/prices.json could not be loaded");
-    showNotice("warn", `<strong>Couldn't load live data (${err.message}).</strong> This usually means the
-      GitHub Actions workflow hasn't run yet, or this page is being opened from somewhere other than
-      GitHub Pages / raw.githubusercontent.com where a relative fetch of <code>data/prices.json</code>
-      won't resolve. Showing the snapshot that was baked into this page when it was built instead.`);
+    USING_FALLBACK = true;
+    document.getElementById("fallback-notice").innerHTML = `
+      <div class="wrap" style="padding-top:1rem;">
+        <p style="background:var(--caution-soft);color:var(--caution);border-radius:8px;padding:0.7rem 1rem;font-size:0.85rem;font-family:'IBM Plex Mono',monospace;">
+          Couldn't load live data (${err.message}) — showing the snapshot baked into this page when it was built.
+        </p>
+      </div>`;
   }
   render();
 }
 
-function render() {
-  const categories = ["All", ...Array.from(new Set(DATA.items.map(i => i.category)))];
-  let activeCategory = "All";
+/** Build the per-product retailer matrix: baseline (Digicape) price plus
+ * every competitor's price, status, and computed delta/deal/cheapest flag
+ * versus baseline. Ports the reference PHP app's dpw_build_matrix(). */
+function buildMatrix(data) {
+  const baseline = data.baseline_retailer || "digicape";
+  const retailerOrder = Object.keys(data.retailer_labels || {});
 
-  const legendEl = document.getElementById("legend");
-  legendEl.innerHTML = "";
-  Object.keys(RETAILER_META).forEach(key => {
-    if (!DATA.items.some(i => i.prices[key])) return;
-    const el = document.createElement("div");
-    el.className = "legend-item";
-    el.innerHTML = `<span class="legend-dot" style="background:${RETAILER_META[key].color}"></span>${RETAILER_META[key].label}`;
-    legendEl.appendChild(el);
-  });
+  return data.items.map(item => {
+    const baselineCellRaw = item.prices[baseline];
+    const baselinePrice = (baselineCellRaw && !baselineCellRaw.stale) ? baselineCellRaw.price : null;
 
-  function renderTabs() {
-    const tabsEl = document.getElementById("tabs");
-    tabsEl.innerHTML = "";
-    categories.forEach(cat => {
-      const btn = document.createElement("button");
-      btn.className = "tab" + (cat === activeCategory ? " active" : "");
-      const count = cat === "All" ? DATA.items.length : DATA.items.filter(i => i.category === cat).length;
-      btn.textContent = `${cat} (${count})`;
-      btn.onclick = () => { activeCategory = cat; renderTabs(); renderGrid(); };
-      tabsEl.appendChild(btn);
+    const cells = {};
+    retailerOrder.forEach(retailer => {
+      const isBaseline = retailer === baseline;
+      const raw = item.prices[retailer];
+      const cell = {
+        retailer, isBaseline,
+        price: null, status: "unavailable",
+        variantNote: raw && raw.note ? raw.note : null,
+        url: raw ? raw.url : null,
+        delta: null, isDeal: false, isCheapest: false,
+      };
+      if (raw && typeof raw.price === "number") {
+        cell.price = raw.price;
+        cell.status = raw.stale ? "stale" : "ok";
+        if (!isBaseline && baselinePrice !== null && cell.status === "ok") {
+          cell.delta = baselinePrice - cell.price;
+          cell.isDeal = cell.delta > 0 && !cell.variantNote;
+        }
+      }
+      cells[retailer] = cell;
     });
-  }
 
-  function renderGrid() {
-    const gridEl = document.getElementById("grid");
-    gridEl.innerHTML = "";
-    const items = activeCategory === "All" ? DATA.items : DATA.items.filter(i => i.category === activeCategory);
-
-    if (!items.length) {
-      gridEl.innerHTML = `<div class="empty-state">No products in this category yet.</div>`;
-      return;
+    let lowest = null;
+    Object.values(cells).forEach(c => {
+      if (c.status !== "ok" || c.price === null || c.variantNote) return;
+      if (lowest === null || c.price < lowest) lowest = c.price;
+    });
+    if (lowest !== null) {
+      Object.values(cells).forEach(c => {
+        c.isCheapest = c.status === "ok" && c.price !== null && !c.variantNote && Math.abs(c.price - lowest) < 0.01;
+      });
     }
 
-    items.forEach(item => {
-      const card = document.createElement("div");
-      card.className = "card";
+    return { category: item.category, title: item.title, baselinePrice, cells, retailerOrder };
+  });
+}
 
-      const title = document.createElement("div");
-      title.className = "card-title";
-      title.textContent = item.title;
-      card.appendChild(title);
-
-      const retailerKeys = Object.keys(RETAILER_META).filter(k => item.prices[k]);
-      const validPrices = retailerKeys.map(k => item.prices[k].price).filter(p => typeof p === "number");
-      const minPrice = validPrices.length ? Math.min(...validPrices) : null;
-      const tie = validPrices.filter(p => p === minPrice).length > 1;
-
-      retailerKeys.forEach(key => {
-        const entry = item.prices[key];
-        const row = document.createElement("div");
-        const isBest = minPrice !== null && entry.price === minPrice && !tie && validPrices.length > 1;
-        row.className = "row" + (isBest ? " best" : "");
-
-        const left = document.createElement("div");
-        left.className = "row-retailer";
-        left.innerHTML = `<span class="row-dot" style="background:${RETAILER_META[key].color}"></span>${RETAILER_META[key].label}`;
-        if (isBest) left.innerHTML += `<span class="best-badge">Best</span>`;
-        row.appendChild(left);
-
-        const right = document.createElement("div");
-        if (typeof entry.price === "number") {
-          const a = document.createElement("a");
-          a.className = "row-price";
-          a.style.color = "inherit";
-          a.style.textDecoration = "none";
-          a.textContent = fmt(entry.price);
-          if (entry.url) { a.href = entry.url; a.target = "_blank"; a.rel = "noopener"; }
-          right.appendChild(a);
-        } else {
-          const na = document.createElement("div");
-          na.className = "row-na";
-          na.textContent = "no data";
-          right.appendChild(na);
-        }
-        row.appendChild(right);
-        card.appendChild(row);
-      });
-
-      gridEl.appendChild(card);
+function topDeals(matrix, limit = 20) {
+  const deals = [];
+  matrix.forEach(p => {
+    let best = null;
+    Object.values(p.cells).forEach(c => {
+      if (c.isDeal && (best === null || c.delta > best.delta)) best = c;
     });
-  }
+    if (best) deals.push({ ...best, productName: p.title, category: p.category, baselinePrice: p.baselinePrice });
+  });
+  deals.sort((a, b) => b.delta - a.delta);
+  return deals.slice(0, limit);
+}
 
-  renderTabs();
-  renderGrid();
+function retailerLabel(slug, labels) { return labels[slug] || slug; }
+
+function renderDeals(matrix, labels) {
+  const deals = topDeals(matrix);
+  const comparable = matrix.length;
+  const dealCount = matrix.filter(p => Object.values(p.cells).some(c => c.isDeal)).length;
+  document.getElementById("deals-note").textContent =
+    `${dealCount} of ${comparable} comparable products have at least one cheaper alternative right now · sorted by rand saved`;
+
+  const body = document.getElementById("deals-body");
+  if (!deals.length) {
+    body.innerHTML = `<p class="empty-state">No deals found yet — either every tracked product is priced at or below Digicape, or the scraper hasn't completed a run.</p>`;
+    return;
+  }
+  const scroll = document.createElement("div");
+  scroll.className = "ticket-scroll";
+  deals.forEach(d => {
+    const t = document.createElement("div");
+    t.className = "ticket";
+    t.innerHTML = `
+      <p class="t-cat">${escapeHtml(d.category)}</p>
+      <p class="t-name">${escapeHtml(d.productName)}</p>
+      <p class="t-best-label">Best price · ${escapeHtml(retailerLabel(d.retailer, labels))}</p>
+      <p class="t-price">${fmt(d.price)}</p>
+      <p class="t-retailer">vs Digicape</p>
+      <p class="t-dc">Digicape: <s>${fmt(d.baselinePrice)}</s></p>
+      <span class="t-save">Save ${fmt(d.delta)}</span>`;
+    scroll.appendChild(t);
+  });
+  body.innerHTML = "";
+  body.appendChild(scroll);
+}
+
+function escapeHtml(s) {
+  const div = document.createElement("div");
+  div.textContent = s == null ? "" : String(s);
+  return div.innerHTML;
+}
+
+function renderCard(product, labels) {
+  const card = document.createElement("article");
+  card.className = "product-card";
+  card.dataset.search = `${product.category} ${product.title}`.toLowerCase();
+
+  const head = document.createElement("header");
+  head.className = "product-card-head";
+  head.innerHTML = `<span class="product-category">${escapeHtml(product.category)}</span><h3>${escapeHtml(product.title)}</h3>`;
+  card.appendChild(head);
+
+  const storePrices = document.createElement("div");
+  storePrices.className = "store-prices";
+
+  product.retailerOrder.forEach(retailer => {
+    const cell = product.cells[retailer];
+    const row = document.createElement("div");
+    let cls = "store-price";
+    if (cell.isBaseline) cls += " reference";
+    if (cell.isDeal) cls += " best-deal";
+    if (cell.isCheapest) cls += " cheapest";
+    if (cell.status === "stale") cls += " stale";
+    row.className = cls;
+
+    const nameSpan = document.createElement("span");
+    nameSpan.className = "store-name";
+    nameSpan.innerHTML = escapeHtml(retailerLabel(retailer, labels)) + (cell.isBaseline ? " <small>reference</small>" : "");
+    row.appendChild(nameSpan);
+
+    if (cell.status === "stale") {
+      row.innerHTML += `<strong>${fmt(cell.price)}</strong><span class="stale-label">last known</span>`;
+    } else if (cell.status !== "ok") {
+      row.innerHTML += `<strong class="not-available">Unavailable</strong>`;
+    } else {
+      let extra = `<strong>${fmt(cell.price)}</strong>`;
+      if (cell.isCheapest) extra += `<span class="cheapest-badge">Cheapest</span>`;
+      if (cell.isBaseline) {
+        extra += `<span class="card-variance current">Current Digicape price</span>`;
+      } else if (cell.variantNote) {
+        extra += `<span class="card-variance mismatch" title="${escapeHtml(cell.variantNote)}">Different variant</span>`;
+      } else if (cell.isDeal) {
+        extra += `<span class="card-variance cheaper">Save ${fmt(cell.delta)}</span>`;
+      } else if (product.baselinePrice !== null && cell.delta !== null && cell.delta < 0) {
+        extra += `<span class="card-variance dearer">${fmt(-cell.delta)} more</span>`;
+      } else if (product.baselinePrice !== null && cell.delta === 0) {
+        extra += `<span class="card-variance same">Same price</span>`;
+      }
+      row.innerHTML += extra;
+    }
+    storePrices.appendChild(row);
+  });
+
+  card.appendChild(storePrices);
+  return card;
+}
+
+function renderProductGroups(matrix, labels) {
+  const groups = {};
+  GROUP_ORDER.forEach(g => groups[g] = []);
+  matrix.forEach(p => groups[GROUP_FOR_CATEGORY(p.category)].push(p));
+
+  const container = document.getElementById("product-groups");
+  container.innerHTML = "";
+  GROUP_ORDER.forEach(groupName => {
+    const products = groups[groupName];
+    if (!products.length) return;
+    const details = document.createElement("details");
+    details.className = "product-group";
+    const summary = document.createElement("summary");
+    summary.innerHTML = `<span>${escapeHtml(groupName)}</span><small>${products.length} products</small>`;
+    details.appendChild(summary);
+    const grid = document.createElement("div");
+    grid.className = "product-grid";
+    products.forEach(p => grid.appendChild(renderCard(p, labels)));
+    details.appendChild(grid);
+    container.appendChild(details);
+  });
+}
+
+function wireSearch() {
+  const input = document.getElementById("product-filter");
+  const countEl = document.getElementById("filter-count");
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    const cards = Array.from(document.querySelectorAll(".product-card"));
+    let visible = 0;
+    cards.forEach(card => {
+      const show = !query || (card.dataset.search || "").indexOf(query) !== -1;
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    });
+    document.querySelectorAll(".product-group").forEach(group => {
+      const matches = Array.from(group.querySelectorAll(".product-card")).filter(c => c.style.display !== "none").length;
+      group.style.display = (!query || matches > 0) ? "" : "none";
+      if (query && matches > 0) group.open = true;
+    });
+    countEl.textContent = query ? `${visible} matching products` : "";
+  });
+}
+
+function render() {
+  const labels = DATA.retailer_labels || {};
+  const matrix = buildMatrix(DATA);
+
+  document.getElementById("dek").textContent =
+    `Tracking ${matrix.length} Apple products against Digicape's shelf price across four other South African retailers, live-scraped and flagging every product where someone else is cheaper.`;
+
+  const generatedAt = DATA.generated_at ? new Date(DATA.generated_at) : null;
+  const lastCheckedLabel = generatedAt
+    ? generatedAt.toLocaleString("en-ZA", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) + " UTC"
+    : "unknown";
+  document.getElementById("last-checked").textContent = lastCheckedLabel;
+  if (USING_FALLBACK) document.getElementById("meta-row").classList.add("warn");
+
+  renderDeals(matrix, labels);
+  renderProductGroups(matrix, labels);
+  wireSearch();
+
+  const scheduleEl = document.getElementById("schedule-line");
+  scheduleEl.textContent = `Scheduled every 6 hours via GitHub Actions. Last run: ${lastCheckedLabel}` +
+    (USING_FALLBACK ? " — showing built-in fallback, live data unavailable." : `. ${matrix.length} products currently have a fresh Digicape reference price.`);
+  if (USING_FALLBACK) scheduleEl.classList.add("stale");
 }
 
 loadData();

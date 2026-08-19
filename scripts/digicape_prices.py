@@ -190,9 +190,26 @@ def scrape_listing(category, path):
 
     print(f"[{category}] matched {len(cards)} cards using selector: {used_selector}")
     results = []
+    price_selector_misses = 0
     for card in cards:
         name = first_match(card, NAME_SELECTORS)
         price_text = first_match(card, PRICE_SELECTORS)
+        if not price_text:
+            # PRODUCT_SELECTORS / NAME_SELECTORS can match while
+            # PRICE_SELECTORS misses — the card element itself was found (so
+            # the name comes through fine) but Digicape's price markup uses
+            # a class name outside PRICE_SELECTORS's guesses. Rather than
+            # silently returning a name with no price (which is what was
+            # happening — 45/45 rows fetched, 0 with a usable price), fall
+            # back to scanning this card's own text nodes for a price-shaped
+            # string. This is scoped to the single card, so it can't pick up
+            # an unrelated price elsewhere on the page.
+            price_selector_misses += 1
+            for chunk in card.css("*::text").getall():
+                stripped = chunk.strip()
+                if stripped and PRICE_REGEX.search(stripped):
+                    price_text = stripped
+                    break
         if not name and not price_text:
             continue
         results.append({
@@ -205,6 +222,11 @@ def scrape_listing(category, path):
             "old_price": None,
             "url": url,
         })
+    if price_selector_misses:
+        recovered = sum(1 for r in results if r["price"] is not None)
+        print(f"[{category}] PRICE_SELECTORS missed on {price_selector_misses}/{len(cards)} cards; "
+              f"per-card text fallback recovered a price for {recovered} of those. If that recovered "
+              f"count is still 0, run --dump-html {category} and update PRICE_SELECTORS for real.")
     return results
 
 
