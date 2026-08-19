@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T11:19:46Z",
+  "generated_at": "2026-08-19T11:47:31Z",
   "retailer_labels": {
     "digicape": "Digicape",
     "istore": "iStore",
@@ -8,104 +8,210 @@
   "items": [
     {
       "category": "AirPods",
-      "title": "AirPods 4",
+      "title": "AirPods Accessories",
       "prices": {
-        "digicape": {
-          "price": 2799,
-          "price_text": "From R2,799",
-          "url": "https://www.digicape.co.za/category/airpods-all"
-        },
         "istore": {
-          "price": 2799,
-          "price_text": "From R2,799",
+          "price": 299.0,
+          "price_text": "R299",
           "url": "https://www.istore.co.za/airpods"
         }
       }
     },
     {
       "category": "AirPods",
-      "title": "AirPods 4 with Active Noise Cancellation",
+      "title": "Apple AirPods 4",
       "prices": {
-        "digicape": {
-          "price": 3699,
-          "price_text": "From R3,699",
-          "url": "https://www.digicape.co.za/category/airpods-all"
-        }
-      }
-    },
-    {
-      "category": "AirPods",
-      "title": "AirPods Max",
-      "prices": {
-        "digicape": {
-          "price": 11999,
-          "price_text": "From R11,999",
-          "url": "https://www.digicape.co.za/category/airpods-all"
-        }
-      }
-    },
-    {
-      "category": "AirPods",
-      "title": "AirPods Max 2",
-      "prices": {
-        "digicape": {
-          "price": 11499,
-          "price_text": "From R11,499",
-          "url": "https://www.digicape.co.za/category/airpods-all"
-        },
         "istore": {
-          "price": 11499,
-          "price_text": "From R11,499",
+          "price": 2799.0,
+          "price_text": "R2 799",
           "url": "https://www.istore.co.za/airpods"
         }
       }
     },
     {
       "category": "AirPods",
-      "title": "AirPods Pro 3",
+      "title": "Apple AirPods Max 2",
       "prices": {
-        "digicape": {
-          "price": 5099,
-          "price_text": "From R5,099",
-          "url": "https://www.digicape.co.za/category/airpods-all"
-        },
         "istore": {
-          "price": 5399,
-          "price_text": "From R5,399",
+          "price": 11499.0,
+          "price_text": "R11 499",
           "url": "https://www.istore.co.za/airpods"
         }
       }
     },
     {
-      "category": "Apple TV",
-      "title": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
+      "category": "AirPods",
+      "title": "Apple AirPods Pro 3",
       "prices": {
-        "digicape": {
-          "price": 5249,
-          "price_text": "From R5,249",
-          "url": "https://www.digicape.co.za/category/apple-tv"
+        "istore": {
+          "price": 5399.0,
+          "price_text": "R5 399",
+          "url": "https://www.istore.co.za/airpods"
         }
       }
     },
     {
-      "category": "Apple TV",
-      "title": "Apple TV 4K 64Gb Wifi (3rd Gen, 2022)",
+      "category": "Apple (Takealot promo)",
+      "title": "Apple AirPods 4",
       "prices": {
-        "digicape": {
-          "price": 4199,
-          "price_text": "From R4,199",
-          "url": "https://www.digicape.co.za/category/apple-tv"
+        "takealot": {
+          "price": 2399.0,
+          "price_text": "R 2,399",
+          "url": ""
         }
       }
     },
     {
-      "category": "Apple TV",
-      "title": "Apple TV Siri Remote",
+      "category": "Apple (Takealot promo)",
+      "title": "Apple AirPods 4 with Active Noise Cancellation",
       "prices": {
-        "digicape": {
-          "price": 1399,
-          "price_text": "From R1,399",
-          "url": "https://www.digicape.co.za/category/apple-tv"
+        "takealot": {
+          "price": 3999.0,
+          "price_text": "R 3,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple AirPods Max 2",
+      "prices": {
+        "takealot": {
+          "price": 13645.0,
+          "price_text": "R 13,645",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple AirPods Pro 3",
+      "prices": {
+        "takealot": {
+          "price": 5299.0,
+          "price_text": "R 5,299",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple Lightning Digital AV Adapter",
+      "prices": {
+        "takealot": {
+          "price": 1199.0,
+          "price_text": "R 1,199",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
+      "prices": {
+        "takealot": {
+          "price": 13999.0,
+          "price_text": "R 13,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
+      "prices": {
+        "takealot": {
+          "price": 15999.0,
+          "price_text": "R 15,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 83499.0,
+          "price_text": "R 83,499",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 14\" M5 Pro 15 core CPU and 16 core GPU, 24GB, 1TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 86999.0,
+          "price_text": "R 86,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 99999.0,
+          "price_text": "R 99,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 48GB RAM 1TB SSD",
+      "prices": {
+        "takealot": {
+          "price": 71499.0,
+          "price_text": "R 71,499",
+          "url": ""
+        }
+      }
+    },
+    {
+      "category": "Apple (Takealot promo)",
+      "title": "Apple Siri Remote",
+      "prices": {
+        "takealot": {
+          "price": 1499.0,
+          "price_text": "R 1,499",
+          "url": ""
         }
       }
     },
@@ -113,14 +219,9 @@
       "category": "Mac",
       "title": "13-inch MacBook Air M5",
       "prices": {
-        "digicape": {
-          "price": 26399,
-          "price_text": "From R26,399",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        },
         "istore": {
-          "price": 26499,
-          "price_text": "From R26,499",
+          "price": 26499.0,
+          "price_text": "R26 499",
           "url": "https://www.istore.co.za/mac"
         }
       }
@@ -129,75 +230,175 @@
       "category": "Mac",
       "title": "14-inch MacBook Pro M5",
       "prices": {
-        "digicape": {
-          "price": 40699,
-          "price_text": "From R40,699",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        },
         "istore": {
-          "price": 40799,
-          "price_text": "From R40,799",
+          "price": 40799.0,
+          "price_text": "R40 799",
           "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
       "category": "Mac",
-      "title": "Mac Studio (M3 Ultra chip)",
+      "title": "14-inch MacBook Pro M5 Pro / M5 Max",
       "prices": {
-        "digicape": {
-          "price": 107899,
-          "price_text": "From R107,899",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac Studio (M4 Max chip)",
-      "prices": {
-        "digicape": {
-          "price": 50899,
-          "price_text": "From R50,899",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac mini (M4 Pro chip)",
-      "prices": {
-        "digicape": {
-          "price": 32499,
-          "price_text": "From R32,499",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac mini M4",
-      "prices": {
-        "digicape": {
-          "price": 20399,
-          "price_text": "From R20,399",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        },
         "istore": {
-          "price": 24499,
-          "price_text": "From R24,499",
+          "price": 50999.0,
+          "price_text": "R50 999",
           "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
       "category": "Mac",
-      "title": "MacBook Air 15-inch (M5 chip)",
+      "title": "15-inch MacBook Air M5",
       "prices": {
-        "digicape": {
-          "price": 30499,
-          "price_text": "From R30,499",
-          "url": "https://www.digicape.co.za/category/mac-all"
+        "istore": {
+          "price": 30599.0,
+          "price_text": "R30 599",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "16-inch MacBook Pro M5 Pro / M5 Max",
+      "prices": {
+        "istore": {
+          "price": 61199.0,
+          "price_text": "R61 199",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Apple HomePod mini",
+      "prices": {
+        "istore": {
+          "price": 2999.0,
+          "price_text": "R2 999",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Apple Studio Display",
+      "prices": {
+        "istore": {
+          "price": 45199.0,
+          "price_text": "R45 199",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Apple Studio Display XDR",
+      "prices": {
+        "istore": {
+          "price": 81999.0,
+          "price_text": "R81 999",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Beats Flex – All-Day Wireless Earphones",
+      "prices": {
+        "istore": {
+          "price": 1599.0,
+          "price_text": "R1 599",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Beats Powerbeats Pro 2 High-Performance Earbuds",
+      "prices": {
+        "istore": {
+          "price": 5499.0,
+          "price_text": "R5 499",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Beats Studio Buds + True Wireless Noise Cancelling Earbuds",
+      "prices": {
+        "istore": {
+          "price": 3699.0,
+          "price_text": "R3 699",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Beats Studio Pro Premium Wireless Noise Cancelling Headphones",
+      "prices": {
+        "istore": {
+          "price": 7699.0,
+          "price_text": "R7 699",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Beats USB-C to Lightning Woven Cable (1.5 m)",
+      "prices": {
+        "istore": {
+          "price": 549.0,
+          "price_text": "R549",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Harman Kardon Luna 2 Portable Bluetooth Speaker - Black",
+      "prices": {
+        "istore": {
+          "price": 3699.0,
+          "price_text": "R3 699",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac Studio | Apple M3 Ultra | 60‑core GPU | 1TB",
+      "prices": {
+        "istore": {
+          "price": 107999.0,
+          "price_text": "R107 999",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac Studio | Apple M4 Max | 32‑core GPU | 512GB",
+      "prices": {
+        "istore": {
+          "price": 50999.0,
+          "price_text": "R50 999",
+          "url": "https://www.istore.co.za/mac"
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac mini | Apple M4",
+      "prices": {
+        "istore": {
+          "price": 24499.0,
+          "price_text": "R24 499",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
@@ -205,228 +406,141 @@
       "category": "Mac",
       "title": "MacBook Neo",
       "prices": {
-        "digicape": {
-          "price": 13899,
-          "price_text": "From R13,899",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        },
         "istore": {
-          "price": 13999,
-          "price_text": "From R13,999",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
       "category": "Mac",
-      "title": "MacBook Pro 16-inch (M5 chip)",
+      "title": "MacBook Pro 16-inch | Apple M4",
       "prices": {
-        "digicape": {
-          "price": 61099,
-          "price_text": "From R61,099",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "iMac 24-inch M4",
-      "prices": {
-        "digicape": {
-          "price": 34199,
-          "price_text": "From R34,199",
-          "url": "https://www.digicape.co.za/category/mac-all"
-        },
         "istore": {
-          "price": 34299,
-          "price_text": "From R34,299",
+          "price": 52999.0,
+          "price_text": "R52 999",
           "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
-      "category": "Watch",
-      "title": "Apple Watch SE 3 Sport Band",
-      "prices": {
-        "digicape": {
-          "price": 5699,
-          "price_text": "From R5,699",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch SE3",
+      "category": "Mac",
+      "title": "Satechi Slim LX Wired Mouse - Silver",
       "prices": {
         "istore": {
-          "price": 5799,
-          "price_text": "From R5,799",
-          "url": "https://www.istore.co.za/watch"
+          "price": 499.0,
+          "price_text": "R499",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
-      "category": "Watch",
-      "title": "Apple Watch Series 10 GPS+Cellular 42mm",
+      "category": "Mac",
+      "title": "Satechi Slim LX3 Wired Keyboard - Silver",
       "prices": {
         "istore": {
-          "price": 8999.0,
-          "price_text": "R8,999",
-          "url": "https://www.istore.co.za/"
+          "price": 899.0,
+          "price_text": "R899",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
-      "category": "Watch",
-      "title": "Apple Watch Series 11",
+      "category": "Mac",
+      "title": "Tucano Fine Zaino Doppio Vano Backpack for MacBook 16-inch/15-inch",
       "prices": {
         "istore": {
-          "price": 9399,
-          "price_text": "From R9,399",
-          "url": "https://www.istore.co.za/watch"
+          "price": 1599.0,
+          "price_text": "R1 599",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
-      "category": "Watch",
-      "title": "Apple Watch Series 11 Milanese Loop",
-      "prices": {
-        "digicape": {
-          "price": 18299,
-          "price_text": "From R18,299",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Series 11 Sport Band",
-      "prices": {
-        "digicape": {
-          "price": 9199,
-          "price_text": "From R9,199",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3",
+      "category": "Mac",
+      "title": "iMac 24-inch | Apple M4",
       "prices": {
         "istore": {
-          "price": 18799,
-          "price_text": "From R18,799",
-          "url": "https://www.istore.co.za/watch"
+          "price": 34299.0,
+          "price_text": "R34 299",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Alpine Loop",
+      "category": "Mac",
+      "title": "iMac 24-inch | Apple M4 | Nano-Texture Glass | 256GB SSD - Silver",
       "prices": {
-        "digicape": {
-          "price": 19499,
-          "price_text": "From R19,499",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Milanese Loop",
-      "prices": {
-        "digicape": {
-          "price": 21999,
-          "price_text": "From R21,999",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Ocean Band",
-      "prices": {
-        "digicape": {
-          "price": 19499,
-          "price_text": "From R19,499",
-          "url": "https://www.digicape.co.za/category/watch-all"
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Trail Loop",
-      "prices": {
-        "digicape": {
-          "price": 19499,
-          "price_text": "From R19,499",
-          "url": "https://www.digicape.co.za/category/watch-all"
+        "istore": {
+          "price": 43499.0,
+          "price_text": "R43 499",
+          "url": "https://www.istore.co.za/mac"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Adonit SE 2 Stylus - White",
+      "title": "Apple AirPods 4",
       "prices": {
         "istore": {
-          "price": 699,
-          "price_text": "From R699",
+          "price": 2799.0,
+          "price_text": "R2 799",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "AirTag (2nd Gen) - 1 Pack",
+      "title": "Apple Smart Folio for iPad (A16)",
       "prices": {
         "istore": {
-          "price": 669,
-          "price_text": "From R669",
+          "price": 2299.0,
+          "price_text": "R2 299",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Apple 20W USB-C Power Adapter",
+      "title": "Apple Watch Nike Sport Band",
       "prices": {
         "istore": {
-          "price": 399,
-          "price_text": "From R399",
+          "price": 499.0,
+          "price_text": "R499",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Apple 70W USB-C Power Adapter",
+      "title": "Apple Watch Sport Band",
       "prices": {
         "istore": {
-          "price": 1499,
-          "price_text": "From R1,499",
+          "price": 1199.0,
+          "price_text": "R1 199",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Apple EarPods with USB-C Connector",
+      "title": "Apple Watch Sport Loop",
       "prices": {
         "istore": {
-          "price": 459,
-          "price_text": "From R459",
+          "price": 1199.0,
+          "price_text": "R1 199",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Apple Lightning to USB-C 1m Cable",
+      "title": "Apple iPhone 17 Pro Max Silicone Case with MagSafe",
       "prices": {
         "istore": {
-          "price": 499,
-          "price_text": "From R499",
+          "price": 1399.0,
+          "price_text": "R1 399",
           "url": "https://www.istore.co.za/accessories"
         }
       }
@@ -436,8 +550,41 @@
       "title": "Apple iPhone 17 Pro Silicone Case with MagSafe",
       "prices": {
         "istore": {
-          "price": 1399,
-          "price_text": "From R1,399",
+          "price": 1399.0,
+          "price_text": "R1 399",
+          "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Apple iPhone 17 Silicone Case with MagSafe",
+      "prices": {
+        "istore": {
+          "price": 1399.0,
+          "price_text": "R1 399",
+          "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Apple iPhone 17e Silicone Case with MagSafe",
+      "prices": {
+        "istore": {
+          "price": 1399.0,
+          "price_text": "R1 399",
+          "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Beats Pill Wireless Bluetooth Speaker",
+      "prices": {
+        "istore": {
+          "price": 3599.0,
+          "price_text": "R3 599",
           "url": "https://www.istore.co.za/accessories"
         }
       }
@@ -447,8 +594,8 @@
       "title": "Beats Powerbeats Pro 2 High-Performance Earbuds",
       "prices": {
         "istore": {
-          "price": 5499,
-          "price_text": "From R5,499",
+          "price": 5499.0,
+          "price_text": "R5 499",
           "url": "https://www.istore.co.za/accessories"
         }
       }
@@ -458,41 +605,52 @@
       "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17",
       "prices": {
         "istore": {
-          "price": 2199,
-          "price_text": "From R2,199",
+          "price": 2199.0,
+          "price_text": "R2 199",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Belkin BoostCharge 20,000 mAh 3-Port 65W Power Bank",
+      "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
       "prices": {
         "istore": {
-          "price": 1699,
-          "price_text": "From R1,699",
+          "price": 2199.0,
+          "price_text": "R2 199",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Belkin BoostCharge USB-C to Lightning Cable - White",
+      "title": "Beats Solo 4 Wireless On-Ear Headphones",
       "prices": {
         "istore": {
-          "price": 399,
-          "price_text": "From R399",
+          "price": 4399.0,
+          "price_text": "R4 399",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "DJI Mic Mini 2 (2 TX + 1 RX + Charging Case)",
+      "title": "Beats USB-A to USB-C Woven Cable (1.5m)",
       "prices": {
         "istore": {
-          "price": 1799,
-          "price_text": "From R1,799",
+          "price": 549.0,
+          "price_text": "R549",
+          "url": "https://www.istore.co.za/accessories"
+        }
+      }
+    },
+    {
+      "category": "accessories",
+      "title": "Beats USB-C to USB-C Woven Cable (1.5 m)",
+      "prices": {
+        "istore": {
+          "price": 549.0,
+          "price_text": "R549",
           "url": "https://www.istore.co.za/accessories"
         }
       }
@@ -502,234 +660,240 @@
       "title": "JBL Flip 7 Portable Bluetooth Speaker",
       "prices": {
         "istore": {
-          "price": 2499,
-          "price_text": "From R2,499",
+          "price": 2499.0,
+          "price_text": "R2 499",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Moov Clear Glass Screen Guard for iPhone 17 Pro",
+      "title": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
       "prices": {
         "istore": {
-          "price": 399,
-          "price_text": "From R399",
+          "price": 599.0,
+          "price_text": "R599",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Moov ClearSafe Matte Case for MacBook Air 13-inch - Abstract Flowers",
+      "title": "Ocean Band for Apple Watch 49mm with Black Titanium Finish",
       "prices": {
         "istore": {
-          "price": 499,
-          "price_text": "From R499",
+          "price": 2399.0,
+          "price_text": "R2 399",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Moov Glass Screen Protector for iPad A16/10th Gen",
+      "title": "Trail Loop for Apple Watch 49mm with Black Titanium Finish",
       "prices": {
         "istore": {
-          "price": 699,
-          "price_text": "From R699",
+          "price": 2399.0,
+          "price_text": "R2 399",
           "url": "https://www.istore.co.za/accessories"
         }
       }
     },
     {
       "category": "accessories",
-      "title": "Sonos Play Versatile Smart Speaker - Black",
+      "title": "Tucano Fine Zaino Doppio Vano Backpack for MacBook 16-inch/15-inch",
       "prices": {
         "istore": {
-          "price": 7999,
-          "price_text": "From R7,999",
+          "price": 1599.0,
+          "price_text": "R1 599",
           "url": "https://www.istore.co.za/accessories"
-        }
-      }
-    },
-    {
-      "category": "accessories",
-      "title": "Tucano Fold Backpack for 16-inch MacBook - Black",
-      "prices": {
-        "istore": {
-          "price": 1599,
-          "price_text": "From R1,599",
-          "url": "https://www.istore.co.za/accessories"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad 11-inch (A16 chip)",
-      "prices": {
-        "digicape": {
-          "price": 8699,
-          "price_text": "From R8,699",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad A16",
-      "prices": {
-        "istore": {
-          "price": 8799,
-          "price_text": "From R8,799",
-          "url": "https://www.istore.co.za/ipad"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 11-inch (M3 chip)",
-      "prices": {
-        "digicape": {
-          "price": 15899,
-          "price_text": "From R15,899",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 11-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 15199,
-          "price_text": "From R15,199",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 13-inch (M2 chip)",
-      "prices": {
-        "digicape": {
-          "price": 19299,
-          "price_text": "From R19,299",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 13-inch (M3 chip)",
-      "prices": {
-        "digicape": {
-          "price": 16899,
-          "price_text": "From R16,899",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 13-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 19299,
-          "price_text": "From R19,299",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air M4",
-      "prices": {
-        "istore": {
-          "price": 15299,
-          "price_text": "From R15,299",
-          "url": "https://www.istore.co.za/ipad"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 11-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 23299,
-          "price_text": "From R23,299",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 11-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 24499,
-          "price_text": "From R24,499",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 13-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 30199,
-          "price_text": "From R30,199",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 13-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 26899,
-          "price_text": "From R26,899",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro M4",
-      "prices": {
-        "istore": {
-          "price": 24599,
-          "price_text": "From R24,599",
-          "url": "https://www.istore.co.za/ipad"
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad mini A17 Pro",
-      "prices": {
-        "digicape": {
-          "price": 12199,
-          "price_text": "From R12,199",
-          "url": "https://www.digicape.co.za/category/ipad-all"
-        },
-        "istore": {
-          "price": 12299,
-          "price_text": "From R12,299",
-          "url": "https://www.istore.co.za/ipad"
         }
       }
     },
     {
       "category": "iPhone",
-      "title": "iPhone 16 Plus",
+      "title": "Apple AirPods 4",
       "prices": {
-        "digicape": {
-          "price": 19999,
-          "price_text": "From R19,999",
-          "url": "https://www.digicape.co.za/category/iphone-all"
+        "istore": {
+          "price": 2799.0,
+          "price_text": "R2 799",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Apple HomePod (2nd Gen)",
+      "prices": {
+        "istore": {
+          "price": 8179.0,
+          "price_text": "R8 179",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Apple HomePod mini",
+      "prices": {
+        "istore": {
+          "price": 2999.0,
+          "price_text": "R2 999",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Apple iPhone 17e Silicone Case with MagSafe",
+      "prices": {
+        "istore": {
+          "price": 1399.0,
+          "price_text": "R1 399",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Flex – All-Day Wireless Earphones",
+      "prices": {
+        "istore": {
+          "price": 1599.0,
+          "price_text": "R1 599",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Powerbeats Pro 2 High-Performance Earbuds",
+      "prices": {
+        "istore": {
+          "price": 5499.0,
+          "price_text": "R5 499",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17",
+      "prices": {
+        "istore": {
+          "price": 2199.0,
+          "price_text": "R2 199",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
+      "prices": {
+        "istore": {
+          "price": 2199.0,
+          "price_text": "R2 199",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Studio Buds + True Wireless Noise Cancelling Earbuds",
+      "prices": {
+        "istore": {
+          "price": 3699.0,
+          "price_text": "R3 699",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats Studio Pro Premium Wireless Noise Cancelling Headphones",
+      "prices": {
+        "istore": {
+          "price": 7699.0,
+          "price_text": "R7 699",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats USB-A to USB-C Woven Cable (1.5m)",
+      "prices": {
+        "istore": {
+          "price": 549.0,
+          "price_text": "R549",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Beats USB-C to Lightning Woven Cable (1.5 m)",
+      "prices": {
+        "istore": {
+          "price": 549.0,
+          "price_text": "R549",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Belkin Boostcharge Power Bank 10K Display - Pink",
+      "prices": {
+        "istore": {
+          "price": 599.0,
+          "price_text": "R599",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "JBL Flip 7 Portable Bluetooth Speaker",
+      "prices": {
+        "istore": {
+          "price": 2499.0,
+          "price_text": "R2 499",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
+      "prices": {
+        "istore": {
+          "price": 599.0,
+          "price_text": "R599",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "Sony WH- 1000XM6 Noise Cancelling Bluetooth Headphones - Pink",
+      "prices": {
+        "istore": {
+          "price": 10999.0,
+          "price_text": "R10 999",
+          "url": "https://www.istore.co.za/iphone"
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 16",
+      "prices": {
+        "istore": {
+          "price": 13999.0,
+          "price_text": "R13 999",
+          "url": "https://www.istore.co.za/iphone"
         }
       }
     },
@@ -737,26 +901,10 @@
       "category": "iPhone",
       "title": "iPhone 16e",
       "prices": {
-        "digicape": {
-          "price": 11799,
-          "price_text": "From R11,799",
-          "url": "https://www.digicape.co.za/category/iphone-all"
-        },
         "istore": {
-          "price": 11999,
-          "price_text": "From R11,999",
+          "price": 11999.0,
+          "price_text": "R11 999",
           "url": "https://www.istore.co.za/iphone"
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 17",
-      "prices": {
-        "digicape": {
-          "price": 13999,
-          "price_text": "From R13,999",
-          "url": "https://www.digicape.co.za/category/iphone-all"
         }
       }
     },
@@ -764,37 +912,10 @@
       "category": "iPhone",
       "title": "iPhone 17 Pro",
       "prices": {
-        "digicape": {
-          "price": 27699,
-          "price_text": "From R27,699",
-          "url": "https://www.digicape.co.za/category/iphone-all"
-        },
         "istore": {
-          "price": 24999,
-          "price_text": "From R24,999",
+          "price": 24999.0,
+          "price_text": "R24 999",
           "url": "https://www.istore.co.za/iphone"
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 17 Pro Max",
-      "prices": {
-        "digicape": {
-          "price": 30499,
-          "price_text": "From R30,499",
-          "url": "https://www.digicape.co.za/category/iphone-all"
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 17 Pro Max 256GB - Cosmic Orange",
-      "prices": {
-        "istore": {
-          "price": 27999.0,
-          "price_text": "R27,999",
-          "url": "https://www.istore.co.za/"
         }
       }
     },
@@ -802,14 +923,9 @@
       "category": "iPhone",
       "title": "iPhone 17e",
       "prices": {
-        "digicape": {
-          "price": 14599,
-          "price_text": "From R14,599",
-          "url": "https://www.digicape.co.za/category/iphone-all"
-        },
         "istore": {
-          "price": 14599,
-          "price_text": "From R14,599",
+          "price": 14599.0,
+          "price_text": "R14 599",
           "url": "https://www.istore.co.za/iphone"
         }
       }
@@ -818,21 +934,10 @@
       "category": "iPhone",
       "title": "iPhone Air",
       "prices": {
-        "digicape": {
-          "price": 21999,
-          "price_text": "From R21,999",
-          "url": "https://www.digicape.co.za/category/iphone-all"
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone Air 256GB - Sky Blue",
-      "prices": {
         "istore": {
-          "price": 20499.0,
-          "price_text": "R20,499",
-          "url": "https://www.istore.co.za/"
+          "price": 19999.0,
+          "price_text": "R19 999",
+          "url": "https://www.istore.co.za/iphone"
         }
       }
     }
