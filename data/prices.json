@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T17:06:22Z",
+  "generated_at": "2026-08-19T18:35:33Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -23,12 +23,6 @@
           "price": 2399.0,
           "price_text": "R 2,399",
           "url": "",
-          "stale": false
-        },
-        "incredible": {
-          "price": 2399.0,
-          "price_text": "R2,399",
-          "url": "https://www.incredible.co.za/apple-airpods-4",
           "stale": false
         },
         "istore": {
@@ -84,13 +78,6 @@
           "price_text": "R 13,645",
           "url": "",
           "stale": false
-        },
-        "incredible": {
-          "price": 9999.0,
-          "price_text": "R9,999",
-          "url": "https://www.incredible.co.za/apple-airpods-max-2-blue",
-          "stale": false,
-          "note": "on promo, R11,999 regular"
         },
         "istore": {
           "price": 11499.0,
@@ -166,10 +153,10 @@
         },
         "incredible": {
           "price": 36499.0,
-          "price_text": "R36,499",
+          "price_text": "R 36,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
-          "note": "cheapest listed config, not the base 'from' price"
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 26499.0,
@@ -197,11 +184,11 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
-          "price": 40999.0,
-          "price_text": "R40,999",
+          "price": 48999.0,
+          "price_text": "R 48,999",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
-          "note": "cheapest listed config, not the base 'from' price"
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 40799.0,
@@ -223,10 +210,10 @@
         },
         "incredible": {
           "price": 36499.0,
-          "price_text": "R36,499",
+          "price_text": "R 36,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
-          "note": "cheapest listed config, not the base 'from' price"
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 30599.0,
@@ -292,6 +279,60 @@
     },
     {
       "category": "Mac",
+      "title": "MacBook Air 13-inch (M5 chip) 10-core CPU/10-core GPU 24GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 36699.0,
+          "price_text": "R 36,699",
+          "url": "https://www.digicape.co.za/product/macbook-air-13inch-m5-chip",
+          "stale": false
+        },
+        "incredible": {
+          "price": 36499.0,
+          "price_text": "R 36,499",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Air 15-inch (M5 chip) 10-core CPU/10-core GPU 16GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 36699.0,
+          "price_text": "R 36,699",
+          "url": "https://www.digicape.co.za/product/macbook-air-15inch-m5-chip",
+          "stale": false
+        },
+        "incredible": {
+          "price": 36499.0,
+          "price_text": "R 36,499",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Air 15-inch (M5 chip) 10-core CPU/10-core GPU 24GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 40699.0,
+          "price_text": "R 40,699",
+          "url": "https://www.digicape.co.za/product/macbook-air-15inch-m5-chip",
+          "stale": false
+        },
+        "incredible": {
+          "price": 40999.0,
+          "price_text": "R 40,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
       "title": "MacBook Neo",
       "prices": {
         "digicape": {
@@ -310,6 +351,96 @@
     },
     {
       "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) 10-core CPU/10-core GPU 32GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 48899.0,
+          "price_text": "R 48,899",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "incredible": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 50899.0,
+          "price_text": "R 50,899",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": "",
+          "stale": false
+        },
+        "incredible": {
+          "price": 50999.0,
+          "price_text": "R 50,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 2TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 50999.0,
+          "price_text": "R 50,999",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
+          "stale": false
+        },
+        "incredible": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) Pro 18-core CPU/20-core GPU 24GB 2TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 65199.0,
+          "price_text": "R 65,199",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 63999.0,
+          "price_text": "R 63,999",
+          "url": "",
+          "stale": false
+        },
+        "incredible": {
+          "price": 64999.0,
+          "price_text": "R 64,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
       "title": "MacBook Pro 16-inch (M5 chip)",
       "prices": {
         "digicape": {
@@ -318,12 +449,67 @@
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "incredible": {
           "price": 60999.0,
-          "price_text": "R60,999",
+          "price_text": "R 60,999",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
-          "note": "cheapest listed config, not the base 'from' price"
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 16-inch (M5 chip) Pro 18-core CPU/20-core GPU 24GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 61099.0,
+          "price_text": "R 61,099",
+          "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
+          "stale": false
+        },
+        "incredible": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 16-inch (M5 chip) Pro 18-core CPU/20-core GPU 48GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 73399.0,
+          "price_text": "R 73,399",
+          "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 71499.0,
+          "price_text": "R 71,499",
+          "url": "",
+          "stale": false
+        },
+        "incredible": {
+          "price": 73499.0,
+          "price_text": "R 73,499",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
         }
       }
     },
@@ -336,6 +522,13 @@
           "price_text": "R34 199",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
+        },
+        "incredible": {
+          "price": 38999.0,
+          "price_text": "R 38,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 34299.0,
@@ -775,12 +968,6 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
-        "incredible": {
-          "price": 14599.0,
-          "price_text": "R14,599",
-          "url": "https://www.incredible.co.za/apple-iphone-17e",
-          "stale": false
-        },
         "istore": {
           "price": 14599.0,
           "price_text": "R14 599",
@@ -797,12 +984,6 @@
           "price": 21999.0,
           "price_text": "R21 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
-          "stale": false
-        },
-        "incredible": {
-          "price": 25999.0,
-          "price_text": "R25,999",
-          "url": "https://www.incredible.co.za/apple-iphone-air",
           "stale": false
         },
         "istore": {
