@@ -54,6 +54,16 @@ jobs:
         continue-on-error: true
         run: python scripts/digicape_mac_configs.py
 
+      - name: Scrape Amazon SA
+        # Confirmed working from a residential connection (2026-08-19,
+        # 20/20 products, zero CAPTCHA/bot-check hits). NOT yet confirmed
+        # from GitHub Actions' own IP range, which Amazon is known to treat
+        # more aggressively -- watch this step's log on the first few
+        # scheduled/manual runs. continue-on-error means a block here can't
+        # take down the rest of the pipeline either way.
+        continue-on-error: true
+        run: python scripts/amazon_prices.py
+
       - name: Combine into data/prices.json
         run: python scripts/combine.py
 
