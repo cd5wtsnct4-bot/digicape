@@ -302,11 +302,11 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
-    "old_price_text": "R27 999",
-    "old_price": 27999.0,
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -322,11 +322,11 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
-    "old_price_text": "",
-    "old_price": null,
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
+    "old_price_text": "R27 999",
+    "old_price": 27999.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -481,6 +481,366 @@
   },
   {
     "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Pro M5",
+    "price_text": "R30 799",
+    "price": 30799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Pro M5",
+    "price_text": "R24 599",
+    "price": 24599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Pro M4",
+    "price_text": "R27 999",
+    "price": 27999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Air M4",
+    "price_text": "R19 399",
+    "price": 19399.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Air M4",
+    "price_text": "R15 299",
+    "price": 15299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Air M3",
+    "price_text": "R14 999",
+    "price": 14999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Air M3",
+    "price_text": "R15 999",
+    "price": 15999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad A16",
+    "price_text": "R8 799",
+    "price": 8799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad mini A17 Pro",
+    "price_text": "R12 299",
+    "price": 12299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad Accessories",
+    "price_text": "R299",
+    "price": 299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Pro M5",
+    "price_text": "R24 599",
+    "price": 24599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Air M4",
+    "price_text": "R19 399",
+    "price": 19399.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Air M4",
+    "price_text": "R15 299",
+    "price": 15299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Air M3",
+    "price_text": "R14 999",
+    "price": 14999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Pro M4",
+    "price_text": "R27 999",
+    "price": 27999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad A16",
+    "price_text": "R8 799",
+    "price": 8799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "iPad mini A17 Pro",
+    "price_text": "R12 299",
+    "price": 12299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Air M3",
+    "price_text": "R15 999",
+    "price": 15999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Pro M5",
+    "price_text": "R30 799",
+    "price": 30799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3",
+    "price_text": "R18 799",
+    "price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 11",
+    "price_text": "R9 399",
+    "price": 9399.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE 3",
+    "price_text": "R5 799",
+    "price": 5799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 10",
+    "price_text": "R5 999",
+    "price": 5999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE",
+    "price_text": "R5 799",
+    "price": 5799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Accessories",
+    "price_text": "R299",
+    "price": 299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE 2 Sport Band",
+    "price_text": "R5 799",
+    "price": 5799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE 2 Sport Loop",
+    "price_text": "",
+    "price": null,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE 3 Sport Band",
+    "price_text": "R5 799",
+    "price": 5799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch series 10 Sport Band",
+    "price_text": "R7 999",
+    "price": 7999.0,
+    "old_price_text": "R7 999",
+    "old_price": 7999.0,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 10 Sport Loop",
+    "price_text": "R7 999",
+    "price": 7999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 11 Sport Band",
+    "price_text": "R9 399",
+    "price": 9399.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Series 11 Milanese Loop",
+    "price_text": "R17 599",
+    "price": 17599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 Ocean Band",
+    "price_text": "R18 799",
+    "price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 Alpine Loop",
+    "price_text": "R18 799",
+    "price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 Trail Loop",
+    "price_text": "R18 799",
+    "price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 Milanese Loop",
+    "price_text": "R21 099",
+    "price": 21099.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
     "category": "airpods",
     "name": "Apple AirPods Pro 3",
     "price_text": "R5 399",
@@ -558,6 +918,66 @@
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "2022 Apple TV 4K (3rd Gen)",
+    "price_text": "R4 199",
+    "price": 4199.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "Apple HomePod (2nd Gen)",
+    "price_text": "R8 179",
+    "price": 8179.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "Apple HomePod mini",
+    "price_text": "R2 999",
+    "price": 2999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "TV & Home Accessories",
+    "price_text": "R599",
+    "price": 599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "2022 Apple TV 4K (3rd Gen)",
+    "price_text": "R4 199",
+    "price": 4199.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
+  },
+  {
+    "retailer": "istore",
+    "category": "appletv",
+    "name": "Apple TV Siri Remote",
+    "price_text": "R1 399",
+    "price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv"
   },
   {
     "retailer": "istore",

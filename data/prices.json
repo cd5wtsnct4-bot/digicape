@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T15:11:57Z",
+  "generated_at": "2026-08-19T15:42:42Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -126,23 +126,29 @@
     },
     {
       "category": "Apple TV",
-      "title": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
+      "title": "2022 Apple TV 4K (3rd Gen)",
       "prices": {
         "digicape": {
-          "price": 5249.0,
-          "price_text": "R5 249",
+          "price": 4199.0,
+          "price_text": "R4 199",
           "url": "https://www.digicape.co.za/category/apple-tv",
+          "stale": false
+        },
+        "istore": {
+          "price": 4199.0,
+          "price_text": "R4 199",
+          "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv",
           "stale": false
         }
       }
     },
     {
       "category": "Apple TV",
-      "title": "Apple TV 4K 64Gb Wifi (3rd Gen,2022)",
+      "title": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
       "prices": {
         "digicape": {
-          "price": 4199.0,
-          "price_text": "R4 199",
+          "price": 5249.0,
+          "price_text": "R5 249",
           "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
         }
@@ -341,6 +347,12 @@
           "price_text": "R5 699",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
+        },
+        "istore": {
+          "price": 5799.0,
+          "price_text": "R5 799",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
+          "stale": false
         }
       }
     },
@@ -352,6 +364,12 @@
           "price": 18299.0,
           "price_text": "R18 299",
           "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 17599.0,
+          "price_text": "R17 599",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
       }
@@ -365,53 +383,209 @@
           "price_text": "R9 199",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Alpine Loop",
-      "prices": {
-        "digicape": {
-          "price": 19499.0,
-          "price_text": "R19 499",
-          "url": "https://www.digicape.co.za/category/watch-all",
+        },
+        "istore": {
+          "price": 7999.0,
+          "price_text": "R7 999",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
       }
     },
     {
       "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Milanese Loop",
+      "title": "Apple Watch Ultra 3 Alpine Loop",
+      "prices": {
+        "digicape": {
+          "price": 19499.0,
+          "price_text": "R19 499",
+          "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 18799.0,
+          "price_text": "R18 799",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Watch",
+      "title": "Apple Watch Ultra 3 Milanese Loop",
       "prices": {
         "digicape": {
           "price": 21999.0,
           "price_text": "R21 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Ocean Band",
-      "prices": {
-        "digicape": {
-          "price": 19499.0,
-          "price_text": "R19 499",
-          "url": "https://www.digicape.co.za/category/watch-all",
+        },
+        "istore": {
+          "price": 21099.0,
+          "price_text": "R21 099",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
       }
     },
     {
       "category": "Watch",
-      "title": "Apple Watch Ultra 3 with Trail Loop",
+      "title": "Apple Watch Ultra 3 Ocean Band",
       "prices": {
         "digicape": {
           "price": 19499.0,
           "price_text": "R19 499",
           "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 18799.0,
+          "price_text": "R18 799",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Watch",
+      "title": "Apple Watch Ultra 3 Trail Loop",
+      "prices": {
+        "digicape": {
+          "price": 19499.0,
+          "price_text": "R19 499",
+          "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 18799.0,
+          "price_text": "R18 799",
+          "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "11-inch iPad Air M3",
+      "prices": {
+        "digicape": {
+          "price": 15899.0,
+          "price_text": "R15 899",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 15999.0,
+          "price_text": "R15 999",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "11-inch iPad Air M4",
+      "prices": {
+        "digicape": {
+          "price": 15199.0,
+          "price_text": "R15 199",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 15299.0,
+          "price_text": "R15 299",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "11-inch iPad Pro M4",
+      "prices": {
+        "digicape": {
+          "price": 23299.0,
+          "price_text": "R23 299",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 27999.0,
+          "price_text": "R27 999",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "11-inch iPad Pro M5",
+      "prices": {
+        "digicape": {
+          "price": 24499.0,
+          "price_text": "R24 499",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 24599.0,
+          "price_text": "R24 599",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "13-inch iPad Air M3",
+      "prices": {
+        "digicape": {
+          "price": 16899.0,
+          "price_text": "R16 899",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 14999.0,
+          "price_text": "R14 999",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "13-inch iPad Air M4",
+      "prices": {
+        "digicape": {
+          "price": 19299.0,
+          "price_text": "R19 299",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 19399.0,
+          "price_text": "R19 399",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "13-inch iPad Pro M5",
+      "prices": {
+        "digicape": {
+          "price": 26899.0,
+          "price_text": "R26 899",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 30799.0,
+          "price_text": "R30 799",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
       }
@@ -423,30 +597,6 @@
         "digicape": {
           "price": 8699.0,
           "price_text": "R8 699",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 11-inch (M3 chip)",
-      "prices": {
-        "digicape": {
-          "price": 15899.0,
-          "price_text": "R15 899",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 11-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 15199.0,
-          "price_text": "R15 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         }
@@ -466,54 +616,6 @@
     },
     {
       "category": "iPad",
-      "title": "iPad Air 13-inch (M3 chip)",
-      "prices": {
-        "digicape": {
-          "price": 16899.0,
-          "price_text": "R16 899",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Air 13-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 19299.0,
-          "price_text": "R19 299",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 11-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 23299.0,
-          "price_text": "R23 299",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad Pro 11-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 24499.0,
-          "price_text": "R24 499",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
       "title": "iPad Pro 13-inch (M4 chip)",
       "prices": {
         "digicape": {
@@ -526,24 +628,18 @@
     },
     {
       "category": "iPad",
-      "title": "iPad Pro 13-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 26899.0,
-          "price_text": "R26 899",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
-      "title": "iPad mini (A17 Pro)",
+      "title": "iPad mini A17 Pro",
       "prices": {
         "digicape": {
           "price": 12199.0,
           "price_text": "R12 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 12299.0,
+          "price_text": "R12 299",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
       }
