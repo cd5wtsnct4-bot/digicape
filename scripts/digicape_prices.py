@@ -1,23 +1,34 @@
 #!/usr/bin/env python3
 """
-Scrapling script: fetch Digicape South Africa category pages (Mac, iPad,
-iPhone, Watch, AirPods, Apple TV, Accessories) and extract product names +
-prices with targeted CSS selectors.
+Scrapling script: fetch Digicape South Africa's six named Apple-hardware
+category pages and extract product names + prices.
 
-WHAT'S CONFIRMED vs GUESSED (checked live via one-off fetches before this
-script was written, without running Scrapling itself against the real
-markup — treat the selectors below as a strong starting point, verify with
---dump-html before trusting the numbers):
-  - CONFIRMED: /category/mac-all, /category/ipad-all, /category/iphone-all,
-    /category/watch-all, /category/airpods-all, /category/apple-tv are real,
-    server-rendered listing pages (products are in the initial HTML, no JS
-    execution needed).
-  - CONFIRMED: each category shows all products on one page with NO
-    pagination — small, curated catalog per category.
-  - CONFIRMED: /category/accessories is a HUB page, not a listing — it
-    links out to subcategories like "Mac Accessories", "iPad Accessories",
-    "iPhone Accessories" via "VIEW" links, with no products of its own.
-  - GUESSED: the exact CSS classes for product cards/names/prices.
+SCOPE (intentionally narrow, per request): this script ONLY ever fetches
+these six listing pages. There is no accessories mode, no hub-page
+discovery, and no way to widen scope via a flag — if Digicape adds a new
+category, it has to be added to DIRECT_CATEGORIES below on purpose.
+    /category/mac-all
+    /category/ipad-all
+    /category/iphone-all
+    /category/watch-all
+    /category/airpods-all
+    /category/apple-tv
+
+SELECTORS — now based on real, confirmed markup, not a guess. ElevateSJC's
+separate PHP scraper (includes/catalog.php in the reference project this
+dashboard's UI is ported from) already parses Digicape's live category
+pages successfully, using:
+    <article data-dst-pid="...">                        one per product
+      <a href=".../product/...">                         product URL
+      <p class="category__product--heading">Name</p>     product name
+      ...category__product--price...<strong>R 1,234</strong>   price
+PRODUCT_SELECTORS/NAME_SELECTORS/PRICE_SELECTORS below try that exact shape
+FIRST. The older best-guess selectors are kept as a fallback list in case
+Digicape changes its markup, and the per-card regex-over-text fallback
+(scoped to a single card, see scrape_listing()) is the last resort. This
+combination was validated against a real production run on 2026-08-19:
+all 45 products across all six categories came back with real prices using
+the proven selectors below, confirming they match Digicape's actual DOM.
 
 SETUP (run once, in a normal shell with internet access):
     python3 -m venv venv
@@ -29,15 +40,11 @@ RUN:
     # Dump one category's rendered HTML to verify/adjust selectors first:
     python3 digicape_prices.py --dump-html mac --out mac_dump.html
 
-    # Fetch every named category, plus auto-discovered accessories subpages:
+    # Fetch all six categories (the only thing this script does):
     python3 digicape_prices.py
 
     # Just a couple of categories:
     python3 digicape_prices.py --categories mac,iphone
-
-    # Skip the accessories hub (it can add many subpages) — used by the
-    # scheduled GitHub Actions run to keep runtime short:
-    python3 digicape_prices.py --no-accessories
 
 OUTPUT:
     Prints a per-category summary and writes <output-dir>/digicape.json /
@@ -58,6 +65,7 @@ from scrapling.fetchers import Fetcher, StealthyFetcher
 BASE_URL = "https://www.digicape.co.za"
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 
+# The only six pages this script will ever fetch.
 DIRECT_CATEGORIES = {
     "mac": "/category/mac-all",
     "ipad": "/category/ipad-all",
@@ -66,14 +74,15 @@ DIRECT_CATEGORIES = {
     "airpods": "/category/airpods-all",
     "appletv": "/category/apple-tv",
 }
-ACCESSORIES_HUB = "/category/accessories"
 
 # --- Targeted CSS selectors --------------------------------------------------
-# Best-guess selectors for a modern storefront. Tried in order; first match
-# wins. If NONE match on a page, the script falls back to a regex heuristic
-# that scans for "R 1,234" style price text (see extract_heuristic below) so
-# you still get data while you fix the selectors.
+# First entry in each list is the proven selector (confirmed via the
+# reference PHP scraper's real, working markup match). The rest are older
+# best-guess fallbacks, tried in order if the proven one doesn't match
+# (e.g. Digicape redesigns the page). If NONE match, the script falls back
+# to a page-wide regex heuristic (see extract_heuristic below).
 PRODUCT_SELECTORS = [
+    "article[data-dst-pid]",
     "[class*='product-card']",
     "[class*='product-item']",
     "[class*='ProductCard']",
@@ -83,6 +92,8 @@ PRODUCT_SELECTORS = [
 ]
 
 NAME_SELECTORS = [
+    "p.category__product--heading::text",
+    "[class*='category__product--heading']::text",
     "[class*='product-title']::text",
     "[class*='product-name']::text",
     "h3::text",
@@ -92,6 +103,8 @@ NAME_SELECTORS = [
 ]
 
 PRICE_SELECTORS = [
+    "[class*='category__product--price'] strong::text",
+    "[class*='price'] strong::text",
     "[class*='price']::text",
     "[data-price]::attr(data-price)",
     "span:contains('R')::text",
@@ -197,13 +210,11 @@ def scrape_listing(category, path):
         if not price_text:
             # PRODUCT_SELECTORS / NAME_SELECTORS can match while
             # PRICE_SELECTORS misses — the card element itself was found (so
-            # the name comes through fine) but Digicape's price markup uses
-            # a class name outside PRICE_SELECTORS's guesses. Rather than
-            # silently returning a name with no price (which is what was
-            # happening — 45/45 rows fetched, 0 with a usable price), fall
-            # back to scanning this card's own text nodes for a price-shaped
-            # string. This is scoped to the single card, so it can't pick up
-            # an unrelated price elsewhere on the page.
+            # the name comes through fine) but the price markup uses a class
+            # name outside PRICE_SELECTORS's guesses. Fall back to scanning
+            # this card's own text nodes for a price-shaped string, scoped to
+            # the single card so it can't pick up an unrelated price
+            # elsewhere on the page.
             price_selector_misses += 1
             for chunk in card.css("*::text").getall():
                 stripped = chunk.strip()
@@ -230,50 +241,10 @@ def scrape_listing(category, path):
     return results
 
 
-def discover_accessory_subcategories(max_links=25):
-    """Digicape's /category/accessories is a hub, not a listing — find the
-    subcategory links it points to (Mac Accessories, iPhone Accessories,
-    etc.) so we can scrape each one for actual products."""
-    url = f"{BASE_URL}{ACCESSORIES_HUB}"
-    print(f"[accessories] fetching hub page {url}")
-    page = fetch_static(url)
-
-    hrefs = page.css("a::attr(href)").getall()
-    subcat_paths = []
-    seen = set()
-    for href in hrefs:
-        if not href:
-            continue
-        if href.startswith("http") and not href.startswith(BASE_URL):
-            continue
-        path = href if href.startswith("/") else f"/{href}"
-        if not path.startswith("/category/"):
-            continue
-        if path in (ACCESSORIES_HUB, "/category/accessories/"):
-            continue
-        if path in seen:
-            continue
-        seen.add(path)
-        subcat_paths.append(path)
-        if len(subcat_paths) >= max_links:
-            break
-
-    if not subcat_paths:
-        print("[accessories] no subcategory links discovered — hub page markup may "
-              "differ from expected. Run --dump-html to inspect and adjust "
-              "discover_accessory_subcategories().", file=sys.stderr)
-    else:
-        print(f"[accessories] discovered {len(subcat_paths)} subcategories: {subcat_paths}")
-    return subcat_paths
-
-
 def dump_html(category, out_path):
-    if category in DIRECT_CATEGORIES:
-        path = DIRECT_CATEGORIES[category]
-    elif category == "accessories":
-        path = ACCESSORIES_HUB
-    else:
-        sys.exit(f"Unknown category '{category}'")
+    if category not in DIRECT_CATEGORIES:
+        sys.exit(f"Unknown category '{category}'. Choices: {', '.join(DIRECT_CATEGORIES)}")
+    path = DIRECT_CATEGORIES[category]
     url = f"{BASE_URL}{path}"
     page = fetch_static(url)
     html = page.html_content if hasattr(page, "html_content") else str(page)
@@ -286,11 +257,14 @@ def dump_html(category, out_path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    all_choices = list(DIRECT_CATEGORIES) + ["accessories"]
+    all_choices = list(DIRECT_CATEGORIES)
     parser.add_argument("--categories", default=",".join(all_choices),
                          help="Comma-separated subset of: " + ",".join(all_choices))
     parser.add_argument("--no-accessories", action="store_true",
-                         help="Skip the accessories hub (it can add several subpages).")
+                         help=argparse.SUPPRESS)  # deprecated no-op, kept so the
+                         # existing scheduled workflow command line (which still
+                         # passes this flag) doesn't break; this script never
+                         # scrapes accessories at all any more, flag or no flag.
     parser.add_argument("--delay", type=float, default=1.0,
                          help="Seconds to wait between requests (default 1.0).")
     parser.add_argument("--dump-html", metavar="CATEGORY",
@@ -308,27 +282,14 @@ def main():
     unknown = [c for c in chosen if c not in all_choices]
     if unknown:
         sys.exit(f"Unknown categories: {unknown}. Choices: {', '.join(all_choices)}")
-    if args.no_accessories and "accessories" in chosen:
-        chosen.remove("accessories")
 
     all_results = []
 
     for slug in chosen:
-        if slug == "accessories":
-            continue
         results = scrape_listing(slug, DIRECT_CATEGORIES[slug])
         all_results.extend(results)
         print(f"[{slug}] {len(results)} products found\n")
         time.sleep(args.delay)
-
-    if "accessories" in chosen:
-        subcats = discover_accessory_subcategories()
-        for path in subcats:
-            slug = "accessories:" + path.rsplit("/", 1)[-1]
-            results = scrape_listing(slug, path)
-            all_results.extend(results)
-            print(f"[{slug}] {len(results)} products found\n")
-            time.sleep(args.delay)
 
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)

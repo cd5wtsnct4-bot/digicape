@@ -67,7 +67,6 @@ CATEGORY_LABELS = {
     "airpods": "AirPods",
     "appletv": "Apple TV",
     "apple-promo": "Apple (Takealot promo)",
-    "accessories": "Accessories",
 }
 
 # Storage sizes and Apple's more common colour/finish names — stripped during
@@ -167,9 +166,6 @@ def main():
         name = (row.get("name") or "").strip()
         retailer = row.get("retailer", "unknown")
         category = row.get("category", "unknown")
-        # roll any digicape accessories:<slug> sub-category into "accessories"
-        if category.startswith("accessories"):
-            category = "accessories"
 
         if price is None or not name:
             skipped_no_price += 1

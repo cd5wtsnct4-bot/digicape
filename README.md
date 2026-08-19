@@ -15,6 +15,10 @@ and this baseline-vs-competitor model are ported from the ElevateSJC internal
    plus a manual "Run workflow" button in the Actions tab) and executes the
    scraper scripts in `scripts/`.
 2. Each scraper writes its retailer's results to `data/<retailer>.json`.
+   `scripts/digicape_prices.py` is intentionally narrow in scope: it only
+   ever fetches Digicape's six named category pages (Mac, iPad, iPhone,
+   Watch, AirPods, Apple TV) — no accessories, no other categories. That's
+   the baseline dataset every comparison is built from.
 3. `scripts/combine.py` merges the files into `data/prices.json`,
    fuzzy-matching the same product across retailers so the dashboard can show
    a side-by-side comparison. Matching is heuristic — see the docstring at the
@@ -62,18 +66,19 @@ python scripts/combine.py
   identical products may show up as separate unmatched cards; occasionally
   two different configurations may merge into one row. Spot-check
   `data/prices.json` after a run.
-- Accessories catalogs are large and only partially represented.
+- Digicape accessories are out of scope by design (see "How it works" above)
+  — the dashboard only ever compares the six named Apple hardware
+  categories, never third-party or accessory listings.
 - Retailer HTML structure changes over time — if a scraper starts returning
   zero results, the CSS selectors at the top of that script need updating
   (each script has a `--dump-html` flag to help re-calibrate them).
-- **Digicape's selectors need re-verification against the live site.** The
-  first production run of `digicape_prices.py` returned product names but no
-  prices — the CSS selectors were written against a text-summarized view of
-  the site, not the real DOM. A per-card regex fallback was added, but it
-  hasn't yet been confirmed to actually recover prices on a real run. Since
-  every card on the dashboard requires a fresh Digicape price to appear at
-  all, this is the single most important thing to verify next — until it's
-  fixed, the dashboard will show very few products.
+- **Digicape's price selectors are now confirmed working against the live
+  site** (as of the 2026-08-19 12:41 UTC run — all 45 products across all
+  six categories returned real prices). The current selectors are the same
+  card/name/price shape ElevateSJC's own working PHP scraper uses
+  (`article[data-dst-pid]` → `p.category__product--heading` →
+  `.category__product--price strong`), not a guess — a per-card regex
+  fallback still exists underneath in case Digicape's markup shifts again.
 - `amazon_prices.py` is unverified end-to-end: Amazon.co.za blocks automated
   fetching aggressively (robots.txt disallows it outright, and it's known for
   CAPTCHA-based bot detection). The selectors are Amazon's long-standing,
