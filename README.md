@@ -230,18 +230,28 @@ for that run rather than the whole job breaking.
   Digicape's generic "from" price, so most MacBook rows still won't match a
   base config — that's correct behaviour, not a bug — but AirPods, whose
   names are simple, now match reliably.
-- Amazon SA: **no working scraper yet, and none is planned without a paid
-  proxy.** `amazon_prices.py` exists but Amazon.co.za's robots.txt disallows
-  automated fetching outright and it runs real CAPTCHA-based bot detection —
-  a direct server-side fetch reliably gets blocked, which is also what the
-  ElevateSJC reference PHP tool's own README documents for this retailer. The
-  reference tool's actual fix is a paid scraping/rendering proxy (it
-  documents ScrapingAnt specifically) that executes JavaScript from a
-  residential/datacenter IP and waits for the real product card before
-  returning HTML — plain requests don't get that far regardless of the
-  selectors used. Wiring that in would need an account and API key from
-  whoever runs this repo; nothing here should be interpreted as an attempt to
-  bypass Amazon's bot protection, and nothing here does.
+- **Amazon SA: assumption revised (2026-08-19) — working, including from
+  GitHub Actions.** The original assumption here (a direct fetch reliably
+  gets blocked, matching what the ElevateSJC reference PHP tool's README
+  documents) turned out not to hold. Verified twice against the live site:
+  first by hand from a residential connection (20/20 curated URLs, real
+  prices, zero CAPTCHA hits), then by the scheduled GitHub Actions workflow
+  itself on its first real run with the new step (same result: 20/20,
+  `data/amazon.json` from the 2026-08-19 18:50 UTC run) — so it isn't
+  blocked from Actions' shared IP range either, which was the open question
+  after the first test. `amazon_prices.py` now has a `continue-on-error`
+  step in the scheduled workflow like every other scraper. Two clean runs
+  aren't a permanent guarantee — Amazon's bot detection can vary over time
+  or by IP reputation, so it's worth an occasional glance at that step's
+  log — but there's no reason left to treat this retailer as unworkable. If
+  it ever does start getting blocked, the reference tool's fix is a paid
+  scraping/rendering proxy (it documents ScrapingAnt specifically) that
+  executes JavaScript from a residential/datacenter IP and waits for the
+  real product card before returning HTML; that would need an account and
+  API key from whoever runs this repo. Nothing here should be interpreted
+  as an attempt to bypass Amazon's bot protection — the script backs off
+  the moment it detects a CAPTCHA/bot-check page rather than trying to get
+  past it, and nothing here does otherwise.
 - Product-name matching across retailers is heuristic, not exact. Some
   identical products may show up as separate unmatched cards; occasionally
   two different configurations may merge into one row. Spot-check
@@ -271,10 +281,3 @@ for that run rather than the whole job breaking.
   than publish it. The nine affected rows were manually nulled out in
   `data/digicape.json` rather than left wrong; they'll repopulate with real
   numbers on the next scrape run.
-- `amazon_prices.py` is unverified end-to-end: Amazon.co.za blocks automated
-  fetching aggressively (robots.txt disallows it outright, and it's known for
-  CAPTCHA-based bot detection). The selectors are Amazon's long-standing,
-  well-documented ones, not guessed from nothing, but nothing in this
-  project's development environment could load a real amazon.co.za page to
-  confirm them. Run it once by hand and read its console output before
-  trusting it in the scheduled workflow.
