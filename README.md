@@ -143,6 +143,79 @@ for that run rather than the whole job breaking.
 
 ## Known limitations
 
+- **Amazon SA contributed zero matched rows despite scraping successfully,
+  and Takealot/Incredible Connection were under-matching too — mostly
+  fixed (2026-08-19).** Found while investigating a user report that all
+  three retailers were "not showing as many records as there should be."
+  Amazon's 20/20 scraped rows all loaded with real-looking data but none of
+  them made it into `data/prices.json` at all, for two independent reasons:
+  1. `amazon_prices.py`'s `clean_price()` truncated every single price.
+     Amazon renders thousands separators with U+00A0 (non-breaking space,
+     e.g. `"R29\xa0999.00"`), and `.replace(" ", "")` only strips plain
+     ASCII spaces — confirmed directly, every one of the 20 scraped prices
+     came out as just the leading digit group (29.0 instead of 29999.0).
+     Fixed by stripping all whitespace (`\s+`, which covers `\xa0`) instead
+     of just literal spaces.
+  2. Amazon's titles are full marketing copy (`"Apple MacBook Air 13-inch
+     Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid
+     Retina Display, 24GB Unified Memory, ..."`) against Digicape's short,
+     clean names (`"MacBook Air 13-inch (M5 chip)"`). `normalize_key()`
+     requires identical token sets, so dozens of unstripped marketing/spec
+     words — display, camera, battery, memory, connectivity generation
+     numbers (Wi-Fi 6/7, 5G, 120Hz), chip-generation codes (A16/A19/H2),
+     and more — blocked every single Amazon row from matching anything,
+     confirmed by computing and comparing every Amazon title's key against
+     every same-category Digicape name directly. A related, separate bug in
+     the same code path: Amazon states Mac/iPad screen sizes as the literal
+     panel diagonal (`"13.6-inch"`) rather than Apple's marketed whole
+     number (`"13-inch"`), and the existing inch-regex only grabbed the
+     digit immediately before "-inch", so `"13.6-inch"` produced stray
+     tokens `"13"` and `"6in"` instead of the `"13in"` Digicape's own name
+     produces. Fixed all three by (a) extending `STRIP_WORDS` with Amazon's
+     marketing vocabulary, (b) flooring a decimal inch size to Apple's
+     marketed whole number, but ONLY when that floor is a real Mac/iPad
+     size — iPhone and iPad mini also state a decimal diagonal (6.3", 8.3")
+     that neither Apple nor Digicape names the model by, so those are
+     dropped rather than guessed at, and (c) stripping Wi-Fi
+     generation/megapixel/mm/Hz/5G number+unit tokens and A/H-series chip
+     generation codes as their own units. Result, confirmed against the
+     real live data captured this run: Amazon went from 0/20 to 15/20 rows
+     matched. Considered and explicitly rejected switching the matcher from
+     exact-token-set equality to subset containment as a more general fix
+     for noisy titles — that would have reintroduced the exact "Pro/Max
+     silently collapsing into the base model" bug fixed on 2026-08-19 (see
+     the entry below), since an unstripped "pro"/"max" token in a superset
+     title wouldn't stop it matching a bare base-model key. Also
+     deliberately did NOT strip "active"/"noise"/"cancellation" or
+     "ethernet" as marketing filler, even though doing so would fix
+     Amazon's remaining 2 AirPods Pro/Max misses — confirmed directly this
+     would silently collapse two of Digicape's own real, differently-priced
+     SKUs into one row each (`"AirPods 4"` R2,799 vs `"AirPods 4 with Active
+     Noise Cancellation"` R3,699; `"Apple TV 4K 128Gb Wifi+Ethernet"`
+     R5,249 vs `"Apple TV 4K 64Gb Wifi"` R4,199) — a missed match is an
+     acceptable cost, a silently wrong price is not.
+     Separately, Incredible Connection went from 14 to 29 of its 37 raw Mac
+     rows matching (most of that 37 collapses into fewer combined rows,
+     since many are colour variants of the same spec) after two more small
+     `normalize_key()` fixes found the same way: Incredible spells a colour
+     as one joined word (`"SpaceBlack"`) where other retailers/Digicape use
+     two (`"Space Black"`), and Incredible's core-count listings use U+2011
+     (non-breaking hyphen, `"10‑core CPU"`) instead of a plain `"-"`, which
+     the existing core-count regex's ASCII-only `-?` didn't match, leaving
+     a stray bare `"10"` token. Takealot also picked up one small fix:
+     `"MacBook Neo 13"` states a bare size the same way `"MacBook Pro 16"`
+     does, but unlike Air/Pro, Digicape's own `"MacBook Neo"` name has no
+     size in it at all — so this is dropped entirely rather than converted
+     to `"13in"`. Remaining known gaps, all confirmed to be real content
+     differences rather than matcher bugs: Amazon's 3 M4-chip Mac listings
+     (Digicape doesn't currently sell an M4 configuration in any of those
+     lines), Takealot's Max-tier Mac/Apple-promo-category/no-fresh-price
+     rows (each intentional — see the entries below and above), and two
+     Incredible Connection Apple TV listings that simply don't state the
+     "3rd Gen 2022" wording Digicape's name carries. New regression tests
+     covering all of this: `test_combine.py`'s `TestAmazonMarketingCopyStripping`,
+     `TestDecimalInchHandling`, and `TestIncredibleConnectionFixes`, plus
+     `test_amazon_prices.py` (new file) for the non-breaking-space bug.
 - **Mac matching against Takealot showed zero results, and iPhone/Watch
   generation numbers could silently merge — both now fixed (2026-08-19).**
   Two separate bugs in `combine.py`'s `normalize_key()`, found while

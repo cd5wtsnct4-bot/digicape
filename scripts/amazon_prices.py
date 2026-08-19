@@ -106,7 +106,16 @@ CAPTCHA_MARKERS = ("robot check", "enter the characters you see", "api-services-
 def clean_price(text):
     if not text:
         return None
-    cleaned = re.sub(r"[^\d,.\s]", "", text).strip().replace(" ", "").replace(",", "")
+    # Real bug, found 2026-08-19: Amazon renders thousands separators with
+    # U+00A0 (non-breaking space), e.g. "R29\xa0999.00". `.replace(" ", "")`
+    # only strips plain ASCII spaces, so that non-breaking space survived
+    # into `cleaned`, and the numeric regex below then matched only the
+    # first digit group before it -- every Amazon price silently came out
+    # truncated (29.0 instead of 29999.0). `\s+` matches \xa0 along with
+    # every other whitespace character, so this strips all of them, not
+    # just plain spaces.
+    cleaned = re.sub(r"[^\d,.\s]", "", text).strip()
+    cleaned = re.sub(r"\s+", "", cleaned).replace(",", "")
     match = re.search(r"\d+(\.\d+)?", cleaned)
     return float(match.group()) if match else None
 

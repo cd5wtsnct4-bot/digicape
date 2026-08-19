@@ -114,7 +114,14 @@ STRIP_WORDS = {
     "silver", "black", "white", "blue", "green", "red", "yellow", "pink",
     "purple", "gold", "grey", "gray", "natural", "titanium", "midnight",
     "starlight", "orange", "graphite", "sierra", "cosmic", "sky", "stone",
-    "deep", "space", "ultramarine", "teal", "rose",
+    "deep", "space", "ultramarine", "teal", "rose", "mist", "jet",
+    # Real bug, found 2026-08-19: Incredible Connection writes this colour
+    # as one joined word ("SpaceBlack") where Digicape/others write it as
+    # two ("Space Black") — "space" and "black" were already individually
+    # stripped above, but the joined form is a different token entirely and
+    # slipped through, leaving every SpaceBlack Mac SKU unmatched against
+    # its Silver sibling of the same spec.
+    "spaceblack",
     # generic filler that varies between retailers without changing the product
     "chip", "chipset", "processor", "with", "the", "and", "for", "gen",
     "generation", "wifi", "cellular",
@@ -132,7 +139,72 @@ STRIP_WORDS = {
     # once this boilerplate is stripped too, both keys collapse to the same
     # value and the row matches.
     "core", "cores", "cpu", "gpu", "ssd", "ram",
+    # Real bug, found 2026-08-19: Amazon's product titles are full marketing
+    # copy (dozens of spec/feature/marketing words) while Digicape's names
+    # are short and clean, e.g. "Apple MacBook Air 13-inch Laptop with M4
+    # chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display,
+    # 24GB Unified Memory, ..." vs Digicape's plain "MacBook Air 13-inch (M5
+    # chip)". Confirmed directly: ALL 20 scraped Amazon rows failed to match
+    # anything because of leftover marketing tokens like these — none of
+    # them describe a materially different product, they're just Amazon's
+    # copywriting. Verified against every real Amazon title captured
+    # 2026-08-19 across mac/ipad/iphone/watch/airpods/appletv that this list
+    # (plus the regexes below) reduces each one to exactly the same token set
+    # as its real Digicape counterpart, with no accidental collisions among
+    # Digicape's own distinctly-priced products (see test_combine.py).
+    "laptop", "built", "intelligence", "ai", "liquid", "retina", "xdr",
+    "unified", "memory", "storage", "display", "center", "stage", "camera",
+    "touch", "id", "all", "day", "battery", "life", "front", "back",
+    "landscape", "high", "fidelity", "sound", "wireless", "earbuds",
+    "bluetooth", "headphones", "adaptive", "audio", "transparency", "mode",
+    "personalised", "personalized", "spatial", "usb", "charging", "case",
+    "over", "ear", "level", "smartphone", "big", "boost", "control",
+    "improved", "scratch", "resistance", "group", "selfies", "smarter",
+    "breakthrough", "system", "fusion", "promotion", "best", "ever", "any",
+    "aluminium", "aluminum", "always", "on", "water", "resistant", "health",
+    "monitoring", "fitness", "tracker", "trackers", "score", "sleep",
+    "heart", "rate", "monitor", "sensing", "smartwatch", "gps", "n1",
+    "works", "to", "up", "in", "wi", "fi", "iphone",
+    # NOTE: "active", "noise", "cancellation", and "ethernet" are
+    # deliberately NOT in this list, even though stripping them would help
+    # a couple of Amazon AirPods Pro/Max/Apple TV listings match. Confirmed
+    # directly this would be wrong: Digicape has real, differently-priced
+    # SKUs whose name is the ONLY thing distinguishing them by exactly one
+    # of these words — "AirPods 4" (R2,799) vs "AirPods 4 with Active Noise
+    # Cancellation" (R3,699); "Apple TV 4K 128Gb Wifi+Ethernet" (R5,249) vs
+    # "Apple TV 4K 64Gb Wifi" (R4,199) (the storage digits are already
+    # stripped by the compound-token rule below, leaving "Ethernet" as the
+    # only remaining differentiator). Stripping these words uniformly
+    # collapsed both pairs into one row each, silently discarding a real
+    # price difference — a worse outcome than the Pro/Max listings simply
+    # not matching. See test_combine.py's
+    # TestAmazonMarketingCopyStripping.test_anc_and_ethernet_words_not_stripped.
+    "a", "c", "l", "m",
+    # Single-letter tokens Amazon titles leave behind after other words are
+    # stripped ("and a Big Boost" -> stray "a"; Watch band sizing "M/L" ->
+    # stray "m"/"l"; "USB‑C" -> stray "c"). None of Digicape's own names
+    # contain a bare single-letter word, so these can only ever be removed
+    # from a competitor's key, never a false-strip on Digicape's side.
 }
+
+
+# Real Apple marketed Mac/iPad screen sizes (whole inches). Amazon states the
+# literal panel diagonal as a decimal ("13.6-inch", "14.2-inch") while Apple
+# (and Digicape, following Apple's naming) markets the model by the rounded
+# whole number ("13-inch MacBook Air", "14-inch MacBook Pro"). floor() of the
+# decimal always lands on the marketed number for every current Mac/iPad
+# line. iPhone and iPad mini also state a decimal diagonal ("6.3-inch",
+# "8.3-inch") but neither Apple nor Digicape names those models by screen
+# size at all, so a decimal outside this curated list is dropped entirely
+# rather than guessed at — see the decimal-inch handling below.
+MAC_IPAD_WHOLE_INCH_SIZES = {"9", "10", "11", "12", "13", "14", "15", "16"}
+
+
+def _decimal_inch_repl(match):
+    whole = match.group(1)
+    if whole in MAC_IPAD_WHOLE_INCH_SIZES:
+        return f"{whole}in"
+    return " "  # not a marketed Mac/iPad size (e.g. iPhone/iPad mini diagonal) — drop it
 
 
 def normalize_key(name):
@@ -140,6 +212,14 @@ def normalize_key(name):
     the same product across retailers' differently-worded listings."""
     s = name.lower().replace("’", "'")
     s = re.sub(r'(\d+)\s*[\"″]', r'\1in', s)       # 14"  / 14″ -> 14in
+    # Real bug, found 2026-08-19: Amazon's Mac/iPad titles state the literal
+    # display diagonal as a decimal ("13.6-inch", "14.2-inch") rather than
+    # Apple's marketed whole number. Confirmed directly: without this, the
+    # existing bare-inch regex below only grabs the digit right before
+    # "-inch" (turning "13.6-inch" into stray tokens "13" and "6in" instead
+    # of the single "13in" Digicape's own name produces), so this MUST run
+    # before that regex, not after.
+    s = re.sub(r'(\d+)\.\d+\s*-?\s*inch', _decimal_inch_repl, s)
     s = re.sub(r'(\d+)\s*-?\s*inch', r'\1in', s)         # 14-inch / 14 inch -> 14in
     # Real bug, found 2026-08-19: Takealot's 16" MacBook Pro listings say
     # "MacBook Pro 16 M5 Max ..." — a bare "16" with no "-inch"/quote-mark
@@ -155,6 +235,13 @@ def normalize_key(name):
     # elsewhere in a name is deliberately left alone (see the removed
     # blanket bare-number rule below).
     s = re.sub(r'\b(macbook\s+(?:air|pro))\s+(1[3-6])\b', r'\1 \2in', s)
+    # Real bug, found 2026-08-19: Takealot's "MacBook Neo" listings also
+    # state a bare size ("Apple MacBook Neo 13 A18 Pro ..."), but unlike
+    # Air/Pro, Digicape's own "MacBook Neo" name has no size in it at all
+    # (it's a single-size line) — so converting to "13in" would just add a
+    # token Digicape's key doesn't have. Dropped entirely instead, since
+    # there's currently only one Neo size to disambiguate from.
+    s = re.sub(r'\b(macbook\s+neo)\s+(1[3-6])\b', r'\1', s)
     s = re.sub(r'(\d+)\s*gb\b', r'\1gb', s)              # normalize spacing on "256 GB"
     s = re.sub(r'(\d+)\s*tb\b', r'\1tb', s)              # normalize spacing on "2 TB"
     # Real bug, found 2026-08-19: Takealot spells out core counts as
@@ -162,14 +249,68 @@ def normalize_key(name):
     # "core". Removed as one unit (number + word together) rather than
     # relying on STRIP_WORDS + a generic bare-number rule, because a
     # generic rule can't tell a core count apart from a meaningful model
-    # number (see the removed bare-number rule below).
-    s = re.sub(r'\d+\s*-?\s*core\b', ' ', s)
+    # number (see the removed bare-number rule below). Uses [^a-z0-9]*
+    # rather than a plain ASCII "-?" between the digits and "core" because
+    # Incredible Connection's listings use U+2011 (non-breaking hyphen,
+    # "10‑core") instead of a plain "-" — confirmed directly: with only
+    # "-?" here, "10‑core CPU" left a stray bare "10" token that blocked
+    # several real 14" M5 (non-Pro) matches Digicape does carry.
+    s = re.sub(r'\d+[^a-z0-9]*core\b', ' ', s)
+    # Real bug, found 2026-08-19: Amazon states Wi-Fi generation ("Wi-Fi 6",
+    # "Wi‑Fi 6E", "Wi-Fi 7" — note some titles use U+2011 non-breaking
+    # hyphen, not a plain "-") which Digicape's names never mention at all.
+    # Collapsed as one unit (word + trailing generation digit/letter)
+    # BEFORE the generic non-alnum strip below, otherwise the bare
+    # generation number is indistinguishable from a meaningful digit once
+    # "wi"/"fi" are removed as separate stopwords.
+    s = re.sub(r'wi[^a-z0-9]*fi[^a-z0-9]*\d*e?\b', ' ', s)
+    # Real bug, found 2026-08-19: Amazon states camera megapixels ("12MP"),
+    # Watch case size ("42mm", "44mm"), display refresh rate ("120Hz"), and
+    # cellular generation ("5G") — none of which Digicape's names ever
+    # mention. Stripped as number+unit units (not via STRIP_WORDS) because
+    # the leading digit would otherwise survive as a stray bare-number token
+    # once the unit word is removed.
+    s = re.sub(r'\d+\s*mp\b', ' ', s)
+    s = re.sub(r'\d+\s*mm\b', ' ', s)
+    s = re.sub(r'\d+\s*hz\b', ' ', s)
+    s = re.sub(r'\b\d+g\b', ' ', s)
+    # Real bug, found 2026-08-19: some Amazon iPhone titles end with an
+    # incidental "Works with AirPods" mention. "airpods" can't go in
+    # STRIP_WORDS (it would collapse Digicape's differently-priced "AirPods
+    # 4" and "AirPods 4 with Active Noise Cancellation" into one row), so
+    # this specific recurring marketing phrase is collapsed as a unit
+    # instead, leaving real AirPods product listings untouched.
+    s = re.sub(r'works with airpods', ' ', s)
+    # "Pro‑Level" (AirPods Max marketing copy) is an adjective, not a real
+    # "Pro" product tier — Digicape has no separate "AirPods Max Pro" line,
+    # so left un-stripped this would wrongly introduce a "pro" token that
+    # has no counterpart in Digicape's plain "AirPods Max" name.
+    s = re.sub(r'pro[^a-z0-9]*level', ' ', s)
+    # Real bug, found 2026-08-19: Amazon/Takealot always state the A-series
+    # chip generation ("A16 chip", "A19 Pro Chip", "A18 Pro") while
+    # Digicape's iPhone and MacBook Neo names never mention a chip at all
+    # (its iPad names do — "iPad 11-inch (A16 chip)" — but symmetrically
+    # stripping it there is safe: no two current Digicape iPad lines share
+    # a base name and differ only by A-chip generation). Matched and
+    # dropped as ONE phrase (chip number + optional "Pro"/"Max" suffix)
+    # rather than as separate tokens, so "A18 Pro" doesn't leave a stray
+    # "pro" behind — that stray "pro" would otherwise be indistinguishable
+    # from "MacBook Pro"'s meaningful "pro". "M"-chip tokens (m2/m3/m4/m5)
+    # are deliberately NOT touched — those DO distinguish real,
+    # differently-priced Digicape SKUs (e.g. "iPad Air 11-inch (M3 chip)"
+    # vs "... (M4 chip)").
+    s = re.sub(r'\ba\d{1,2}\s*(pro|max)?\b', ' ', s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
     tokens = [t for t in s.split() if t not in STRIP_WORDS and t != "apple"]
     # drop compound storage/RAM tokens like "256gb", "1tb", "24gb" — a
     # retailer listing a specific config (e.g. "24GB/1TB") shouldn't stop it
     # matching another retailer's bare "from" price for the same base model
     tokens = [t for t in tokens if not re.fullmatch(r"\d{1,4}(gb|tb)", t)]
+    # AirPods' "H2 Chip" -- Digicape never names an H-chip generation, so
+    # it's always pure Amazon filler. Kept as a separate token-level filter
+    # (rather than folded into the phrase regex above) since it has no
+    # "Pro"/"Max" suffix variant to worry about.
+    tokens = [t for t in tokens if not re.fullmatch(r"h\d{1,2}", t)]
     # NOTE: an earlier version of this function also dropped any leftover
     # bare 2-4 digit token ("keeps '14in' but drops '256'"). Real bug, found
     # 2026-08-19: that rule is indiscriminate — it can't distinguish a
