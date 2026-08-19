@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T14:10:20Z",
+  "generated_at": "2026-08-19T14:58:12Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -17,6 +17,12 @@
           "price": 2799.0,
           "price_text": "R2 799",
           "url": "https://www.digicape.co.za/category/airpods-all",
+          "stale": false
+        },
+        "takealot": {
+          "price": 2399.0,
+          "price_text": "R 2,399",
+          "url": "",
           "stale": false
         },
         "incredible": {
@@ -41,6 +47,12 @@
           "price": 3699.0,
           "price_text": "R3 699",
           "url": "https://www.digicape.co.za/category/airpods-all",
+          "stale": false
+        },
+        "takealot": {
+          "price": 3999.0,
+          "price_text": "R 3,999",
+          "url": "",
           "stale": false
         }
       }
@@ -67,6 +79,12 @@
           "url": "https://www.digicape.co.za/category/airpods-all",
           "stale": false
         },
+        "takealot": {
+          "price": 13645.0,
+          "price_text": "R 13,645",
+          "url": "",
+          "stale": false
+        },
         "incredible": {
           "price": 9999.0,
           "price_text": "R9,999",
@@ -90,6 +108,12 @@
           "price": 5099.0,
           "price_text": "R5 099",
           "url": "https://www.digicape.co.za/category/airpods-all",
+          "stale": false
+        },
+        "takealot": {
+          "price": 5299.0,
+          "price_text": "R 5,299",
+          "url": "",
           "stale": false
         },
         "istore": {

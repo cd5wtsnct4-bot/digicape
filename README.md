@@ -62,6 +62,32 @@ python scripts/combine.py
 
 ## Known limitations
 
+- **Takealot showed zero matches until 2026-08-19, now fixed.** Every row from
+  `takealot_apple_prices.py` was tagged `"category": "apple-promo"`
+  unconditionally, while Digicape (the baseline) tags rows `mac`/`ipad`/
+  `iphone`/`watch`/`airpods`/`appletv`. Since `combine.py` groups by
+  `(category, normalized name)`, no Takealot row could ever land in the same
+  group as a Digicape row, regardless of the name — Takealot was structurally
+  excluded from the comparison the whole time this retailer has existed, not
+  just a bad scrape. Fixed by classifying each Takealot listing into the same
+  six categories by keyword (`classify_category()`) before it's written to
+  `data/takealot.json`. Takealot's promo page lists specific high-end
+  configs (e.g. "MacBook Pro 16 M5 Max ... 48GB RAM 1TB SSD") rather than
+  Digicape's generic "from" price, so most MacBook rows still won't match a
+  base config — that's correct behaviour, not a bug — but AirPods, whose
+  names are simple, now match reliably.
+- Amazon SA: **no working scraper yet, and none is planned without a paid
+  proxy.** `amazon_prices.py` exists but Amazon.co.za's robots.txt disallows
+  automated fetching outright and it runs real CAPTCHA-based bot detection —
+  a direct server-side fetch reliably gets blocked, which is also what the
+  ElevateSJC reference PHP tool's own README documents for this retailer. The
+  reference tool's actual fix is a paid scraping/rendering proxy (it
+  documents ScrapingAnt specifically) that executes JavaScript from a
+  residential/datacenter IP and waits for the real product card before
+  returning HTML — plain requests don't get that far regardless of the
+  selectors used. Wiring that in would need an account and API key from
+  whoever runs this repo; nothing here should be interpreted as an attempt to
+  bypass Amazon's bot protection, and nothing here does.
 - Product-name matching across retailers is heuristic, not exact. Some
   identical products may show up as separate unmatched cards; occasionally
   two different configurations may merge into one row. Spot-check

@@ -73,6 +73,34 @@ PRICE_SELECTORS = [
 
 WAIT_SELECTOR = "[data-ref='product-card']"  # tweak if the grid uses a different marker
 
+# Real bug, found 2026-08-19: every row here was tagged "category": "apple-promo"
+# unconditionally, while Digicape (the baseline every comparison is built
+# against, see combine.py) tags its rows "mac"/"ipad"/"iphone"/"watch"/
+# "airpods"/"appletv". combine.py groups by (category, normalized-name) —
+# with every Takealot row in a category no Digicape row ever uses, NOT ONE
+# Takealot product could ever appear in the comparison, regardless of name
+# matching. This classifies each listing into the same six categories by
+# keyword, so identically-named products actually get grouped together.
+# Anything that doesn't match a known device family (accessories like a
+# Lightning adapter, a generic promo bundle) is left as "apple-promo" and
+# correctly stays out of the comparison — that part isn't a bug.
+CATEGORY_KEYWORDS = [
+    ("appletv", ("apple tv", "appletv", "siri remote")),
+    ("airpods", ("airpods",)),
+    ("iphone", ("iphone",)),
+    ("ipad", ("ipad",)),
+    ("watch", (" watch",)),
+    ("mac", ("macbook", "imac", "mac mini", "mac studio", "mac pro", " mac ")),
+]
+
+
+def classify_category(name):
+    lowered = f" {(name or '').lower()} "
+    for category, keywords in CATEGORY_KEYWORDS:
+        if any(kw in lowered for kw in keywords):
+            return category
+    return "apple-promo"
+
 
 def extract_price(text):
     """Pull a numeric value out of strings like 'R 15,999' or 'R15 999.00'."""
@@ -139,7 +167,7 @@ def extract():
         if title or price_text:
             results.append({
                 "retailer": "takealot",
-                "category": "apple-promo",
+                "category": classify_category(title),
                 "name": title or "",
                 "price_text": price_text or "",
                 "price": price,
