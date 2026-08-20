@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T12:47:57Z",
+  "generated_at": "2026-08-20T18:40:38Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -146,8 +146,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 5099.0,
-          "price_text": "R5 099.00",
+          "price": 5249.0,
+          "price_text": "R5 249.00",
           "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8",
           "stale": false
         }
@@ -164,8 +164,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 22999.0,
-          "price_text": "R22 999.00",
+          "price": 26499.0,
+          "price_text": "R26 499.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -1094,8 +1094,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 24250.0,
-          "price_text": "R24 250.00",
+          "price": 23999.0,
+          "price_text": "R23 999.00",
           "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
