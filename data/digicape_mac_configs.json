@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:08:12Z",
+  "generated_at": "2026-08-20T06:44:06Z",
   "models": [
     {
       "name": "MacBook Air 15-inch (M5 chip)",
@@ -1138,9 +1138,9 @@
                 "name": "MacBook Air 13-inch (M5 chip)",
                 "description": "<p>MacBook Air with the M5 chip brings blazing speed and powerful AI capabilities into an incredibly portable design. With Apple Intelligence, up to 18 hours of battery life and fast SSD storage starting with 512GB, you can work, create and play anywhere life takes you.</p>",
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_13_M5/MacBook_Air_13_M5_Silver/MacBook_Air_13_M5_Silver_0.jpg",
-                "has_quantity": "1",
+                "has_quantity": "0",
                 "sort_order": "3",
-                "quantity": "1",
+                "quantity": "0",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
