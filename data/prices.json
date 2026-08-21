@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T06:46:30Z",
+  "generated_at": "2026-08-21T12:46:14Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -650,8 +650,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 7499.0,
-          "price_text": "R7 499.00",
+          "price": 7699.0,
+          "price_text": "R7 699.00",
           "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL",
           "stale": false
         },
@@ -692,8 +692,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 9399.0,
-          "price_text": "R9 399.00",
+          "price": 9003.5,
+          "price_text": "R9 003.50",
           "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
           "stale": false
         },
