@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T06:41:50Z",
+  "generated_at": "2026-08-23T12:39:42Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -164,8 +164,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 23849.0,
-          "price_text": "R23 849.00",
+          "price": 26499.0,
+          "price_text": "R26 499.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -692,8 +692,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 9003.5,
-          "price_text": "R9 003.50",
+          "price": 8999.0,
+          "price_text": "R8 999.00",
           "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
           "stale": false
         },

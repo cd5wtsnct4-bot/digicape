@@ -32,9 +32,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "13-inch MacBook Air M5",
-    "price_text": "R26 499",
-    "price": 26499.0,
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -42,9 +42,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
+    "name": "13-inch MacBook Air M5",
+    "price_text": "R26 499",
+    "price": 26499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
