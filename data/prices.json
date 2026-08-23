@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T18:31:18Z",
+  "generated_at": "2026-08-23T01:15:52Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -19,6 +19,12 @@
           "url": "https://www.digicape.co.za/category/airpods-all",
           "stale": false
         },
+        "takealot": {
+          "price": 2399.0,
+          "price_text": "R 2,399",
+          "url": "",
+          "stale": false
+        },
         "istore": {
           "price": 2799.0,
           "price_text": "R2 799",
@@ -35,6 +41,18 @@
           "price": 3699.0,
           "price_text": "R3 699",
           "url": "https://www.digicape.co.za/category/airpods-all",
+          "stale": false
+        },
+        "takealot": {
+          "price": 3999.0,
+          "price_text": "R 3,999",
+          "url": "",
+          "stale": false
+        },
+        "amazon": {
+          "price": 3699.0,
+          "price_text": "R3 699.00",
+          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -61,6 +79,12 @@
           "url": "https://www.digicape.co.za/category/airpods-all",
           "stale": false
         },
+        "takealot": {
+          "price": 13645.0,
+          "price_text": "R 13,645",
+          "url": "",
+          "stale": false
+        },
         "istore": {
           "price": 11499.0,
           "price_text": "R11 499",
@@ -77,6 +101,12 @@
           "price": 5099.0,
           "price_text": "R5 099",
           "url": "https://www.digicape.co.za/category/airpods-all",
+          "stale": false
+        },
+        "takealot": {
+          "price": 5299.0,
+          "price_text": "R 5,299",
+          "url": "",
           "stale": false
         },
         "istore": {
@@ -134,8 +164,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 26499.0,
-          "price_text": "R26 499.00",
+          "price": 23849.0,
+          "price_text": "R23 849.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -164,6 +194,20 @@
           "price_text": "R40 699",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
+        },
+        "takealot": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
+        "amazon": {
+          "price": 36936.0,
+          "price_text": "R36 936.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 40999.0,
@@ -337,10 +381,35 @@
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
+        "takealot": {
+          "price": 13999.0,
+          "price_text": "R 13,999",
+          "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 13999.0,
           "price_text": "R13 999",
           "url": "https://www.istore.co.za/mac",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) 10-core CPU/10-core GPU 16GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 40699.0,
+          "price_text": "R 40,699",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "amazon": {
+          "price": 36936.0,
+          "price_text": "R36 936.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
       }
@@ -409,6 +478,12 @@
           "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
           "stale": false
         },
+        "takealot": {
+          "price": 48999.0,
+          "price_text": "R 48,999",
+          "url": "",
+          "stale": false
+        },
         "incredible": {
           "price": 50999.0,
           "price_text": "R 50,999",
@@ -425,6 +500,12 @@
           "price": 50999.0,
           "price_text": "R 50,999",
           "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
           "stale": false
         },
         "incredible": {
@@ -445,6 +526,12 @@
           "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
           "stale": false
         },
+        "takealot": {
+          "price": 63999.0,
+          "price_text": "R 63,999",
+          "url": "",
+          "stale": false
+        },
         "incredible": {
           "price": 64999.0,
           "price_text": "R 64,999",
@@ -462,6 +549,13 @@
           "price_text": "R61 099",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
+        },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 60999.0,
@@ -482,6 +576,12 @@
           "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
           "stale": false
         },
+        "takealot": {
+          "price": 60999.0,
+          "price_text": "R 60,999",
+          "url": "",
+          "stale": false
+        },
         "incredible": {
           "price": 60999.0,
           "price_text": "R 60,999",
@@ -498,6 +598,12 @@
           "price": 73399.0,
           "price_text": "R 73,399",
           "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
+          "stale": false
+        },
+        "takealot": {
+          "price": 71499.0,
+          "price_text": "R 71,499",
+          "url": "",
           "stale": false
         },
         "incredible": {
@@ -699,9 +805,16 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
+        "amazon": {
+          "price": 14999.0,
+          "price_text": "R14 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
-          "price": 15299.0,
-          "price_text": "R15 299",
+          "price": 13499.0,
+          "price_text": "R13 499",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -772,8 +885,8 @@
           "stale": false
         },
         "istore": {
-          "price": 19399.0,
-          "price_text": "R19 399",
+          "price": 17499.0,
+          "price_text": "R17 499",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -806,6 +919,13 @@
           "price_text": "R8 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 7909.0,
+          "price_text": "R7 909.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -818,6 +938,13 @@
           "price_text": "R19 299",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 14640.58,
+          "price_text": "R14 640.58",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -903,6 +1030,13 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
