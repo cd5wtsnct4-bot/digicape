@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T12:36:38Z",
+  "generated_at": "2026-08-23T18:27:28Z",
   "models": [
     {
       "name": "MacBook Air 15-inch (M5 chip)",
@@ -2787,7 +2787,7 @@
                 "image": "catalog/_products/2024/Mac mini/Mac_mini_M4/Mac_mini_M4_Silver/Mac_mini_M4_Silver_0.png",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "4",
+                "quantity": "3",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",

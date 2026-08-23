@@ -59,8 +59,8 @@
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad Air 11-inch (M4): Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 7 with Apple N1, Touch ID, All-Day Battery Life — Blue",
-    "price_text": "R14 999.00",
-    "price": 14999.0,
+    "price_text": "R13 499.00",
+    "price": 13499.0,
     "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9"
   },
   {
@@ -74,7 +74,7 @@
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Mist Blue",
+    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black",
     "price_text": "R18 999.00",
     "price": 18999.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
