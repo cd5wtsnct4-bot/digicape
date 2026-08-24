@@ -2,13 +2,6 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD",
-    "price_text": "R 98,159",
-    "price": 98159.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
     "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
     "price_text": "R 60,999",
     "price": 60999.0
@@ -23,16 +16,9 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
-    "price_text": "R 15,999",
-    "price": 15999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5 Pro 15 core CPU and 16 core GPU, 24GB, 2TB SSD",
-    "price_text": "R 60,999",
-    "price": 60999.0
+    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 40 Core GPU 48GB RAM 2TB SSD",
+    "price_text": "R 98,159",
+    "price": 98159.0
   },
   {
     "retailer": "takealot",
@@ -44,9 +30,9 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
-    "price_text": "R 63,999",
-    "price": 63999.0
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
+    "price_text": "R 15,999",
+    "price": 15999.0
   },
   {
     "retailer": "takealot",
@@ -54,6 +40,20 @@
     "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
     "price_text": "R 86,999",
     "price": 86999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
+    "price_text": "R 63,999",
+    "price": 63999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14\" M5 Pro 15 core CPU and 16 core GPU, 24GB, 2TB SSD",
+    "price_text": "R 60,999",
+    "price": 60999.0
   },
   {
     "retailer": "takealot",
@@ -72,16 +72,9 @@
   {
     "retailer": "takealot",
     "category": "airpods",
-    "name": "Apple AirPods 4 with Active Noise Cancellation",
-    "price_text": "R 3,999",
-    "price": 3999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "apple-promo",
-    "name": "Apple Lightning Digital AV Adapter",
-    "price_text": "R 1,199",
-    "price": 1199.0
+    "name": "Apple AirPods Max 2",
+    "price_text": "R 13,645",
+    "price": 13645.0
   },
   {
     "retailer": "takealot",
@@ -99,10 +92,10 @@
   },
   {
     "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods Max 2",
-    "price_text": "R 13,645",
-    "price": 13645.0
+    "category": "apple-promo",
+    "name": "Apple Lightning Digital AV Adapter",
+    "price_text": "R 1,199",
+    "price": 1199.0
   },
   {
     "retailer": "takealot",
@@ -110,5 +103,12 @@
     "name": "Apple Siri Remote",
     "price_text": "R 1,499",
     "price": 1499.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "airpods",
+    "name": "Apple AirPods 4 with Active Noise Cancellation",
+    "price_text": "R 3,999",
+    "price": 3999.0
   }
 ]

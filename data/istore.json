@@ -32,16 +32,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "13-inch MacBook Air M5",
-    "price_text": "R26 499",
-    "price": 26499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "Apple Studio Display",
     "price_text": "R45 199",
     "price": 45199.0,
@@ -52,9 +42,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Neo",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "13-inch MacBook Air M5",
+    "price_text": "R26 499",
+    "price": 26499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -62,9 +52,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "MacBook Neo",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -85,6 +75,16 @@
     "name": "Apple Studio Display XDR",
     "price_text": "R81 999",
     "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -462,9 +462,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "Belkin Boostcharge Power Bank 10K Display - Pink",
-    "price_text": "R599",
-    "price": 599.0,
+    "name": "Belkin BoostCharge Slim Magnetic Power Bank 5K - White",
+    "price_text": "R1 199",
+    "price": 1199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -472,9 +472,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "Sony WH- 1000XM6 Noise Cancelling Bluetooth Headphones - Pink",
-    "price_text": "R10 999",
-    "price": 10999.0,
+    "name": "Belkin BoostCharge Slim Magnetic Power Bank 5K - Black",
+    "price_text": "R1 199",
+    "price": 1199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
