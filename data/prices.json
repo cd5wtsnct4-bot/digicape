@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T12:49:08Z",
+  "generated_at": "2026-08-24T18:42:00Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -825,8 +825,8 @@
       "title": "11-inch iPad Pro M4",
       "prices": {
         "digicape": {
-          "price": 23299.0,
-          "price_text": "R23 299",
+          "price": 21399.0,
+          "price_text": "R21 399",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
