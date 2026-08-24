@@ -42,9 +42,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Neo",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -52,9 +52,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
+    "name": "MacBook Neo",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -302,6 +302,16 @@
   {
     "retailer": "istore",
     "category": "iphone",
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
     "name": "iPhone 17 Pro",
     "price_text": "R24 999",
     "price": 24999.0,
@@ -315,16 +325,6 @@
     "name": "iPhone 15",
     "price_text": "R13 999",
     "price": 13999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
-  },
-  {
-    "retailer": "istore",
-    "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
