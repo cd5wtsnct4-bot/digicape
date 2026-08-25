@@ -250,14 +250,6 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Air 13 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Sky Blue",
-    "price_text": "R 36,499",
-    "price": 36499.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
     "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 16GB 1TB SSD Silver",
     "price_text": "R 36,499",
     "price": 36499.0,
@@ -275,6 +267,14 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 16GB 1TB SSD Sky Blue",
+    "price_text": "R 36,499",
+    "price": 36499.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 16GB 1TB SSD Starlight",
     "price_text": "R 36,499",
     "price": 36499.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
