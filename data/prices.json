@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T06:49:12Z",
+  "generated_at": "2026-08-26T12:52:05Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -164,8 +164,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 26399.0,
-          "price_text": "R26 399.00",
+          "price": 26499.0,
+          "price_text": "R26 499.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -244,74 +244,6 @@
         "istore": {
           "price": 30599.0,
           "price_text": "R30 599",
-          "url": "https://www.istore.co.za/mac",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac Studio M3 Ultra",
-      "prices": {
-        "digicape": {
-          "price": 107899.0,
-          "price_text": "R107 899",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 107999.0,
-          "price_text": "R107 999",
-          "url": "https://www.istore.co.za/mac",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac Studio M4 Max",
-      "prices": {
-        "digicape": {
-          "price": 50899.0,
-          "price_text": "R50 899",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 50999.0,
-          "price_text": "R50 999",
-          "url": "https://www.istore.co.za/mac",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac mini (M4 Pro)",
-      "prices": {
-        "digicape": {
-          "price": 32499.0,
-          "price_text": "R32 499",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Mac mini (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 20399.0,
-          "price_text": "R20 399",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 24499.0,
-          "price_text": "R24 499",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
@@ -610,6 +542,18 @@
           "price": 73499.0,
           "price_text": "R 73,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Open-box MacBook Pro 14-inch (M5 chip)",
+      "prices": {
+        "digicape": {
+          "price": 30899.0,
+          "price_text": "R30 899",
+          "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         }
       }

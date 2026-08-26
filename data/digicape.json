@@ -22,6 +22,16 @@
   {
     "retailer": "digicape",
     "category": "mac",
+    "name": "Open-box MacBook Pro 14-inch (M5 chip)",
+    "price_text": "R30 899",
+    "price": 30899.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
     "name": "MacBook Air 13-inch (M5 chip)",
     "price_text": "R26 399",
     "price": 26399.0,
@@ -55,46 +65,6 @@
     "name": "iMac 24-Inch (M4 chip)",
     "price_text": "R34 199",
     "price": 34199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "Mac mini (M4 chip)",
-    "price_text": "R20 399",
-    "price": 20399.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "Mac mini (M4 Pro)",
-    "price_text": "R32 499",
-    "price": 32499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "Mac Studio M3 Ultra",
-    "price_text": "R107 899",
-    "price": 107899.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "Mac Studio M4 Max",
-    "price_text": "R50 899",
-    "price": 50899.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"
