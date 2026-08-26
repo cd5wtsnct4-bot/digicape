@@ -10,9 +10,9 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Starlight",
-    "price_text": "R26 499.00",
-    "price": 26499.0,
+    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Sky Blue",
+    "price_text": "R22 999.00",
+    "price": 22999.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
   },
   {
@@ -43,8 +43,8 @@
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
-    "price_text": "R7 999.00",
-    "price": 7999.0,
+    "price_text": "R6 999.00",
+    "price": 6999.0,
     "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
   },
   {
@@ -147,16 +147,16 @@
     "retailer": "amazon",
     "category": "appletv",
     "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
-    "price_text": "R5 249.00",
-    "price": 5249.0,
+    "price_text": "R5 099.00",
+    "price": 5099.0,
     "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8"
   },
   {
     "retailer": "amazon",
     "category": "appletv",
     "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
-    "price_text": "R5 249.00",
-    "price": 5249.0,
+    "price_text": "R5 099.00",
+    "price": 5099.0,
     "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD"
   }
 ]
