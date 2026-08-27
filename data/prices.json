@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:50:08Z",
+  "generated_at": "2026-08-27T07:22:38Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 2399.0,
-          "price_text": "R 2,399",
+          "price": 2349.0,
+          "price_text": "R 2,349",
           "url": "",
           "stale": false
         },
@@ -104,8 +104,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 5299.0,
-          "price_text": "R 5,299",
+          "price": 4999.0,
+          "price_text": "R 4,999",
           "url": "",
           "stale": false
         },
@@ -125,6 +125,12 @@
           "price": 4199.0,
           "price_text": "R4 199",
           "url": "https://www.digicape.co.za/category/apple-tv",
+          "stale": false
+        },
+        "amazon": {
+          "price": 3099.0,
+          "price_text": "R3 099.00",
+          "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD",
           "stale": false
         },
         "istore": {
@@ -164,8 +170,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 22999.0,
-          "price_text": "R22 999.00",
+          "price": 25999.99,
+          "price_text": "R25 999.99",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
