@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T09:35:50Z",
+  "generated_at": "2026-08-28T21:48:00Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -164,8 +164,8 @@
       "title": "13-inch MacBook Air M5",
       "prices": {
         "digicape": {
-          "price": 26399.0,
-          "price_text": "R26 399",
+          "price": 24999.0,
+          "price_text": "R24 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
