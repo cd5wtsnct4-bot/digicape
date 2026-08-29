@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T12:21:52Z",
+  "generated_at": "2026-08-29T20:28:59Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -152,8 +152,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 5099.0,
-          "price_text": "R5 099.00",
+          "price": 5249.0,
+          "price_text": "R5 249.00",
           "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8",
           "stale": false
         }
