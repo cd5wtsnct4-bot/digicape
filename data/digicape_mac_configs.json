@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T03:39:26Z",
+  "generated_at": "2026-08-30T11:17:18Z",
   "models": [
     {
       "name": "MacBook Air 15-inch (M5 chip)",
@@ -1430,7 +1430,7 @@
                   "image": "catalog/_products/2026/Mac/MacBook_Neo/MacBook_Neo/MacBook_Neo_Blush/MacBook_Neo_Blush_0.jpg",
                   "has_quantity": "0",
                   "sort_order": "3",
-                  "quantity": "0",
+                  "quantity": "-1",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
