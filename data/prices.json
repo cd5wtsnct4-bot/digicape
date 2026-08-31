@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T03:41:45Z",
+  "generated_at": "2026-08-31T12:46:44Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -44,8 +44,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 3599.0,
-          "price_text": "R 3,599",
+          "price": 3999.0,
+          "price_text": "R 3,999",
           "url": "",
           "stale": false
         },
@@ -250,6 +250,48 @@
         "istore": {
           "price": 30599.0,
           "price_text": "R30 599",
+          "url": "https://www.istore.co.za/mac",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac Mini (M5 Pro)",
+      "prices": {
+        "digicape": {
+          "price": 33599.0,
+          "price_text": "R33 599",
+          "url": "https://www.digicape.co.za/category/mac-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac Studio (M5 Max)",
+      "prices": {
+        "digicape": {
+          "price": 49499.0,
+          "price_text": "R49 499",
+          "url": "https://www.digicape.co.za/category/mac-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "Mac mini (M6)",
+      "prices": {
+        "digicape": {
+          "price": 17699.0,
+          "price_text": "R17 699",
+          "url": "https://www.digicape.co.za/category/mac-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 17699.0,
+          "price_text": "R17 699",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
@@ -548,18 +590,6 @@
           "price": 73499.0,
           "price_text": "R 73,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Open-box MacBook Pro 14-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 30899.0,
-          "price_text": "R30 899",
-          "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         }
       }

@@ -1,7 +1,9 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
+digicape,mac,Mac Mini (M5 Pro),R33 599,33599.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac mini (M6),R17 699,17699.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac Studio (M5 Max),R49 499,49499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 15-inch (M5 chip),R30 499,30499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 16-inch (M5 chip),R61 099,61099.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Open-box MacBook Pro 14-inch (M5 chip),R30 899,30899.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 13-inch (M5 chip),R24 999,24999.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Neo,R13 899,13899.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 14-inch (M5 chip),R40 699,40699.0,,,https://www.digicape.co.za/category/mac-all
