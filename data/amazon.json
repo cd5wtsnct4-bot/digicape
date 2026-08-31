@@ -27,24 +27,24 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Pro Laptop with M5 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD; Space Black",
-    "price_text": "R32 999.00",
-    "price": 32999.0,
+    "price_text": "R36 936.00",
+    "price": 36936.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG"
   },
   {
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Pro Laptop with M4 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD Storage; Silver",
-    "price_text": "R35 999.00",
-    "price": 35999.0,
+    "price_text": "R37 983.27",
+    "price": 37983.27,
     "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0DLHFMRTT"
   },
   {
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
-    "price_text": "R6 999.00",
-    "price": 6999.0,
+    "price_text": "R7 999.00",
+    "price": 7999.0,
     "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
   },
   {
@@ -107,8 +107,8 @@
     "retailer": "amazon",
     "category": "watch",
     "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
-    "price_text": "R7 999.00",
-    "price": 7999.0,
+    "price_text": "R8 999.00",
+    "price": 8999.0,
     "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
   },
   {
@@ -123,8 +123,8 @@
     "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods 4 Wireless Earbuds with Active Noise Cancellation, Bluetooth Headphones, Adaptive Audio, Transparency Mode, Personalised Spatial Audio, USB C Charging Case, Wireless Charging, H2 Chip",
-    "price_text": "R3 599.00",
-    "price": 3599.0,
+    "price_text": "R3 699.00",
+    "price": 3699.0,
     "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995"
   },
   {
