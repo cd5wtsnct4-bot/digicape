@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T22:32:13Z",
+  "generated_at": "2026-09-01T03:39:19Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -951,8 +951,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 17899.0,
-          "price_text": "R17 899.00",
+          "price": 18299.0,
+          "price_text": "R18 299.00",
           "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
