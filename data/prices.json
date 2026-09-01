@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T03:39:19Z",
+  "generated_at": "2026-09-01T11:11:10Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -477,8 +477,8 @@
       "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 2TB SSD",
       "prices": {
         "digicape": {
-          "price": 50999.0,
-          "price_text": "R 50,999",
+          "price": 61099.0,
+          "price_text": "R 61,099",
           "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
           "stale": false
         },
@@ -624,8 +624,8 @@
       "title": "Apple Watch SE 3 Sport Band",
       "prices": {
         "digicape": {
-          "price": 5699.0,
-          "price_text": "R5 699",
+          "price": 5999.0,
+          "price_text": "R5 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
@@ -877,8 +877,8 @@
       "title": "13-inch iPad Pro M5",
       "prices": {
         "digicape": {
-          "price": 26899.0,
-          "price_text": "R26 899",
+          "price": 30699.0,
+          "price_text": "R30 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
@@ -1025,8 +1025,8 @@
       "title": "iPhone 16e",
       "prices": {
         "digicape": {
-          "price": 11799.0,
-          "price_text": "R11 799",
+          "price": 11999.0,
+          "price_text": "R11 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -1043,8 +1043,8 @@
       "title": "iPhone 17",
       "prices": {
         "digicape": {
-          "price": 19699.0,
-          "price_text": "R19 699",
+          "price": 19999.0,
+          "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
