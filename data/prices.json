@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T11:11:10Z",
+  "generated_at": "2026-09-01T16:09:32Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -958,8 +958,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 12299.0,
-          "price_text": "R12 299",
+          "price": 0.0,
+          "price_text": "R0",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -988,8 +988,8 @@
       "title": "iPhone 16",
       "prices": {
         "digicape": {
-          "price": 16999.0,
-          "price_text": "R16 999",
+          "price": 17599.0,
+          "price_text": "R17 599",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -1074,8 +1074,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 23999.0,
-          "price_text": "R23 999.00",
+          "price": 23499.0,
+          "price_text": "R23 499.00",
           "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
