@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T02:56:21Z",
+  "generated_at": "2026-09-02T10:43:11Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -209,8 +209,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "amazon": {
-          "price": 36936.0,
-          "price_text": "R36 936.00",
+          "price": 37299.0,
+          "price_text": "R37 299.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -387,8 +387,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 36936.0,
-          "price_text": "R36 936.00",
+          "price": 37299.0,
+          "price_text": "R37 299.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
