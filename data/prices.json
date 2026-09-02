@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T10:43:11Z",
+  "generated_at": "2026-09-02T16:06:18Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -50,8 +50,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 3699.0,
-          "price_text": "R3 699.00",
+          "price": 3669.0,
+          "price_text": "R3 669.00",
           "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
