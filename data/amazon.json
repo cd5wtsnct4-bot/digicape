@@ -43,8 +43,8 @@
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
-    "price_text": "R7 999.00",
-    "price": 7999.0,
+    "price_text": "R7 499.00",
+    "price": 7499.0,
     "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
   },
   {
@@ -67,8 +67,8 @@
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
-    "price_text": "R18 299.00",
-    "price": 18299.0,
+    "price_text": "R15 959.56",
+    "price": 15959.56,
     "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
   },
   {
@@ -91,8 +91,8 @@
     "retailer": "amazon",
     "category": "iphone",
     "name": "Apple iPhone 17 Pro Max 256GB: 6.9-inch Display with ProMotion, A19 Pro Chip, Best Battery Life in Any iPhone Ever, Pro Fusion Camera System, Center Stage Front Camera; Silver",
-    "price_text": "R27 999.00",
-    "price": 27999.0,
+    "price_text": "R26 999.00",
+    "price": 26999.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
   },
   {
@@ -107,8 +107,8 @@
     "retailer": "amazon",
     "category": "watch",
     "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
-    "price_text": "R8 999.00",
-    "price": 8999.0,
+    "price_text": "R8 738.91",
+    "price": 8738.91,
     "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
   },
   {
@@ -131,16 +131,16 @@
     "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound, USB‑C Charging",
-    "price_text": "R5 099.00",
-    "price": 5099.0,
+    "price_text": "R4 599.00",
+    "price": 4599.0,
     "url": "https://www.amazon.co.za/Apple-Cancellation-Bluetooth-Headphones-High%E2%80%91Fidelity/dp/B0FQFYMLS5"
   },
   {
     "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
-    "price_text": "R11 040.49",
-    "price": 11040.49,
+    "price_text": "R11 046.01",
+    "price": 11046.01,
     "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
   },
   {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T16:06:18Z",
+  "generated_at": "2026-09-02T20:35:29Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -672,8 +672,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 8999.0,
-          "price_text": "R8 999.00",
+          "price": 8738.91,
+          "price_text": "R8 738.91",
           "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
           "stale": false
         },
@@ -901,8 +901,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 7999.0,
-          "price_text": "R7 999.00",
+          "price": 7499.0,
+          "price_text": "R7 499.00",
           "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -951,8 +951,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 18299.0,
-          "price_text": "R18 299.00",
+          "price": 15959.56,
+          "price_text": "R15 959.56",
           "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -1099,8 +1099,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 27999.0,
-          "price_text": "R27 999.00",
+          "price": 26999.0,
+          "price_text": "R26 999.00",
           "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
