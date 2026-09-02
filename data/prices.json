@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T20:38:29Z",
+  "generated_at": "2026-09-02T02:56:21Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -26,8 +26,8 @@
           "stale": false
         },
         "istore": {
-          "price": 2799.0,
-          "price_text": "R2 799",
+          "price": 2599.0,
+          "price_text": "R2 599",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -86,8 +86,8 @@
           "stale": false
         },
         "istore": {
-          "price": 11499.0,
-          "price_text": "R11 499",
+          "price": 11299.0,
+          "price_text": "R11 299",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -110,8 +110,8 @@
           "stale": false
         },
         "istore": {
-          "price": 5399.0,
-          "price_text": "R5 399",
+          "price": 5099.0,
+          "price_text": "R5 099",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -958,8 +958,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 0.0,
-          "price_text": "R0",
+          "price": 12299.0,
+          "price_text": "R12 299",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
