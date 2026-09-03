@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T10:45:07Z",
+  "generated_at": "2026-09-03T15:52:35Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -170,8 +170,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 26499.0,
-          "price_text": "R26 499.00",
+          "price": 24999.0,
+          "price_text": "R24 999.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
