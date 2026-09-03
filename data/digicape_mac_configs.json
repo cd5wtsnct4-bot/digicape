@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T02:57:24Z",
+  "generated_at": "2026-09-03T10:42:13Z",
   "models": [
     {
       "name": "Mac Mini (M5 Pro)",
@@ -1330,7 +1330,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_13_M5/MacBook_Air_13_M5_Midnight/MacBook_Air_13_M5_Midnight_0.jpg",
                 "has_quantity": "0",
                 "sort_order": "3",
-                "quantity": "0",
+                "quantity": "-1",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -1729,7 +1729,7 @@
                   "image": "catalog/_products/2026/Mac/MacBook_Neo/MacBook_Neo_TouchID/MacBook_Neo_TouchID_Silver/MacBook_Neo_TouchID_Silver_0.jpg",
                   "has_quantity": "1",
                   "sort_order": "3",
-                  "quantity": "7",
+                  "quantity": "3",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
@@ -1855,7 +1855,7 @@
                 "image": "catalog/_products/2025/Mac/MacBook_Pro_14-inch_M5/MacBook_Pro_14-inch_M5_Space_Black/MacBook_Pro_14-inch_M5_Space_Black_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "3",
+                "quantity": "1",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
