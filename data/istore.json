@@ -82,9 +82,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "15-inch MacBook Air M5",
-    "price_text": "R30 599",
-    "price": 30599.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -92,9 +92,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "15-inch MacBook Air M5",
+    "price_text": "R30 599",
+    "price": 30599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -212,6 +212,16 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "ZAGG Desk Keyboard Mouse Combo - Black",
+    "price_text": "R999",
+    "price": 999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "Satechi Slim LX3 Wired Keyboard - Silver",
     "price_text": "R899",
     "price": 899.0,
@@ -225,16 +235,6 @@
     "name": "Satechi Slim LX Wired Mouse - Silver",
     "price_text": "R499",
     "price": 499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Harman Kardon Luna 2 Portable Bluetooth Speaker - Black",
-    "price_text": "R3 699",
-    "price": 3699.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -292,9 +292,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
+    "name": "iPhone 17e",
+    "price_text": "R14 599",
+    "price": 14599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -302,9 +302,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17e",
-    "price_text": "R14 599",
-    "price": 14599.0,
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
