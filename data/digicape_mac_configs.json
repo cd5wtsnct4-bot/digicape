@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T10:37:46Z",
+  "generated_at": "2026-09-04T15:47:25Z",
   "models": [
     {
       "name": "Mac Mini (M5 Pro)",
@@ -242,7 +242,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_15_M5/MacBook_Air_15_M5_Midnight/MacBook_Air_15_M5_Midnight_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "6",
+                "quantity": "4",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -741,7 +741,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Pro_M5/MacBook_Pro_16_M5/MacBook_Pro_16_M5_Pro_Silver/MacBook_Pro_16_M5_Pro_Silver_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "5",
+                "quantity": "4",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -780,7 +780,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Pro_M5/MacBook_Pro_16_M5/MacBook_Pro_16_M5_Pro_Space_Black/MacBook_Pro_16_M5_Pro_Space_Black_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "3",
+                "quantity": "2",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -2325,7 +2325,7 @@
                 "image": "catalog/_products/2025/Mac/MacBook_Pro_14-inch_M5/MacBook_Pro_14-inch_M5_Space_Black/MacBook_Pro_14-inch_M5_Space_Black_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "3",
+                "quantity": "2",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
