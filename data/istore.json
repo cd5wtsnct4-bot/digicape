@@ -32,6 +32,16 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "13-inch MacBook Air M5",
+    "price_text": "R26 499",
+    "price": 26499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "Apple Studio Display",
     "price_text": "R45 199",
     "price": 45199.0,
@@ -52,9 +62,19 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "13-inch MacBook Air M5",
-    "price_text": "R26 499",
-    "price": 26499.0,
+    "name": "Mac mini | Apple M4",
+    "price_text": "R24 499",
+    "price": 24499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -75,26 +95,6 @@
     "name": "Apple Studio Display XDR",
     "price_text": "R81 999",
     "price": 81999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Mac mini | Apple M4",
-    "price_text": "R24 499",
-    "price": 24499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -292,9 +292,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17e",
-    "price_text": "R14 599",
-    "price": 14599.0,
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -302,9 +302,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
+    "name": "iPhone 17e",
+    "price_text": "R14 599",
+    "price": 14599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -363,8 +363,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
-    "price_text": "R599",
-    "price": 599.0,
+    "price_text": "R299",
+    "price": 299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -733,10 +733,10 @@
     "retailer": "istore",
     "category": "watch",
     "name": "Apple Watch SE 2 Sport Band",
-    "price_text": "R3 499",
-    "price": 3499.0,
-    "old_price_text": "R3 999",
-    "old_price": 3999.0,
+    "price_text": "",
+    "price": null,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -1063,8 +1063,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
-    "price_text": "R599",
-    "price": 599.0,
+    "price_text": "R299",
+    "price": 299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
