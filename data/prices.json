@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:39:21Z",
+  "generated_at": "2026-09-05T20:00:39Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -121,6 +121,12 @@
           "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
         },
+        "amazon": {
+          "price": 3099.0,
+          "price_text": "R3 099.00",
+          "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD",
+          "stale": false
+        },
         "istore": {
           "price": 4199.0,
           "price_text": "R4 199",
@@ -150,13 +156,6 @@
           "price_text": "R24 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 26499.0,
-          "price_text": "R26 499.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 36499.0,
@@ -892,13 +891,6 @@
           "price_text": "R8 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 7499.0,
-          "price_text": "R7 499.00",
-          "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -942,13 +934,6 @@
           "price_text": "R12 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 15959.56,
-          "price_text": "R15 959.56",
-          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 12299.0,
@@ -1041,13 +1026,6 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
-        "amazon": {
-          "price": 18999.0,
-          "price_text": "R18 999.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 19999.0,
           "price_text": "R19 999",
@@ -1066,13 +1044,6 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
-        "amazon": {
-          "price": 23499.0,
-          "price_text": "R23 499.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 24999.0,
           "price_text": "R24 999",
@@ -1090,6 +1061,13 @@
           "price_text": "R30 499",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 26999.0,
+          "price_text": "R26 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
