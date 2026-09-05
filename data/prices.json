@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T03:01:57Z",
+  "generated_at": "2026-09-05T10:02:24Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -696,8 +696,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 8738.91,
-          "price_text": "R8 738.91",
+          "price": 8999.0,
+          "price_text": "R8 999.00",
           "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
           "stale": false
         },
