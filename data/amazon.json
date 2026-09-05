@@ -2,14 +2,6 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Starlight",
-    "price_text": "R29 999.00",
-    "price": 29999.0,
-    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
-  },
-  {
-    "retailer": "amazon",
-    "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Starlight",
     "price_text": "R26 499.00",
     "price": 26499.0,
@@ -19,8 +11,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
-    "price": 6148.815,
+    "price_text": "R1,529.00",
+    "price": 1529.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {
@@ -30,14 +22,6 @@
     "price_text": "R37 299.00",
     "price": 37299.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG"
-  },
-  {
-    "retailer": "amazon",
-    "category": "mac",
-    "name": "Apple MacBook Pro Laptop with M4 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD Storage; Silver",
-    "price_text": "R37 983.27",
-    "price": 37983.27,
-    "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0DLHFMRTT"
   },
   {
     "retailer": "amazon",
@@ -54,14 +38,6 @@
     "price_text": "R14 640.58",
     "price": 14640.58,
     "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP"
-  },
-  {
-    "retailer": "amazon",
-    "category": "ipad",
-    "name": "Apple iPad Air 11-inch (M4): Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 7 with Apple N1, Touch ID, All-Day Battery Life — Blue",
-    "price_text": "R13 499.00",
-    "price": 13499.0,
-    "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9"
   },
   {
     "retailer": "amazon",
@@ -90,14 +66,6 @@
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple iPhone 17 Pro Max 256GB: 6.9-inch Display with ProMotion, A19 Pro Chip, Best Battery Life in Any iPhone Ever, Pro Fusion Camera System, Center Stage Front Camera; Silver",
-    "price_text": "R26 999.00",
-    "price": 26999.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
-  },
-  {
-    "retailer": "amazon",
-    "category": "iphone",
     "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
     "price_text": "R19 999.00",
     "price": 19999.0,
@@ -113,50 +81,10 @@
   },
   {
     "retailer": "amazon",
-    "category": "watch",
-    "name": "Apple Watch SE 3 GPS + Cellular 44mm Smartwatch with Midnight Aluminium Case with Midnight Sport Band - M/L. Fitness and Sleep Trackers, Heart Rate Monitor, Always-On Display, Water Resistant",
-    "price_text": "R7 699.00",
-    "price": 7699.0,
-    "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL"
-  },
-  {
-    "retailer": "amazon",
-    "category": "airpods",
-    "name": "Apple AirPods 4 Wireless Earbuds with Active Noise Cancellation, Bluetooth Headphones, Adaptive Audio, Transparency Mode, Personalised Spatial Audio, USB C Charging Case, Wireless Charging, H2 Chip",
-    "price_text": "R3 669.00",
-    "price": 3669.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995"
-  },
-  {
-    "retailer": "amazon",
-    "category": "airpods",
-    "name": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound, USB‑C Charging",
-    "price_text": "R4 599.00",
-    "price": 4599.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Bluetooth-Headphones-High%E2%80%91Fidelity/dp/B0FQFYMLS5"
-  },
-  {
-    "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
     "price_text": "R11 046.01",
     "price": 11046.01,
     "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
-  },
-  {
-    "retailer": "amazon",
-    "category": "appletv",
-    "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
-    "price_text": "R5 249.00",
-    "price": 5249.0,
-    "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8"
-  },
-  {
-    "retailer": "amazon",
-    "category": "appletv",
-    "name": "Apple 2022 Apple TV 4K WiFi with 64GB storage (3rd generation)",
-    "price_text": "R3 099.00",
-    "price": 3099.0,
-    "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD"
   }
 ]
