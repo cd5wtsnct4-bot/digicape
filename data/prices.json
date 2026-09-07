@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T11:39:33Z",
+  "generated_at": "2026-09-07T17:18:50Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -47,12 +47,6 @@
           "price": 3999.0,
           "price_text": "R 3,999",
           "url": "",
-          "stale": false
-        },
-        "amazon": {
-          "price": 3669.0,
-          "price_text": "R3 669.00",
-          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -190,8 +184,8 @@
       "title": "14-inch MacBook Pro M5",
       "prices": {
         "digicape": {
-          "price": 38999.0,
-          "price_text": "R38 999",
+          "price": 44699.0,
+          "price_text": "R44 699",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
@@ -565,66 +559,6 @@
     },
     {
       "category": "Mac",
-      "title": "Open-box MacBook Pro 14\" M2 Chip",
-      "prices": {
-        "digicape": {
-          "price": 23899.0,
-          "price_text": "R23 899",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Open-box MacBook Pro 14-inch (M3 Chip)",
-      "prices": {
-        "digicape": {
-          "price": 27799.0,
-          "price_text": "R27 799",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Open-box MacBook Pro 14-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 30899.0,
-          "price_text": "R30 899",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Open-box MacBook Pro 16-inch (M5 chip)",
-      "prices": {
-        "digicape": {
-          "price": 66599.0,
-          "price_text": "R66 599",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "Open-box iMac 24-Inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 30999.0,
-          "price_text": "R30 999",
-          "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
       "title": "iMac 24-Inch (M4 chip)",
       "prices": {
         "digicape": {
@@ -634,8 +568,8 @@
           "stale": false
         },
         "incredible": {
-          "price": 38999.0,
-          "price_text": "R 38,999",
+          "price": 33999.0,
+          "price_text": "R 33,999",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -692,6 +626,12 @@
           "price": 9199.0,
           "price_text": "R9 199",
           "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        },
+        "amazon": {
+          "price": 8999.0,
+          "price_text": "R8 999.00",
+          "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
           "stale": false
         },
         "istore": {
@@ -946,6 +886,13 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
+        "amazon": {
+          "price": 15959.56,
+          "price_text": "R15 959.56",
+          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 12299.0,
           "price_text": "R12 299",
@@ -999,6 +946,13 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1029,13 +983,6 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 18999.0,
-          "price_text": "R18 999.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 19999.0,

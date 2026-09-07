@@ -17,27 +17,35 @@
   },
   {
     "retailer": "amazon",
-    "category": "mac",
-    "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "R1,529.00",
-    "price": 1529.0,
-    "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
+    "category": "ipad",
+    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
+    "price_text": "R15 959.56",
+    "price": 15959.56,
+    "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
   },
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black",
-    "price_text": "R18 999.00",
-    "price": 18999.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
+    "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
+    "price_text": "R19 999.00",
+    "price": 19999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L"
+  },
+  {
+    "retailer": "amazon",
+    "category": "watch",
+    "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
+    "price_text": "R8 999.00",
+    "price": 8999.0,
+    "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
   },
   {
     "retailer": "amazon",
     "category": "airpods",
-    "name": "Apple AirPods 4 Wireless Earbuds with Active Noise Cancellation, Bluetooth Headphones, Adaptive Audio, Transparency Mode, Personalised Spatial Audio, USB C Charging Case, Wireless Charging, H2 Chip",
-    "price_text": "R3 669.00",
-    "price": 3669.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995"
+    "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
+    "price_text": "R11 046.01",
+    "price": 11046.01,
+    "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
   },
   {
     "retailer": "amazon",
