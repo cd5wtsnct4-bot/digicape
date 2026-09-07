@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T17:18:50Z",
+  "generated_at": "2026-09-07T21:11:04Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -592,6 +592,12 @@
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
+        "amazon": {
+          "price": 7699.0,
+          "price_text": "R7 699.00",
+          "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL",
+          "stale": false
+        },
         "istore": {
           "price": 5799.0,
           "price_text": "R5 799",
@@ -741,6 +747,13 @@
           "price_text": "R15 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 13499.0,
+          "price_text": "R13 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 13499.0,
@@ -946,13 +959,6 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 19999.0,
-          "price_text": "R19 999.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -983,6 +989,13 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19299.0,
+          "price_text": "R19 299.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 19999.0,
