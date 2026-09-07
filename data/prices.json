@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T20:03:43Z",
+  "generated_at": "2026-09-07T02:58:11Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -163,6 +163,13 @@
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
+        "amazon": {
+          "price": 26499.0,
+          "price_text": "R26 499.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "incredible": {
           "price": 36499.0,
           "price_text": "R 36,499",
@@ -192,6 +199,13 @@
           "price": 48999.0,
           "price_text": "R 48,999",
           "url": "",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
+        "amazon": {
+          "price": 37299.0,
+          "price_text": "R37 299.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
@@ -364,6 +378,24 @@
           "price": 23899.0,
           "price_text": "R23 899",
           "url": "https://www.digicape.co.za/category/mac-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M5 chip) 10-core CPU/10-core GPU 16GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 40699.0,
+          "price_text": "R 40,699",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
+          "stale": false
+        },
+        "amazon": {
+          "price": 37299.0,
+          "price_text": "R37 299.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
       }
@@ -615,6 +647,12 @@
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
+        "amazon": {
+          "price": 7699.0,
+          "price_text": "R7 699.00",
+          "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL",
+          "stale": false
+        },
         "istore": {
           "price": 5799.0,
           "price_text": "R5 799",
@@ -765,6 +803,13 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
+        "amazon": {
+          "price": 13499.0,
+          "price_text": "R13 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 13499.0,
           "price_text": "R13 499",
@@ -872,6 +917,13 @@
           "price_text": "R8 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 7499.0,
+          "price_text": "R7 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -915,6 +967,13 @@
           "price_text": "R12 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 15959.56,
+          "price_text": "R15 959.56",
+          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 12299.0,
@@ -969,6 +1028,13 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1000,6 +1066,13 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
+        "amazon": {
+          "price": 18999.0,
+          "price_text": "R18 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 19999.0,
           "price_text": "R19 999",
@@ -1017,6 +1090,13 @@
           "price_text": "R27 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 23499.0,
+          "price_text": "R23 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 24999.0,
