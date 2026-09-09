@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T15:59:35Z",
+  "generated_at": "2026-09-09T20:29:08Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -138,12 +138,6 @@
           "price_text": "R5 249",
           "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
-        },
-        "amazon": {
-          "price": 5249.0,
-          "price_text": "R5 249.00",
-          "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8",
-          "stale": false
         }
       }
     },
@@ -156,13 +150,6 @@
           "price_text": "R24 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 23999.0,
-          "price_text": "R23 999.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 36499.0,
@@ -761,6 +748,13 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
+        "amazon": {
+          "price": 13499.0,
+          "price_text": "R13 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 13499.0,
           "price_text": "R13 499",
@@ -905,13 +899,6 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
-        "amazon": {
-          "price": 15959.56,
-          "price_text": "R15 959.56",
-          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 12299.0,
           "price_text": "R12 299",
@@ -995,13 +982,6 @@
           "price_text": "R19 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 19499.0,
-          "price_text": "R19 499.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 19999.0,
