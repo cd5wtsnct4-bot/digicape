@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T03:09:15Z",
+  "generated_at": "2026-09-09T10:51:09Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -127,6 +127,12 @@
           "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
         },
+        "amazon": {
+          "price": 3099.0,
+          "price_text": "R3 099.00",
+          "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD",
+          "stale": false
+        },
         "istore": {
           "price": 4199.0,
           "price_text": "R4 199",
@@ -164,8 +170,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 26499.0,
-          "price_text": "R26 499.00",
+          "price": 23999.0,
+          "price_text": "R23 999.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -275,7 +281,7 @@
     },
     {
       "category": "Mac",
-      "title": "Mac mini (M6)",
+      "title": "Mac mini M6",
       "prices": {
         "digicape": {
           "price": 17699.0,

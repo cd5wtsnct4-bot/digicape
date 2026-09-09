@@ -12,7 +12,7 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Mac mini (M6)",
+    "name": "Mac mini M6",
     "price_text": "R17 699",
     "price": 17699.0,
     "old_price_text": "",
@@ -25,6 +25,16 @@
     "name": "14-inch MacBook Pro M5",
     "price_text": "R40 799",
     "price": 40799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -52,29 +62,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Mac mini | Apple M4",
-    "price_text": "R24 499",
-    "price": 24499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -92,9 +82,19 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Mac mini M4",
+    "price_text": "R24 499",
+    "price": 24499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -292,9 +292,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17e",
-    "price_text": "R14 599",
-    "price": 14599.0,
+    "name": "iPhone 15",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -302,9 +302,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 15",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "iPhone 17e",
+    "price_text": "R14 599",
+    "price": 14599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
