@@ -322,6 +322,46 @@
   {
     "retailer": "digicape",
     "category": "watch",
+    "name": "Apple Watch Ultra 4 Alpine Loop",
+    "price_text": "R17 799",
+    "price": 17799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 4 Milanese Loop",
+    "price_text": "R19 999",
+    "price": 19999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 4 Trail Loop",
+    "price_text": "R17 799",
+    "price": 17799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 4 with Ocean Band",
+    "price_text": "R17 799",
+    "price": 17799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
     "name": "Apple Watch Ultra 3 with Alpine Loop",
     "price_text": "R19 499",
     "price": 19499.0,
@@ -358,6 +398,26 @@
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "airpods",
+    "name": "AirPods 5",
+    "price_text": "R2 599",
+    "price": 2599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/airpods-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "airpods",
+    "name": "AirPods 5 with Wireless Charging Case",
+    "price_text": "R2 999",
+    "price": 2999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/airpods-all"
   },
   {
     "retailer": "digicape",
