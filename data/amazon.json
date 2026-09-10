@@ -10,9 +10,9 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Sky Blue",
-    "price_text": "R23 999.00",
-    "price": 23999.0,
+    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
+    "price_text": "R24 499.00",
+    "price": 24499.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
   },
   {
@@ -83,8 +83,8 @@
     "retailer": "amazon",
     "category": "iphone",
     "name": "Apple iPhone 17 Pro 256GB: 6.3-inch Display with ProMotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Deep Blue",
-    "price_text": "R23 499.00",
-    "price": 23499.0,
+    "price_text": "R23 250.00",
+    "price": 23250.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC"
   },
   {
