@@ -322,6 +322,26 @@
   {
     "retailer": "digicape",
     "category": "watch",
+    "name": "Apple Watch Series 12 Milanese Loop",
+    "price_text": "R9 999",
+    "price": 9999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Series 12 Sport Band",
+    "price_text": "R8 799",
+    "price": 8799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
     "name": "Apple Watch Ultra 4 Alpine Loop",
     "price_text": "R17 799",
     "price": 17799.0,
