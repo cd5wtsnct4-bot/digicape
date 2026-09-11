@@ -42,16 +42,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "13-inch MacBook Air M5",
     "price_text": "R26 499",
     "price": 26499.0,
@@ -62,9 +52,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Neo",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -72,9 +62,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "MacBook Neo",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -105,6 +95,16 @@
     "name": "15-inch MacBook Air M5",
     "price_text": "R30 599",
     "price": 30599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -612,6 +612,16 @@
   {
     "retailer": "istore",
     "category": "ipad",
+    "name": "13-inch iPad Air M3",
+    "price_text": "R14 999",
+    "price": 14999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
     "name": "11-inch iPad Pro M4",
     "price_text": "R27 999",
     "price": 27999.0,
@@ -642,29 +652,19 @@
   {
     "retailer": "istore",
     "category": "ipad",
-    "name": "13-inch iPad Pro M5",
-    "price_text": "R30 799",
-    "price": 30799.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
-  },
-  {
-    "retailer": "istore",
-    "category": "ipad",
-    "name": "13-inch iPad Air M3",
-    "price_text": "R14 999",
-    "price": 14999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
-  },
-  {
-    "retailer": "istore",
-    "category": "ipad",
     "name": "11-inch iPad Air M3",
     "price_text": "R15 999",
     "price": 15999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "13-inch iPad Pro M5",
+    "price_text": "R30 799",
+    "price": 30799.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
