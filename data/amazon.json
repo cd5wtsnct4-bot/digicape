@@ -11,8 +11,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
-    "price_text": "R24 999.00",
-    "price": 24999.0,
+    "price_text": "R23 999.00",
+    "price": 23999.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
   },
   {
@@ -123,8 +123,8 @@
     "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods 4 Wireless Earbuds with Active Noise Cancellation, Bluetooth Headphones, Adaptive Audio, Transparency Mode, Personalised Spatial Audio, USB C Charging Case, Wireless Charging, H2 Chip",
-    "price_text": "R3 499.00",
-    "price": 3499.0,
+    "price_text": "R2 499.00",
+    "price": 2499.0,
     "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995"
   },
   {
@@ -139,8 +139,8 @@
     "retailer": "amazon",
     "category": "airpods",
     "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
-    "price_text": "R11 051.53",
-    "price": 11051.53,
+    "price_text": "R11 057.06",
+    "price": 11057.06,
     "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
   },
   {
