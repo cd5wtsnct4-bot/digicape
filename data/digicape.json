@@ -202,6 +202,36 @@
   {
     "retailer": "digicape",
     "category": "iphone",
+    "name": "iPhone 18 Pro",
+    "price_text": "R28 799",
+    "price": 28799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/iphone-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "iphone",
+    "name": "iPhone 18 Pro Max",
+    "price_text": "R31 299",
+    "price": 31299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/iphone-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "iphone",
+    "name": "iPhone 17",
+    "price_text": "R21 799",
+    "price": 21799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/iphone-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "iphone",
     "name": "iPhone 17 Pro",
     "price_text": "R27 699",
     "price": 27699.0,
@@ -222,29 +252,19 @@
   {
     "retailer": "digicape",
     "category": "iphone",
-    "name": "iPhone Air",
-    "price_text": "R22 999",
-    "price": 22999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/iphone-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "iphone",
-    "name": "iPhone 17",
-    "price_text": "R21 799",
-    "price": 21799.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/iphone-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "iphone",
     "name": "iPhone 17e",
     "price_text": "R16 999",
     "price": 16999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/iphone-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "iphone",
+    "name": "iPhone Air",
+    "price_text": "R22 999",
+    "price": 22999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/iphone-all"

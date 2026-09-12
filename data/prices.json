@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T10:10:34Z",
+  "generated_at": "2026-09-12T15:04:10Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -145,12 +145,6 @@
           "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
         },
-        "amazon": {
-          "price": 3099.0,
-          "price_text": "R3 099.00",
-          "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD",
-          "stale": false
-        },
         "istore": {
           "price": 4199.0,
           "price_text": "R4 199",
@@ -186,13 +180,6 @@
           "price_text": "R24 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 23999.0,
-          "price_text": "R23 999.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 36499.0,
@@ -965,13 +952,6 @@
           "price_text": "R8 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 7499.0,
-          "price_text": "R7 499.00",
-          "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -996,13 +976,6 @@
           "price_text": "R19 299",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 14640.58,
-          "price_text": "R14 640.58",
-          "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1163,13 +1136,6 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
-        "amazon": {
-          "price": 23250.0,
-          "price_text": "R23 250.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 24999.0,
           "price_text": "R24 999",
@@ -1211,6 +1177,36 @@
           "price": 14599.0,
           "price_text": "R14 599",
           "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 18 Pro",
+      "prices": {
+        "digicape": {
+          "price": 28799.0,
+          "price_text": "R28 799",
+          "url": "https://www.digicape.co.za/category/iphone-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 28799.0,
+          "price_text": "R28 799",
+          "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 18 Pro Max",
+      "prices": {
+        "digicape": {
+          "price": 31299.0,
+          "price_text": "R31 299",
+          "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         }
       }
