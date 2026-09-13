@@ -2,10 +2,18 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Starlight",
-    "price_text": "R29 999.00",
-    "price": 29999.0,
-    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
+    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
+    "price_text": "R23 999.00",
+    "price": 23999.0,
+    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
+  },
+  {
+    "retailer": "amazon",
+    "category": "mac",
+    "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
+    "price_text": "R26 587.07",
+    "price": 26587.07,
+    "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {
     "retailer": "amazon",
@@ -41,6 +49,30 @@
   },
   {
     "retailer": "amazon",
+    "category": "ipad",
+    "name": "Apple iPad Air 11-inch (M4): Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 7 with Apple N1, Touch ID, All-Day Battery Life — Space Grey",
+    "price_text": "R14 999.00",
+    "price": 14999.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9"
+  },
+  {
+    "retailer": "amazon",
+    "category": "ipad",
+    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
+    "price_text": "R18 299.00",
+    "price": 18299.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
+  },
+  {
+    "retailer": "amazon",
+    "category": "iphone",
+    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Mist Blue",
+    "price_text": "R19 499.00",
+    "price": 19499.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
+  },
+  {
+    "retailer": "amazon",
     "category": "iphone",
     "name": "Apple iPhone 17 Pro 256GB: 6.3-inch Display with ProMotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Deep Blue",
     "price_text": "R23 250.00",
@@ -57,11 +89,27 @@
   },
   {
     "retailer": "amazon",
+    "category": "iphone",
+    "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
+    "price_text": "R19 999.00",
+    "price": 19999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L"
+  },
+  {
+    "retailer": "amazon",
     "category": "watch",
     "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
     "price_text": "R7 799.00",
     "price": 7799.0,
     "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
+  },
+  {
+    "retailer": "amazon",
+    "category": "watch",
+    "name": "Apple Watch SE 3 GPS + Cellular 44mm Smartwatch with Starlight Aluminium Case with Starlight Sport Band - M/L. Fitness and Sleep Trackers, Heart Rate Monitor, Always-On Display, Water Resistant",
+    "price_text": "R7 299.00",
+    "price": 7299.0,
+    "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL"
   },
   {
     "retailer": "amazon",
