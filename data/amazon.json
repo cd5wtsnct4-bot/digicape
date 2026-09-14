@@ -2,6 +2,14 @@
   {
     "retailer": "amazon",
     "category": "mac",
+    "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Starlight",
+    "price_text": "R29 999.00",
+    "price": 29999.0,
+    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
+  },
+  {
+    "retailer": "amazon",
+    "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
     "price_text": "R23 999.00",
     "price": 23999.0,
@@ -35,8 +43,8 @@
     "retailer": "amazon",
     "category": "ipad",
     "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
-    "price_text": "R7 499.00",
-    "price": 7499.0,
+    "price_text": "R8 079.00",
+    "price": 8079.0,
     "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
   },
   {
