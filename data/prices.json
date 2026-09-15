@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T03:28:33Z",
+  "generated_at": "2026-09-15T11:09:43Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -380,8 +380,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 13499.0,
-          "price_text": "R 13,499",
+          "price": 12999.0,
+          "price_text": "R 12,999",
           "url": "",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -495,8 +495,8 @@
       "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 2TB SSD",
       "prices": {
         "digicape": {
-          "price": 61099.0,
-          "price_text": "R 61,099",
+          "price": 50999.0,
+          "price_text": "R 50,999",
           "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
           "stale": false
         },
@@ -1090,8 +1090,8 @@
       "title": "iPhone 16",
       "prices": {
         "digicape": {
-          "price": 19299.0,
-          "price_text": "R19 299",
+          "price": 16999.0,
+          "price_text": "R16 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
