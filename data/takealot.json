@@ -9,20 +9,6 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD",
-    "price_text": "R 79,999",
-    "price": 79999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
-    "price_text": "R 15,499",
-    "price": 15499.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
     "name": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
     "price_text": "R 61,999",
     "price": 61999.0
@@ -30,14 +16,35 @@
   {
     "retailer": "takealot",
     "category": "mac",
+    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
+    "price_text": "R 81,999",
+    "price": 81999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
     "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
-    "price_text": "R 13,699",
-    "price": 13699.0
+    "price_text": "R 13,499",
+    "price": 13499.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
+    "price_text": "R 14,999",
+    "price": 14999.0
   },
   {
     "retailer": "takealot",
     "category": "mac",
     "name": "Apple MacBook Pro 14\" M5 Pro 15 core CPU and 16 core GPU, 24GB, 2TB SSD",
+    "price_text": "R 59,999",
+    "price": 59999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
     "price_text": "R 59,999",
     "price": 59999.0
   },
@@ -51,23 +58,16 @@
   {
     "retailer": "takealot",
     "category": "mac",
+    "name": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD",
+    "price_text": "R 79,999",
+    "price": 79999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
     "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 48GB RAM 1TB SSD",
     "price_text": "R 71,499",
     "price": 71499.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
-    "price_text": "R 81,999",
-    "price": 81999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
-    "price_text": "R 59,999",
-    "price": 59999.0
   },
   {
     "retailer": "takealot",
@@ -82,20 +82,6 @@
     "name": "Apple AirPods 4 with Active Noise Cancellation",
     "price_text": "R 3,999",
     "price": 3999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "appletv",
-    "name": "Apple TV 4K 64GB",
-    "price_text": "R 5,519",
-    "price": 5519.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods 4",
-    "price_text": "R 2,399",
-    "price": 2399.0
   },
   {
     "retailer": "takealot",
@@ -114,9 +100,23 @@
   {
     "retailer": "takealot",
     "category": "airpods",
+    "name": "Apple AirPods 4",
+    "price_text": "R 2,299",
+    "price": 2299.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "appletv",
+    "name": "Apple TV 4K 64GB",
+    "price_text": "R 5,519",
+    "price": 5519.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "airpods",
     "name": "Apple AirPods Pro 3",
-    "price_text": "R 5,299",
-    "price": 5299.0
+    "price_text": "R 4,999",
+    "price": 4999.0
   },
   {
     "retailer": "takealot",
