@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T03:22:25Z",
+  "generated_at": "2026-09-16T10:53:57Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -517,8 +517,8 @@
       "title": "Apple Watch SE 3 Sport Band",
       "prices": {
         "digicape": {
-          "price": 5999.0,
-          "price_text": "R5 999",
+          "price": 5499.0,
+          "price_text": "R5 499",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },

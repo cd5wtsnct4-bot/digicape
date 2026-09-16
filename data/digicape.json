@@ -302,6 +302,16 @@
   {
     "retailer": "digicape",
     "category": "watch",
+    "name": "Apple Watch SE 3 Sport Band",
+    "price_text": "R5 499",
+    "price": 5499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
     "name": "Apple Watch Series 12 Milanese Loop",
     "price_text": "R9 999",
     "price": 9999.0,
@@ -375,16 +385,6 @@
     "name": "Apple Watch Series 11 Sport Band",
     "price_text": "R9 199",
     "price": 9199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/watch-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "watch",
-    "name": "Apple Watch SE 3 Sport Band",
-    "price_text": "R5 999",
-    "price": 5999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
