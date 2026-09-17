@@ -232,9 +232,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "soundcore Space 2 Wireless Active Noise-Cancelling Headphones - Seafoam Green",
-    "price_text": "R2 999",
-    "price": 2999.0,
+    "name": "Apple 40W Dynamic Power Adapter with 60W Max",
+    "price_text": "R999",
+    "price": 999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -293,10 +293,10 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
+    "old_price_text": "R2 199",
+    "old_price": 2199.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -322,9 +322,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -342,9 +342,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -1093,10 +1093,10 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
+    "old_price_text": "R2 199",
+    "old_price": 2199.0,
     "url": "https://www.istore.co.za/accessories"
   },
   {
