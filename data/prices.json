@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T20:55:11Z",
+  "generated_at": "2026-09-17T03:27:59Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -153,8 +153,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 26499.0,
-          "price_text": "R26 499",
+          "price": 24999.0,
+          "price_text": "R24 999",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
