@@ -82,16 +82,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Mac mini M4",
-    "price_text": "R24 499",
-    "price": 24499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "MacBook Pro 16-inch | Apple M4",
     "price_text": "R52 999",
     "price": 52999.0,
@@ -105,6 +95,16 @@
     "name": "15-inch MacBook Air M5",
     "price_text": "R30 599",
     "price": 30599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Mac mini M4",
+    "price_text": "R24 499",
+    "price": 24499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
