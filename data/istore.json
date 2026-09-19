@@ -322,16 +322,6 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
-  },
-  {
-    "retailer": "istore",
-    "category": "iphone",
     "name": "iPhone 16",
     "price_text": "R17 499",
     "price": 17499.0,
@@ -345,6 +335,16 @@
     "name": "iPhone 15",
     "price_text": "R13 999",
     "price": 13999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -945,16 +945,6 @@
     "name": "Apple AirPods Max",
     "price_text": "",
     "price": null,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/airpods"
-  },
-  {
-    "retailer": "istore",
-    "category": "airpods",
-    "name": "Apple AirPods 5 with Wireless Charging Case",
-    "price_text": "R2 999",
-    "price": 2999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/airpods"
