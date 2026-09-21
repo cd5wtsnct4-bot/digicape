@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:24:31Z",
+  "generated_at": "2026-09-21T12:05:11Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -44,15 +44,9 @@
           "stale": false
         },
         "takealot": {
-          "price": 3999.0,
-          "price_text": "R 3,999",
+          "price": 3499.0,
+          "price_text": "R 3,499",
           "url": "",
-          "stale": false
-        },
-        "amazon": {
-          "price": 2499.0,
-          "price_text": "R2 499.00",
-          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -220,8 +214,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 48999.0,
-          "price_text": "R 48,999",
+          "price": 47999.0,
+          "price_text": "R 47,999",
           "url": "",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -380,8 +374,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 13699.0,
-          "price_text": "R 13,699",
+          "price": 12999.0,
+          "price_text": "R 12,999",
           "url": "",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -477,8 +471,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 48999.0,
-          "price_text": "R 48,999",
+          "price": 47999.0,
+          "price_text": "R 47,999",
           "url": "",
           "stale": false
         },
@@ -501,8 +495,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 59999.0,
-          "price_text": "R 59,999",
+          "price": 57999.0,
+          "price_text": "R 57,999",
           "url": "",
           "stale": false
         },
@@ -525,8 +519,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 61999.0,
-          "price_text": "R 61,999",
+          "price": 59999.0,
+          "price_text": "R 59,999",
           "url": "",
           "stale": false
         },
@@ -549,8 +543,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 59999.0,
-          "price_text": "R 59,999",
+          "price": 58999.0,
+          "price_text": "R 58,999",
           "url": "",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -575,8 +569,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 59999.0,
-          "price_text": "R 59,999",
+          "price": 58999.0,
+          "price_text": "R 58,999",
           "url": "",
           "stale": false
         },
@@ -599,8 +593,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 71499.0,
-          "price_text": "R 71,499",
+          "price": 69999.0,
+          "price_text": "R 69,999",
           "url": "",
           "stale": false
         },
@@ -1022,8 +1016,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 12280.33,
-          "price_text": "R12 280.33",
+          "price": 11052.3,
+          "price_text": "R11 052.30",
           "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."

@@ -42,6 +42,16 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "13-inch MacBook Air M5",
     "price_text": "R24 999",
     "price": 24999.0,
@@ -62,9 +72,19 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "15-inch MacBook Air M5",
+    "price_text": "R30 599",
+    "price": 30599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -85,26 +105,6 @@
     "name": "MacBook Pro 16-inch | Apple M4",
     "price_text": "R52 999",
     "price": 52999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "15-inch MacBook Air M5",
-    "price_text": "R30 599",
-    "price": 30599.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -312,16 +312,6 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
-  },
-  {
-    "retailer": "istore",
-    "category": "iphone",
     "name": "iPhone 17e",
     "price_text": "R16 999",
     "price": 16999.0,
@@ -332,9 +322,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 15",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "iPhone 16",
+    "price_text": "R17 499",
+    "price": 17499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -345,6 +335,16 @@
     "name": "iPhone 17 Pro",
     "price_text": "R24 999",
     "price": 24999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "iPhone 15",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -847,6 +847,16 @@
     "price": 16499.0,
     "old_price_text": "R21 099",
     "old_price": 21099.0,
+    "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "watch",
+    "name": "Apple Watch SE 3 Sport Band",
+    "price_text": "R5 499",
+    "price": 5499.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
