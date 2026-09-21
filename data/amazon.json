@@ -18,34 +18,10 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
-    "price_text": "R26 587.07",
-    "price": 26587.07,
-    "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
-  },
-  {
-    "retailer": "amazon",
-    "category": "mac",
     "name": "Apple MacBook Pro Laptop with M5 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD; Space Black",
     "price_text": "R31 999.00",
     "price": 31999.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG"
-  },
-  {
-    "retailer": "amazon",
-    "category": "mac",
-    "name": "Apple MacBook Pro Laptop with M4 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD Storage; Silver",
-    "price_text": "R37 983.27",
-    "price": 37983.27,
-    "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0DLHFMRTT"
-  },
-  {
-    "retailer": "amazon",
-    "category": "ipad",
-    "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
-    "price_text": "R6 998.00",
-    "price": 6998.0,
-    "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
   },
   {
     "retailer": "amazon",
@@ -82,14 +58,6 @@
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple Iphone 17 Pro 256GB: 6.3-inch Display with Promotion up to 120Hz, A19 Chip, Breakthrough Battery Life, Fusion Camera System with Center Stage Front Deep Blue",
-    "price_text": "R23 499.00",
-    "price": 23499.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC"
-  },
-  {
-    "retailer": "amazon",
-    "category": "iphone",
     "name": "Apple Iphone 17 Pro Max 256GB: 6.9-inch Display with Promotion, A19 Chip, Best Battery Life in Any Ever, Fusion Camera System, Center Stage Front Silver",
     "price_text": "R25 499.00",
     "price": 25499.0,
@@ -110,38 +78,6 @@
     "price_text": "R7 799.00",
     "price": 7799.0,
     "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
-  },
-  {
-    "retailer": "amazon",
-    "category": "watch",
-    "name": "Apple Watch SE 3 GPS + Cellular 44mm Smartwatch with Starlight Aluminium Case with Starlight Sport Band - M/L. Fitness and Sleep Trackers, Heart Rate Monitor, Always-On Display, Water Resistant",
-    "price_text": "R7 299.00",
-    "price": 7299.0,
-    "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL"
-  },
-  {
-    "retailer": "amazon",
-    "category": "airpods",
-    "name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water Resistant, USB C Charging Case, H2 Chip, Up to 24 Hours of Battery Life, Effortless Setup for iPhone",
-    "price_text": "R1 999.00",
-    "price": 1999.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995"
-  },
-  {
-    "retailer": "amazon",
-    "category": "airpods",
-    "name": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound, USB‑C Charging",
-    "price_text": "R4 299.00",
-    "price": 4299.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Bluetooth-Headphones-High%E2%80%91Fidelity/dp/B0FQFYMLS5"
-  },
-  {
-    "retailer": "amazon",
-    "category": "airpods",
-    "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
-    "price_text": "R9 956.33",
-    "price": 9956.33,
-    "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
   },
   {
     "retailer": "amazon",
