@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T03:11:21Z",
+  "generated_at": "2026-09-24T11:09:05Z",
   "models": [
     {
       "name": "Mac Mini (M5 Pro)",
@@ -64,7 +64,7 @@
                 "image": "catalog/_products/2026/Apple/Mac_mini_M6_Silver/Mac_mini_M6_Silver_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "21",
+                "quantity": "20",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
