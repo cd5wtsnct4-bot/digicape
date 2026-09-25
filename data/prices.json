@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:14:11Z",
+  "generated_at": "2026-09-25T03:31:21Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -1132,8 +1132,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 19999.0,
-          "price_text": "R19 999",
+          "price": 21799.0,
+          "price_text": "R21 799",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
