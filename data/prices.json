@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T11:29:45Z",
+  "generated_at": "2026-09-27T16:29:21Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -47,6 +47,12 @@
           "price": 3499.0,
           "price_text": "R 3,499",
           "url": "",
+          "stale": false
+        },
+        "amazon": {
+          "price": 2499.0,
+          "price_text": "R2 499.00",
+          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -1117,13 +1123,6 @@
           "price_text": "R21 799",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 21799.0,
-          "price_text": "R21 799.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 21799.0,
