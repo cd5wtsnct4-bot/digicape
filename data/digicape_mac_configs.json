@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:54:52Z",
+  "generated_at": "2026-09-28T03:41:27Z",
   "models": [
     {
       "name": "Mac Mini (M5 Pro)",
@@ -142,9 +142,9 @@
                 "name": "Mac mini (M6)",
                 "description": "<p>Mac mini packs pure power into a small, five by five–inch desktop as the M6 chip delivers next-level AI capabilities. Mac mini features 2.5 Gigabit Ethernet with support for Wi‑Fi 7 and Bluetooth 6,1 with ports on the front and back.</p><p><br></p><p>Legal:</p><p>¹Wi‑Fi 7 availability varies by country. For more information, visit https://support.apple.com/en-za/148165.<br>²Testing conducted by Apple in July 2026 using pre‑production Mac mini systems with Apple M6, 12‑core CPU and 12‑core GPU, and production Mac mini systems with Apple M4, 10‑core CPU and 10‑core GPU, both configured with 32GB of unified memory and 2TB SSD. Time to first token measured with an 8K‑token prompt using a 14‑billion parameter model with 4‑bit quantisation and LM Studio 0.4.18+1. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini.<br>³Testing conducted by Apple in July 2026 using pre‑production Mac mini systems with Apple M6, 12‑core CPU and 12‑core GPU, and production Mac mini systems with Apple M4, 10‑core CPU and 10‑core GPU, both configured with 32GB of unified memory and 2TB SSD. Tested with FIO 3.42, 1024KB request size, 10GB test file and IO depth=8. Mac mini systems tested with an attached 5K display. Performance tests are conducted using specific computer systems and reflect the approximate performance of Mac mini.<br>⁴Siri AI will be available in beta later this year and requires an Apple Intelligence–enabled device set to a supported language. Available in English to start. Siri AI will not initially be available in the EU on iOS, iPadOS or watchOS.<br>⁵Apple Intelligence is available with Siri and device language set to Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish or Vietnamese. Some features may not be available in all regions or languages. Some devices may not be available in all regions.<br>⁶Available on Mac computers with Apple silicon and Intel-based Mac computers with a T2 Security Chip. Requires that your iPhone and Mac are signed in with the same Apple Account using two‑factor authentication, your iPhone and Mac are near each other and have Bluetooth and Wi‑Fi turned on, and your Mac is not using AirPlay or Sidecar. Some iPhone features (e.g. camera and microphone) are not compatible with iPhone Mirroring.</p>",
                 "image": "catalog/_products/2026/Apple/Mac_mini_M6_Silver/Mac_mini_M6_Silver_0.jpg",
-                "has_quantity": "1",
+                "has_quantity": "0",
                 "sort_order": "1",
-                "quantity": "1",
+                "quantity": "0",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
