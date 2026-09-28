@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T03:44:40Z",
+  "generated_at": "2026-09-28T12:59:55Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 2299.0,
-          "price_text": "R 2,299",
+          "price": 1999.0,
+          "price_text": "R 1,999",
           "url": "",
           "stale": false
         },
@@ -1016,8 +1016,8 @@
       "title": "iPad Air 13-inch (M3 chip)",
       "prices": {
         "digicape": {
-          "price": 16899.0,
-          "price_text": "R16 899",
+          "price": 27699.0,
+          "price_text": "R27 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         }
