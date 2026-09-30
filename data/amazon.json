@@ -66,15 +66,15 @@
   {
     "retailer": "amazon",
     "category": "ipad",
-    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
-    "price_text": "R18 299.00",
-    "price": 18299.0,
+    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 128GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Blue",
+    "price_text": "R12 299.00",
+    "price": 12299.0,
     "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
   },
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Sage",
+    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Lavender",
     "price_text": "R18 499.00",
     "price": 18499.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
