@@ -52,21 +52,21 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "13-inch MacBook Air M5",
-    "price_text": "R24 999",
-    "price": 24999.0,
-    "old_price_text": "R26 499",
-    "old_price": 26499.0,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "MacBook Neo",
     "price_text": "R13 999",
     "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "13-inch MacBook Air M5",
+    "price_text": "R24 999",
+    "price": 24999.0,
+    "old_price_text": "R26 499",
+    "old_price": 26499.0,
     "url": "https://www.istore.co.za/mac"
   },
   {
@@ -92,9 +92,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "15-inch MacBook Air M5",
-    "price_text": "R30 599",
-    "price": 30599.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -102,9 +102,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "15-inch MacBook Air M5",
+    "price_text": "R30 599",
+    "price": 30599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -352,9 +352,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17e",
-    "price_text": "R16 999",
-    "price": 16999.0,
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -372,9 +372,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
+    "name": "iPhone 17e",
+    "price_text": "R16 999",
+    "price": 16999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
