@@ -52,16 +52,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Neo",
-    "price_text": "R13 999",
-    "price": 13999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "13-inch MacBook Air M5",
     "price_text": "R24 999",
     "price": 24999.0,
@@ -72,19 +62,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "MacBook Neo",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -102,9 +82,29 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "15-inch MacBook Air M5",
     "price_text": "R30 599",
     "price": 30599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -243,8 +243,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "iPhone 16e",
-    "price_text": "R11 999",
-    "price": 11999.0,
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -342,6 +342,16 @@
   {
     "retailer": "istore",
     "category": "iphone",
+    "name": "iPhone 15",
+    "price_text": "R16 499",
+    "price": 16499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
     "name": "iPhone 17e",
     "price_text": "R16 999",
     "price": 16999.0,
@@ -352,19 +362,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 15",
-    "price_text": "R13 999",
-    "price": 13999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
-  },
-  {
-    "retailer": "istore",
-    "category": "iphone",
     "name": "iPhone 16",
-    "price_text": "R17 499",
-    "price": 17499.0,
+    "price_text": "R18 499",
+    "price": 18499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -775,8 +775,8 @@
     "name": "Apple Watch SE 3 Sport Band",
     "price_text": "R5 499",
     "price": 5499.0,
-    "old_price_text": "R5 799",
-    "old_price": 5799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -785,8 +785,8 @@
     "name": "Apple Watch series 10 Sport Band",
     "price_text": "R5 999",
     "price": 5999.0,
-    "old_price_text": "R7 999",
-    "old_price": 7999.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -795,8 +795,8 @@
     "name": "Apple Watch Series 11 Sport Band",
     "price_text": "R7 799",
     "price": 7799.0,
-    "old_price_text": "R9 399",
-    "old_price": 9399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -805,8 +805,8 @@
     "name": "Apple Watch Series 11 Milanese Loop",
     "price_text": "R14 999",
     "price": 14999.0,
-    "old_price_text": "R17 599",
-    "old_price": 17599.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -815,8 +815,8 @@
     "name": "Apple Watch Ultra 3 Ocean Band",
     "price_text": "R15 999",
     "price": 15999.0,
-    "old_price_text": "R18 799",
-    "old_price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -825,8 +825,8 @@
     "name": "Apple Watch Ultra 3 Alpine Loop",
     "price_text": "R15 999",
     "price": 15999.0,
-    "old_price_text": "R18 799",
-    "old_price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -835,8 +835,8 @@
     "name": "Apple Watch Ultra 3 Trail Loop",
     "price_text": "R15 999",
     "price": 15999.0,
-    "old_price_text": "R18 799",
-    "old_price": 18799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -845,8 +845,8 @@
     "name": "Apple Watch Ultra 3 Milanese Loop",
     "price_text": "R16 499",
     "price": 16499.0,
-    "old_price_text": "R21 099",
-    "old_price": 21099.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -865,8 +865,8 @@
     "name": "Apple AirPods Pro 3",
     "price_text": "R5 099",
     "price": 5099.0,
-    "old_price_text": "R5 399",
-    "old_price": 5399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
@@ -895,8 +895,8 @@
     "name": "Apple AirPods Max 2",
     "price_text": "R11 299",
     "price": 11299.0,
-    "old_price_text": "R11 499",
-    "old_price": 11499.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
@@ -925,8 +925,8 @@
     "name": "Apple AirPods Max 2",
     "price_text": "R11 299",
     "price": 11299.0,
-    "old_price_text": "R11 499",
-    "old_price": 11499.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
@@ -975,8 +975,8 @@
     "name": "Apple AirPods Pro 3",
     "price_text": "R5 099",
     "price": 5099.0,
-    "old_price_text": "R5 399",
-    "old_price": 5399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
