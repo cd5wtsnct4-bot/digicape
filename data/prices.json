@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T12:31:51Z",
+  "generated_at": "2026-10-01T22:26:33Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -188,8 +188,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 23999.0,
-          "price_text": "R23 999.00",
+          "price": 22999.0,
+          "price_text": "R22 999.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -1002,6 +1002,13 @@
           "price_text": "R19 299",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 25299.0,
+          "price_text": "R25 299.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1162,8 +1169,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 26999.0,
-          "price_text": "R26 999.00",
+          "price": 27999.0,
+          "price_text": "R27 999.00",
           "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."

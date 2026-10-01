@@ -11,8 +11,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
-    "price_text": "R23 999.00",
-    "price": 23999.0,
+    "price_text": "R22 999.00",
+    "price": 22999.0,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
   },
   {
@@ -50,9 +50,9 @@
   {
     "retailer": "amazon",
     "category": "ipad",
-    "name": "Apple iPad Air 13-inch (M2): Liquid Retina display, 256GB, Landscape 12MP Front Camera/12MP Back Camera, Wi-Fi 6E + 5G Cellular with eSIM, Touch ID, All-Day Battery Life - Blue",
-    "price_text": "R11 695.32",
-    "price": 11695.32,
+    "name": "Apple iPad Air 13-inch (M2): Liquid Retina display, 512GB, Landscape 12MP Front Camera/12MP Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life - Blue",
+    "price_text": "R25 299.00",
+    "price": 25299.0,
     "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP"
   },
   {
@@ -91,8 +91,8 @@
     "retailer": "amazon",
     "category": "iphone",
     "name": "Apple Iphone 17 Pro Max 256GB: 6.9-inch Display with Promotion, A19 Chip, Best Battery Life in Any Ever, Fusion Camera System, Center Stage Front Silver",
-    "price_text": "R26 999.00",
-    "price": 26999.0,
+    "price_text": "R27 999.00",
+    "price": 27999.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
   },
   {
