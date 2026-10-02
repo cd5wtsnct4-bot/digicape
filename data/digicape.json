@@ -102,6 +102,16 @@
   {
     "retailer": "digicape",
     "category": "ipad",
+    "name": "iPad Air 13-inch (M2 chip)",
+    "price_text": "R19 299",
+    "price": 19299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/ipad-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "ipad",
     "name": "iPad Pro 13-inch (M5 chip)",
     "price_text": "R30 699",
     "price": 30699.0,
@@ -155,26 +165,6 @@
     "name": "iPad Air 11-inch (M3 chip)",
     "price_text": "R15 899",
     "price": 15899.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/ipad-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "ipad",
-    "name": "iPad Air 13-inch (M3 chip)",
-    "price_text": "R27 699",
-    "price": 27699.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/ipad-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "ipad",
-    "name": "iPad Air 13-inch (M2 chip)",
-    "price_text": "R19 299",
-    "price": 19299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/ipad-all"
