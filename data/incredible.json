@@ -162,22 +162,6 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5  10‑core CPU 16GB 1TB SSD10‑core GPU Space Black",
-    "price_text": "R 40,999",
-    "price": 40999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5 10‑core CPU 16GB 1TB SSD 10‑core GPU Silver",
-    "price_text": "R 40,999",
-    "price": 40999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
     "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Sky Blue",
     "price_text": "R 40,999",
     "price": 40999.0,
@@ -203,6 +187,22 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Midnight",
+    "price_text": "R 40,999",
+    "price": 40999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14\" M5  10‑core CPU 16GB 1TB SSD10‑core GPU Space Black",
+    "price_text": "R 40,999",
+    "price": 40999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14\" M5 10‑core CPU 16GB 1TB SSD 10‑core GPU Silver",
     "price_text": "R 40,999",
     "price": 40999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -283,16 +283,16 @@
     "retailer": "incredible",
     "category": "appletv",
     "name": "Apple TV 4K Wi‑Fi Ethernet 128GB",
-    "price_text": "R 3,599",
-    "price": 3599.0,
+    "price_text": "R 5,299",
+    "price": 5299.0,
     "url": "https://www.incredible.co.za/products/tv-audio/streaming-devices"
   },
   {
     "retailer": "incredible",
     "category": "appletv",
     "name": "Apple TV 4K Wi‑Fi with 64GB storage",
-    "price_text": "R 3,099",
-    "price": 3099.0,
+    "price_text": "R 4,199",
+    "price": 4199.0,
     "url": "https://www.incredible.co.za/products/tv-audio/streaming-devices"
   }
 ]
