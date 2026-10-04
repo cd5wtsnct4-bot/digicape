@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T04:21:23Z",
+  "generated_at": "2026-10-04T11:50:02Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -805,7 +805,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_13_M5/MacBook_Air_13_M5_Midnight/MacBook_Air_13_M5_Midnight_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "3",
-                "quantity": "6",
+                "quantity": "5",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
