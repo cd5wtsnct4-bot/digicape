@@ -42,9 +42,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Neo",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -52,9 +52,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
+    "name": "MacBook Neo",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -67,6 +67,16 @@
     "price": 24999.0,
     "old_price_text": "R26 499",
     "old_price": 26499.0,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/mac"
   },
   {
@@ -95,16 +105,6 @@
     "name": "15-inch MacBook Air M5",
     "price_text": "R30 599",
     "price": 30599.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -212,16 +212,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Mac Studio | Apple M4 Max | 32‑core GPU | 512GB",
-    "price_text": "R50 999",
-    "price": 50999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "iMac 24-inch | Apple M4 | Nano-Texture Glass | 256GB SSD - Silver",
     "price_text": "R43 499",
     "price": 43499.0,
@@ -235,6 +225,16 @@
     "name": "Satechi USB-C Snap Hub - Citrus",
     "price_text": "R899",
     "price": 899.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "OrbitKey Essentials Keyboard Pouch Mini - Terracotta",
+    "price_text": "R799",
+    "price": 799.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -342,9 +342,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 15",
-    "price_text": "R16 499",
-    "price": 16499.0,
+    "name": "iPhone 17e",
+    "price_text": "R16 999",
+    "price": 16999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -352,9 +352,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17e",
-    "price_text": "R16 999",
-    "price": 16999.0,
+    "name": "iPhone 15",
+    "price_text": "R16 499",
+    "price": 16499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -1193,10 +1193,10 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Sport Band",
-    "price_text": "R999",
-    "price": 999.0,
-    "old_price_text": "R1 199",
-    "old_price": 1199.0,
+    "price_text": "R0",
+    "price": 0.0,
+    "old_price_text": "R0",
+    "old_price": 0.0,
     "url": "https://www.istore.co.za/accessories"
   },
   {

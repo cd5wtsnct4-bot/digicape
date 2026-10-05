@@ -3,13 +3,13 @@ istore,mac,iMac 24-inch | Apple M4,R34 299,34299.0,,,https://www.istore.co.za/ma
 istore,mac,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/mac
 istore,mac,Mac mini M6,R17 699,17699.0,,,https://www.istore.co.za/mac
 istore,mac,14-inch MacBook Pro M5,R40 799,40799.0,,,https://www.istore.co.za/mac
-istore,mac,MacBook Neo,R13 999,13999.0,,,https://www.istore.co.za/mac
 istore,mac,Apple Studio Display,R45 199,45199.0,,,https://www.istore.co.za/mac
+istore,mac,MacBook Neo,R13 999,13999.0,,,https://www.istore.co.za/mac
 istore,mac,13-inch MacBook Air M5,R24 999,24999.0,R26 499,26499.0,https://www.istore.co.za/mac
+istore,mac,Apple Studio Display XDR,R81 999,81999.0,,,https://www.istore.co.za/mac
 istore,mac,Mac mini M4,R24 499,24499.0,,,https://www.istore.co.za/mac
 istore,mac,MacBook Pro 16-inch | Apple M4,R52 999,52999.0,,,https://www.istore.co.za/mac
 istore,mac,15-inch MacBook Air M5,R30 599,30599.0,,,https://www.istore.co.za/mac
-istore,mac,Apple Studio Display XDR,R81 999,81999.0,,,https://www.istore.co.za/mac
 istore,mac,14-inch MacBook Pro M5 Pro / M5 Max,R50 999,50999.0,,,https://www.istore.co.za/mac
 istore,mac,16-inch MacBook Pro M5 Pro / M5 Max,R61 199,61199.0,,,https://www.istore.co.za/mac
 istore,mac,Beats USB-C to Lightning Woven Cable (1.5 m),R549,549.0,,,https://www.istore.co.za/mac
@@ -20,9 +20,9 @@ istore,mac,Apple HomePod mini,R2 999,2999.0,,,https://www.istore.co.za/mac
 istore,mac,Beats Flex – All-Day Wireless Earphones,R1 599,1599.0,,,https://www.istore.co.za/mac
 istore,mac,Satechi USB-C Snap Hub - Indigo,R899,899.0,,,https://www.istore.co.za/mac
 istore,mac,Mac Studio | Apple M3 Ultra | 60‑core GPU | 1TB,R107 999,107999.0,,,https://www.istore.co.za/mac
-istore,mac,Mac Studio | Apple M4 Max | 32‑core GPU | 512GB,R50 999,50999.0,,,https://www.istore.co.za/mac
 istore,mac,iMac 24-inch | Apple M4 | Nano-Texture Glass | 256GB SSD - Silver,R43 499,43499.0,,,https://www.istore.co.za/mac
 istore,mac,Satechi USB-C Snap Hub - Citrus,R899,899.0,,,https://www.istore.co.za/mac
+istore,mac,OrbitKey Essentials Keyboard Pouch Mini - Terracotta,R799,799.0,,,https://www.istore.co.za/mac
 istore,iphone,iPhone 16e,R13 999,13999.0,,,https://www.istore.co.za/iphone
 istore,iphone,Apple iPhone 18 Pro Max TechWoven Case with MagSafe,R1 599,1599.0,,,https://www.istore.co.za/iphone
 istore,iphone,Apple iPhone 18 Pro Max Silicone Case with MagSafe,R1 199,1199.0,,,https://www.istore.co.za/iphone
@@ -33,8 +33,8 @@ istore,iphone,Beats USB-C to Lightning Woven Cable (1.5 m),R549,549.0,,,https://
 istore,iphone,Beats Rugged Case with MagSafe and Camera Control for iPhone 17,R1 999,1999.0,R2 199,2199.0,https://www.istore.co.za/iphone
 istore,iphone,Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro,R1 299,1299.0,R2 199,2199.0,https://www.istore.co.za/iphone
 istore,iphone,iPhone 18 Pro,R28 799,28799.0,,,https://www.istore.co.za/iphone
-istore,iphone,iPhone 15,R16 499,16499.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17e,R16 999,16999.0,,,https://www.istore.co.za/iphone
+istore,iphone,iPhone 15,R16 499,16499.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 16,R18 499,18499.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17 Pro,R24 999,24999.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17,R21 799,21799.0,,,https://www.istore.co.za/iphone
@@ -118,7 +118,7 @@ istore,accessories,Beats Powerbeats Pro 2 High-Performance Earbuds,R5 499,5499.0
 istore,accessories,Apple Watch 49mm Ocean Band,R1 999,1999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch 49mm Trail Loop,R1 999,1999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Nike Sport Loop,R1 199,1199.0,,,https://www.istore.co.za/accessories
-istore,accessories,Apple Watch Sport Band,R999,999.0,R1 199,1199.0,https://www.istore.co.za/accessories
+istore,accessories,Apple Watch Sport Band,R0,0.0,R0,0.0,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Nike Sport Band,R399,399.0,R499,499.0,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Sport Loop,R999,999.0,R1 199,1199.0,https://www.istore.co.za/accessories
 istore,accessories,Apple AirPods 4,R1 999,1999.0,R2 799,2799.0,https://www.istore.co.za/accessories
