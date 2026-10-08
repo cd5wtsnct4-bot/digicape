@@ -42,16 +42,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "13-inch MacBook Air M5",
     "price_text": "R24 999",
     "price": 24999.0,
@@ -65,6 +55,16 @@
     "name": "MacBook Neo",
     "price_text": "R13 999",
     "price": 13999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -92,9 +92,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "15-inch MacBook Air M5",
+    "price_text": "R30 599",
+    "price": 30599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -102,9 +102,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "15-inch MacBook Air M5",
-    "price_text": "R30 599",
-    "price": 30599.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -323,10 +323,10 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
+    "old_price_text": "R2 199",
+    "old_price": 2199.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -352,9 +352,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
+    "name": "iPhone 16",
+    "price_text": "R18 499",
+    "price": 18499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -362,9 +362,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R18 499",
-    "price": 18499.0,
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -1073,8 +1073,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "",
-    "price": null,
+    "price_text": "R1 199",
+    "price": 1199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1133,10 +1133,10 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
+    "old_price_text": "R2 199",
+    "old_price": 2199.0,
     "url": "https://www.istore.co.za/accessories"
   },
   {
