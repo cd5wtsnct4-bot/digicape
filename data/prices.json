@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T12:58:09Z",
+  "generated_at": "2026-10-08T22:59:22Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -14,8 +14,8 @@
       "title": "AirPods 4",
       "prices": {
         "digicape": {
-          "price": 2799.0,
-          "price_text": "R2 799",
+          "price": 2429.0,
+          "price_text": "R2 429",
           "url": "https://www.digicape.co.za/category/airpods-all",
           "stale": false
         },
@@ -38,8 +38,8 @@
       "title": "AirPods 4 with Active Noise Cancellation",
       "prices": {
         "digicape": {
-          "price": 3699.0,
-          "price_text": "R3 699",
+          "price": 3199.0,
+          "price_text": "R3 199",
           "url": "https://www.digicape.co.za/category/airpods-all",
           "stale": false
         },
