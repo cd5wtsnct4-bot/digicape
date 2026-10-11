@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T21:15:04Z",
+  "generated_at": "2026-10-11T04:05:02Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -980,8 +980,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 14640.58,
-          "price_text": "R14 640.58",
+          "price": 12122.4,
+          "price_text": "R12 122.40",
           "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
