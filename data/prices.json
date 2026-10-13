@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:13:49Z",
+  "generated_at": "2026-10-13T13:40:10Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -720,8 +720,8 @@
       "title": "Apple Watch Ultra 3 Alpine Loop",
       "prices": {
         "digicape": {
-          "price": 19499.0,
-          "price_text": "R19 499",
+          "price": 17999.0,
+          "price_text": "R17 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
@@ -1036,8 +1036,8 @@
           "stale": false
         },
         "istore": {
-          "price": 16499.0,
-          "price_text": "R16 499",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -1054,8 +1054,8 @@
           "stale": false
         },
         "istore": {
-          "price": 18499.0,
-          "price_text": "R18 499",
+          "price": 17499.0,
+          "price_text": "R17 499",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -1072,8 +1072,8 @@
           "stale": false
         },
         "istore": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 11999.0,
+          "price_text": "R11 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -1134,8 +1134,8 @@
       "title": "iPhone 17 Pro Max",
       "prices": {
         "digicape": {
-          "price": 30499.0,
-          "price_text": "R30 499",
+          "price": 29699.0,
+          "price_text": "R29 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
