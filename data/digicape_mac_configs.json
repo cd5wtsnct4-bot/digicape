@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T14:28:29Z",
+  "generated_at": "2026-10-13T00:10:35Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -343,7 +343,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_15_M5/MacBook_Air_15_M5_Silver/MacBook_Air_15_M5_Silver_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "3",
+                "quantity": "2",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
