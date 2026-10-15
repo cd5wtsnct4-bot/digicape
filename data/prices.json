@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T03:14:46Z",
+  "generated_at": "2026-10-15T10:55:13Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -871,8 +871,8 @@
           "stale": false
         },
         "istore": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 16999.0,
+          "price_text": "R16 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -889,8 +889,8 @@
           "stale": false
         },
         "istore": {
-          "price": 17499.0,
-          "price_text": "R17 499",
+          "price": 18999.0,
+          "price_text": "R18 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -907,8 +907,8 @@
           "stale": false
         },
         "istore": {
-          "price": 11999.0,
-          "price_text": "R11 999",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -1021,8 +1021,8 @@
           "stale": false
         },
         "istore": {
-          "price": 20499.0,
-          "price_text": "R20 499",
+          "price": 22999.0,
+          "price_text": "R22 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
