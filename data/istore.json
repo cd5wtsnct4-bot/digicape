@@ -22,16 +22,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Satechi Slim CEX3 Wireless Combo - Space Black",
-    "price_text": "R1 899",
-    "price": 1899.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "Satechi Slim CEX1 Wireless Combo - Space Black",
     "price_text": "R1 499",
     "price": 1499.0,
@@ -241,20 +231,20 @@
   },
   {
     "retailer": "istore",
-    "category": "iphone",
-    "name": "iPhone 16e",
-    "price_text": "R13 999",
-    "price": 13999.0,
+    "category": "mac",
+    "name": "ZAGG Desk Keyboard Mouse Combo - Silver",
+    "price_text": "R999",
+    "price": 999.0,
     "old_price_text": "",
     "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
+    "url": "https://www.istore.co.za/mac"
   },
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "Tech 21 EvoClear MagSafe iPhone Duo - Clear",
-    "price_text": "R999",
-    "price": 999.0,
+    "name": "iPhone 16e",
+    "price_text": "R13 999",
+    "price": 13999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -475,6 +465,16 @@
     "name": "Burga Crush Tough Case with MagSafe for iPhone 18 Pro Max",
     "price_text": "R799",
     "price": 799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "Apple Silicone Case with MagSafe for iPhone 18 Pro Max - Magenta",
+    "price_text": "R1 199",
+    "price": 1199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -852,26 +852,6 @@
   {
     "retailer": "istore",
     "category": "airpods",
-    "name": "Apple AirPods 5 with Wireless Charging Case",
-    "price_text": "R2 999",
-    "price": 2999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/airpods"
-  },
-  {
-    "retailer": "istore",
-    "category": "airpods",
-    "name": "Apple AirPods 5",
-    "price_text": "R2 599",
-    "price": 2599.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/airpods"
-  },
-  {
-    "retailer": "istore",
-    "category": "airpods",
     "name": "Apple AirPods Max 2",
     "price_text": "R11 299",
     "price": 11299.0,
@@ -895,6 +875,26 @@
     "name": "Apple AirPods Max",
     "price_text": "",
     "price": null,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "airpods",
+    "name": "Apple AirPods 5 with Wireless Charging Case",
+    "price_text": "R2 999",
+    "price": 2999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/airpods"
+  },
+  {
+    "retailer": "istore",
+    "category": "airpods",
+    "name": "Apple AirPods 5",
+    "price_text": "R2 599",
+    "price": 2599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/airpods"
@@ -1062,16 +1062,6 @@
   {
     "retailer": "istore",
     "category": "accessories",
-    "name": "Satechi Slim CEX3 Wireless Combo - Space Black",
-    "price_text": "R1 899",
-    "price": 1899.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/accessories"
-  },
-  {
-    "retailer": "istore",
-    "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
     "price_text": "R1 199",
     "price": 1199.0,
@@ -1095,16 +1085,6 @@
     "name": "Volkano AutoPlay Series Wireless Receiver",
     "price_text": "R799",
     "price": 799.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/accessories"
-  },
-  {
-    "retailer": "istore",
-    "category": "accessories",
-    "name": "Tech 21 EvoClear MagSafe iPhone Duo - Clear",
-    "price_text": "R999",
-    "price": 999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1253,6 +1233,26 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "OrbitKey Crossbody Phone Strap - Terracotta",
+    "price_text": "R599",
+    "price": 599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "OrbitKey Crossbody Phone Strap - Lilac",
+    "price_text": "R599",
+    "price": 599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "OrbitKey Crossbody Phone Strap - Black",
     "price_text": "R599",
     "price": 599.0,
     "old_price_text": "",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T16:07:25Z",
+  "generated_at": "2026-10-16T20:32:16Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -55,7 +55,7 @@
                   "image": "catalog/_products/2026/Mac/MacBook_Neo/MacBook_Neo_TouchID/MacBook_Neo_TouchID_Indigo/MacBook_Neo_TouchID_Indigo_0.jpg",
                   "has_quantity": "1",
                   "sort_order": "3",
-                  "quantity": "7",
+                  "quantity": "22",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
@@ -133,7 +133,7 @@
                   "image": "catalog/_products/2026/Mac/MacBook_Neo/MacBook_Neo_TouchID/MacBook_Neo_TouchID_Silver/MacBook_Neo_TouchID_Silver_0.jpg",
                   "has_quantity": "1",
                   "sort_order": "3",
-                  "quantity": "9",
+                  "quantity": "29",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
@@ -1109,7 +1109,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_13_M5/MacBook_Air_13_M5_Midnight/MacBook_Air_13_M5_Midnight_0.jpg",
                 "has_quantity": "0",
                 "sort_order": "3",
-                "quantity": "-10",
+                "quantity": "0",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -2509,7 +2509,7 @@
                   "image": "catalog/_products/2024/iMac/iMac_M4/iMac_M4_Chip_2-port_24_Blue/iMac_M4_Chip_2-port_24_Blue_0.png",
                   "has_quantity": "0",
                   "sort_order": "1",
-                  "quantity": "-5",
+                  "quantity": "0",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",

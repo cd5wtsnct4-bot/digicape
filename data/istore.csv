@@ -1,7 +1,6 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
 istore,mac,Satechi USB-C Snap Hub - Indigo,R899,899.0,,,https://www.istore.co.za/mac
 istore,mac,iMac 24-inch | Apple M4,R34 299,34299.0,,,https://www.istore.co.za/mac
-istore,mac,Satechi Slim CEX3 Wireless Combo - Space Black,R1 899,1899.0,,,https://www.istore.co.za/mac
 istore,mac,Satechi Slim CEX1 Wireless Combo - Space Black,R1 499,1499.0,,,https://www.istore.co.za/mac
 istore,mac,OrbitKey Essentials Keyboard Pouch Mini - Terracotta,R799,799.0,,,https://www.istore.co.za/mac
 istore,mac,Orbitkey Essentials Keyboard Pouch Mini - Lilac,R799,799.0,,,https://www.istore.co.za/mac
@@ -23,8 +22,8 @@ istore,mac,Satechi USB-C Snap Hub - Silver,R899,899.0,,,https://www.istore.co.za
 istore,mac,soundcore Space 2 Wireless Active Noise-Cancelling Headphones - Seafoam Green,R2 999,2999.0,,,https://www.istore.co.za/mac
 istore,mac,soundcore Space 2 Wireless Active Noise-Cancelling Headphones - Linen White,R2 999,2999.0,,,https://www.istore.co.za/mac
 istore,mac,Soundcore Space 2 Wireless Active Noise-Cancelling Headphones - Jet Black,R2 999,2999.0,,,https://www.istore.co.za/mac
+istore,mac,ZAGG Desk Keyboard Mouse Combo - Silver,R999,999.0,,,https://www.istore.co.za/mac
 istore,iphone,iPhone 16e,R13 999,13999.0,,,https://www.istore.co.za/iphone
-istore,iphone,Tech 21 EvoClear MagSafe iPhone Duo - Clear,R999,999.0,,,https://www.istore.co.za/iphone
 istore,iphone,Belkin BoostCharge Qi2 Slim Magnetic Power Bank with Kickstand - White,R1 499,1499.0,,,https://www.istore.co.za/iphone
 istore,iphone,OrbitKey Phone Wrist Strap - Black,R399,399.0,,,https://www.istore.co.za/iphone
 istore,iphone,OrbitKey Crossbody Phone Strap - Terracotta,R599,599.0,,,https://www.istore.co.za/iphone
@@ -47,6 +46,7 @@ istore,iphone,Burga Golden Coral Tough Case with Magsafe for iPhone 18 Pro Max,R
 istore,iphone,Zagg Teton Snap Kickstand Holster Case for iPhone 18 Pro Max - Aubergine,R899,899.0,,,https://www.istore.co.za/iphone
 istore,iphone,Zagg Teton Snap Kickstand Holster Case for iPhone 18 Pro Max - Navy,R899,899.0,,,https://www.istore.co.za/iphone
 istore,iphone,Burga Crush Tough Case with MagSafe for iPhone 18 Pro Max,R799,799.0,,,https://www.istore.co.za/iphone
+istore,iphone,Apple Silicone Case with MagSafe for iPhone 18 Pro Max - Magenta,R1 199,1199.0,,,https://www.istore.co.za/iphone
 istore,ipad,13-inch iPad Pro M5,R30 799,30799.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Pro M5,R24 599,24599.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Pro M4,R27 999,27999.0,,,https://www.istore.co.za/ipad/shop-ipad-range
@@ -84,11 +84,11 @@ istore,airpods,Apple AirPods Max,,,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max 2,R11 299,11299.0,,,https://www.istore.co.za/airpods
 istore,airpods,AirPods Accessories,R299,299.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/airpods
-istore,airpods,Apple AirPods 5 with Wireless Charging Case,R2 999,2999.0,,,https://www.istore.co.za/airpods
-istore,airpods,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max 2,R11 299,11299.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods 4,R1 999,1999.0,R2 799,2799.0,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max,,,,,https://www.istore.co.za/airpods
+istore,airpods,Apple AirPods 5 with Wireless Charging Case,R2 999,2999.0,,,https://www.istore.co.za/airpods
+istore,airpods,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Pro 3,R5 099,5099.0,,,https://www.istore.co.za/airpods
 istore,appletv,Apple HomeView,R6 299,6299.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,Apple TV 4K (4th Gen),R6 299,6299.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
@@ -105,11 +105,9 @@ istore,accessories,Beats 360 Cushion Kit – Cloud UltraPlush Cushions for Ear C
 istore,accessories,Beats 360 Cushion Kit – Black UltraPlush Cushions for Ear Cups and Headband,R1 099,1099.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch 49mm Alpine Loop Band,R1 999,1999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Sport Band (New),R1 199,1199.0,,,https://www.istore.co.za/accessories
-istore,accessories,Satechi Slim CEX3 Wireless Combo - Space Black,R1 899,1899.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Nike Sport Band (New),R1 199,1199.0,,,https://www.istore.co.za/accessories
 istore,accessories,Satechi Slim CEX1 Wireless Combo - Space Black,R1 499,1499.0,,,https://www.istore.co.za/accessories
 istore,accessories,Volkano AutoPlay Series Wireless Receiver,R799,799.0,,,https://www.istore.co.za/accessories
-istore,accessories,Tech 21 EvoClear MagSafe iPhone Duo - Clear,R999,999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Belkin BoostCharge Qi2 Slim Magnetic Power Bank with Kickstand - White,R1 499,1499.0,,,https://www.istore.co.za/accessories
 istore,accessories,JBL Tune 530 BT On Ear Headphone - Beige,R899,899.0,,,https://www.istore.co.za/accessories
 istore,accessories,Soundcore Sleep A30 - White,R2 499,2499.0,R3 499,3499.0,https://www.istore.co.za/accessories
@@ -125,3 +123,5 @@ istore,accessories,Apple Watch 46mm Radiant Gold Link Bracelet,R7 399,7399.0,,,h
 istore,accessories,Whoosh Screen Shine Duo Bundle - 100ml + 8ml with Microfibre Cloth,R399,399.0,,,https://www.istore.co.za/accessories
 istore,accessories,OrbitKey Phone Wrist Strap - Black,R399,399.0,,,https://www.istore.co.za/accessories
 istore,accessories,OrbitKey Crossbody Phone Strap - Terracotta,R599,599.0,,,https://www.istore.co.za/accessories
+istore,accessories,OrbitKey Crossbody Phone Strap - Lilac,R599,599.0,,,https://www.istore.co.za/accessories
+istore,accessories,OrbitKey Crossbody Phone Strap - Black,R599,599.0,,,https://www.istore.co.za/accessories
