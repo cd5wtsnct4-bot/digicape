@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:08:39Z",
+  "generated_at": "2026-10-18T10:32:11Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -846,8 +846,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 12399.0,
-          "price_text": "R12 399.00",
+          "price": 14999.0,
+          "price_text": "R14 999.00",
           "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
