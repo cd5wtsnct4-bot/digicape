@@ -333,10 +333,10 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
-    "old_price_text": "R2 199",
-    "old_price": 2199.0,
+    "price_text": "",
+    "price": null,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -362,9 +362,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 15",
-    "price_text": "R16 999",
-    "price": 16999.0,
+    "name": "iPhone 16",
+    "price_text": "R18 999",
+    "price": 18999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -382,9 +382,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 17 Pro",
-    "price_text": "R24 999",
-    "price": 24999.0,
+    "name": "iPhone 15",
+    "price_text": "R16 999",
+    "price": 16999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -392,9 +392,9 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "iPhone 16",
-    "price_text": "R18 999",
-    "price": 18999.0,
+    "name": "iPhone 17 Pro",
+    "price_text": "R24 999",
+    "price": 24999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -1043,8 +1043,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "R1 199",
-    "price": 1199.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1103,10 +1103,10 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
-    "old_price_text": "R2 199",
-    "old_price": 2199.0,
+    "price_text": "",
+    "price": null,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
