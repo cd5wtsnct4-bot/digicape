@@ -502,6 +502,16 @@
   {
     "retailer": "digicape",
     "category": "appletv",
+    "name": "Apple TV 4K (4th Gen)",
+    "price_text": "R6 299",
+    "price": 6299.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/apple-tv"
+  },
+  {
+    "retailer": "digicape",
+    "category": "appletv",
     "name": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
     "price_text": "R5 249",
     "price": 5249.0,
@@ -523,6 +533,16 @@
     "retailer": "digicape",
     "category": "appletv",
     "name": "Apple TV Siri Remote",
+    "price_text": "",
+    "price": null,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/apple-tv"
+  },
+  {
+    "retailer": "digicape",
+    "category": "appletv",
+    "name": "Apple TV Siri Remote (4th Gen)",
     "price_text": "",
     "price": null,
     "old_price_text": "",

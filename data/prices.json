@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T12:16:11Z",
+  "generated_at": "2026-10-19T22:06:29Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -154,6 +154,24 @@
         "istore": {
           "price": 4199.0,
           "price_text": "R4 199",
+          "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Apple TV",
+      "title": "Apple TV 4K (4th Gen)",
+      "prices": {
+        "digicape": {
+          "price": 6299.0,
+          "price_text": "R6 299",
+          "url": "https://www.digicape.co.za/category/apple-tv",
+          "stale": false
+        },
+        "istore": {
+          "price": 6299.0,
+          "price_text": "R6 299",
           "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv",
           "stale": false
         }
