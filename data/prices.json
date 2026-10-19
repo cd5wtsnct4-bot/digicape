@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T03:22:38Z",
+  "generated_at": "2026-10-19T12:16:11Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 2399.0,
-          "price_text": "R 2,399",
+          "price": 1999.0,
+          "price_text": "R 1,999",
           "url": "",
           "stale": false
         },
@@ -44,8 +44,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 3999.0,
-          "price_text": "R 3,999",
+          "price": 3399.0,
+          "price_text": "R 3,399",
           "url": "",
           "stale": false
         },
@@ -68,8 +68,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 2499.0,
-          "price_text": "R 2,499",
+          "price": 2399.0,
+          "price_text": "R 2,399",
           "url": "",
           "stale": false
         },
@@ -104,8 +104,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 13405.0,
-          "price_text": "R 13,405",
+          "price": 10999.0,
+          "price_text": "R 10,999",
           "url": "",
           "stale": false
         },
@@ -128,8 +128,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 5299.0,
-          "price_text": "R 5,299",
+          "price": 4899.0,
+          "price_text": "R 4,899",
           "url": "",
           "stale": false
         },
@@ -182,8 +182,8 @@
       "title": "13-inch MacBook Air M5",
       "prices": {
         "digicape": {
-          "price": 24999.0,
-          "price_text": "R24 999",
+          "price": 26499.0,
+          "price_text": "R26 499",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
@@ -278,8 +278,8 @@
       "title": "Mac Mini (M5 Pro)",
       "prices": {
         "digicape": {
-          "price": 33599.0,
-          "price_text": "R33 599",
+          "price": 34999.0,
+          "price_text": "R34 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         }
@@ -290,8 +290,8 @@
       "title": "Mac Studio (M5 Max)",
       "prices": {
         "digicape": {
-          "price": 49499.0,
-          "price_text": "R49 499",
+          "price": 50999.0,
+          "price_text": "R50 999",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         }
@@ -302,8 +302,8 @@
       "title": "Mac mini M6",
       "prices": {
         "digicape": {
-          "price": 17699.0,
-          "price_text": "R17 699",
+          "price": 18499.0,
+          "price_text": "R18 499",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
@@ -642,8 +642,8 @@
       "title": "Apple Watch SE 3 Sport Band",
       "prices": {
         "digicape": {
-          "price": 5499.0,
-          "price_text": "R5 499",
+          "price": 5699.0,
+          "price_text": "R5 699",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
@@ -696,8 +696,8 @@
       "title": "Apple Watch Series 12 Milanese Loop",
       "prices": {
         "digicape": {
-          "price": 9999.0,
-          "price_text": "R9 999",
+          "price": 10299.0,
+          "price_text": "R10 299",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -708,8 +708,8 @@
       "title": "Apple Watch Series 12 Sport Band",
       "prices": {
         "digicape": {
-          "price": 8799.0,
-          "price_text": "R8 799",
+          "price": 9099.0,
+          "price_text": "R9 099",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -792,8 +792,8 @@
       "title": "Apple Watch Ultra 4 Alpine Loop",
       "prices": {
         "digicape": {
-          "price": 17799.0,
-          "price_text": "R17 799",
+          "price": 18299.0,
+          "price_text": "R18 299",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -804,8 +804,8 @@
       "title": "Apple Watch Ultra 4 Milanese Loop",
       "prices": {
         "digicape": {
-          "price": 19999.0,
-          "price_text": "R19 999",
+          "price": 20499.0,
+          "price_text": "R20 499",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -816,8 +816,8 @@
       "title": "Apple Watch Ultra 4 Trail Loop",
       "prices": {
         "digicape": {
-          "price": 17799.0,
-          "price_text": "R17 799",
+          "price": 18299.0,
+          "price_text": "R18 299",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -828,8 +828,8 @@
       "title": "Apple Watch Ultra 4 with Ocean Band",
       "prices": {
         "digicape": {
-          "price": 17799.0,
-          "price_text": "R17 799",
+          "price": 18299.0,
+          "price_text": "R18 299",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -846,8 +846,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 14999.0,
-          "price_text": "R14 999.00",
+          "price": 12399.0,
+          "price_text": "R12 399.00",
           "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -1078,8 +1078,8 @@
       "title": "iPhone 17",
       "prices": {
         "digicape": {
-          "price": 21799.0,
-          "price_text": "R21 799",
+          "price": 22299.0,
+          "price_text": "R22 299",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -1147,8 +1147,8 @@
       "title": "iPhone 17e",
       "prices": {
         "digicape": {
-          "price": 16999.0,
-          "price_text": "R16 999",
+          "price": 17299.0,
+          "price_text": "R17 299",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },

@@ -1,13 +1,13 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
 digicape,mac,MacBook Neo,R13 899,13899.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 15-inch (M5 chip),R30 499,30499.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,MacBook Air 13-inch (M5 chip),R24 999,24999.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Air 13-inch (M5 chip),R26 499,26499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 14-inch (M5 chip),R44 699,44699.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 16-inch (M5 chip),R61 099,61099.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,iMac 24-Inch (M4 chip),R34 199,34199.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac mini (M6),R17 699,17699.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac Mini (M5 Pro),R33 599,33599.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,Mac Studio (M5 Max),R49 499,49499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac mini (M6),R18 499,18499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac Mini (M5 Pro),R34 999,34999.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,Mac Studio (M5 Max),R50 999,50999.0,,,https://www.digicape.co.za/category/mac-all
 digicape,ipad,iPad Pro 11-inch (M5 chip),R24 499,24499.0,,,https://www.digicape.co.za/category/ipad-all
 digicape,ipad,iPad Air 13-inch (M2 chip),R19 299,19299.0,,,https://www.digicape.co.za/category/ipad-all
 digicape,ipad,iPad Pro 13-inch (M5 chip),R30 699,30699.0,,,https://www.digicape.co.za/category/ipad-all
@@ -25,17 +25,17 @@ digicape,iphone,iPhone 18 Pro Max,R31 299,31299.0,,,https://www.digicape.co.za/c
 digicape,iphone,iPhone 17 Pro,R27 699,27699.0,,,https://www.digicape.co.za/category/iphone-all
 digicape,iphone,iPhone Air,R22 999,22999.0,,,https://www.digicape.co.za/category/iphone-all
 digicape,iphone,iPhone 16,R19 299,19299.0,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 17,R21 799,21799.0,,,https://www.digicape.co.za/category/iphone-all
-digicape,iphone,iPhone 17e,R16 999,16999.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 17,R22 299,22299.0,,,https://www.digicape.co.za/category/iphone-all
+digicape,iphone,iPhone 17e,R17 299,17299.0,,,https://www.digicape.co.za/category/iphone-all
 digicape,iphone,iPhone 16e,R14 699,14699.0,,,https://www.digicape.co.za/category/iphone-all
 digicape,iphone,iPhone 15,R13 999,13999.0,,,https://www.digicape.co.za/category/iphone-all
-digicape,watch,Apple Watch SE 3 Sport Band,R5 499,5499.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Series 12 Milanese Loop,R9 999,9999.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Series 12 Sport Band,R8 799,8799.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 4 with Ocean Band,R17 799,17799.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 4 Alpine Loop,R17 799,17799.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 4 Milanese Loop,R19 999,19999.0,,,https://www.digicape.co.za/category/watch-all
-digicape,watch,Apple Watch Ultra 4 Trail Loop,R17 799,17799.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch SE 3 Sport Band,R5 699,5699.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Series 12 Milanese Loop,R10 299,10299.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Series 12 Sport Band,R9 099,9099.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 4 with Ocean Band,R18 299,18299.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 4 Alpine Loop,R18 299,18299.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 4 Milanese Loop,R20 499,20499.0,,,https://www.digicape.co.za/category/watch-all
+digicape,watch,Apple Watch Ultra 4 Trail Loop,R18 299,18299.0,,,https://www.digicape.co.za/category/watch-all
 digicape,watch,Apple Watch Series 11 Milanese Loop,R19 499,19499.0,,,https://www.digicape.co.za/category/watch-all
 digicape,watch,Apple Watch Series 11 Sport Band,R9 199,9199.0,,,https://www.digicape.co.za/category/watch-all
 digicape,watch,Apple Watch Ultra 3 with Alpine Loop,R17 999,17999.0,,,https://www.digicape.co.za/category/watch-all
