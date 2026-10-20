@@ -3,8 +3,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
-    "price": 6148.815,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61FbscGeDyL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
+    "price": 310.511,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
   },
   {
@@ -19,8 +19,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
-    "price": 6148.815,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61FbscGeDyL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
+    "price": 310.511,
     "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {

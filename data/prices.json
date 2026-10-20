@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T03:31:15Z",
+  "generated_at": "2026-10-20T11:03:45Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -1157,6 +1157,12 @@
           "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
+        "istore": {
+          "price": 27999.0,
+          "price_text": "R27 999",
+          "url": "https://www.istore.co.za/iphone",
+          "stale": false
         }
       }
     },
@@ -1204,6 +1210,12 @@
           "price": 31299.0,
           "price_text": "R31 299",
           "url": "https://www.digicape.co.za/category/iphone-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 31299.0,
+          "price_text": "R31 299",
+          "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
       }
