@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T16:40:14Z",
+  "generated_at": "2026-10-22T21:14:12Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -1269,7 +1269,7 @@
                 "image": "catalog/_products/2025/Mac/MacBook_Pro_14-inch_M5/MacBook_Pro_14-inch_M5_Silver/MacBook_Pro_14-inch_M5_Silver_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "5",
+                "quantity": "4",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
