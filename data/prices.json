@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:37:10Z",
+  "generated_at": "2026-10-23T11:11:54Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -904,6 +904,18 @@
           "price": 18999.0,
           "price_text": "R18 999",
           "url": "https://www.istore.co.za/iphone",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPhone",
+      "title": "iPhone 16 Plus",
+      "prices": {
+        "digicape": {
+          "price": 30999.0,
+          "price_text": "R30 999",
+          "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         }
       }

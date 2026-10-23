@@ -192,6 +192,16 @@
   {
     "retailer": "digicape",
     "category": "iphone",
+    "name": "iPhone 16 Plus",
+    "price_text": "R30 999",
+    "price": 30999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/iphone-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "iphone",
     "name": "iPhone 17 Pro Max",
     "price_text": "R29 699",
     "price": 29699.0,
