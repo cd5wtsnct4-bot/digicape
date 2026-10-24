@@ -2,16 +2,9 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
-    "price_text": "R 12,999",
-    "price": 12999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD",
-    "price_text": "R 78,999",
-    "price": 78999.0
+    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
+    "price_text": "R 84,999",
+    "price": 84999.0
   },
   {
     "retailer": "takealot",
@@ -30,16 +23,23 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
-    "price_text": "R 58,999",
-    "price": 58999.0
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
+    "price_text": "R 12,999",
+    "price": 12999.0
   },
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
-    "price_text": "R 13,499",
-    "price": 13499.0
+    "name": "Apple MacBook Pro 14\" M5 Max Chip 18 core CPU & 32 core GPU, 36GB, 2TB SSD",
+    "price_text": "R 78,999",
+    "price": 78999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB RAM 1TB SSD",
+    "price_text": "R 58,999",
+    "price": 58999.0
   },
   {
     "retailer": "takealot",
@@ -58,23 +58,37 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
-    "price_text": "R 84,999",
-    "price": 84999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
     "name": "Apple MacBook Pro 14\" M5 Pro 18 core CPU and 20 core GPU, 24GB, 2TB SSD",
     "price_text": "R 60,999",
     "price": 60999.0
   },
   {
     "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
+    "price_text": "R 13,499",
+    "price": 13499.0
+  },
+  {
+    "retailer": "takealot",
     "category": "airpods",
-    "name": "Apple AirPods 5 with Wireless Charging Case",
-    "price_text": "R 2,799",
-    "price": 2799.0
+    "name": "Apple AirPods Max 2",
+    "price_text": "R 10,999",
+    "price": 10999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "apple-promo",
+    "name": "Apple HomePod mini",
+    "price_text": "R 3,155",
+    "price": 3155.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "airpods",
+    "name": "Apple AirPods 4 with Active Noise Cancellation",
+    "price_text": "R 3,399",
+    "price": 3399.0
   },
   {
     "retailer": "takealot",
@@ -93,30 +107,16 @@
   {
     "retailer": "takealot",
     "category": "airpods",
-    "name": "Apple AirPods Max 2",
-    "price_text": "R 10,999",
-    "price": 10999.0
+    "name": "Apple AirPods Pro 3",
+    "price_text": "R 3,998",
+    "price": 3998.0
   },
   {
     "retailer": "takealot",
     "category": "airpods",
-    "name": "Apple AirPods 4 with Active Noise Cancellation",
-    "price_text": "R 3,399",
-    "price": 3399.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods 4",
-    "price_text": "R 1,999",
-    "price": 1999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "appletv",
-    "name": "Apple Siri Remote",
-    "price_text": "R 1,499",
-    "price": 1499.0
+    "name": "Apple AirPods 5 with Wireless Charging Case",
+    "price_text": "R 2,799",
+    "price": 2799.0
   },
   {
     "retailer": "takealot",
@@ -127,16 +127,16 @@
   },
   {
     "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods Pro 3",
-    "price_text": "R 3,998",
-    "price": 3998.0
+    "category": "appletv",
+    "name": "Apple Siri Remote",
+    "price_text": "R 1,499",
+    "price": 1499.0
   },
   {
     "retailer": "takealot",
-    "category": "apple-promo",
-    "name": "Apple HomePod mini",
-    "price_text": "R 3,155",
-    "price": 3155.0
+    "category": "airpods",
+    "name": "Apple AirPods 4",
+    "price_text": "R 1,999",
+    "price": 1999.0
   }
 ]

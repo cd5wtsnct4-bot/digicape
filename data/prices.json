@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T10:23:28Z",
+  "generated_at": "2026-10-24T15:30:24Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -179,6 +179,12 @@
           "price": 5249.0,
           "price_text": "R5 249",
           "url": "https://www.digicape.co.za/category/apple-tv",
+          "stale": false
+        },
+        "amazon": {
+          "price": 5249.0,
+          "price_text": "R5 249.00",
+          "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8",
           "stale": false
         }
       }
@@ -951,13 +957,6 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
-        "amazon": {
-          "price": 18299.0,
-          "price_text": "R18 299.00",
-          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 12299.0,
           "price_text": "R12 299",
@@ -1011,13 +1010,6 @@
           "price_text": "R30 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 19999.0,
-          "price_text": "R19 999.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1067,6 +1059,13 @@
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
+        "amazon": {
+          "price": 23250.0,
+          "price_text": "R23 250.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 24999.0,
           "price_text": "R24 999",
@@ -1084,13 +1083,6 @@
           "price_text": "R29 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 26999.0,
-          "price_text": "R26 999.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 27999.0,

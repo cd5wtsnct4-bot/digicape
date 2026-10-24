@@ -2,6 +2,14 @@
   {
     "retailer": "amazon",
     "category": "mac",
+    "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61tpImuAtLL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
+    "price": 310.511,
+    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
+  },
+  {
+    "retailer": "amazon",
+    "category": "mac",
     "name": "Apple MacBook Pro Laptop with M4 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD Storage; Silver",
     "price_text": "R37 983.27",
     "price": 37983.27,
@@ -9,27 +17,11 @@
   },
   {
     "retailer": "amazon",
-    "category": "ipad",
-    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
-    "price_text": "R18 299.00",
-    "price": 18299.0,
-    "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
-  },
-  {
-    "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple Iphone 17 Pro Max 256GB: 6.9-inch Display with Promotion, A19 Chip, Best Battery Life in Any Ever, Fusion Camera System, Center Stage Front Silver",
-    "price_text": "R26 999.00",
-    "price": 26999.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
-  },
-  {
-    "retailer": "amazon",
-    "category": "iphone",
-    "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
-    "price_text": "R19 999.00",
-    "price": 19999.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L"
+    "name": "Apple Iphone 17 Pro 256GB: 6.3-inch Display with Promotion up to 120Hz, A19 Chip, Breakthrough Battery Life, Fusion Camera System with Center Stage Front Deep Blue",
+    "price_text": "R23 250.00",
+    "price": 23250.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC"
   },
   {
     "retailer": "amazon",
@@ -38,5 +30,37 @@
     "price_text": "R8 499.00",
     "price": 8499.0,
     "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
+  },
+  {
+    "retailer": "amazon",
+    "category": "airpods",
+    "name": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound, USB‑C Charging",
+    "price_text": "R3 998.00",
+    "price": 3998.0,
+    "url": "https://www.amazon.co.za/Apple-Cancellation-Bluetooth-Headphones-High%E2%80%91Fidelity/dp/B0FQFYMLS5"
+  },
+  {
+    "retailer": "amazon",
+    "category": "airpods",
+    "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
+    "price_text": "R11 399.00",
+    "price": 11399.0,
+    "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
+  },
+  {
+    "retailer": "amazon",
+    "category": "appletv",
+    "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
+    "price_text": "R5 249.00",
+    "price": 5249.0,
+    "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8"
+  },
+  {
+    "retailer": "amazon",
+    "category": "appletv",
+    "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
+    "price_text": "R5 249.00",
+    "price": 5249.0,
+    "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD"
   }
 ]
