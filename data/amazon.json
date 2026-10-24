@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "retailer": "amazon",
+    "category": "mac",
+    "name": "Apple MacBook Pro Laptop with M4 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD Storage; Silver",
+    "price_text": "R37 983.27",
+    "price": 37983.27,
+    "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0DLHFMRTT"
+  },
+  {
+    "retailer": "amazon",
+    "category": "ipad",
+    "name": "Apple iPad mini (A17 Pro): Apple Intelligence, 8.3-inch Liquid Retina Display, 512GB, Wi-Fi 6E, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Purple",
+    "price_text": "R18 299.00",
+    "price": 18299.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ"
+  },
+  {
+    "retailer": "amazon",
+    "category": "iphone",
+    "name": "Apple Iphone 17 Pro Max 256GB: 6.9-inch Display with Promotion, A19 Chip, Best Battery Life in Any Ever, Fusion Camera System, Center Stage Front Silver",
+    "price_text": "R26 999.00",
+    "price": 26999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
+  },
+  {
+    "retailer": "amazon",
+    "category": "iphone",
+    "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
+    "price_text": "R19 999.00",
+    "price": 19999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L"
+  },
+  {
+    "retailer": "amazon",
+    "category": "watch",
+    "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
+    "price_text": "R8 499.00",
+    "price": 8499.0,
+    "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
+  }
+]

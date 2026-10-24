@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T03:23:46Z",
+  "generated_at": "2026-10-24T10:23:28Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -650,6 +650,12 @@
           "price_text": "R9 199",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 8499.0,
+          "price_text": "R8 499.00",
+          "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
+          "stale": false
         }
       }
     },
@@ -945,6 +951,13 @@
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         },
+        "amazon": {
+          "price": 18299.0,
+          "price_text": "R18 299.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "istore": {
           "price": 12299.0,
           "price_text": "R12 299",
@@ -998,6 +1011,13 @@
           "price_text": "R30 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1064,6 +1084,13 @@
           "price_text": "R29 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 26999.0,
+          "price_text": "R26 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 27999.0,
