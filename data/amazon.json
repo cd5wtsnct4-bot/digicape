@@ -2,10 +2,10 @@
   {
     "retailer": "amazon",
     "category": "mac",
-    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
-    "price_text": "R22 999.00",
-    "price": 22999.0,
-    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
+    "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61tpImuAtLL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
+    "price": 310.511,
+    "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {
     "retailer": "amazon",
@@ -26,10 +26,34 @@
   {
     "retailer": "amazon",
     "category": "ipad",
+    "name": "Apple iPad with A16 chip: 11-inch Liquid Retina Display, 128 GB, Wi-Fi 6, 12MP Front / 12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
+    "price_text": "R6 998.00",
+    "price": 6998.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R"
+  },
+  {
+    "retailer": "amazon",
+    "category": "ipad",
+    "name": "Apple iPad Air 13-inch (M2): Liquid Retina display, 512GB, Landscape 12MP Front Camera/12MP Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life - Blue",
+    "price_text": "R25 299.00",
+    "price": 25299.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP"
+  },
+  {
+    "retailer": "amazon",
+    "category": "ipad",
     "name": "Apple iPad Air 11-inch (M4): Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 7 with Apple N1, Touch ID, All-Day Battery Life — Purple",
     "price_text": "R14 999.00",
     "price": 14999.0,
     "url": "https://www.amazon.co.za/Apple-iPad-Air-11-inch-M4/dp/B0GQWC3GV9"
+  },
+  {
+    "retailer": "amazon",
+    "category": "iphone",
+    "name": "Apple iPhone 17 256GB: 6.3-inch Display with ProMotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Mist Blue",
+    "price_text": "R19 999.00",
+    "price": 19999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
   },
   {
     "retailer": "amazon",
@@ -42,18 +66,10 @@
   {
     "retailer": "amazon",
     "category": "iphone",
-    "name": "Apple Iphone 17 Pro Max 256GB: 6.9-inch Display with Promotion, A19 Chip, Best Battery Life in Any Ever, Fusion Camera System, Center Stage Front Silver",
-    "price_text": "R26 999.00",
-    "price": 26999.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX"
-  },
-  {
-    "retailer": "amazon",
-    "category": "watch",
-    "name": "Apple Watch Series 11 GPS 42mm Smartwatch with Jet Black Aluminium Case with Black Sport Band - M/L. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
-    "price_text": "R8 499.00",
-    "price": 8499.0,
-    "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW"
+    "name": "Apple iPhone 16 Plus 128 GB: 5G Smartphone with Apple Intelligence, Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
+    "price_text": "R19 999.00",
+    "price": 19999.0,
+    "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L"
   },
   {
     "retailer": "amazon",
@@ -74,10 +90,10 @@
   {
     "retailer": "amazon",
     "category": "airpods",
-    "name": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Heart Rate Sensing, Bluetooth Headphones, Spatial Audio, High‑Fidelity Sound, USB‑C Charging",
-    "price_text": "R3 998.00",
-    "price": 3998.0,
-    "url": "https://www.amazon.co.za/Apple-Cancellation-Bluetooth-Headphones-High%E2%80%91Fidelity/dp/B0FQFYMLS5"
+    "name": "Apple AirPods Max Wireless Over‑Ear Headphones, Pro‑Level Active Noise Cancellation, Transparency Mode, Personalised Spatial Audio, USB‑C Charging, Bluetooth Headphones for iPhone, Blue",
+    "price_text": "R11 399.00",
+    "price": 11399.0,
+    "url": "https://www.amazon.co.za/Apple-AirPods-Max-Space-Gray/dp/B08Q4LRXCG"
   },
   {
     "retailer": "amazon",
