@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T03:20:30Z",
+  "generated_at": "2026-10-26T12:23:04Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -128,8 +128,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 5499.0,
-          "price_text": "R 5,499",
+          "price": 3999.0,
+          "price_text": "R 3,999",
           "url": "",
           "stale": false
         },
@@ -1208,8 +1208,8 @@
       "title": "iPhone 18 Pro",
       "prices": {
         "digicape": {
-          "price": 28799.0,
-          "price_text": "R28 799",
+          "price": 29799.0,
+          "price_text": "R29 799",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -1226,8 +1226,8 @@
       "title": "iPhone 18 Pro Max",
       "prices": {
         "digicape": {
-          "price": 31299.0,
-          "price_text": "R31 299",
+          "price": 32299.0,
+          "price_text": "R32 299",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
