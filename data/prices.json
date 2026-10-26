@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T20:29:59Z",
+  "generated_at": "2026-10-26T03:20:30Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 1999.0,
-          "price_text": "R 1,999",
+          "price": 1499.0,
+          "price_text": "R 1,499",
           "url": "",
           "stale": false
         },
@@ -44,8 +44,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 3399.0,
-          "price_text": "R 3,399",
+          "price": 2399.0,
+          "price_text": "R 2,399",
           "url": "",
           "stale": false
         },
@@ -68,8 +68,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 2399.0,
-          "price_text": "R 2,399",
+          "price": 2299.0,
+          "price_text": "R 2,299",
           "url": "",
           "stale": false
         },
@@ -128,8 +128,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 3998.0,
-          "price_text": "R 3,998",
+          "price": 5499.0,
+          "price_text": "R 5,499",
           "url": "",
           "stale": false
         },
