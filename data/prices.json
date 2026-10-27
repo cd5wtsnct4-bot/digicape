@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T17:35:01Z",
+  "generated_at": "2026-10-27T21:55:45Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -199,6 +199,13 @@
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
+        "amazon": {
+          "price": 22999.0,
+          "price_text": "R22 999.00",
+          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
+        },
         "incredible": {
           "price": 36499.0,
           "price_text": "R 36,499",
@@ -228,13 +235,6 @@
           "price": 48999.0,
           "price_text": "R 48,999",
           "url": "",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
-        "amazon": {
-          "price": 38999.0,
-          "price_text": "R38 999.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
@@ -395,24 +395,6 @@
           "price": 13999.0,
           "price_text": "R13 999",
           "url": "https://www.istore.co.za/mac",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) 10-core CPU/10-core GPU 16GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 40699.0,
-          "price_text": "R 40,699",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "amazon": {
-          "price": 38999.0,
-          "price_text": "R38 999.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
       }
@@ -922,6 +904,13 @@
           "price_text": "R8 699",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 7999.0,
+          "price_text": "R7 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-A16-chip-11-inch/dp/B0DZ78275R",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -946,13 +935,6 @@
           "price_text": "R19 299",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 25299.0,
-          "price_text": "R25 299.00",
-          "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1043,6 +1025,13 @@
           "price_text": "R30 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1123,6 +1112,13 @@
           "price_text": "R29 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 26999.0,
+          "price_text": "R26 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-Max-256GB/dp/B0FQFH63DX",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 27999.0,
