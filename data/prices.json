@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T21:55:45Z",
+  "generated_at": "2026-10-28T04:05:19Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -47,6 +47,12 @@
           "price": 3399.0,
           "price_text": "R 3,399",
           "url": "",
+          "stale": false
+        },
+        "amazon": {
+          "price": 2399.0,
+          "price_text": "R2 399.00",
+          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -198,13 +204,6 @@
           "price_text": "R26 499",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 22999.0,
-          "price_text": "R22 999.00",
-          "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
           "price": 36499.0,
@@ -669,6 +668,12 @@
           "price_text": "R9 199",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 8499.0,
+          "price_text": "R8 499.00",
+          "url": "https://amazon.co.za/Apple-Watch-Smartwatch-Aluminium-Always/dp/B0FQG1VWHW",
+          "stale": false
         }
       }
     },
@@ -843,6 +848,24 @@
     },
     {
       "category": "iPad",
+      "title": "11-inch iPad Pro M4",
+      "prices": {
+        "digicape": {
+          "price": 29199.0,
+          "price_text": "R29 199",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 27999.0,
+          "price_text": "R27 999",
+          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
       "title": "11-inch iPad Pro M5",
       "prices": {
         "digicape": {
@@ -940,18 +963,6 @@
     },
     {
       "category": "iPad",
-      "title": "iPad Pro 11-inch (M4 chip)",
-      "prices": {
-        "digicape": {
-          "price": 29199.0,
-          "price_text": "R29 199",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
       "title": "iPad Pro 13-inch (M4 chip)",
       "prices": {
         "digicape": {
@@ -971,6 +982,13 @@
           "price_text": "R12 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 18299.0,
+          "price_text": "R18 299.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-mini-A17-Pro/dp/B0DK43XKCQ",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 12299.0,
