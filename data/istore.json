@@ -42,6 +42,16 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "13-inch MacBook Air M5",
     "price_text": "R24 999",
     "price": 24999.0,
@@ -55,36 +65,6 @@
     "name": "MacBook Neo",
     "price_text": "R13 999",
     "price": 13999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "15-inch MacBook Air M5",
-    "price_text": "R30 599",
-    "price": 30599.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "14-inch MacBook Pro M5 Pro / M5 Max",
-    "price_text": "R50 999",
-    "price": 50999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -115,6 +95,26 @@
     "name": "MacBook Pro 16-inch | Apple M4",
     "price_text": "R52 999",
     "price": 52999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "14-inch MacBook Pro M5 Pro / M5 Max",
+    "price_text": "R50 999",
+    "price": 50999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "15-inch MacBook Air M5",
+    "price_text": "R30 599",
+    "price": 30599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -1022,6 +1022,16 @@
   {
     "retailer": "istore",
     "category": "accessories",
+    "name": "Beats 360 Over‑Ear Headphones",
+    "price_text": "R7 499",
+    "price": 7499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
     "name": "Apple Watch 49mm Alpine Loop Band",
     "price_text": "R1 999",
     "price": 1999.0,
@@ -1245,16 +1255,6 @@
     "name": "Beats Pill Wireless Bluetooth Speaker",
     "price_text": "R3 599",
     "price": 3599.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/accessories"
-  },
-  {
-    "retailer": "istore",
-    "category": "accessories",
-    "name": "Beats Solo 4 Wireless On-Ear Headphones",
-    "price_text": "R4 399",
-    "price": 4399.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"

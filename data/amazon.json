@@ -10,10 +10,26 @@
   {
     "retailer": "amazon",
     "category": "mac",
+    "name": "Apple MacBook Air 13-inch Laptop M5 chip (10-core CPU and 8-core GPU): Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage, Touch ID, Wi-Fi 7; Midnight",
+    "price_text": "R22 999.00",
+    "price": 22999.0,
+    "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-10-core/dp/B0GR1P2GC5"
+  },
+  {
+    "retailer": "amazon",
+    "category": "mac",
     "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21cGVGS4jDL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51BGD20vcDL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21D2XGhZgJL.js,11K5qCK19CL.js,01nswzbMoBL.js,31LGDiE3tcL.js,21+1gkOLweL.js,11RA63NYs0L.js,017PpEJgdTL.js_.js?AUIClients/');\n});",
-    "price": 419.51662,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61tpImuAtLL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
+    "price": 310.511,
     "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
+  },
+  {
+    "retailer": "amazon",
+    "category": "mac",
+    "name": "Apple MacBook Pro Laptop with M5 chip with 10 core CPU and 10 core GPU: Built for Apple Intelligence, 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 1TB SSD; Space Black",
+    "price_text": "R38 999.00",
+    "price": 38999.0,
+    "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG"
   },
   {
     "retailer": "amazon",
@@ -126,5 +142,13 @@
     "price_text": "R5 249.00",
     "price": 5249.0,
     "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8"
+  },
+  {
+    "retailer": "amazon",
+    "category": "appletv",
+    "name": "Apple 2022 Apple TV 4K Wi‑Fi + Ethernet with 128GB storage (3rd generation)",
+    "price_text": "R5 249.00",
+    "price": 5249.0,
+    "url": "https://www.amazon.co.za/Apple-2022-WiFi-storage-generation/dp/B0CZ9H8QHD"
   }
 ]
