@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:14:31Z",
+  "generated_at": "2026-10-28T22:18:00Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -259,8 +259,26 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 40799.0,
-          "price_text": "R40 799",
+          "price": 38999.0,
+          "price_text": "R38 999",
+          "url": "https://www.istore.co.za/mac",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "14-inch MacBook Pro M6",
+      "prices": {
+        "digicape": {
+          "price": 41599.0,
+          "price_text": "R41 599",
+          "url": "https://www.digicape.co.za/category/mac-all",
+          "stale": false
+        },
+        "istore": {
+          "price": 41599.0,
+          "price_text": "R41 599",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
@@ -648,9 +666,21 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
-          "price": 34299.0,
-          "price_text": "R34 299",
+          "price": 29999.0,
+          "price_text": "R29 999",
           "url": "https://www.istore.co.za/mac",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "iMac 24-Inch (M6 chip)",
+      "prices": {
+        "digicape": {
+          "price": 34999.0,
+          "price_text": "R34 999",
+          "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         }
       }
@@ -990,6 +1020,13 @@
           "price_text": "R19 299",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 25299.0,
+          "price_text": "R25 299.00",
+          "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
@@ -1137,13 +1174,6 @@
           "price_text": "R27 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
-        },
-        "amazon": {
-          "price": 22499.0,
-          "price_text": "R22 499.00",
-          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 24999.0,

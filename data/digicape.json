@@ -12,9 +12,29 @@
   {
     "retailer": "digicape",
     "category": "mac",
+    "name": "iMac 24-Inch (M6 chip)",
+    "price_text": "R34 999",
+    "price": 34999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
     "name": "MacBook Air 15-inch (M5 chip)",
     "price_text": "R30 499",
     "price": 30499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
+    "name": "MacBook Pro 14-inch (M6 chip)",
+    "price_text": "R41 599",
+    "price": 41599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"

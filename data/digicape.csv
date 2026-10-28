@@ -1,6 +1,8 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
 digicape,mac,MacBook Neo,R13 899,13899.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,iMac 24-Inch (M6 chip),R34 999,34999.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 15-inch (M5 chip),R30 499,30499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Pro 14-inch (M6 chip),R41 599,41599.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 13-inch (M5 chip),R26 499,26499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 14-inch (M5 chip),R44 699,44699.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 16-inch (M5 chip),R61 099,61099.0,,,https://www.digicape.co.za/category/mac-all

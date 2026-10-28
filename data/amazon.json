@@ -3,8 +3,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61tpImuAtLL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
-    "price": 310.511,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
+    "price": 6148.815,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
   },
   {
@@ -19,8 +19,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/31YcZsr0mxL._RC|51+iq1gv+nL.js,61tpImuAtLL.js,31DwCDV0WwL.js,41n8pbaNR0L.js,01mjV3L7d0L.js,01AyV5VYHYL.js,01yUtrqTbwL.js,31HYvVTTfML.js,41bkBPpetXL.js,4166dfB8fdL.js,41Cex44Q-HL.js_.js?AUIClients/');\n});",
-    "price": 310.511,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21aiEIdRdKL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51BGD20vcDL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21D2XGhZgJL.js,11K5qCK19CL.js,01nswzbMoBL.js,31LGDiE3tcL.js,21+1gkOLweL.js,11RA63NYs0L.js,01CWV6hGTDL.js_.js?AUIClients/');\n});",
+    "price": 419.51662,
     "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {
@@ -50,6 +50,14 @@
   {
     "retailer": "amazon",
     "category": "ipad",
+    "name": "Apple iPad Air 13-inch (M2): Liquid Retina display, 512GB, Landscape 12MP Front Camera/12MP Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life - Blue",
+    "price_text": "R25 299.00",
+    "price": 25299.0,
+    "url": "https://www.amazon.co.za/Apple-iPad-Air-13-inch-Landscape/dp/B0D3JBG3FP"
+  },
+  {
+    "retailer": "amazon",
+    "category": "ipad",
     "name": "Apple iPad Air 11-inch (M4): Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 7 with Apple N1, Touch ID, All-Day Battery Life — Purple",
     "price_text": "R14 999.00",
     "price": 14999.0,
@@ -70,14 +78,6 @@
     "price_text": "R19 999.00",
     "price": 19999.0,
     "url": "https://www.amazon.co.za/Apple-iPhone-256GB-ProMotion-Resistance/dp/B0FQG2GDD9"
-  },
-  {
-    "retailer": "amazon",
-    "category": "iphone",
-    "name": "Apple Iphone 17 Pro 256GB: 6.3-inch Display with Promotion up to 120Hz, A19 Chip, Breakthrough Battery Life, Fusion Camera System with Center Stage Front Deep Blue",
-    "price_text": "R22 499.00",
-    "price": 22499.0,
-    "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC"
   },
   {
     "retailer": "amazon",
