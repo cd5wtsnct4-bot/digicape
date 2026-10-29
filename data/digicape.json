@@ -233,8 +233,8 @@
     "retailer": "digicape",
     "category": "iphone",
     "name": "iPhone 16 Plus",
-    "price_text": "R30 999",
-    "price": 30999.0,
+    "price_text": "R30 899",
+    "price": 30899.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/iphone-all"
@@ -473,8 +473,8 @@
     "retailer": "digicape",
     "category": "airpods",
     "name": "AirPods Max",
-    "price_text": "R11 999",
-    "price": 11999.0,
+    "price_text": "R9 999",
+    "price": 9999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/airpods-all"
@@ -553,8 +553,8 @@
     "retailer": "digicape",
     "category": "appletv",
     "name": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
-    "price_text": "R5 249",
-    "price": 5249.0,
+    "price_text": "R4 699",
+    "price": 4699.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/apple-tv"
@@ -563,8 +563,8 @@
     "retailer": "digicape",
     "category": "appletv",
     "name": "Apple TV 4K 64Gb Wifi (3rd Gen,2022)",
-    "price_text": "R4 199",
-    "price": 4199.0,
+    "price_text": "R2 999",
+    "price": 2999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/apple-tv"
