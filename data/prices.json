@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T22:18:00Z",
+  "generated_at": "2026-10-29T04:30:52Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -245,8 +245,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "amazon": {
-          "price": 38999.0,
-          "price_text": "R38 999.00",
+          "price": 37958.0,
+          "price_text": "R37 958.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -441,8 +441,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 38999.0,
-          "price_text": "R38 999.00",
+          "price": 37958.0,
+          "price_text": "R37 958.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
@@ -1174,6 +1174,13 @@
           "price_text": "R27 699",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 22499.0,
+          "price_text": "R22 499.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Pro-256GB-Breakthrough/dp/B0FQFZM6QC",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 24999.0,
