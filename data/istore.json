@@ -62,26 +62,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "14-inch MacBook Pro M5",
-    "price_text": "R38 999",
-    "price": 38999.0,
-    "old_price_text": "R40 799",
-    "old_price": 40799.0,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "14-inch MacBook Pro M5 Pro / M5 Max",
-    "price_text": "R50 999",
-    "price": 50999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "16-inch MacBook Pro M5 Pro / M5 Max",
     "price_text": "R61 199",
     "price": 61199.0,
@@ -132,9 +112,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "14-inch MacBook Pro with PROLED XDR Display M5 Pro",
+    "price_text": "R60 999",
+    "price": 60999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -145,6 +125,16 @@
     "name": "Apple Studio Display XDR",
     "price_text": "R81 999",
     "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -235,6 +225,16 @@
     "name": "Belkin BoostCharge Pro Retractable GaN Wall Charge - White",
     "price_text": "R899",
     "price": 899.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "Belkin USB-C 8-IN-1 Dual HDMI Hub with Privacy Control",
+    "price_text": "R1 599",
+    "price": 1599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -542,6 +542,16 @@
   {
     "retailer": "istore",
     "category": "ipad",
+    "name": "iPad mini A20 Pro",
+    "price_text": "R14 499",
+    "price": 14499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
     "name": "iPad mini A17 Pro",
     "price_text": "R12 299",
     "price": 12299.0,
@@ -555,16 +565,6 @@
     "name": "iPad Accessories",
     "price_text": "R299",
     "price": 299.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
-  },
-  {
-    "retailer": "istore",
-    "category": "ipad",
-    "name": "11-inch iPad Pro M5",
-    "price_text": "R24 599",
-    "price": 24599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
@@ -645,6 +645,16 @@
     "name": "13-inch iPad Pro M5",
     "price_text": "R30 799",
     "price": 30799.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/ipad/shop-ipad-range"
+  },
+  {
+    "retailer": "istore",
+    "category": "ipad",
+    "name": "11-inch iPad Pro M5",
+    "price_text": "R24 599",
+    "price": 24599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
