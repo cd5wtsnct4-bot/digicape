@@ -3,8 +3,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 24GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Silver",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
-    "price": 6148.815,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21aiEIdRdKL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51BGD20vcDL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21D2XGhZgJL.js,11K5qCK19CL.js,01cKKCPmIbL.js,31LGDiE3tcL.js,21+1gkOLweL.js,11RA63NYs0L.js,01CWV6hGTDL.js_.js?AUIClients/');\n});",
+    "price": 419.51662,
     "url": "https://www.amazon.co.za/Apple-MacBook-13-inch-Laptop-chip/dp/B0DZDBM3DV"
   },
   {
@@ -19,8 +19,8 @@
     "retailer": "amazon",
     "category": "mac",
     "name": "Apple MacBook Air 15-inch Laptop with M4 chip: Built for Apple Intelligence, 15.3-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight",
-    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21cGVGS4jDL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51BGD20vcDL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21HwReYdTbL.js,11K5qCK19CL.js,01cKKCPmIbL.js,31LGDiE3tcL.js,21+1gkOLweL.js,11RA63NYs0L.js,01CWV6hGTDL.js_.js?AUIClients/');\n});",
-    "price": 419.51662,
+    "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('useBuyingRulesDpAssets').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/61n4ZyS8spL._RC|81QrR5UkbfL.js,31jsB13JlVL.js_.js?AUIClients/');\n});",
+    "price": 6148.815,
     "url": "https://www.amazon.co.za/Apple-MacBook-15-inch-Laptop-chip/dp/B0DZDD2DKG"
   },
   {
