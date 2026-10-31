@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T11:49:51Z",
+  "generated_at": "2026-10-31T16:56:20Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 1499.0,
-          "price_text": "R 1,499",
+          "price": 1999.0,
+          "price_text": "R 1,999",
           "url": "",
           "stale": false
         },
