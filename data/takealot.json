@@ -2,16 +2,9 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 16GB RAM 1TB SSD",
-    "price_text": "R 41,599",
-    "price": 41599.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
-    "price_text": "R 84,999",
-    "price": 84999.0
+    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 24GB RAM 1TB SSD",
+    "price_text": "R 45,699",
+    "price": 45699.0
   },
   {
     "retailer": "takealot",
@@ -23,23 +16,9 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
-    "price_text": "R 13,499",
-    "price": 13499.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
     "name": "Apple MacBook Pro with PROLED XDR Display 16\" M5 Max 18/32C 36GB RAM 2TB",
     "price_text": "R 99,999",
     "price": 99999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 32GB RAM 1TB SSD",
-    "price_text": "R 49,999",
-    "price": 49999.0
   },
   {
     "retailer": "takealot",
@@ -51,9 +30,23 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
-    "price_text": "R 12,999",
-    "price": 12999.0
+    "name": "Apple MacBook Pro 16 M5 Max 18 Core CPU 32 Core GPU 36GB RAM 2TB SSD",
+    "price_text": "R 84,999",
+    "price": 84999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 256GB SSD",
+    "price_text": "R 13,499",
+    "price": 13499.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 32GB RAM 1TB SSD",
+    "price_text": "R 49,999",
+    "price": 49999.0
   },
   {
     "retailer": "takealot",
@@ -65,9 +58,16 @@
   {
     "retailer": "takealot",
     "category": "mac",
-    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 24GB RAM 1TB SSD",
-    "price_text": "R 45,699",
-    "price": 45699.0
+    "name": "Apple MacBook Pro 14-inch Apple M6 Chip 12C CPU 12C GPU 16GB RAM 1TB SSD",
+    "price_text": "R 41,599",
+    "price": 41599.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "mac",
+    "name": "Apple MacBook Neo 13 A18 Pro 6 Core CPU 5 Core GPU 8GB RAM 512GB SSD",
+    "price_text": "R 12,999",
+    "price": 12999.0
   },
   {
     "retailer": "takealot",
@@ -78,6 +78,27 @@
   },
   {
     "retailer": "takealot",
+    "category": "airpods",
+    "name": "Apple AirPods 4",
+    "price_text": "R 1,999",
+    "price": 1999.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "apple-promo",
+    "name": "Apple Homepod (2nd Generation)",
+    "price_text": "R 8,609",
+    "price": 8609.0
+  },
+  {
+    "retailer": "takealot",
+    "category": "apple-promo",
+    "name": "Apple HomePod mini",
+    "price_text": "R 3,155",
+    "price": 3155.0
+  },
+  {
+    "retailer": "takealot",
     "category": "appletv",
     "name": "Apple Siri Remote",
     "price_text": "R 1,499",
@@ -85,10 +106,10 @@
   },
   {
     "retailer": "takealot",
-    "category": "apple-promo",
-    "name": "Apple Lightning Digital AV Adapter",
-    "price_text": "R 1,199",
-    "price": 1199.0
+    "category": "airpods",
+    "name": "Apple AirPods 5 with Wireless Charging Case",
+    "price_text": "R 2,699",
+    "price": 2699.0
   },
   {
     "retailer": "takealot",
@@ -107,23 +128,9 @@
   {
     "retailer": "takealot",
     "category": "apple-promo",
-    "name": "Apple HomePod mini",
-    "price_text": "R 3,155",
-    "price": 3155.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods 5 with Wireless Charging Case",
-    "price_text": "R 2,699",
-    "price": 2699.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "airpods",
-    "name": "Apple AirPods 4",
-    "price_text": "R 1,999",
-    "price": 1999.0
+    "name": "Apple Lightning Digital AV Adapter",
+    "price_text": "R 1,199",
+    "price": 1199.0
   },
   {
     "retailer": "takealot",
@@ -131,12 +138,5 @@
     "name": "Apple AirPods Max 2",
     "price_text": "R 10,999",
     "price": 10999.0
-  },
-  {
-    "retailer": "takealot",
-    "category": "apple-promo",
-    "name": "Apple Homepod (2nd Generation)",
-    "price_text": "R 8,609",
-    "price": 8609.0
   }
 ]
