@@ -72,6 +72,16 @@
   {
     "retailer": "istore",
     "category": "mac",
+    "name": "14-inch MacBook Pro M5 Pro / M5 Max",
+    "price_text": "R50 999",
+    "price": 50999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
     "name": "16-inch MacBook Pro M5 Pro / M5 Max",
     "price_text": "R61 199",
     "price": 61199.0,
@@ -132,9 +142,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -142,9 +152,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -225,16 +235,6 @@
     "name": "Apple HomePod mini",
     "price_text": "R2 999",
     "price": 2999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
-    "name": "Beats Flex – All-Day Wireless Earphones",
-    "price_text": "R1 599",
-    "price": 1599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -405,8 +405,8 @@
     "name": "Apple iPhone 17e Silicone Case with MagSafe",
     "price_text": "R1 199",
     "price": 1199.0,
-    "old_price_text": "R1 399",
-    "old_price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -425,16 +425,16 @@
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17",
     "price_text": "R1 999",
     "price": 1999.0,
-    "old_price_text": "R2 199",
-    "old_price": 2199.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/iphone"
   },
   {
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -815,8 +815,8 @@
     "name": "Apple AirPods 4",
     "price_text": "R1 999",
     "price": 1999.0,
-    "old_price_text": "R2 799",
-    "old_price": 2799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
@@ -875,8 +875,8 @@
     "name": "Apple AirPods 4",
     "price_text": "R1 999",
     "price": 1999.0,
-    "old_price_text": "R2 799",
-    "old_price": 2799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/airpods"
   },
   {
@@ -1075,8 +1075,8 @@
     "name": "Apple iPhone 17 Pro Silicone Case with MagSafe",
     "price_text": "R999",
     "price": 999.0,
-    "old_price_text": "R1 399",
-    "old_price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1085,8 +1085,8 @@
     "name": "Apple iPhone 17 Pro Max Silicone Case with MagSafe",
     "price_text": "R999",
     "price": 999.0,
-    "old_price_text": "R1 399",
-    "old_price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1095,8 +1095,8 @@
     "name": "Apple iPhone 17 Silicone Case with MagSafe",
     "price_text": "R1 199",
     "price": 1199.0,
-    "old_price_text": "R1 399",
-    "old_price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1105,8 +1105,8 @@
     "name": "Apple iPhone 17e Silicone Case with MagSafe",
     "price_text": "R1 199",
     "price": 1199.0,
-    "old_price_text": "R1 399",
-    "old_price": 1399.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1115,16 +1115,16 @@
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17",
     "price_text": "R1 999",
     "price": 1999.0,
-    "old_price_text": "R2 199",
-    "old_price": 2199.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "",
-    "price": null,
+    "price_text": "R1 299",
+    "price": 1299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1255,8 +1255,8 @@
     "name": "Apple AirPods 4",
     "price_text": "R1 999",
     "price": 1999.0,
-    "old_price_text": "R2 799",
-    "old_price": 2799.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
