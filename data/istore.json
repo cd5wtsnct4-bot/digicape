@@ -122,16 +122,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "14-inch MacBook Pro with PROLED XDR Display M5 Pro",
-    "price_text": "R60 999",
-    "price": 60999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "Apple Studio Display",
     "price_text": "R45 199",
     "price": 45199.0,
@@ -142,9 +132,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
+    "name": "14-inch MacBook Pro with PROLED XDR Display M5 Pro",
+    "price_text": "R60 999",
+    "price": 60999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -155,6 +145,16 @@
     "name": "Apple Studio Display XDR",
     "price_text": "R81 999",
     "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -433,8 +433,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -463,10 +463,10 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "JBL Flip 7 Portable Bluetooth Speaker",
-    "price_text": "R2 499",
-    "price": 2499.0,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R2 099",
+    "price": 2099.0,
+    "old_price_text": "R2 499",
+    "old_price": 2499.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -1063,8 +1063,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "R1 199",
-    "price": 1199.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1123,8 +1123,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1163,10 +1163,10 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "JBL Flip 7 Portable Bluetooth Speaker",
-    "price_text": "R2 499",
-    "price": 2499.0,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R2 099",
+    "price": 2099.0,
+    "old_price_text": "R2 499",
+    "old_price": 2499.0,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1225,8 +1225,8 @@
     "name": "Apple Watch Sport Band",
     "price_text": "R999",
     "price": 999.0,
-    "old_price_text": "R1 199",
-    "old_price": 1199.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {
@@ -1235,8 +1235,8 @@
     "name": "Apple Watch Nike Sport Band",
     "price_text": "R999",
     "price": 999.0,
-    "old_price_text": "R1 199",
-    "old_price": 1199.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/accessories"
   },
   {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T21:07:34Z",
+  "generated_at": "2026-11-01T04:30:41Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -17,12 +17,6 @@
           "price": 2429.0,
           "price_text": "R2 429",
           "url": "https://www.digicape.co.za/category/airpods-all",
-          "stale": false
-        },
-        "takealot": {
-          "price": 1999.0,
-          "price_text": "R 1,999",
-          "url": "",
           "stale": false
         },
         "istore": {
@@ -232,8 +226,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 37500.0,
-          "price_text": "R37 500.00",
+          "price": 37958.0,
+          "price_text": "R37 958.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -417,8 +411,8 @@
           "stale": false
         },
         "amazon": {
-          "price": 37500.0,
-          "price_text": "R37 500.00",
+          "price": 37958.0,
+          "price_text": "R37 958.00",
           "url": "https://www.amazon.co.za/Apple-MacBook-Laptop-chip-core/dp/B0FWD51XLG",
           "stale": false
         }
