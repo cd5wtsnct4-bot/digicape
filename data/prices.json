@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:48:52Z",
+  "generated_at": "2026-11-01T21:48:27Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -682,6 +682,12 @@
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         },
+        "amazon": {
+          "price": 7499.0,
+          "price_text": "R7 499.00",
+          "url": "https://www.amazon.co.za/Apple-Cellular-Smartwatch-Starlight-Aluminium/dp/B0FQFT6XYL",
+          "stale": false
+        },
         "istore": {
           "price": 5499.0,
           "price_text": "R5 499",
@@ -1093,6 +1099,13 @@
           "price_text": "R30 899",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
+        },
+        "amazon": {
+          "price": 19999.0,
+          "price_text": "R19 999.00",
+          "url": "https://www.amazon.co.za/Apple-iPhone-Plus-128-Intelligence/dp/B0DGHPQY7L",
+          "stale": false,
+          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         }
       }
     },
