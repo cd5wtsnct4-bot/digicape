@@ -22,6 +22,26 @@
   {
     "retailer": "digicape",
     "category": "mac",
+    "name": "MacBook Pro with PROLED XDR Display (16-inch)",
+    "price_text": "R71 999",
+    "price": 71999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
+    "name": "MacBook Pro with PROLED XDR Display (14-inch)",
+    "price_text": "R60 999",
+    "price": 60999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
     "name": "MacBook Air 13-inch (M5 chip)",
     "price_text": "R26 499",
     "price": 26499.0,
@@ -65,16 +85,6 @@
     "name": "iMac 24-Inch (M6 chip)",
     "price_text": "R34 999",
     "price": 34999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "iMac 24-Inch (M4 chip)",
-    "price_text": "R43 399",
-    "price": 43399.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"
@@ -573,18 +583,8 @@
     "retailer": "digicape",
     "category": "appletv",
     "name": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
-    "price_text": "R4 699",
-    "price": 4699.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/apple-tv"
-  },
-  {
-    "retailer": "digicape",
-    "category": "appletv",
-    "name": "Apple TV 4K 64Gb Wifi (3rd Gen,2022)",
-    "price_text": "R2 999",
-    "price": 2999.0,
+    "price_text": "R4 659",
+    "price": 4659.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/apple-tv"

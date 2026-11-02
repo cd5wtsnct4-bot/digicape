@@ -1,12 +1,13 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
 digicape,mac,MacBook Neo,R13 899,13899.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 15-inch (M5 chip),R30 499,30499.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Pro with PROLED XDR Display (16-inch),R71 999,71999.0,,,https://www.digicape.co.za/category/mac-all
+digicape,mac,MacBook Pro with PROLED XDR Display (14-inch),R60 999,60999.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Air 13-inch (M5 chip),R26 499,26499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 14-inch (M5 chip),R44 699,44699.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 14-inch (M6 chip),R41 599,41599.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,MacBook Pro 16-inch (M5 chip),R61 099,61099.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,iMac 24-Inch (M6 chip),R34 999,34999.0,,,https://www.digicape.co.za/category/mac-all
-digicape,mac,iMac 24-Inch (M4 chip),R43 399,43399.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,Mac mini (M6),R18 499,18499.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,Mac Mini (M5 Pro),R34 999,34999.0,,,https://www.digicape.co.za/category/mac-all
 digicape,mac,Mac Studio (M5 Max),R50 999,50999.0,,,https://www.digicape.co.za/category/mac-all
@@ -56,7 +57,6 @@ digicape,airpods,AirPods 4,R2 429,2429.0,,,https://www.digicape.co.za/category/a
 digicape,airpods,AirPods Max 2,R11 499,11499.0,,,https://www.digicape.co.za/category/airpods-all
 digicape,airpods,AirPods Pro 3,R5 099,5099.0,,,https://www.digicape.co.za/category/airpods-all
 digicape,appletv,Apple TV 4K (4th Gen),R6 299,6299.0,,,https://www.digicape.co.za/category/apple-tv
-digicape,appletv,"Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",R4 699,4699.0,,,https://www.digicape.co.za/category/apple-tv
-digicape,appletv,"Apple TV 4K 64Gb Wifi (3rd Gen,2022)",R2 999,2999.0,,,https://www.digicape.co.za/category/apple-tv
+digicape,appletv,"Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",R4 659,4659.0,,,https://www.digicape.co.za/category/apple-tv
 digicape,appletv,Apple TV Siri Remote,,,,,https://www.digicape.co.za/category/apple-tv
 digicape,appletv,Apple TV Siri Remote (4th Gen),,,,,https://www.digicape.co.za/category/apple-tv
