@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T21:48:27Z",
+  "generated_at": "2026-11-02T04:31:58Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -38,9 +38,15 @@
           "stale": false
         },
         "takealot": {
-          "price": 3399.0,
-          "price_text": "R 3,399",
+          "price": 3999.0,
+          "price_text": "R 3,999",
           "url": "",
+          "stale": false
+        },
+        "amazon": {
+          "price": 2499.0,
+          "price_text": "R2 499.00",
+          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
@@ -92,8 +98,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 10999.0,
-          "price_text": "R 10,999",
+          "price": 13405.0,
+          "price_text": "R 13,405",
           "url": "",
           "stale": false
         },
@@ -116,8 +122,8 @@
           "stale": false
         },
         "takealot": {
-          "price": 3999.0,
-          "price_text": "R 3,999",
+          "price": 4499.0,
+          "price_text": "R 4,499",
           "url": "",
           "stale": false
         },
@@ -698,6 +704,30 @@
     },
     {
       "category": "Watch",
+      "title": "Apple Watch Series 10 Sport Band",
+      "prices": {
+        "digicape": {
+          "price": 7999.0,
+          "price_text": "R7 999",
+          "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Watch",
+      "title": "Apple Watch Series 10 Sport Loop",
+      "prices": {
+        "digicape": {
+          "price": 6599.0,
+          "price_text": "R6 599",
+          "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Watch",
       "title": "Apple Watch Series 11 Milanese Loop",
       "prices": {
         "digicape": {
@@ -1157,8 +1187,8 @@
       "title": "iPhone 17 Pro",
       "prices": {
         "digicape": {
-          "price": 27699.0,
-          "price_text": "R27 699",
+          "price": 37099.0,
+          "price_text": "R37 099",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },

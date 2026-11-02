@@ -223,8 +223,8 @@
     "retailer": "digicape",
     "category": "iphone",
     "name": "iPhone 17 Pro",
-    "price_text": "R27 699",
-    "price": 27699.0,
+    "price_text": "R37 099",
+    "price": 37099.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/iphone-all"
@@ -345,6 +345,26 @@
     "name": "Apple Watch SE 3 Sport Band",
     "price_text": "R5 699",
     "price": 5699.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Series 10 Sport Band",
+    "price_text": "R7 999",
+    "price": 7999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Series 10 Sport Loop",
+    "price_text": "R6 599",
+    "price": 6599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
