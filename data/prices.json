@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:54:39Z",
+  "generated_at": "2026-11-03T00:39:26Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -35,12 +35,6 @@
           "price": 3199.0,
           "price_text": "R3 199",
           "url": "https://www.digicape.co.za/category/airpods-all",
-          "stale": false
-        },
-        "amazon": {
-          "price": 2499.0,
-          "price_text": "R2 499.00",
-          "url": "https://www.amazon.co.za/Apple-Cancellation-Headphones-Transparency-Personalised/dp/B0DGJ7M995",
           "stale": false
         }
       }
