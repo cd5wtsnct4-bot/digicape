@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T00:39:26Z",
+  "generated_at": "2026-11-03T13:47:09Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -202,8 +202,8 @@
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "incredible": {
-          "price": 40999.0,
-          "price_text": "R 40,999",
+          "price": 44499.0,
+          "price_text": "R 44,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -382,24 +382,6 @@
         "incredible": {
           "price": 48999.0,
           "price_text": "R 48,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) 16GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 40699.0,
-          "price_text": "R 40,699",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 40999.0,
-          "price_text": "R 40,999",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false
         }
