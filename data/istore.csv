@@ -1,7 +1,7 @@
 retailer,category,name,price_text,price,old_price_text,old_price,url
 istore,mac,Mac mini M6,R17 699,17699.0,,,https://www.istore.co.za/mac
 istore,mac,MacBook Neo,R13 999,13999.0,,,https://www.istore.co.za/mac
-istore,mac,Mac mini M4,R24 499,24499.0,,,https://www.istore.co.za/mac
+istore,mac,Mac mini M4,R20 499,20499.0,,,https://www.istore.co.za/mac
 istore,mac,24-inch iMac with Retina 4.5K display M6,R34 999,34999.0,,,https://www.istore.co.za/mac
 istore,mac,iMac 24-inch | Apple M4,R29 999,29999.0,R34 299,34299.0,https://www.istore.co.za/mac
 istore,mac,14-inch MacBook Pro M6,R41 599,41599.0,,,https://www.istore.co.za/mac
@@ -31,7 +31,7 @@ istore,iphone,iPhone 17 Pro Max,R27 999,27999.0,,,https://www.istore.co.za/iphon
 istore,iphone,iPhone 17 Pro,R24 999,24999.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17,R21 799,21799.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17e,R16 999,16999.0,,,https://www.istore.co.za/iphone
-istore,iphone,iPhone 16e,R13 999,13999.0,,,https://www.istore.co.za/iphone
+istore,iphone,iPhone 16e,R14 699,14699.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 16,R18 999,18999.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 15,R16 999,16999.0,,,https://www.istore.co.za/iphone
 istore,iphone,Apple iPhone 18 Pro Max TechWoven Case with MagSafe,R1 599,1599.0,,,https://www.istore.co.za/iphone

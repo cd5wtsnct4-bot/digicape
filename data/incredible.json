@@ -250,7 +250,7 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Sky Blue",
+    "name": "Apple MacBook Pro 14\" M5 10‑core CPU 16GB 1TB SSD 10‑core GPU Silver",
     "price_text": "R 40,999",
     "price": 40999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -258,7 +258,7 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Starlight",
+    "name": "Apple MacBook Air 15 M5 10 Core CPU 10 Core GPU 24GB 1TB SSD Sky Blue",
     "price_text": "R 40,999",
     "price": 40999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -283,40 +283,40 @@
     "retailer": "incredible",
     "category": "ipad",
     "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
+    "price_text": "R 16,999",
+    "price": 16999.0,
     "url": "https://www.incredible.co.za/apple-ipad-mini-8-3-inch-a17-pro-128gb-wifi-space-grey"
   },
   {
     "retailer": "incredible",
     "category": "watch",
     "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
+    "price_text": "R 16,999",
+    "price": 16999.0,
     "url": "https://www.incredible.co.za/apple-watch-se-gps-44mm-midnight-alu-case-with-ink-sport-loop"
   },
   {
     "retailer": "incredible",
     "category": "airpods",
     "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
+    "price_text": "R 16,999",
+    "price": 16999.0,
     "url": "https://www.incredible.co.za/apple-airpods-pro"
   },
   {
     "retailer": "incredible",
     "category": "airpods",
     "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
+    "price_text": "R 16,999",
+    "price": 16999.0,
     "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-purple"
   },
   {
     "retailer": "incredible",
     "category": "airpods",
     "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
+    "price_text": "R 16,999",
+    "price": 16999.0,
     "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-blue"
   }
 ]
