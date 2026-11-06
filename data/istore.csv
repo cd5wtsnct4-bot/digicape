@@ -14,8 +14,8 @@ istore,mac,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/mac
 istore,mac,Apple Studio Display,R45 199,45199.0,,,https://www.istore.co.za/mac
 istore,mac,14-inch MacBook Pro with PROLED XDR Display M5 Pro,R60 999,60999.0,,,https://www.istore.co.za/mac
 istore,mac,Apple Studio Display XDR,R81 999,81999.0,,,https://www.istore.co.za/mac
+istore,mac,16-inch MacBook Pro with PROLED XDR Display M5 Pro,R0,0.0,,,https://www.istore.co.za/mac
 istore,mac,MacBook Pro 16-inch | Apple M4,R52 999,52999.0,,,https://www.istore.co.za/mac
-istore,mac,16-inch MacBook Pro with PROLED XDR Display M5 Pro,R71 999,71999.0,,,https://www.istore.co.za/mac
 istore,mac,14-inch MacBook Pro with PROLED XDR Display M5 Max,R94 999,94999.0,,,https://www.istore.co.za/mac
 istore,mac,16-inch MacBook Pro with PROLED XDR Display M5 Max,R100 999,100999.0,,,https://www.istore.co.za/mac
 istore,mac,Beats USB-C to Lightning Woven Cable (1.5 m),R549,549.0,,,https://www.istore.co.za/mac
@@ -26,7 +26,7 @@ istore,mac,Apple HomePod mini,R2 999,2999.0,,,https://www.istore.co.za/mac
 istore,iphone,iPhone 18 Pro,R29 799,29799.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 18 Pro Max,R32 299,32299.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone Duo,R47 999,47999.0,,,https://www.istore.co.za/iphone
-istore,iphone,iPhone Air,R22 999,22999.0,,,https://www.istore.co.za/iphone
+istore,iphone,iPhone Air,R0,0.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17 Pro Max,R27 999,27999.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17 Pro,R24 999,24999.0,,,https://www.istore.co.za/iphone
 istore,iphone,iPhone 17,R21 799,21799.0,,,https://www.istore.co.za/iphone
@@ -42,7 +42,7 @@ istore,iphone,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/iphone
 istore,iphone,Apple iPhone 17e Silicone Case with MagSafe,R1 199,1199.0,,,https://www.istore.co.za/iphone
 istore,iphone,Beats USB-C to Lightning Woven Cable (1.5 m),R549,549.0,,,https://www.istore.co.za/iphone
 istore,iphone,Beats Rugged Case with MagSafe and Camera Control for iPhone 17,R1 999,1999.0,,,https://www.istore.co.za/iphone
-istore,iphone,Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro,R1 299,1299.0,,,https://www.istore.co.za/iphone
+istore,iphone,Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro,,,,,https://www.istore.co.za/iphone
 istore,iphone,Beats USB-A to USB-C Woven Cable (1.5m),R549,549.0,,,https://www.istore.co.za/iphone
 istore,iphone,JBL Junior 320BT Wireless On-Ear Kids Headphones,,,,,https://www.istore.co.za/iphone
 istore,iphone,JBL Flip 7 Portable Bluetooth Speaker,R2 099,2099.0,R2 499,2499.0,https://www.istore.co.za/iphone
@@ -52,8 +52,8 @@ istore,ipad,11-inch iPad Pro M5,R24 599,24599.0,,,https://www.istore.co.za/ipad/
 istore,ipad,11-inch iPad Pro M4,R27 999,27999.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,13-inch iPad Air M4,R19 399,19399.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Air M4,R15 299,15299.0,,,https://www.istore.co.za/ipad/shop-ipad-range
-istore,ipad,iPad A16,R8 799,8799.0,,,https://www.istore.co.za/ipad/shop-ipad-range
-istore,ipad,iPad mini A20 Pro,R14 499,14499.0,,,https://www.istore.co.za/ipad/shop-ipad-range
+istore,ipad,iPad A16,R18 399,18399.0,,,https://www.istore.co.za/ipad/shop-ipad-range
+istore,ipad,iPad mini A20 Pro,R17 599,17599.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,iPad mini A17 Pro,R12 299,12299.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,iPad Accessories,R299,299.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Pro M5,R24 599,24599.0,,,https://www.istore.co.za/ipad/shop-ipad-range
@@ -61,7 +61,7 @@ istore,ipad,13-inch iPad Air M4,R19 399,19399.0,,,https://www.istore.co.za/ipad/
 istore,ipad,11-inch iPad Air M4,R15 299,15299.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,13-inch iPad Air M3,,,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Pro M4,R27 999,27999.0,,,https://www.istore.co.za/ipad/shop-ipad-range
-istore,ipad,iPad A16,R8 799,8799.0,,,https://www.istore.co.za/ipad/shop-ipad-range
+istore,ipad,iPad A16,R18 399,18399.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,iPad mini A17 Pro,R12 299,12299.0,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,11-inch iPad Air M3,,,,,https://www.istore.co.za/ipad/shop-ipad-range
 istore,ipad,13-inch iPad Pro M5,R30 799,30799.0,,,https://www.istore.co.za/ipad/shop-ipad-range
@@ -73,13 +73,12 @@ istore,watch,Apple Watch Series 11,R9 399,9399.0,,,https://www.istore.co.za/appl
 istore,watch,Apple Watch Series 10,R5 999,5999.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Accessories,R299,299.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Series 9 (PRODUCT)RED Aluminium Case with (PRODUCT)RED Sport Band,,,,,https://www.istore.co.za/apple-watch/shop-watch-range
-istore,watch,Apple Watch SE 3 Sport Band,R5 699,5699.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
+istore,watch,Apple Watch SE 3 Sport Band,R6 199,6199.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Ultra 3 Ocean Band,R15 999,15999.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Ultra 3 Alpine Loop,R15 999,15999.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Ultra 3 Trail Loop,R15 999,15999.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,watch,Apple Watch Ultra 3 Milanese Loop,R16 499,16499.0,,,https://www.istore.co.za/apple-watch/shop-watch-range
 istore,airpods,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/airpods
-istore,airpods,Apple AirPods Pro 3,R5 199,5199.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods 4,R1 999,1999.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max,,,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max 2,R11 499,11499.0,,,https://www.istore.co.za/airpods
@@ -90,12 +89,11 @@ istore,airpods,Apple AirPods 4,R1 999,1999.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods Max,,,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods 5 with Wireless Charging Case,R2 999,2999.0,,,https://www.istore.co.za/airpods
 istore,airpods,Apple AirPods 5,R2 599,2599.0,,,https://www.istore.co.za/airpods
-istore,airpods,Apple AirPods Pro 3,R5 199,5199.0,,,https://www.istore.co.za/airpods
 istore,appletv,Apple HomeView,R6 299,6299.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,Apple TV 4K (4th Gen),R6 299,6299.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,2022 Apple TV 4K (3rd Gen),R4 199,4199.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,Apple HomePod (2nd Gen),R8 179,8179.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
-istore,appletv,Apple HomePod mini 2,R3 499,3499.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
+istore,appletv,Apple HomePod mini 2,R0,0.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,Apple HomePod mini,R2 999,2999.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,TV & Home Accessories,R599,599.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
 istore,appletv,2022 Apple TV 4K (3rd Gen),R4 199,4199.0,,,https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv
@@ -105,13 +103,13 @@ istore,appletv,Apple TV Siri Remote,R1 399,1399.0,,,https://www.istore.co.za/mus
 istore,accessories,Beats 360 Over‑Ear Headphones,R7 499,7499.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch 49mm Alpine Loop Band,R1 999,1999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple Watch Sport Band (New),R1 199,1199.0,,,https://www.istore.co.za/accessories
-istore,accessories,Apple Watch Nike Sport Band (New),R1 199,1199.0,,,https://www.istore.co.za/accessories
+istore,accessories,Apple Watch Nike Sport Band (New),,,,,https://www.istore.co.za/accessories
 istore,accessories,Apple iPhone 17 Pro Silicone Case with MagSafe,R999,999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple iPhone 17 Pro Max Silicone Case with MagSafe,R999,999.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple iPhone 17 Silicone Case with MagSafe,R1 199,1199.0,,,https://www.istore.co.za/accessories
 istore,accessories,Apple iPhone 17e Silicone Case with MagSafe,R1 199,1199.0,,,https://www.istore.co.za/accessories
 istore,accessories,Beats Rugged Case with MagSafe and Camera Control for iPhone 17,R1 999,1999.0,,,https://www.istore.co.za/accessories
-istore,accessories,Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro,R1 299,1299.0,,,https://www.istore.co.za/accessories
+istore,accessories,Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro,,,,,https://www.istore.co.za/accessories
 istore,accessories,Beats USB-A to USB-C Woven Cable (1.5m),R549,549.0,,,https://www.istore.co.za/accessories
 istore,accessories,Beats USB-C to USB-C Woven Cable (1.5 m),R549,549.0,,,https://www.istore.co.za/accessories
 istore,accessories,JBL Junior 320BT Wireless On-Ear Kids Headphones,,,,,https://www.istore.co.za/accessories
