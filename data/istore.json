@@ -142,16 +142,6 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R52 999",
-    "price": 52999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "Apple Studio Display XDR",
     "price_text": "R81 999",
     "price": 81999.0,
@@ -165,6 +155,16 @@
     "name": "16-inch MacBook Pro with PROLED XDR Display M5 Pro",
     "price_text": "R71 999",
     "price": 71999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "R52 999",
+    "price": 52999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
