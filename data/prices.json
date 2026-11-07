@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T22:51:49Z",
+  "generated_at": "2026-11-07T04:48:40Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -119,6 +119,12 @@
           "price": 4499.0,
           "price_text": "R 4,499",
           "url": "",
+          "stale": false
+        },
+        "istore": {
+          "price": 5199.0,
+          "price_text": "R5 199",
+          "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
       }
@@ -610,8 +616,8 @@
           "stale": false
         },
         "istore": {
-          "price": 6199.0,
-          "price_text": "R6 199",
+          "price": 5699.0,
+          "price_text": "R5 699",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -1212,8 +1218,8 @@
           "stale": false
         },
         "istore": {
-          "price": 0.0,
-          "price_text": "R0",
+          "price": 22999.0,
+          "price_text": "R22 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
