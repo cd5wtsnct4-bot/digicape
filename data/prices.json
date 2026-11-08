@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T21:34:19Z",
+  "generated_at": "2026-11-08T04:33:55Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -159,7 +159,7 @@
         },
         "amazon": {
           "price": 419.51662,
-          "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21aiEIdRdKL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51SDPA5ECkL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21D2XGhZgJL.js,11K5qCK19CL.js,01cKKCPmIbL.js,31LGDiE3tcL.js,210nkE7VIFL.js,11RA63NYs0L.js,01CWV6hGTDL.js_.js?AUIClients/');\n});",
+          "price_text": "(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('dpJsAssetsLoadMarker').execute(function() {\n  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41mrZQo9NML._RC|51uQ662IBTL.js,01wFfxST+ZL.js,018-nGQj6aL.js,11uacn9D5ZL.js,41Debmz01QL.js,11wgbT+iLbL.js,21Kuwp90mSL.js,110SJ0xcEvL.js,51a4kNa2k1L.js,21cjS8PvBhL.js,31zDXuckuOL.js,311zP7kfZ8L.js,81WnvBeqYSL.js,41b+0K8ZkhL.js,41uCNbD5DbL.js,51YlGBJT6GL.js,316hSr46GXL.js,316fSGYPyVL.js,11a+lhxkUrL.js,11PUEGgF9FL.js,01jh4YtdtKL.js,416ub16xtCL.js,01TQyo0bnIL.js,31H0nwX+1NL.js,61dR72XNAhL.js,212y+0gKg2L.js,01GhKb2usNL.js,111zW1Nhl9L.js,013eoEBTVUL.js,41q14VUm1iL.js,216SNRfjloL.js,014kCoIHgIL.js,31n1fArP0iL.js,21aiEIdRdKL.js,01+oIQ0jY7L.js,41vuedqkA7L.js,31zkiEyiFKL.js,510pMqUVqkL.js,51SDPA5ECkL.js,31vI2qZfDdL.js,11rRJL1puzL.js,31mAYKjJfpL.js,21HwReYdTbL.js,11K5qCK19CL.js,01cKKCPmIbL.js,31LGDiE3tcL.js,210nkE7VIFL.js,11RA63NYs0L.js,01CWV6hGTDL.js_.js?AUIClients/');\n});",
           "url": "https://www.amazon.co.za/Apple-Wi%E2%80%91Fi-Ethernet-storage-generation/dp/B0CZ9G2LB8",
           "stale": false
         }
