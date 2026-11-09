@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T21:42:32Z",
+  "generated_at": "2026-11-09T04:44:28Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -215,7 +215,7 @@
                   "image": "catalog/_products/2026/Mac/MacBook_Neo/MacBook_Neo/MacBook_Neo_Blush/MacBook_Neo_Blush_0.jpg",
                   "has_quantity": "1",
                   "sort_order": "3",
-                  "quantity": "7",
+                  "quantity": "6",
                   "option_1_name": "Processor",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
