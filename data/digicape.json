@@ -3,8 +3,8 @@
     "retailer": "digicape",
     "category": "mac",
     "name": "MacBook Neo",
-    "price_text": "R13 899",
-    "price": 13899.0,
+    "price_text": "R12 899",
+    "price": 12899.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"
@@ -43,18 +43,8 @@
     "retailer": "digicape",
     "category": "mac",
     "name": "MacBook Air 13-inch (M5 chip)",
-    "price_text": "R26 499",
-    "price": 26499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/mac-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "mac",
-    "name": "MacBook Pro 14-inch (M5 chip)",
-    "price_text": "R44 699",
-    "price": 44699.0,
+    "price_text": "R24 499",
+    "price": 24499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"
@@ -75,6 +65,16 @@
     "name": "MacBook Pro 16-inch (M5 chip)",
     "price_text": "R61 099",
     "price": 61099.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/mac-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "mac",
+    "name": "MacBook Pro 14-inch (M5 chip)",
+    "price_text": "R48 899",
+    "price": 48899.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/mac-all"
@@ -213,8 +213,8 @@
     "retailer": "digicape",
     "category": "ipad",
     "name": "iPad 11-inch (A16 chip)",
-    "price_text": "R8 699",
-    "price": 8699.0,
+    "price_text": "R8 299",
+    "price": 8299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/ipad-all"
@@ -513,8 +513,8 @@
     "retailer": "digicape",
     "category": "airpods",
     "name": "AirPods 4 with Active Noise Cancellation",
-    "price_text": "R3 199",
-    "price": 3199.0,
+    "price_text": "R2 839",
+    "price": 2839.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/airpods-all"
@@ -543,8 +543,8 @@
     "retailer": "digicape",
     "category": "airpods",
     "name": "AirPods 4",
-    "price_text": "R2 429",
-    "price": 2429.0,
+    "price_text": "R1 599",
+    "price": 1599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/airpods-all"
@@ -583,8 +583,8 @@
     "retailer": "digicape",
     "category": "appletv",
     "name": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
-    "price_text": "R4 659",
-    "price": 4659.0,
+    "price_text": "R3 599",
+    "price": 3599.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/apple-tv"
