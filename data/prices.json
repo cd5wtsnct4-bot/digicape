@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:13:29Z",
+  "generated_at": "2026-11-10T14:22:51Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -158,8 +158,8 @@
       "title": "14-inch MacBook Pro M5",
       "prices": {
         "digicape": {
-          "price": 48899.0,
-          "price_text": "R48 899",
+          "price": 50899.0,
+          "price_text": "R50 899",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
@@ -277,24 +277,6 @@
           "price": 13999.0,
           "price_text": "R13 999",
           "url": "https://www.istore.co.za/mac",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) 10-core CPU/10-core GPU 32GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 48899.0,
-          "price_text": "R 48,899",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 48999.0,
-          "price_text": "R 48,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false
         }
       }
