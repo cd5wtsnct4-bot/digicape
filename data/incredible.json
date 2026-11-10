@@ -194,6 +194,14 @@
   {
     "retailer": "incredible",
     "category": "mac",
+    "name": "Apple MacBook Pro 14 M5 10 Core CPU 10 Core GPU 32GB 1TB SSD Silver",
+    "price_text": "R 48,999",
+    "price": 48999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
     "name": "Apple iMac 24 inch 4.5K M6 12-Core CPU 24GB 512GB SSD 12-Core GPU Blue",
     "price_text": "R 48,999",
     "price": 48999.0,
@@ -203,14 +211,6 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple iMac 24 inch 4.5K M6 12-Core CPU 24GB 512GB SSD 12-Core GPU Silver",
-    "price_text": "R 48,999",
-    "price": 48999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14 M5 10 Core CPU 10 Core GPU 32GB 1TB SSD Silver",
     "price_text": "R 48,999",
     "price": 48999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -266,14 +266,6 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple iMac 24\" 4.5K Nano Texture M6 12-Core CPU 16GB 256GB SSD 12-Core GPU",
-    "price_text": "R 43,999",
-    "price": 43999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
     "name": "Apple iMac 24 inch 4.5K M6 12-Core CPU 16GB 512GB SSD 12-Core GPU Green",
     "price_text": "R 43,999",
     "price": 43999.0,
@@ -281,42 +273,10 @@
   },
   {
     "retailer": "incredible",
-    "category": "ipad",
-    "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
-    "url": "https://www.incredible.co.za/apple-ipad-mini-8-3-inch-a17-pro-128gb-wifi-space-grey"
-  },
-  {
-    "retailer": "incredible",
-    "category": "watch",
-    "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
-    "url": "https://www.incredible.co.za/apple-watch-se-gps-44mm-midnight-alu-case-with-ink-sport-loop"
-  },
-  {
-    "retailer": "incredible",
-    "category": "airpods",
-    "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
-    "url": "https://www.incredible.co.za/apple-airpods-pro"
-  },
-  {
-    "retailer": "incredible",
-    "category": "airpods",
-    "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
-    "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-purple"
-  },
-  {
-    "retailer": "incredible",
-    "category": "airpods",
-    "name": "Eish! Page not found.",
-    "price_text": "R 6,499",
-    "price": 6499.0,
-    "url": "https://www.incredible.co.za/apple-airpods-max-usb-c-blue"
+    "category": "mac",
+    "name": "Apple iMac 24\" 4.5K Nano Texture M6 12-Core CPU 16GB 256GB SSD 12-Core GPU",
+    "price_text": "R 43,999",
+    "price": 43999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
   }
 ]

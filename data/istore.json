@@ -122,9 +122,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display",
-    "price_text": "R45 199",
-    "price": 45199.0,
+    "name": "14-inch MacBook Pro with PROLED XDR Display M5 Pro",
+    "price_text": "R60 999",
+    "price": 60999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -132,9 +132,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "14-inch MacBook Pro with PROLED XDR Display M5 Pro",
-    "price_text": "R60 999",
-    "price": 60999.0,
+    "name": "Apple Studio Display",
+    "price_text": "R45 199",
+    "price": 45199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -433,8 +433,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -553,8 +553,8 @@
     "retailer": "istore",
     "category": "ipad",
     "name": "iPad mini A17 Pro",
-    "price_text": "R0",
-    "price": 0.0,
+    "price_text": "R12 299",
+    "price": 12299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
@@ -633,8 +633,8 @@
     "retailer": "istore",
     "category": "ipad",
     "name": "iPad mini A17 Pro",
-    "price_text": "R0",
-    "price": 0.0,
+    "price_text": "R12 299",
+    "price": 12299.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
@@ -1123,8 +1123,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
