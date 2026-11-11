@@ -305,8 +305,8 @@
     "name": "iPhone 17",
     "price_text": "R22 299",
     "price": 22299.0,
-    "old_price_text": "R22 299",
-    "old_price": 22299.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/iphone"
   },
   {
