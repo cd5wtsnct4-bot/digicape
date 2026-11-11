@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T22:53:55Z",
+  "generated_at": "2026-11-11T04:45:02Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -692,24 +692,6 @@
     },
     {
       "category": "iPad",
-      "title": "11-inch iPad Pro M4",
-      "prices": {
-        "digicape": {
-          "price": 29199.0,
-          "price_text": "R29 199",
-          "url": "https://www.digicape.co.za/category/ipad-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 27999.0,
-          "price_text": "R27 999",
-          "url": "https://www.istore.co.za/ipad/shop-ipad-range",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPad",
       "title": "11-inch iPad Pro M5",
       "prices": {
         "digicape": {
@@ -793,6 +775,18 @@
         "digicape": {
           "price": 19299.0,
           "price_text": "R19 299",
+          "url": "https://www.digicape.co.za/category/ipad-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "iPad",
+      "title": "iPad Pro 11-inch (M4 chip)",
+      "prices": {
+        "digicape": {
+          "price": 29199.0,
+          "price_text": "R29 199",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         }
