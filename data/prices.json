@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T00:05:03Z",
+  "generated_at": "2026-11-12T14:40:02Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -119,18 +119,6 @@
           "price": 6299.0,
           "price_text": "R6 299",
           "url": "https://www.istore.co.za/music-and-tech/discover-apple-tv/shop-apple-tv",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Apple TV",
-      "title": "Apple TV 4K 128Gb Wifi+Ethernet (3rd Gen, 2022)",
-      "prices": {
-        "digicape": {
-          "price": 3599.0,
-          "price_text": "R3 599",
-          "url": "https://www.digicape.co.za/category/apple-tv",
           "stale": false
         }
       }
@@ -403,24 +391,6 @@
         "incredible": {
           "price": 60999.0,
           "price_text": "R 60,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 16-inch (M5 chip) Pro 18-core CPU/20-core GPU 48GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 73399.0,
-          "price_text": "R 73,399",
-          "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 73499.0,
-          "price_text": "R 73,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false
         }
