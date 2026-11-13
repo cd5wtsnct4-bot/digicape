@@ -34,14 +34,6 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Pro XDR 16.2\" M5 Pro 18-core CPU 48GB 1TB 20-core GPU S Black",
-    "price_text": "R 83,999",
-    "price": 83999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
     "name": "Apple MacBook Pro 14 M5 Max 18 Core CPU 32 Core GPU 36GB 2TB SSD Silver",
     "price_text": "R 83,999",
     "price": 83999.0,
@@ -51,6 +43,14 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple MacBook Pro 14 M5 Max 18 Core CPU 32 Core GPU 36GB SpaceBlack",
+    "price_text": "R 83,999",
+    "price": 83999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "Apple MacBook Pro XDR 16.2\" M5 Pro 18-core CPU 48GB 1TB 20-core GPU S Black",
     "price_text": "R 83,999",
     "price": 83999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -122,14 +122,6 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Pro XDR 14.2\" M5 Pro 15-core CPU 24GB 1TB 16-core GPU Silver",
-    "price_text": "R 60,999",
-    "price": 60999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
     "name": "Apple Macbook Pro 16 M5 Pro 18 Core CPU 20 Core GPU 24GB 1TB SSD Silver",
     "price_text": "R 60,999",
     "price": 60999.0,
@@ -162,7 +154,15 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple Macbook Pro 14 M5 Pro 15 Core CPU 16 Core GPU 24GB SpaceBlack",
+    "name": "Apple MacBook Pro XDR 14.2\" M5 Pro 15-core CPU 24GB 1TB 16-core GPU Silver",
+    "price_text": "R 60,999",
+    "price": 60999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
+    "name": "Apple MacBook Pro 14 M5 Pro 15 Core CPU 16 Core GPU 24GB 1TB SSD Silver",
     "price_text": "R 50,999",
     "price": 50999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -170,7 +170,7 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Pro 14 M5 Pro 15 Core CPU 16 Core GPU 24GB 1TB SSD Silver",
+    "name": "Apple Macbook Pro 14 M5 Pro 15 Core CPU 16 Core GPU 24GB SpaceBlack",
     "price_text": "R 50,999",
     "price": 50999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
@@ -274,9 +274,9 @@
   {
     "retailer": "incredible",
     "category": "mac",
-    "name": "Apple MacBook Pro 14 M5 10 Core CPU 10 Core GPU 32GB 1TB SSD Silver",
-    "price_text": "R 48,999",
-    "price": 48999.0,
+    "name": "Apple MacBook Pro 14\" M6 12‑core CPU 16GB 1TB SSD 12‑core GPU Silver",
+    "price_text": "R 41,499",
+    "price": 41499.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
   }
 ]

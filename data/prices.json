@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T05:04:51Z",
+  "generated_at": "2026-11-13T13:58:03Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -177,8 +177,8 @@
           "stale": false
         },
         "incredible": {
-          "price": 45499.0,
-          "price_text": "R 45,499",
+          "price": 41499.0,
+          "price_text": "R 41,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false,
           "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
@@ -318,6 +318,24 @@
         "incredible": {
           "price": 64999.0,
           "price_text": "R 64,999",
+          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Mac",
+      "title": "MacBook Pro 14-inch (M6 chip) 16GB 1TB SSD",
+      "prices": {
+        "digicape": {
+          "price": 41599.0,
+          "price_text": "R 41,599",
+          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m6-chip",
+          "stale": false
+        },
+        "incredible": {
+          "price": 41499.0,
+          "price_text": "R 41,499",
           "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false
         }
@@ -491,8 +509,8 @@
       "title": "Apple Watch Series 11 Sport Band",
       "prices": {
         "digicape": {
-          "price": 9199.0,
-          "price_text": "R9 199",
+          "price": 8999.0,
+          "price_text": "R8 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -517,6 +535,18 @@
         "digicape": {
           "price": 9099.0,
           "price_text": "R9 099",
+          "url": "https://www.digicape.co.za/category/watch-all",
+          "stale": false
+        }
+      }
+    },
+    {
+      "category": "Watch",
+      "title": "Apple Watch Ultra 2 with Trail Loop",
+      "prices": {
+        "digicape": {
+          "price": 10999.0,
+          "price_text": "R10 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }

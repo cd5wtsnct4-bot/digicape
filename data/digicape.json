@@ -382,6 +382,26 @@
   {
     "retailer": "digicape",
     "category": "watch",
+    "name": "Apple Watch Series 11 Milanese Loop",
+    "price_text": "R19 499",
+    "price": 19499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Series 11 Sport Band",
+    "price_text": "R8 999",
+    "price": 8999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
     "name": "Apple Watch Series 12 Milanese Loop",
     "price_text": "R10 299",
     "price": 10299.0,
@@ -395,6 +415,36 @@
     "name": "Apple Watch Series 12 Sport Band",
     "price_text": "R9 099",
     "price": 9099.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 with Milanese Loop",
+    "price_text": "R21 999",
+    "price": 21999.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 with Ocean Band",
+    "price_text": "R19 499",
+    "price": 19499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.digicape.co.za/category/watch-all"
+  },
+  {
+    "retailer": "digicape",
+    "category": "watch",
+    "name": "Apple Watch Ultra 3 with Trail Loop",
+    "price_text": "R19 499",
+    "price": 19499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
@@ -442,19 +492,9 @@
   {
     "retailer": "digicape",
     "category": "watch",
-    "name": "Apple Watch Series 11 Milanese Loop",
-    "price_text": "R19 499",
-    "price": 19499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/watch-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "watch",
-    "name": "Apple Watch Series 11 Sport Band",
-    "price_text": "R9 199",
-    "price": 9199.0,
+    "name": "Apple Watch Ultra 2 with Trail Loop",
+    "price_text": "R10 999",
+    "price": 10999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
@@ -465,36 +505,6 @@
     "name": "Apple Watch Ultra 3 with Alpine Loop",
     "price_text": "R17 999",
     "price": 17999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/watch-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "watch",
-    "name": "Apple Watch Ultra 3 with Milanese Loop",
-    "price_text": "R21 999",
-    "price": 21999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/watch-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "watch",
-    "name": "Apple Watch Ultra 3 with Ocean Band",
-    "price_text": "R19 499",
-    "price": 19499.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.digicape.co.za/category/watch-all"
-  },
-  {
-    "retailer": "digicape",
-    "category": "watch",
-    "name": "Apple Watch Ultra 3 with Trail Loop",
-    "price_text": "R19 499",
-    "price": 19499.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.digicape.co.za/category/watch-all"
