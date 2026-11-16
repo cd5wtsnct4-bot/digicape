@@ -152,21 +152,21 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "16-inch MacBook Pro with PROLED XDR Display M5 Pro",
-    "price_text": "R71 999",
-    "price": 71999.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/mac"
-  },
-  {
-    "retailer": "istore",
-    "category": "mac",
     "name": "MacBook Pro 16-inch | Apple M4",
     "price_text": "R49 999",
     "price": 49999.0,
     "old_price_text": "R65 599",
     "old_price": 65599.0,
+    "url": "https://www.istore.co.za/mac"
+  },
+  {
+    "retailer": "istore",
+    "category": "mac",
+    "name": "16-inch MacBook Pro with PROLED XDR Display M5 Pro",
+    "price_text": "R71 999",
+    "price": 71999.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/mac"
   },
   {
@@ -1043,8 +1043,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "",
-    "price": null,
+    "price_text": "R1 199",
+    "price": 1199.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"

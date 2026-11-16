@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T04:47:46Z",
+  "generated_at": "2026-11-16T14:49:48Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -467,8 +467,8 @@
       "title": "Apple Watch Series 10 Sport Loop",
       "prices": {
         "digicape": {
-          "price": 6599.0,
-          "price_text": "R6 599",
+          "price": 7999.0,
+          "price_text": "R7 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
@@ -767,8 +767,8 @@
       "title": "iPad Pro 11-inch (M4 chip)",
       "prices": {
         "digicape": {
-          "price": 29199.0,
-          "price_text": "R29 199",
+          "price": 36999.0,
+          "price_text": "R36 999",
           "url": "https://www.digicape.co.za/category/ipad-all",
           "stale": false
         }
@@ -1001,8 +1001,8 @@
       "title": "iPhone Duo",
       "prices": {
         "digicape": {
-          "price": 47999.0,
-          "price_text": "R47 999",
+          "price": 50999.0,
+          "price_text": "R50 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
