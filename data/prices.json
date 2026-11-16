@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T22:31:06Z",
+  "generated_at": "2026-11-16T04:47:46Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -98,8 +98,8 @@
           "stale": false
         },
         "istore": {
-          "price": 5199.0,
-          "price_text": "R5 199",
+          "price": 4499.0,
+          "price_text": "R4 499",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -134,8 +134,8 @@
           "stale": false
         },
         "istore": {
-          "price": 26499.0,
-          "price_text": "R26 499",
+          "price": 25499.0,
+          "price_text": "R25 499",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
@@ -262,8 +262,8 @@
           "stale": false
         },
         "istore": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 12999.0,
+          "price_text": "R12 999",
           "url": "https://www.istore.co.za/mac",
           "stale": false
         }
@@ -443,8 +443,8 @@
           "stale": false
         },
         "istore": {
-          "price": 5699.0,
-          "price_text": "R5 699",
+          "price": 5149.0,
+          "price_text": "R5 149",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -545,8 +545,8 @@
           "stale": false
         },
         "istore": {
-          "price": 15999.0,
-          "price_text": "R15 999",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -563,8 +563,8 @@
           "stale": false
         },
         "istore": {
-          "price": 16499.0,
-          "price_text": "R16 499",
+          "price": 14499.0,
+          "price_text": "R14 499",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -581,8 +581,8 @@
           "stale": false
         },
         "istore": {
-          "price": 15999.0,
-          "price_text": "R15 999",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -599,8 +599,8 @@
           "stale": false
         },
         "istore": {
-          "price": 15999.0,
-          "price_text": "R15 999",
+          "price": 13999.0,
+          "price_text": "R13 999",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -665,8 +665,8 @@
           "stale": false
         },
         "istore": {
-          "price": 15299.0,
-          "price_text": "R15 299",
+          "price": 13499.0,
+          "price_text": "R13 499",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -701,8 +701,8 @@
           "stale": false
         },
         "istore": {
-          "price": 19399.0,
-          "price_text": "R19 399",
+          "price": 17499.0,
+          "price_text": "R17 499",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -797,8 +797,8 @@
           "stale": false
         },
         "istore": {
-          "price": 12299.0,
-          "price_text": "R12 299",
+          "price": 10999.0,
+          "price_text": "R10 999",
           "url": "https://www.istore.co.za/ipad/shop-ipad-range",
           "stale": false
         }
@@ -815,8 +815,8 @@
           "stale": false
         },
         "istore": {
-          "price": 16999.0,
-          "price_text": "R16 999",
+          "price": 15999.0,
+          "price_text": "R15 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
@@ -881,8 +881,8 @@
           "stale": false
         },
         "istore": {
-          "price": 22299.0,
-          "price_text": "R22 299",
+          "price": 20999.0,
+          "price_text": "R20 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
