@@ -142,19 +142,19 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "R49 999",
-    "price": 49999.0,
-    "old_price_text": "R65 599",
-    "old_price": 65599.0,
+    "name": "Apple Studio Display XDR",
+    "price_text": "R81 999",
+    "price": 81999.0,
+    "old_price_text": "",
+    "old_price": null,
     "url": "https://www.istore.co.za/mac"
   },
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "Apple Studio Display XDR",
-    "price_text": "R81 999",
-    "price": 81999.0,
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -273,8 +273,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "iPhone Air",
-    "price_text": "R22 999",
-    "price": 22999.0,
+    "price_text": "R0",
+    "price": 0.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -452,16 +452,6 @@
   {
     "retailer": "istore",
     "category": "iphone",
-    "name": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/iphone"
-  },
-  {
-    "retailer": "istore",
-    "category": "iphone",
     "name": "JBL Flip 7 Portable Bluetooth Speaker",
     "price_text": "R2 099",
     "price": 2099.0,
@@ -475,6 +465,16 @@
     "name": "Beats Powerbeats Pro 2 High-Performance Earbuds",
     "price_text": "R5 499",
     "price": 5499.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/iphone"
+  },
+  {
+    "retailer": "istore",
+    "category": "iphone",
+    "name": "Apple AirPods 4",
+    "price_text": "R0",
+    "price": 0.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -533,10 +533,10 @@
     "retailer": "istore",
     "category": "ipad",
     "name": "iPad A16",
-    "price_text": "R7 999",
-    "price": 7999.0,
-    "old_price_text": "R8 799",
-    "old_price": 8799.0,
+    "price_text": "R14 299",
+    "price": 14299.0,
+    "old_price_text": "R14 299",
+    "old_price": 14299.0,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
   },
   {
@@ -623,10 +623,10 @@
     "retailer": "istore",
     "category": "ipad",
     "name": "iPad A16",
-    "price_text": "R7 999",
-    "price": 7999.0,
-    "old_price_text": "R8 799",
-    "old_price": 8799.0,
+    "price_text": "R14 299",
+    "price": 14299.0,
+    "old_price_text": "R14 299",
+    "old_price": 14299.0,
     "url": "https://www.istore.co.za/ipad/shop-ipad-range"
   },
   {
@@ -743,10 +743,10 @@
     "retailer": "istore",
     "category": "watch",
     "name": "Apple Watch SE 3 Sport Band",
-    "price_text": "R5 149",
-    "price": 5149.0,
-    "old_price_text": "R5 699",
-    "old_price": 5699.0,
+    "price_text": "R6 199",
+    "price": 6199.0,
+    "old_price_text": "R6 199",
+    "old_price": 6199.0,
     "url": "https://www.istore.co.za/apple-watch/shop-watch-range"
   },
   {
@@ -813,8 +813,8 @@
     "retailer": "istore",
     "category": "airpods",
     "name": "Apple AirPods 4",
-    "price_text": "R1 999",
-    "price": 1999.0,
+    "price_text": "R0",
+    "price": 0.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/airpods"
@@ -863,8 +863,8 @@
     "retailer": "istore",
     "category": "airpods",
     "name": "Apple AirPods 4",
-    "price_text": "R1 999",
-    "price": 1999.0,
+    "price_text": "R0",
+    "price": 0.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/airpods"
@@ -1043,8 +1043,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "R1 199",
-    "price": 1199.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1125,16 +1125,6 @@
     "name": "Beats USB-C to USB-C Woven Cable (1.5 m)",
     "price_text": "R549",
     "price": 549.0,
-    "old_price_text": "",
-    "old_price": null,
-    "url": "https://www.istore.co.za/accessories"
-  },
-  {
-    "retailer": "istore",
-    "category": "accessories",
-    "name": "JBL Junior 320BT Wireless On-Ear Kids Headphones",
-    "price_text": "",
-    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1233,8 +1223,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple AirPods 4",
-    "price_text": "R1 999",
-    "price": 1999.0,
+    "price_text": "R0",
+    "price": 0.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1245,6 +1235,16 @@
     "name": "Beats Pill Wireless Bluetooth Speaker",
     "price_text": "R3 599",
     "price": 3599.0,
+    "old_price_text": "",
+    "old_price": null,
+    "url": "https://www.istore.co.za/accessories"
+  },
+  {
+    "retailer": "istore",
+    "category": "accessories",
+    "name": "Beats Solo 4 Wireless On-Ear Headphones",
+    "price_text": "R4 399",
+    "price": 4399.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"

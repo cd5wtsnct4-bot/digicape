@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T01:37:15Z",
+  "generated_at": "2026-11-17T15:32:15Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -20,8 +20,8 @@
           "stale": false
         },
         "istore": {
-          "price": 1999.0,
-          "price_text": "R1 999",
+          "price": 0.0,
+          "price_text": "R0",
           "url": "https://www.istore.co.za/airpods",
           "stale": false
         }
@@ -443,8 +443,8 @@
           "stale": false
         },
         "istore": {
-          "price": 5149.0,
-          "price_text": "R5 149",
+          "price": 6199.0,
+          "price_text": "R6 199",
           "url": "https://www.istore.co.za/apple-watch/shop-watch-range",
           "stale": false
         }
@@ -809,8 +809,8 @@
       "title": "iPhone 15",
       "prices": {
         "digicape": {
-          "price": 13999.0,
-          "price_text": "R13 999",
+          "price": 16999.0,
+          "price_text": "R16 999",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -827,8 +827,8 @@
       "title": "iPhone 16",
       "prices": {
         "digicape": {
-          "price": 19299.0,
-          "price_text": "R19 299",
+          "price": 19799.0,
+          "price_text": "R19 799",
           "url": "https://www.digicape.co.za/category/iphone-all",
           "stale": false
         },
@@ -848,24 +848,6 @@
           "price": 30899.0,
           "price_text": "R30 899",
           "url": "https://www.digicape.co.za/category/iphone-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "iPhone",
-      "title": "iPhone 16e",
-      "prices": {
-        "digicape": {
-          "price": 14699.0,
-          "price_text": "R14 699",
-          "url": "https://www.digicape.co.za/category/iphone-all",
-          "stale": false
-        },
-        "istore": {
-          "price": 14699.0,
-          "price_text": "R14 699",
-          "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
       }
@@ -989,8 +971,8 @@
           "stale": false
         },
         "istore": {
-          "price": 22999.0,
-          "price_text": "R22 999",
+          "price": 0.0,
+          "price_text": "R0",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
