@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T14:49:48Z",
+  "generated_at": "2026-11-17T01:37:15Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -1007,8 +1007,8 @@
           "stale": false
         },
         "istore": {
-          "price": 47999.0,
-          "price_text": "R47 999",
+          "price": 50999.0,
+          "price_text": "R50 999",
           "url": "https://www.istore.co.za/iphone",
           "stale": false
         }
