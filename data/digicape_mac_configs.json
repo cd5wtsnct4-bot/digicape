@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T15:31:29Z",
+  "generated_at": "2026-11-18T00:33:27Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -2835,7 +2835,7 @@
                   "image": "catalog/_products/2026/Mac/iMac_4-Ports_M6/iMac_4-Ports_M6_Silver/iMac_4-Ports_M6_Silver_0.jpg",
                   "has_quantity": "0",
                   "sort_order": "1",
-                  "quantity": "-1",
+                  "quantity": "0",
                   "option_1_name": "Processore",
                   "option_1_hex": "#000000",
                   "option_1_swatch": "0",
@@ -3378,7 +3378,7 @@
                 "image": "catalog/_products/2026/Apple/Mac_mini_M6_Silver/Mac_mini_M6_Silver_0.jpg",
                 "has_quantity": "0",
                 "sort_order": "1",
-                "quantity": "-3",
+                "quantity": "0",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
