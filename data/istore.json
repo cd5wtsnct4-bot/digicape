@@ -23,10 +23,10 @@
     "retailer": "istore",
     "category": "mac",
     "name": "Mac mini M4",
-    "price_text": "",
-    "price": null,
-    "old_price_text": "",
-    "old_price": null,
+    "price_text": "R17 999",
+    "price": 17999.0,
+    "old_price_text": "R20 499",
+    "old_price": 20499.0,
     "url": "https://www.istore.co.za/mac"
   },
   {
@@ -152,9 +152,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "16-inch MacBook Pro with PROLED XDR Display M5 Pro",
-    "price_text": "R71 999",
-    "price": 71999.0,
+    "name": "MacBook Pro 16-inch | Apple M4",
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -162,9 +162,9 @@
   {
     "retailer": "istore",
     "category": "mac",
-    "name": "MacBook Pro 16-inch | Apple M4",
-    "price_text": "",
-    "price": null,
+    "name": "16-inch MacBook Pro with PROLED XDR Display M5 Pro",
+    "price_text": "R71 999",
+    "price": 71999.0,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/mac"
@@ -275,8 +275,8 @@
     "name": "iPhone Air",
     "price_text": "R22 999",
     "price": 22999.0,
-    "old_price_text": "",
-    "old_price": null,
+    "old_price_text": "R22 999",
+    "old_price": 22999.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {
@@ -295,8 +295,8 @@
     "name": "iPhone 17 Pro",
     "price_text": "R24 999",
     "price": 24999.0,
-    "old_price_text": "",
-    "old_price": null,
+    "old_price_text": "R24 999",
+    "old_price": 24999.0,
     "url": "https://www.istore.co.za/iphone"
   },
   {

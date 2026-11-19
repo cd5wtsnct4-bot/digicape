@@ -250,6 +250,14 @@
   {
     "retailer": "incredible",
     "category": "mac",
+    "name": "Apple iMac 24\" 4.5K Nano Texture M6 12-Core CPU 16GB 256GB SSD 12-Core GPU",
+    "price_text": "R 43,999",
+    "price": 43999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
     "name": "Apple iMac 24 inch 4.5K M6 12-Core CPU 16GB 512GB SSD 12-Core GPU Silver",
     "price_text": "R 43,999",
     "price": 43999.0,
@@ -259,14 +267,6 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple iMac 24 inch 4.5K M6 12-Core CPU 16GB 512GB SSD 12-Core GPU Blue",
-    "price_text": "R 43,999",
-    "price": 43999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
-    "name": "Apple iMac 24\" 4.5K Nano Texture M6 12-Core CPU 16GB 256GB SSD 12-Core GPU",
     "price_text": "R 43,999",
     "price": 43999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
