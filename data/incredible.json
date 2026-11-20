@@ -34,6 +34,14 @@
   {
     "retailer": "incredible",
     "category": "mac",
+    "name": "Apple MacBook Pro 14 M5 Max 18 Core CPU 32 Core GPU 36GB 2TB SSD Silver",
+    "price_text": "R 83,999",
+    "price": 83999.0,
+    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
+  },
+  {
+    "retailer": "incredible",
+    "category": "mac",
     "name": "Apple MacBook Pro 14 M5 Max 18 Core CPU 32 Core GPU 36GB SpaceBlack",
     "price_text": "R 83,999",
     "price": 83999.0,
@@ -43,14 +51,6 @@
     "retailer": "incredible",
     "category": "mac",
     "name": "Apple MacBook Pro XDR 16.2\" M5 Pro 18-core CPU 48GB 1TB 20-core GPU S Black",
-    "price_text": "R 83,999",
-    "price": 83999.0,
-    "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
-  },
-  {
-    "retailer": "incredible",
-    "category": "mac",
-    "name": "Apple MacBook Pro 14 M5 Max 18 Core CPU 32 Core GPU 36GB 2TB SSD Silver",
     "price_text": "R 83,999",
     "price": 83999.0,
     "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook"
