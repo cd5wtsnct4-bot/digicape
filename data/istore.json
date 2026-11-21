@@ -433,8 +433,8 @@
     "retailer": "istore",
     "category": "iphone",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/iphone"
@@ -1043,8 +1043,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Apple Watch Nike Sport Band (New)",
-    "price_text": "R1 199",
-    "price": 1199.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
@@ -1103,8 +1103,8 @@
     "retailer": "istore",
     "category": "accessories",
     "name": "Beats Rugged Case with MagSafe and Camera Control for iPhone 17 Pro",
-    "price_text": "R1 299",
-    "price": 1299.0,
+    "price_text": "",
+    "price": null,
     "old_price_text": "",
     "old_price": null,
     "url": "https://www.istore.co.za/accessories"
