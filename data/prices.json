@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T05:48:14Z",
+  "generated_at": "2026-11-23T17:26:24Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -517,18 +517,6 @@
         "digicape": {
           "price": 9099.0,
           "price_text": "R9 099",
-          "url": "https://www.digicape.co.za/category/watch-all",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Watch",
-      "title": "Apple Watch Ultra 2 with Trail Loop",
-      "prices": {
-        "digicape": {
-          "price": 10999.0,
-          "price_text": "R10 999",
           "url": "https://www.digicape.co.za/category/watch-all",
           "stale": false
         }
