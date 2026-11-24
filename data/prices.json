@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T03:50:27Z",
+  "generated_at": "2026-11-24T16:59:41Z",
   "baseline_retailer": "digicape",
   "retailer_labels": {
     "digicape": "Digicape",
@@ -151,13 +151,6 @@
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
         },
-        "incredible": {
-          "price": 44499.0,
-          "price_text": "R 44,499",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        },
         "istore": {
           "price": 38999.0,
           "price_text": "R38 999",
@@ -175,13 +168,6 @@
           "price_text": "R41 599",
           "url": "https://www.digicape.co.za/category/mac-all",
           "stale": false
-        },
-        "incredible": {
-          "price": 45499.0,
-          "price_text": "R 45,499",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
         },
         "istore": {
           "price": 41599.0,
@@ -271,127 +257,12 @@
     },
     {
       "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 50899.0,
-          "price_text": "R 50,899",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 50999.0,
-          "price_text": "R 50,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) Pro 15-core CPU/16-core GPU 24GB 2TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 61099.0,
-          "price_text": "R 61,099",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 60999.0,
-          "price_text": "R 60,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M5 chip) Pro 18-core CPU/20-core GPU 24GB 2TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 54999.0,
-          "price_text": "R 54,999",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 64999.0,
-          "price_text": "R 64,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M6 chip) 24GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 45699.0,
-          "price_text": "R 45,699",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m6-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 45499.0,
-          "price_text": "R 45,499",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 14-inch (M6 chip) 32GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 49999.0,
-          "price_text": "R 49,999",
-          "url": "https://www.digicape.co.za/product/macbook-pro-14inch-m6-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 49999.0,
-          "price_text": "R 49,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false
-        }
-      }
-    },
-    {
-      "category": "Mac",
       "title": "MacBook Pro 16-inch (M5 chip)",
       "prices": {
         "digicape": {
           "price": 61099.0,
           "price_text": "R61 099",
           "url": "https://www.digicape.co.za/category/mac-all",
-          "stale": false
-        },
-        "incredible": {
-          "price": 60999.0,
-          "price_text": "R 60,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
-          "stale": false,
-          "note": "Listed by this retailer as a specific configuration — Digicape's price is the base 'from' price for this model line, not necessarily this exact spec."
-        }
-      }
-    },
-    {
-      "category": "Mac",
-      "title": "MacBook Pro 16-inch (M5 chip) Pro 18-core CPU/20-core GPU 24GB 1TB SSD",
-      "prices": {
-        "digicape": {
-          "price": 61099.0,
-          "price_text": "R 61,099",
-          "url": "https://www.digicape.co.za/product/macbook-pro-16inch-m5-chip",
-          "stale": false
-        },
-        "incredible": {
-          "price": 60999.0,
-          "price_text": "R 60,999",
-          "url": "https://www.incredible.co.za/products/computers-printers-accessories/laptops/macbook",
           "stale": false
         }
       }
