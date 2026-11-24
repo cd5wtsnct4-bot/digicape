@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T17:25:38Z",
+  "generated_at": "2026-11-24T03:49:42Z",
   "models": [
     {
       "name": "MacBook Neo",
@@ -1127,7 +1127,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Pro_PROLED_XDR_Display/MacBook_Pro_PROLED_XDR_Display_14-in_M5_Pro_Space_Black/MacBook_Pro_PROLED_XDR_Display_14-in_M5_Pro_Space_Black_0.jpg",
                 "has_quantity": "0",
                 "sort_order": "1",
-                "quantity": "-1",
+                "quantity": "0",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -1447,7 +1447,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Air_M5/MacBook_Air_13_M5/MacBook_Air_13_M5_Midnight/MacBook_Air_13_M5_Midnight_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "3",
-                "quantity": "19",
+                "quantity": "18",
                 "option_1_name": "Processor",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
@@ -1989,7 +1989,7 @@
                 "image": "catalog/_products/2026/Mac/MacBook_Pro_14-inch/MacBook_Pro_14-inch_M6_Space_Black/MacBook_Pro_14-inch_M6_Space_Black_0.jpg",
                 "has_quantity": "1",
                 "sort_order": "1",
-                "quantity": "3",
+                "quantity": "2",
                 "option_1_name": "Processore",
                 "option_1_hex": "#000000",
                 "option_1_swatch": "0",
